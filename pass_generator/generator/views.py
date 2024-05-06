@@ -8,14 +8,18 @@ def home(request):
     return render(request, 'generator/home.html')
 
 def password(request):
-    thepassword = []
-    strength = 10
-    for x in range(strength):
-        thepassword.append(random.choice(ALPHABET))
-    for i in range(int(strength/2)):
-        el = random.choice(thepassword)
-        idx = thepassword.index(el)
-        thepassword[idx] = el.upper()
+    thepassword = ''
+    strength = int(request.GET['length'])
+    if request.GET['numbers']:
+        ALPHABET.extend(list('0123456789'))
+    if request.GET['special']:
+        ALPHABET.extend(list('!@#$%^&*()_+'))
+    if request.GET['upper']:
+        ALPHABET.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
 
-    password = ''.join(random.sample(thepassword, len(thepassword)))
-    return render(request, 'generator/password.html', {'password':password})
+
+    for i in range(strength):
+        thepassword += random.choice(ALPHABET)
+
+    passw = ''.join(random.sample(thepassword, len(thepassword)))
+    return render(request, 'generator/password.html', {'password':passw})
