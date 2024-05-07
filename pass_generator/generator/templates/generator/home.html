@@ -8,6 +8,12 @@
     <title>Main Page</title>
 </head>
 <body>
+<header>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+</header>
 <h1>Password generator</h1>
 <form action="{% url 'password' %}">
     <label for="select">Length</label>

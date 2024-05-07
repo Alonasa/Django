@@ -23,3 +23,6 @@ def password(request):
 
     passw = ''.join(random.sample(thepassword, len(thepassword)))
     return render(request, 'generator/password.html', {'password':passw})
+
+def about(request):
+    return render(request, template_name='generator/about.html')
