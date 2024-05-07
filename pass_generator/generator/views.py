@@ -10,11 +10,11 @@ def home(request):
 def password(request):
     thepassword = ''
     strength = int(request.GET['length'])
-    if request.GET['numbers']:
+    if request.GET.get('numbers'):
         ALPHABET.extend(list('0123456789'))
-    if request.GET['special']:
+    if request.GET.get('special'):
         ALPHABET.extend(list('!@#$%^&*()_+'))
-    if request.GET['upper']:
+    if request.GET.get('upper'):
         ALPHABET.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
 
 
