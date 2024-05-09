@@ -52,7 +52,7 @@ ROOT_URLCONF = 'password_generator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'generator' /'templates'],
+        'DIRS': [BASE_DIR / 'generator' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
