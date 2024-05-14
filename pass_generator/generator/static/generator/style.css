@@ -18,3 +18,7 @@ input {
 .password {
     cursor: pointer;
 }
+
+.form-select {
+    margin-left: 15px;
+}
