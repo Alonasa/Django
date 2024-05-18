@@ -7,6 +7,7 @@ ALPHABET = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 def home(request):
     return render(request, 'generator/home.html')
 
+
 def password(request):
     thepassword = ''
     strength = int(request.GET['length'])
@@ -17,12 +18,16 @@ def password(request):
     if request.GET.get('upper'):
         ALPHABET.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
 
-
     for i in range(strength):
         thepassword += random.choice(ALPHABET)
 
     passw = ''.join(random.sample(thepassword, len(thepassword)))
     return render(request, 'generator/password.html', {'password':passw})
 
+
 def about(request):
     return render(request, template_name='generator/about.html')
+
+
+def index(request):
+    return HttpResponse("Hello")
