@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
+
 urlpatterns = [
     path('', views.view),
+    path('<int:num1>/<int:num2>', views.dynamic),
     path('admin/', admin.site.urls),
     path('portfolio/', include('portfolio.urls')),
     path('blog/', include('blog.urls'))
