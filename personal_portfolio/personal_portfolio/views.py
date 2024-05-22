@@ -3,7 +3,7 @@ from django.http.response import HttpResponse
 
 
 def view(request):
-    return HttpResponse("Home page view")
+    return render(request, 'personal_portfolio/base-template.html')
 
 
 def dynamic(request, num1, num2):
