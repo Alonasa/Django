@@ -1,12 +1,29 @@
 from django.shortcuts import render
-from django.http.response import HttpResponse
+from django.http.response import HttpResponse, Http404
 
 
 def view(request):
     return render(request, 'personal_portfolio/base-template.html')
 
 
-def dynamic(request, num1, num2):
-    add_res = num1 + num2
-    result = f"{num1}+{num2} = {add_res}"
-    return HttpResponse(str(result))
+months = {
+    "january":  "Eat all dishes after NY party",
+    "february": "Cook pancakes",
+    "march":    "Greet Sisters with their birthday"
+}
+
+
+def dynamic(request, month):
+    check = month.lower()
+    if check in months:
+        return HttpResponse(check)
+    else:
+        raise Http404("Page not found")
+
+
+def raise_404(request, exception):
+    return render(request, "404.html", status=404)
+
+
+def test_custom_404(request):
+    return raise_404(request, None)
