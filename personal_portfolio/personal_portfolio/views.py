@@ -25,5 +25,3 @@ def raise_404(request, exception):
     return render(request, "404.html", status=404)
 
 
-def test_custom_404(request):
-    return raise_404(request, None)

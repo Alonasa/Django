@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('portfolio/', include('portfolio.urls')),
     path('blog/', include('blog.urls')),
-    path('test-404/', views.test_custom_404),
 ]
 
-handler404 = views.raise_404
+handler404 = 'personal_portfolio.views.raise_404'
+
