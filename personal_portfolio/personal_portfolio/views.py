@@ -16,12 +16,10 @@ months = {
 def dynamic(request, month):
     check = month.lower()
     if check in months:
-        return HttpResponse(check)
+        return HttpResponse(months[check])
     else:
         raise Http404("Page not found")
 
 
 def raise_404(request, exception):
     return render(request, "404.html", status=404)
-
-
