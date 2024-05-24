@@ -27,4 +27,3 @@ urlpatterns = [
 ]
 
 handler404 = 'personal_portfolio.views.raise_404'
-
