@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #ffd74b;
+}
+
+a:active {
+    color: rgba(255, 215, 75, 0.3)
+}
+
+body {
+    background-color: #192144;
+    color: #ffffff;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.button {
+    padding: 15px;
+}
+
+.button__yellow {
+    background-color: #ffd74b;
+}
