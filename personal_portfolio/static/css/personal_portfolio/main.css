@@ -24,8 +24,17 @@ body {
 
 .button {
     padding: 15px;
+    text-transform: uppercase;
 }
 
 .button__yellow {
+    height: 40px;
+    padding: 5px 37px;
     background-color: #ffd74b;
+    color: #161c35;
+    border-radius: 20px;
+}
+
+.button__yellow a {
+    color: inherit;
 }
