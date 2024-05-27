@@ -9,5 +9,12 @@ def index(request):
     return HttpResponse("I am main portfolio")
 
 
+menu = {
+    "/": "Travel Fellows",
+    "about": "About",
+    "fellows": "Fellows",
+}
+
+
 def fellows(request):
-    return render(request, "travel_fellows/base.html")
+    return render(request, "travel_fellows/base.html", {"menu": menu})

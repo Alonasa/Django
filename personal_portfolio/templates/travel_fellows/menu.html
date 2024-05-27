@@ -1,21 +1,12 @@
-<nav class="d-flex justify-content-between m-4">
+<nav class="d-flex justify-content-between m-4 flex-wrap">
     <ul class="d-flex list-unstyled menu align-items-center">
+        {% for url, name in menu.items %}
         <li>
-            <a href="/">
-                Travel <br>Fellows
+            <a href="{{ url }}">
+                {{ name }}
             </a>
         </li>
-        <li>
-            <a href="#">
-                About
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                Destinations
-            </a>
-        </li>
-
+        {% endfor %}
     </ul>
     <ul class="list-unstyled d-flex align-items-center">
         <li class="button button__yellow"><a href="#">Sign in</a></li>
