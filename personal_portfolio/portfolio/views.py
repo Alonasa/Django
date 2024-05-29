@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
-from django.urls import reverse
+from django.http import HttpResponse
 
 
 # Create your views here.
@@ -18,3 +17,7 @@ menu = {
 
 def fellows(request):
     return render(request, "travel_fellows/main-page.html", {"menu": menu})
+
+
+def generator(request):
+    return render(request, "generator/home.html")
