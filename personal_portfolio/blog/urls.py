@@ -9,6 +9,5 @@ def home(request):
 
 urlpatterns = [
     path('', views.blog_main, name='blog'),
-    path('home/', home, name='home')
 ]
 
