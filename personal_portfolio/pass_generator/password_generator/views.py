@@ -4,6 +4,8 @@ import random
 
 # Create your views here.
 ALPHABET = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+
 def home(request):
     return render(request, 'generator/home.html')
 
@@ -26,7 +28,7 @@ def password(request):
 
 
 def about(request):
-    return render(request, template_name='generator/about.html')
+    return render(request, 'generator/about.html')
 
 
 def index(request):
