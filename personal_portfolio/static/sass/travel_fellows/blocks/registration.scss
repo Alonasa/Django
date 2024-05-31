@@ -1,0 +1,240 @@
+.registration {
+  background-color: $dark-blue;
+  color: $white;
+  padding-top: 70px;
+  padding-bottom: 12px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+
+  &--upped {
+    margin-top: -30px;
+    padding-top: 100px;
+
+    @media (min-width: $tablet) {
+      padding-top: 135px;
+      margin-top: -60px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 166px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 31px;
+    z-index: 100;
+    background-color: $dark-blue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 58px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+    &::after {
+      height: 61px;
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 102px;
+  }
+}
+
+.registration__title {
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 58px;
+  }
+}
+
+.registration__text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+  text-align: center;
+  width: 200px;
+
+  &--bottom {
+    width: 220px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 620px;
+    margin-bottom: 64px;
+
+    &--bottom {
+      margin-bottom: 44px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+
+    &--bottom {
+      margin-bottom: 44px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.registration__text-br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.registration__text-url {
+  color: $accent-yellow;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &:active {
+    color: rgba($orange, 0.3);
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $border-yellow;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $orange;
+  }
+
+  &:active::after {
+    background-color: rgba($orange, 0.3);
+  }
+}
+
+.registration__form {
+  position: relative;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    padding: 0 35px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 73px 0 70px;
+    margin-bottom: 68px;
+  }
+}
+
+.registration__email {
+  width: 230px;
+  height: 62px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: $white;
+  padding: 18px 70px 20px 22px;
+  color: $greyish-brown;
+  font-size: 18px;
+  font-weight: bold;
+  border: 4px solid $white;
+
+  &::placeholder {
+    color: rgba($greyish-brown, 0.3);
+    font-size: 18px;
+    font-weight: bold;
+
+    @media (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 1;
+    }
+  }
+
+  &:hover {
+    background-color: $light-violet;
+    border-color: $light-violet;
+  }
+
+  &:hover::placeholder {
+    color: rgba(68, 68, 68, 0.5);
+  }
+
+  &:focus {
+    background-color: transparent;
+    border: 4px solid $white;
+    color: $white;
+  }
+
+  &:focus::placeholder {
+    color: $white;
+  }
+
+  &:invalid {
+    background-color: $error-input-bg;
+    border-color: $error-input-bg;
+    color: $error-input-text;
+  }
+
+  @media (min-width: $tablet) {
+    width: 536px;
+    height: 81px;
+    padding: 25px 35px 23px 35px;
+    font-size: 24px;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 853px;
+    padding: 25px 35px 23px 35px;
+  }
+}
+
+.registration__submit {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (min-width: $tablet) {
+    right: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    right: 73px;
+  }
+}
+
+.registration__contacts {
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 220px;
+    margin-bottom: 0;
+  }
+}

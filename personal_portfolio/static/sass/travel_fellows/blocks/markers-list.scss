@@ -1,0 +1,55 @@
+.markers-list {
+  @include list-style-reset();
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 19px;
+    padding-right: 45px;
+  }
+}
+
+.markers-list__item {
+  margin-bottom: 31px;
+  padding-left: 43px;
+  position: relative;
+  color: rgba($black, 0.6);
+
+  &--active {
+    color: $twilight-blue;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 3px;
+    left: 0;
+    background-color: rgba($black, 0.6);
+  }
+
+  &--active::before {
+    background-color: $twilight-blue;
+  }
+}
+
+.markers-list__paragraph {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    line-height: 0.69;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,16 @@
+body {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+a {
+    margin: 0 20px;
+}
+
+a:hover {
+    color: #31d2f2;
+}
+
+a:active {
+    opacity: 0.7;
+}

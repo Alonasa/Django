@@ -1,0 +1,60 @@
+/* normalize.scss */
+@import "../../node_modules/normalize.scss/normalize.scss";
+
+/* Глобальные стили */
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "global";
+@import "animation";
+
+/* Блоки */
+@import "blocks/page";
+@import "blocks/visually-hidden";
+@import "blocks/container";
+@import "blocks/button";
+@import "blocks/page-header";
+@import "blocks/page-nav";
+@import "blocks/logo";
+@import "blocks/heading";
+@import "blocks/contacts";
+@import "blocks/contact-url";
+@import "blocks/social";
+@import "blocks/social-link";
+@import "blocks/text";
+@import "blocks/promo";
+@import "blocks/contact-button";
+@import "blocks/about-us";
+@import "blocks/directions";
+@import "blocks/directions-card";
+@import "blocks/country-flag";
+@import "blocks/teammates";
+@import "blocks/teammates-preview";
+@import "blocks/add-profile";
+@import "blocks/registration";
+@import "blocks/location";
+@import "blocks/contact-info";
+@import "blocks/our-address";
+@import "blocks/map";
+@import "blocks/page-footer";
+@import "blocks/social-button";
+@import "blocks/academy-logo";
+@import "blocks/business-popup";
+@import "blocks/page-main";
+@import "blocks/filter";
+@import "blocks/catalog-wrapper";
+@import "blocks/find-teammate";
+@import "blocks/teammate-search-form";
+@import "blocks/accordion";
+@import "blocks/transport-type";
+@import "blocks/teammates-catalog";
+@import "blocks/teammates-card";
+@import "blocks/user-information";
+@import "blocks/user-plans";
+@import "blocks/plan-card";
+@import "blocks/add-plan";
+@import "blocks/markers-list";
+@import "blocks/plan-step";
+@import "blocks/calendar";
+@import "blocks/country-select";
+@import "blocks/chose-country";

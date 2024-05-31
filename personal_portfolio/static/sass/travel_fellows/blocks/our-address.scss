@@ -1,0 +1,53 @@
+.our-address {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.38;
+  color: $dark-blue;
+  text-transform: uppercase;
+  padding-left: 60px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    top: -2px;
+    left: 0;
+    background-color: $black-blue;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 22px;
+    background-image: url("../img/contacts-location.svg");
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 95px;
+
+    &::before {
+      width: 67px;
+      height: 67px;
+      top: -17px;
+      background-size: 21px 31px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 123px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -2px;
+      z-index: 500;
+      background-size: 28px 43px;
+    }
+  }
+}

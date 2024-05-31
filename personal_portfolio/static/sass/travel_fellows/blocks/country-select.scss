@@ -1,0 +1,251 @@
+.country-select {
+  display: flex;
+  width: 168px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  color: $twilight-blue;
+  border: 1px solid $light-grey;
+  border-radius: 4px;
+  padding: 12px 12px 10px;
+  background-color: transparent;
+  position: relative;
+
+  &:hover {
+    border-color: $step-hover-violet;
+  }
+
+  &--chosen::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: 17px;
+    right: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/dropdown-form.svg");
+    opacity: 0.3;
+    z-index: 10;
+
+    @media (min-width: $tablet) {
+      width: 17px;
+      height: 9px;
+      top: 30px;
+      right: 27px;
+    }
+  }
+
+  &--chosen:hover::before,
+  &--chosen:focus::before {
+    opacity: 0.5;
+  }
+
+  &--chosen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, white 60%, transparent);
+  }
+
+  &--choose {
+    width: 100%;
+    overflow: visible;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 49px;
+      top: 17px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid $light-grey;
+
+      @media (min-width: $tablet) {
+        width: 15px;
+        height: 15px;
+        right: -34px;
+        top: 27px;
+        background-color: $white;
+      }
+
+      @media (min-width: $desktop) {
+        right: -51px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 7px;
+      top: 17px;
+      right: 13px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/dropdown-form.svg");
+      opacity: 0.3;
+      z-index: 10;
+
+      @media (min-width: $tablet) {
+        width: 17px;
+        height: 9px;
+        top: 30px;
+        right: 27px;
+      }
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 0.5;
+    }
+  }
+
+  &--add {
+    width: 100%;
+    background-color: $light-violet;
+    border: none;
+    padding: 12px 12px 11px;
+    overflow: visible;
+
+    &:hover,
+    &:focus {
+      background-color: $violet;
+    }
+
+    &:active {
+      color: rgba($twilight-blue, 0.3);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 49px;
+      top: 17px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid $light-grey;
+
+      @media (min-width: $tablet) {
+        width: 15px;
+        height: 15px;
+        right: -34px;
+        top: 27px;
+        background-color: $light-violet;
+        z-index: 10;
+      }
+
+      @media (min-width: $desktop) {
+        right: -51px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 14px;
+      right: 13px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/qty-plus.svg");
+      opacity: 0.2;
+      z-index: 10;
+
+      @media (min-width: $tablet) {
+        width: 18px;
+        height: 18px;
+        top: 25px;
+        right: 27px;
+      }
+
+      @media (min-width: $desktop) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 0.3;
+    }
+
+    &:active::after {
+      opacity: 0.1;
+    }
+  }
+
+  &--blue {
+    background-color: $twilight-blue;
+    color: $white;
+    border-color: $twilight-blue;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      top: 15px;
+      right: 13px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/menu-filter-close.svg");
+      opacity: 0.3;
+      z-index: 10;
+
+      @media (min-width: $tablet) {
+        width: 17px;
+        height: 17px;
+        top: 25px;
+        right: 27px;
+      }
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+
+    &:active::after {
+      opacity: 0.1;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 369px;
+    padding: 27px 27px 23px;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2;
+  }
+
+  @media (min-width: $desktop) {
+    width: 730px;
+  }
+}
+
+.country-select--choose.country-select--blue::before {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}

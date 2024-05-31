@@ -1,0 +1,24 @@
+.contacts {
+  @include list-style-reset();
+  margin-top: 0;
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.contacts__item {
+  padding: 0;
+
+  &--bottom {
+    @media (min-width: $desktop) {
+      margin-right: 111px;
+    }
+  }
+
+  &--bottom:last-child {
+    @media (min-width: $desktop) {
+      margin-right: 0;
+    }
+  }
+}
