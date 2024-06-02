@@ -102,25 +102,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../img/logo-mobile-blue@1x.png");
+  background-image: url("../img/travel_fellows/logo-mobile-blue@1x.png");
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/logo-mobile-blue@2x.png");
+    background-image: url("../img/travel_fellows/logo-mobile-blue@2x.png");
   }
 
   @media (min-width: $tablet) {
-    background-image: url("../img/logo-tablet-blue@1x.png");
+    background-image: url("../img/travel_fellows/logo-tablet-blue@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/logo-tablet-blue@2x.png");
+      background-image: url("../img/travel_fellows/logo-tablet-blue@2x.png");
     }
   }
 
   @media (min-width: $desktop) {
-    background-image: url("../img/logo-desktop-blue@1x.png");
+    background-image: url("../img/travel_fellows/logo-desktop-blue@1x.png");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/logo-desktop-blue@2x.png");
+      background-image: url("../img/travel_fellows/logo-desktop-blue@2x.png");
     }
   }
 }

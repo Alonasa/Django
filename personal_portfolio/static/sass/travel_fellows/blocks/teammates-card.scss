@@ -672,7 +672,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../img/heart.svg");
+    background-image: url("../img/travel_fellows/heart.svg");
     opacity: 0.3;
 
     @media (min-width: $tablet) {
@@ -707,7 +707,7 @@
   }
 
   &--active::before {
-    background-image: url("../img/heart-active.svg");
+    background-image: url("../img/travel_fellows/heart-active.svg");
     opacity: 1;
   }
 

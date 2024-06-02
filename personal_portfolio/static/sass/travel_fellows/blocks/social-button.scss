@@ -28,17 +28,17 @@
 
   &--fb::after {
     background-size: 11px 21px;
-    background-image: url("../img/facebook.svg");
+    background-image: url("../img/travel_fellows/facebook.svg");
   }
 
   &--vk::after {
     background-size: 23px 12px;
-    background-image: url("../img/vk.svg");
+    background-image: url("../img/travel_fellows/vk.svg");
   }
 
   &--instagram::after {
     background-size: 18px 18px;
-    background-image: url("../img/instagram.svg");
+    background-image: url("../img/travel_fellows/instagram.svg");
   }
 
   @media (min-width: $tablet) {

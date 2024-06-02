@@ -65,7 +65,7 @@
     background-repeat: no-repeat;
     background-size: 15px 10px;
     background-position: center;
-    background-image: url("../img/filter.svg");
+    background-image: url("../img/travel_fellows/filter.svg");
 
     @media (min-width: $tablet) {
       display: none;
@@ -203,13 +203,13 @@
 
   &--open {
     background-size: 17px 3px;
-    background-image: url("../img/dots.svg");
+    background-image: url("../img/travel_fellows/dots.svg");
     background-position: center;
   }
 
   &--close {
     background-size: 12px 12px;
-    background-image: url("../img/filter-close.svg");
+    background-image: url("../img/travel_fellows/filter-close.svg");
     background-position: center top 3px;
   }
 
@@ -476,7 +476,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url("../img/filter-close.svg");
+    background-image: url("../img/travel_fellows/filter-close.svg");
 
     @media (min-width: $tablet) {
       width: 19px;

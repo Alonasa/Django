@@ -31,30 +31,30 @@
     bottom: 0;
     margin: 0 auto;
     z-index: 5;
-    background: url("../img/about-mobile@1x.png") no-repeat left 15px center, url("../img/rectangle-bg-blue.svg") no-repeat left -30px top -11px;
+    background: url("../img/travel_fellows/about-mobile@1x.png") no-repeat left 15px center, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left -30px top -11px;
     background-size: contain, 143px 143px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/about-mobile@2x.png"), url("../img/rectangle-bg-blue.svg");
+      background-image: url("../img/travel_fellows/about-mobile@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg");
     }
 
     @media (min-width: $tablet) {
       width: 768px;
-      background: url("../img/about-tablet@1x.png") no-repeat right 7px bottom 88px, url("../img/rectangle-bg-big-blue.svg") no-repeat left 40px top 53px;
+      background: url("../img/travel_fellows/about-tablet@1x.png") no-repeat right 7px bottom 88px, url("../img/travel_fellows/rectangle-bg-big-blue.svg") no-repeat left 40px top 53px;
       background-size: 376px 548px, 688px 213px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/about-tablet@2x.png"), url("../img/rectangle-bg-big-blue.svg");
+        background-image: url("../img/travel_fellows/about-tablet@2x.png"), url("../img/travel_fellows/rectangle-bg-big-blue.svg");
       }
     }
 
     @media (min-width: $desktop) {
       width: 1440px;
-      background: url("../img/about-desktop@1x.png") no-repeat right 55px bottom, url("../img/rectangle-bg-blue.svg") no-repeat left 60px top 131px;
+      background: url("../img/travel_fellows/about-desktop@1x.png") no-repeat right 55px bottom, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 60px top 131px;
       background-size: 638px 665px, 213px 213px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/about-desktop@2x.png"), url("../img/rectangle-bg-blue.svg");
+        background-image: url("../img/travel_fellows/about-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg");
       }
     }
   }

@@ -37,11 +37,11 @@
 
     &::before {
       width: 768px;
-      background: url("../img/flags-back@1x.png") no-repeat right 40px top 80px, url("../img/rectangle-bg-violet.svg") no-repeat left 40px top 406px;
+      background: url("../img/travel_fellows/flags-back@1x.png") no-repeat right 40px top 80px, url("../img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 40px top 406px;
       background-size: 289px 575px, 141px 141px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/flags-back@2x.png"), url("../img/rectangle-bg-violet.svg");
+        background-image: url("../img/travel_fellows/flags-back@2x.png"), url("../img/travel_fellows/rectangle-bg-violet.svg");
       }
     }
 
@@ -58,11 +58,11 @@
 
     &::before {
       width: 1440px;
-      background: url("../img/flags-back@1x.png") no-repeat right 60px top 88px, url("../img/rectangle-bg-violet.svg") no-repeat left 60px top 89px;
+      background: url("../img/travel_fellows/flags-back@1x.png") no-repeat right 60px top 88px, url("../img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 60px top 89px;
       background-size: 289px 575px, 141px 141px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/flags-back@2x.png"), url("../img/rectangle-bg-violet.svg");
+        background-image: url("../img/travel_fellows/flags-back@2x.png"), url("../img/travel_fellows/rectangle-bg-violet.svg");
       }
     }
   }

@@ -389,18 +389,18 @@ a {
       width: 1440px;
       padding: 0 60px; } }
   .container--promo {
-    background: url("../img/traveller-illustration-mobile@1x.png") no-repeat right 50px top 130px;
+    background: url("../img/travel_fellows/traveller-illustration-mobile@1x.png") no-repeat right 50px top 130px;
     background-size: 192px 255px; }
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .container--promo {
-        background-image: url("../img/traveller-illustration-mobile@2x.png"); } }
+        background-image: url("../img/travel_fellows/traveller-illustration-mobile@2x.png"); } }
     @media (min-width: 768px) {
       .container--promo {
-        background: url("../img/traveller-illustration-tablet@1x.png") no-repeat right 112px bottom 280px;
+        background: url("../img/travel_fellows/traveller-illustration-tablet@1x.png") no-repeat right 112px bottom 280px;
         background-size: 372px 451px; } }
   @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .container--promo {
-      background-image: url("../img/traveller-illustration-tablet@2x.png"); } }
+      background-image: url("../img/travel_fellows/traveller-illustration-tablet@2x.png"); } }
     @media (min-width: 1440px) {
       .container--promo {
         background: none; } }
@@ -572,7 +572,7 @@ a {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../img/return.svg"); }
+        background-image: url("../img/travel_fellows/return.svg"); }
       .page-header__inner-back:hover, .page-header__inner-back:focus {
         opacity: 0.6; }
       .page-header__inner-back:active {
@@ -704,27 +704,27 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../img/logo-mobile-blue@1x.png"); }
+  background-image: url("../img/travel_fellows/logo-mobile-blue@1x.png"); }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-nav--white .page-nav__logo::after,
     .page-nav--no-js .page-nav__logo::after {
-      background-image: url("../img/logo-mobile-blue@2x.png"); } }
+      background-image: url("../img/travel_fellows/logo-mobile-blue@2x.png"); } }
   @media (min-width: 768px) {
     .page-nav--white .page-nav__logo::after,
     .page-nav--no-js .page-nav__logo::after {
-      background-image: url("../img/logo-tablet-blue@1x.png"); } }
+      background-image: url("../img/travel_fellows/logo-tablet-blue@1x.png"); } }
   @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .page-nav--white .page-nav__logo::after,
     .page-nav--no-js .page-nav__logo::after {
-      background-image: url("../img/logo-tablet-blue@2x.png"); } }
+      background-image: url("../img/travel_fellows/logo-tablet-blue@2x.png"); } }
   @media (min-width: 1440px) {
     .page-nav--white .page-nav__logo::after,
     .page-nav--no-js .page-nav__logo::after {
-      background-image: url("../img/logo-desktop-blue@1x.png"); } }
+      background-image: url("../img/travel_fellows/logo-desktop-blue@1x.png"); } }
   @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
     .page-nav--white .page-nav__logo::after,
     .page-nav--no-js .page-nav__logo::after {
-      background-image: url("../img/logo-desktop-blue@2x.png"); } }
+      background-image: url("../img/travel_fellows/logo-desktop-blue@2x.png"); } }
 @media (min-width: 1440px) {
   .page-nav--no-js .page-nav__logo::after {
     background: none; } }
@@ -1087,7 +1087,7 @@ a {
     .contact-url:active::after {
       opacity: 0.3; } }
   .contact-url--telephone::before {
-    background-image: url("../img/contacts-phone.svg"); }
+    background-image: url("../img/travel_fellows/contacts-phone.svg"); }
     @media (min-width: 1440px) {
       .contact-url--telephone::before {
         background-color: #ff8d30;
@@ -1097,16 +1097,16 @@ a {
       background-color: #f26926; } }
   @media (min-width: 1440px) {
     .contact-url--telephone::after {
-      background-image: url("../img/topmenu-phone.svg"); } }
+      background-image: url("../img/travel_fellows/topmenu-phone.svg"); } }
   .contact-url--email::before {
-    background-image: url("../img/contacts-mail.svg"); }
+    background-image: url("../img/travel_fellows/contacts-mail.svg"); }
     @media (min-width: 1440px) {
       .contact-url--email::before {
         background-color: #ffbd30;
         background-image: none; } }
   @media (min-width: 1440px) {
     .contact-url--email::after {
-      background-image: url("../img/topmenu-mail.svg"); } }
+      background-image: url("../img/travel_fellows/topmenu-mail.svg"); } }
   @media (min-width: 1440px) {
     .contact-url--email:hover::before, .contact-url--email:focus::before {
       background-color: #ff8d30; } }
@@ -1145,7 +1145,7 @@ a {
   .social-link--fb {
     width: 11px;
     height: 21px;
-    background-image: url("../img/facebook.svg"); }
+    background-image: url("../img/travel_fellows/facebook.svg"); }
     @media (min-width: 768px) {
       .social-link--fb {
         width: 14px;
@@ -1153,7 +1153,7 @@ a {
   .social-link--vk {
     width: 23px;
     height: 12px;
-    background-image: url("../img/vk.svg"); }
+    background-image: url("../img/travel_fellows/vk.svg"); }
     @media (min-width: 768px) {
       .social-link--vk {
         width: 31px;
@@ -1161,7 +1161,7 @@ a {
   .social-link--instagram {
     width: 18px;
     height: 18px;
-    background-image: url("../img/instagram.svg"); }
+    background-image: url("../img/travel_fellows/instagram.svg"); }
     @media (min-width: 768px) {
       .social-link--instagram {
         width: 24px;
@@ -1194,7 +1194,7 @@ a {
 
 .promo {
   color: #ffffff;
-  background: #161c36 url("../img/globe-back-mobile@1x.jpg") no-repeat left 0;
+  background: #161c36 url("../img/travel_fellows/globe-back-mobile@1x.jpg") no-repeat left 0;
   background-size: 320px 569px;
   position: relative;
   padding-bottom: 39px; }
@@ -1209,19 +1209,19 @@ a {
     z-index: -1; }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../img/globe-back-mobile@2x.jpg"); } }
+      background-image: url("../img/travel_fellows/globe-back-mobile@2x.jpg"); } }
   @media (min-width: 768px) {
     .promo {
-      background: url("../img/globe-back-tablet@1x.jpg") no-repeat center bottom 180px;
+      background: url("../img/travel_fellows/globe-back-tablet@1x.jpg") no-repeat center bottom 180px;
       background-size: 1479px 612px; }
       .promo::before {
         display: none; } }
   @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../img/globe-back-tablet@2x.jpg"); } }
+      background-image: url("../img/travel_fellows/globe-back-tablet@2x.jpg"); } }
   @media (min-width: 1440px) {
     .promo {
-      background: url("../img/traveller-illustration-desktop@1x.png") no-repeat left calc(50vw - 116px) bottom 0, url("../img/globe-back-desktop@1x.jpg") no-repeat center bottom;
+      background: url("../img/travel_fellows/traveller-illustration-desktop@1x.png") no-repeat left calc(50vw - 116px) bottom 0, url("../img/travel_fellows/globe-back-desktop@1x.jpg") no-repeat center bottom;
       background-size: 431px 640px, 1800px 750px;
       background-color: #161c36;
       padding-bottom: 123px;
@@ -1229,7 +1229,7 @@ a {
       border-bottom-right-radius: 60px; } }
   @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../img/traveller-illustration-desktop@2x.png"), url("../img/globe-back-desktop@2x.jpg"); } }
+      background-image: url("../img/travel_fellows/traveller-illustration-desktop@2x.png"), url("../img/travel_fellows/globe-back-desktop@2x.jpg"); } }
 .promo__contacts-list {
   list-style: none;
   padding-left: 0;
@@ -1449,13 +1449,13 @@ a {
   background-position: center; }
   .contact-button--telephone {
     background-color: #ff8d30;
-    background-image: url("../img/topmenu-phone.svg");
+    background-image: url("../img/travel_fellows/topmenu-phone.svg");
     background-size: 18px 18px; }
     .contact-button--telephone:hover, .contact-button--telephone:focus {
       background-color: #f26926; }
   .contact-button--email {
     background-color: #ffbd30;
-    background-image: url("../img/topmenu-mail.svg");
+    background-image: url("../img/travel_fellows/topmenu-mail.svg");
     background-size: 18px 14px; }
     .contact-button--email:hover, .contact-button--email:focus {
       background-color: #ff8d30; }
@@ -1490,27 +1490,27 @@ a {
     bottom: 0;
     margin: 0 auto;
     z-index: 5;
-    background: url("../img/about-mobile@1x.png") no-repeat left 15px center, url("../img/rectangle-bg-blue.svg") no-repeat left -30px top -11px;
+    background: url("../img/travel_fellows/about-mobile@1x.png") no-repeat left 15px center, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left -30px top -11px;
     background-size: contain, 143px 143px; }
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .about-us::after {
-        background-image: url("../img/about-mobile@2x.png"), url("../img/rectangle-bg-blue.svg"); } }
+        background-image: url("../img/travel_fellows/about-mobile@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"); } }
     @media (min-width: 768px) {
       .about-us::after {
         width: 768px;
-        background: url("../img/about-tablet@1x.png") no-repeat right 7px bottom 88px, url("../img/rectangle-bg-big-blue.svg") no-repeat left 40px top 53px;
+        background: url("../img/travel_fellows/about-tablet@1x.png") no-repeat right 7px bottom 88px, url("../img/travel_fellows/rectangle-bg-big-blue.svg") no-repeat left 40px top 53px;
         background-size: 376px 548px, 688px 213px; } }
   @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .about-us::after {
-      background-image: url("../img/about-tablet@2x.png"), url("../img/rectangle-bg-big-blue.svg"); } }
+      background-image: url("../img/travel_fellows/about-tablet@2x.png"), url("../img/travel_fellows/rectangle-bg-big-blue.svg"); } }
     @media (min-width: 1440px) {
       .about-us::after {
         width: 1440px;
-        background: url("../img/about-desktop@1x.png") no-repeat right 55px bottom, url("../img/rectangle-bg-blue.svg") no-repeat left 60px top 131px;
+        background: url("../img/travel_fellows/about-desktop@1x.png") no-repeat right 55px bottom, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 60px top 131px;
         background-size: 638px 665px, 213px 213px; } }
   @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
     .about-us::after {
-      background-image: url("../img/about-desktop@2x.png"), url("../img/rectangle-bg-blue.svg"); } }
+      background-image: url("../img/travel_fellows/about-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"); } }
 .about-us__content-wrapper {
   padding: 0 25px;
   padding-right: 25px;
@@ -1568,11 +1568,11 @@ a {
       border-bottom-right-radius: 60px; }
       .directions::before {
         width: 768px;
-        background: url("../img/flags-back@1x.png") no-repeat right 40px top 80px, url("../img/rectangle-bg-violet.svg") no-repeat left 40px top 406px;
+        background: url("../img/travel_fellows/flags-back@1x.png") no-repeat right 40px top 80px, url("../img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 40px top 406px;
         background-size: 289px 575px, 141px 141px; } }
     @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
       .directions::before {
-        background-image: url("../img/flags-back@2x.png"), url("../img/rectangle-bg-violet.svg"); } }
+        background-image: url("../img/travel_fellows/flags-back@2x.png"), url("../img/travel_fellows/rectangle-bg-violet.svg"); } }
   @media (min-width: 768px) {
       .directions::after {
         height: 61px;
@@ -1584,11 +1584,11 @@ a {
       padding-bottom: 138px; }
       .directions::before {
         width: 1440px;
-        background: url("../img/flags-back@1x.png") no-repeat right 60px top 88px, url("../img/rectangle-bg-violet.svg") no-repeat left 60px top 89px;
+        background: url("../img/travel_fellows/flags-back@1x.png") no-repeat right 60px top 88px, url("../img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 60px top 89px;
         background-size: 289px 575px, 141px 141px; } }
     @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
       .directions::before {
-        background-image: url("../img/flags-back@2x.png"), url("../img/rectangle-bg-violet.svg"); } }
+        background-image: url("../img/travel_fellows/flags-back@2x.png"), url("../img/travel_fellows/rectangle-bg-violet.svg"); } }
 @media (min-width: 1440px) {
   .directions__common-wrapper {
     display: flex;
@@ -1779,7 +1779,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("../img/user.svg");
+    background-image: url("../img/travel_fellows/user.svg");
     opacity: 0.1; }
   @media (min-width: 768px) {
     .directions-card__users {
@@ -1852,11 +1852,11 @@ a {
     bottom: 0;
     margin: 0 auto;
     z-index: 5;
-    background: url("../img/smolov-back-desktop@1x.png") no-repeat right 25px top 69px, url("../img/rectangle-bg-blue.svg") no-repeat left -30px top 69px, url("../img/rogovaya-back-mobile@1x.png") no-repeat left -10px top 340px;
+    background: url("../img/travel_fellows/smolov-back-desktop@1x.png") no-repeat right 25px top 69px, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left -30px top 69px, url("../img/travel_fellows/rogovaya-back-mobile@1x.png") no-repeat left -10px top 340px;
     background-size: 143px 143px, 143px 143px, 71px 71px; }
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .teammates::before {
-        background-image: url("../img/smolov-back-desktop@2x.png"), url("../img/rectangle-bg-blue.svg"), url("../img/rogovaya-back-mobile@2x.png"); } }
+        background-image: url("../img/travel_fellows/smolov-back-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"), url("../img/travel_fellows/rogovaya-back-mobile@2x.png"); } }
   .teammates--upped {
     margin-top: -30px;
     padding-top: 100px; }
@@ -1874,21 +1874,21 @@ a {
       padding-bottom: 88px; }
       .teammates::before {
         width: 768px;
-        background: url("../img/rogovaya-back-desktop@1x.png") no-repeat right 77px top 140px, url("../img/rectangle-bg-blue.svg") no-repeat left 40px top 140px, url("../img/smolov-back-desktop@1x.png") no-repeat left 40px top 486px;
+        background: url("../img/travel_fellows/rogovaya-back-desktop@1x.png") no-repeat right 77px top 140px, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 40px top 140px, url("../img/travel_fellows/smolov-back-desktop@1x.png") no-repeat left 40px top 486px;
         background-size: 285px 285px, 213px 213px, 143px 143px; } }
     @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
       .teammates::before {
-        background-image: url("./../img/rogovaya-back-desktop@2x.png"), url("../img/rectangle-bg-blue.svg"), url("../img/smolov-back-desktop@2x.png"); } }
+        background-image: url("./../img/travel_fellows/rogovaya-back-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"), url("../img/travel_fellows/smolov-back-desktop@2x.png"); } }
   @media (min-width: 1440px) {
     .teammates {
       padding-bottom: 130px; }
       .teammates::before {
         width: 1440px;
-        background: url("../img/rogovaya-back-desktop@1x.png") no-repeat left 191px bottom 80px, url("../img/rectangle-bg-blue.svg") no-repeat left 60px top 128px, url("../img/smolov-back-desktop@1x.png") no-repeat left 547px top 194px;
+        background: url("../img/travel_fellows/rogovaya-back-desktop@1x.png") no-repeat left 191px bottom 80px, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 60px top 128px, url("../img/travel_fellows/smolov-back-desktop@1x.png") no-repeat left 547px top 194px;
         background-size: 285px 285px, 213px 213px, 143px 143px; } }
     @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
       .teammates::before {
-        background-image: url("./../img/rogovaya-back-desktop@2x.png"), url("../img/rectangle-bg-blue.svg"), url("../img/smolov-back-desktop@2x.png"); } }
+        background-image: url("./../img/travel_fellows/rogovaya-back-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"), url("../img/travel_fellows/smolov-back-desktop@2x.png"); } }
 @media (min-width: 768px) {
   .teammates__common-wrapper {
     padding: 0 35px; } }
@@ -2243,11 +2243,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../img/rates@1x.png");
+  background-image: url("../img/travel_fellows/rates@1x.png");
   margin-left: auto; }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .add-profile__image-block {
-      background-image: url("../img/rates@2x.png"); } }
+      background-image: url("../img/travel_fellows/rates@2x.png"); } }
   @media (min-width: 768px) {
     .add-profile__image-block {
       order: 10;
@@ -2393,7 +2393,7 @@ a {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        background-image: url("../img/business.svg"); }
+        background-image: url("../img/travel_fellows/business.svg"); }
       .add-profile__business-link:hover::after, .add-profile__business-link:focus::after {
         opacity: 0.7; }
       .add-profile__business-link:active::after {
@@ -2756,7 +2756,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 14px 22px;
-    background-image: url("../img/contacts-location.svg"); }
+    background-image: url("../img/travel_fellows/contacts-location.svg"); }
   @media (min-width: 768px) {
     .our-address {
       padding-left: 95px; }
@@ -2894,13 +2894,13 @@ a {
     opacity: 0.3; }
   .social-button--fb::after {
     background-size: 11px 21px;
-    background-image: url("../img/facebook.svg"); }
+    background-image: url("../img/travel_fellows/facebook.svg"); }
   .social-button--vk::after {
     background-size: 23px 12px;
-    background-image: url("../img/vk.svg"); }
+    background-image: url("../img/travel_fellows/vk.svg"); }
   .social-button--instagram::after {
     background-size: 18px 18px;
-    background-image: url("../img/instagram.svg"); }
+    background-image: url("../img/travel_fellows/instagram.svg"); }
   @media (min-width: 768px) {
     .social-button {
       width: 60px;
@@ -2923,7 +2923,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-image: url("../img/htmlacademy.svg"); }
+  background-image: url("../img/travel_fellows/htmlacademy.svg"); }
 
 .business-popup {
   display: none;
@@ -3099,7 +3099,7 @@ a {
     background-repeat: no-repeat;
     background-size: 15px 10px;
     background-position: center;
-    background-image: url("../img/filter.svg"); }
+    background-image: url("../img/travel_fellows/filter.svg"); }
     @media (min-width: 768px) {
       .filter__title::before {
         display: none; } }
@@ -3201,11 +3201,11 @@ a {
   background-position: center; }
   .filter__toggler--open {
     background-size: 17px 3px;
-    background-image: url("../img/dots.svg");
+    background-image: url("../img/travel_fellows/dots.svg");
     background-position: center; }
   .filter__toggler--close {
     background-size: 12px 12px;
-    background-image: url("../img/filter-close.svg");
+    background-image: url("../img/travel_fellows/filter-close.svg");
     background-position: center top 3px; }
   .filter__toggler:hover, .filter__toggler:focus {
     opacity: 0.6; }
@@ -3407,7 +3407,7 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url("../img/filter-close.svg"); }
+    background-image: url("../img/travel_fellows/filter-close.svg"); }
     @media (min-width: 768px) {
       .filter__inner-button-cross::before {
         width: 19px;
@@ -3791,7 +3791,7 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url("../img/tick.svg"); }
+    background-image: url("../img/travel_fellows/tick.svg"); }
   .accordion__checkbox:active::after {
     opacity: 0.2; }
   @media (min-width: 768px) {
@@ -4122,7 +4122,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("../img/show-more-plus.svg"); }
+    background-image: url("../img/travel_fellows/show-more-plus.svg"); }
     @media (min-width: 768px) {
       .teammates-catalog__button-text::before {
         width: 27px;
@@ -4739,7 +4739,7 @@ a {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../img/heart.svg");
+    background-image: url("../img/travel_fellows/heart.svg");
     opacity: 0.3; }
     @media (min-width: 768px) {
       .teammates-card__like::before {
@@ -4758,7 +4758,7 @@ a {
   .teammates-card__like--active:hover, .teammates-card__like--active:focus {
     background-color: #f9d8d8; }
   .teammates-card__like--active::before {
-    background-image: url("../img/heart-active.svg");
+    background-image: url("../img/travel_fellows/heart-active.svg");
     opacity: 1; }
   .teammates-card__like--active:active::before {
     opacity: 0.3; }
@@ -5652,20 +5652,20 @@ a {
       height: 70px; } }
   .plan-step__number-input-button--decrease {
     background-size: 14px 2px;
-    background-image: url("../img/qty-minus-mobile.svg");
+    background-image: url("../img/travel_fellows/qty-minus-mobile.svg");
     left: 0; }
     @media (min-width: 768px) {
       .plan-step__number-input-button--decrease {
         background-size: 20px 2px;
-        background-image: url("../img/qty-minus.svg"); } }
+        background-image: url("../img/travel_fellows/qty-minus.svg"); } }
   .plan-step__number-input-button--increase {
     background-size: 14px 14px;
-    background-image: url("../img/qty-plus-mobile.svg");
+    background-image: url("../img/travel_fellows/qty-plus-mobile.svg");
     right: 0; }
     @media (min-width: 768px) {
       .plan-step__number-input-button--increase {
         background-size: 20px 20px;
-        background-image: url("../img/qty-plus.svg"); } }
+        background-image: url("../img/travel_fellows/qty-plus.svg"); } }
   .plan-step__number-input-button:hover, .plan-step__number-input-button:focus {
     opacity: 0.4; }
   .plan-step__number-input-button:active {
@@ -5728,7 +5728,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("../img/tick.svg"); }
+    background-image: url("../img/travel_fellows/tick.svg"); }
   .plan-step__custom-checkbox:hover::before, .plan-step__custom-checkbox:focus::before {
     border: 1px solid #959bb2; }
   .plan-step__custom-checkbox:active::before {
@@ -5825,7 +5825,7 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: url("../img/small-arrow.svg"); }
+    background-image: url("../img/travel_fellows/small-arrow.svg"); }
   @media (min-width: 768px) {
     .plan-step__select-wrapper {
       justify-content: space-between;
@@ -5888,7 +5888,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 9px 9px;
-  background-image: url("../img/menu-close.svg");
+  background-image: url("../img/travel_fellows/menu-close.svg");
   position: absolute;
   right: -10px;
   top: -10px;
@@ -6120,9 +6120,9 @@ a {
   background-size: contain;
   opacity: 0.3; }
   .calendar__control--prev {
-    background-image: url("../img/month-arrow-left.svg"); }
+    background-image: url("../img/travel_fellows/month-arrow-left.svg"); }
   .calendar__control--next {
-    background-image: url("../img/month-arrow-right.svg"); }
+    background-image: url("../img/travel_fellows/month-arrow-right.svg"); }
   .calendar__control:hover, .calendar__control:focus {
     opacity: 0.5; }
   .calendar__control:active {
@@ -6344,7 +6344,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../img/dropdown-form.svg");
+    background-image: url("../img/travel_fellows/dropdown-form.svg");
     opacity: 0.3;
     z-index: 10; }
     @media (min-width: 768px) {
@@ -6396,7 +6396,7 @@ a {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url("../img/dropdown-form.svg");
+      background-image: url("../img/travel_fellows/dropdown-form.svg");
       opacity: 0.3;
       z-index: 10; }
       @media (min-width: 768px) {
@@ -6448,7 +6448,7 @@ a {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url("../img/qty-plus.svg");
+      background-image: url("../img/travel_fellows/qty-plus.svg");
       opacity: 0.2;
       z-index: 10; }
       @media (min-width: 768px) {
@@ -6480,7 +6480,7 @@ a {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url("../img/menu-filter-close.svg");
+      background-image: url("../img/travel_fellows/menu-filter-close.svg");
       opacity: 0.3;
       z-index: 10; }
       @media (min-width: 768px) {

@@ -6,7 +6,7 @@
 {#              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">#}
 {#        <meta http-equiv="X-UA-Compatible" content="ie=edge">#}
 {#        <title>Travel Fellows</title>#}
-{#        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"#}
+{#        <link href="https://cdn.jsdelivr.net/npm/bootstrap' %}@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"#}
 {#          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">#}
 {#        {% load static %}#}
 {#    <link rel="stylesheet" href="{% static 'css/personal_portfolio/main.css' %}">#}
@@ -32,7 +32,6 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Travell fellows application">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/personal_portfolio/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/travel_fellows/styles.css' %}">
     <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
@@ -41,7 +40,7 @@
 </head>
 <body class="page">
 <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
+    <include src="build/{% static 'img/travel_fellows/sprite.svg' %}' %}"></include>
 </div>
 <header class="page-header page-header--main">
     <nav class="page-nav page-nav--main page-nav--inactive page-nav--no-js">
@@ -49,32 +48,7 @@
             <div class="page-nav__wrapper">
                 <div class="page-nav__logo-wrapper">
                     <a class="logo page-nav__logo">
-                        <picture>
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="
-                      img/logo-desktop-white@1x.webp 1x,
-                      img/logo-desktop-white@2x.webp 2x
-                    ">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="
-                      img/logo-tablet-white@1x.webp 1x,
-                      img/logo-tablet-white@2x.webp 2x
-                    ">
-                            <source type="image/webp" srcset="
-                      img/logo-mobile-white@1x.webp 1x,
-                      img/logo-mobile-white@2x.webp 2x
-                    ">
-                            <source media="(min-width: 1440px)" srcset="
-                      img/logo-desktop-white@1x.png 1x,
-                      img/logo-desktop-white@2x.png 2x
-                    ">
-                            <source media="(min-width: 768px)" srcset="
-                      img/logo-tablet-white@1x.png 1x,
-                      img/logo-tablet-white@2x.png 2x
-                    ">
-                            <img class="logo__picture" src="img/logo-mobile-white@1x.png" srcset="
-                      img/logo-mobile-white@1x.png 1x,
-                      img/logo-mobile-white@2x.png 2x
-                    " alt="Travel Fellows">
-                        </picture>
+                        Travel Fellows
                     </a>
                     <button class="page-nav__toggler" type="button" aria-haspopup="true"
                             aria-label="Navigation Toggler">
@@ -108,7 +82,7 @@
                         </li>
                         <li class="contacts__item">
                             <a class="contact-url contact-url--email" href="mailto:mail"><span
-                                    class="contact-url__content">mail@</span></a>
+                                    class="contact-url__content">mail' %}@</span></a>
                         </li>
                     </ul>
                     <ul class="social page-nav__social">
@@ -137,8 +111,8 @@
                 </div>
                 <ul class="promo__contacts-list">
                     <li class="promo__contacts-item">
-                        <a class="contact-button contact-button--email" href="mailto:mail@h"
-                           aria-label="Email us e-mail: mail@htmlacademy.ru">mail@h</a>
+                        <a class="contact-button contact-button--email" href="mailto:mail' %}@h"
+                           aria-label="Email us e-mail: mail' %}@htmlacademy.ru">mail' %}@h</a>
                     </li>
                     <li class="promo__contacts-item">
                         <a class="button button--rounded button--promo" href="authorization.html">Authorise</a>
@@ -208,27 +182,27 @@
                             <div class="directions-card__image">
                                 <picture>
                                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                          img/thailand-desktop@1x.webp 1x,
-                          img/thailand-desktop@2x.webp 2x
+                          {% static 'img/travel_fellows/thailand-desktop' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/thailand-desktop' %}@2x.webp 2x
                         ">
                                     <source type="image/webp" srcset="
-                          img/thailand-mobile@1x.webp 1x,
-                          img/thailand-mobile@2x.webp 2x
+                          {% static 'img/travel_fellows/thailand-mobile' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/thailand-mobile' %}@2x.webp 2x
                         ">
                                     <source media="(min-width: 768px)" srcset="
-                          img/thailand-desktop@1x.jpg 1x,
-                          img/thailand-desktop@2x.jpg 2x
+                          {% static 'img/travel_fellows/thailand-desktop' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/thailand-desktop' %}@2x.jpg 2x
                         ">
-                                    <img class="directions-card__picture" src="img/thailand-mobile@1x.jpg" srcset="
-                          img/thailand-mobile@1x.jpg 1x,
-                          img/thailand-mobile@2x.jpg 2x
+                                    <img class="directions-card__picture" src="{% static 'img/travel_fellows/thailand-mobile' %}@1x.jpg" srcset="
+                          {% static 'img/travel_fellows/thailand-mobile' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/thailand-mobile' %}@2x.jpg 2x
                         " alt="Trip to Thailand" width="270" height="110">
                                 </picture>
                             </div>
                             <div class="directions-card__content-wrapper">
                                 <div class="country-flag country-flag--directions country-flag--big  directions-card__flag"
                                      data-tooltip="Thailand">
-                                    <img class="country-flag__picture" src="img/flag-thailand.svg" alt="Флаг Таиланда"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-thailand.svg' %}" alt="Флаг Таиланда"
                                          width="35" height="24">
                                 </div>
                                 <div class="directions-card__info-wrapper">
@@ -248,27 +222,27 @@
                             <div class="directions-card__image">
                                 <picture>
                                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                          img/france-desktop@1x.webp 1x,
-                          img/france-desktop@2x.webp 2x
+                          {% static 'img/travel_fellows/france-desktop' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/france-desktop' %}@2x.webp 2x
                         ">
                                     <source type="image/webp" srcset="
-                          img/france-mobile@1x.webp 1x,
-                          img/france-mobile@2x.webp 2x
+                          {% static 'img/travel_fellows/france-mobile' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/france-mobile' %}@2x.webp 2x
                         ">
                                     <source media="(min-width: 768px)" srcset="
-                          img/france-desktop@1x.jpg 1x,
-                          img/france-desktop@2x.jpg 2x
+                          {% static 'img/travel_fellows/france-desktop' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/france-desktop' %}@2x.jpg 2x
                         ">
-                                    <img class="directions-card__picture" src="img/france-mobile@1x.jpg" srcset="
-                          img/france-mobile@1x.jpg 1x,
-                          img/france-mobile@2x.jpg 2x
+                                    <img class="directions-card__picture" src="{% static 'img/travel_fellows/france-mobile' %}@1x.jpg" srcset="
+                          {% static 'img/travel_fellows/france-mobile' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/france-mobile' %}@2x.jpg 2x
                         " alt="Trip to France" width="270" height="110">
                                 </picture>
                             </div>
                             <div class="directions-card__content-wrapper">
                                 <div class="country-flag country-flag--directions country-flag--big directions-card__flag"
                                      data-tooltip="France">
-                                    <img class="country-flag__picture" src="img/flag-france.svg" alt="Флаг Франции"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-france.svg' %}" alt="Флаг Франции"
                                          width="35" height="24">
                                 </div>
                                 <div class="directions-card__info-wrapper">
@@ -288,27 +262,27 @@
                             <div class="directions-card__image">
                                 <picture>
                                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                          img/czech-desktop@1x.webp 1x,
-                          img/czech-desktop@2x.webp 2x
+                          {% static 'img/travel_fellows/czech-desktop' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/czech-desktop' %}@2x.webp 2x
                         ">
                                     <source type="image/webp" srcset="
-                          img/czech-mobile@1x.webp 1x,
-                          img/czech-mobile@2x.webp 2x
+                          {% static 'img/travel_fellows/czech-mobile' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/czech-mobile' %}@2x.webp 2x
                         ">
                                     <source media="(min-width: 768px)" srcset="
-                          img/czech-desktop@1x.jpg 1x,
-                          img/czech-desktop@2x.jpg 2x
+                          {% static 'img/travel_fellows/czech-desktop' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/czech-desktop' %}@2x.jpg 2x
                         ">
-                                    <img class="directions-card__picture" src="img/czech-mobile@1x.jpg" srcset="
-                          img/czech-mobile@1x.jpg 1x,
-                          img/czech-mobile@2x.jpg 2x
+                                    <img class="directions-card__picture" src="{% static 'img/travel_fellows/czech-mobile' %}@1x.jpg" srcset="
+                          {% static 'img/travel_fellows/czech-mobile' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/czech-mobile' %}@2x.jpg 2x
                         " alt="Trip to Czech Republic" width="270" height="110">
                                 </picture>
                             </div>
                             <div class="directions-card__content-wrapper">
                                 <div class="country-flag country-flag--directions country-flag--big directions-card__flag"
                                      data-tooltip="Чехия">
-                                    <img class="country-flag__picture" src="img/flag-czech.svg" alt="Флаг Чехии"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
                                          width="35" height="24">
                                 </div>
                                 <div class="directions-card__info-wrapper">
@@ -348,20 +322,20 @@
                         <div class="teammates-preview__image">
                             <picture>
                                 <source type="image/webp" media="(min-width: 1440px)" srcset="
-                        img/firsova-desktop@1x.webp 1x,
-                        img/firsova-desktop@2x.webp 2x
+                        {% static 'img/travel_fellows/firsova-desktop' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/firsova-desktop' %}@2x.webp 2x
                       ">
                                 <source type="image/webp" srcset="
-                        img/firsova-tablet@1x.webp 1x,
-                        img/firsova-tablet@2x.webp 2x
+                        {% static 'img/travel_fellows/firsova-tablet' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/firsova-tablet' %}@2x.webp 2x
                       ">
                                 <source media="(min-width: 1440px)" srcset="
-                        img/firsova-desktop@1x.jpg 1x,
-                        img/firsova-desktop@2x.jpg 2x
+                        {% static 'img/travel_fellows/firsova-desktop' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/firsova-desktop' %}@2x.jpg 2x
                       ">
-                                <img class="teammates-preview__picture" src="img/firsova-tablet@1x.jpg" srcset="
-                        img/firsova-tablet@1x.jpg 1x,
-                        img/firsova-tablet@2x.jpg 2x
+                                <img class="teammates-preview__picture" src="{% static 'img/travel_fellows/firsova-tablet' %}@1x.jpg" srcset="
+                        {% static 'img/travel_fellows/firsova-tablet' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/firsova-tablet' %}@2x.jpg 2x
                       " alt="User 1" width="270" height="270">
                             </picture>
                         </div>
@@ -377,17 +351,17 @@
                             <div class="teammates-preview__flags-wrapper">
                                 <div class="country-flag country-flag--lk teammates-preview__flag"
                                      data-tooltip="Sri Lanka">
-                                    <img class="country-flag__picture" src="img/flag-sri-lanka.svg" alt="Flag of Sri Lanka"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-sri-lanka.svg' %}" alt="Flag of Sri Lanka"
                                          width="35" height="24">
                                 </div>
                                 <div class="country-flag country-flag--th teammates-preview__flag"
                                      data-tooltip="Thailand">
-                                    <img class="country-flag__picture" src="img/flag-thailand.svg" alt="Flag of Thailand"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-thailand.svg' %}" alt="Flag of Thailand"
                                          width="35" height="24">
                                 </div>
                                 <div class="country-flag country-flag--sc teammates-preview__flag"
                                      data-tooltip="Seychelles">
-                                    <img class="country-flag__picture" src="img/flag-seychelles.svg" alt="Flag of Seychelles"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-seychelles.svg' %}" alt="Flag of Seychelles"
                                          width="35" height="24">
                                 </div>
                             </div>
@@ -428,20 +402,20 @@
                         <div class="teammates-preview__image">
                             <picture>
                                 <source type="image/webp" media="(min-width: 1440px)" srcset="
-                        img/demin-desktop@1x.webp 1x,
-                        img/demin-desktop@2x.webp 2x
+                        {% static 'img/travel_fellows/demin-desktop' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/demin-desktop' %}@2x.webp 2x
                       ">
                                 <source type="image/webp" srcset="
-                        img/demin-tablet@1x.webp 1x,
-                        img/demin-tablet@2x.webp 2x
+                        {% static 'img/travel_fellows/demin-tablet' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/demin-tablet' %}@2x.webp 2x
                       ">
                                 <source media="(min-width: 1440px)" srcset="
-                        img/demin-desktop@1x.jpg 1x,
-                        img/demin-desktop@2x.jpg 2x
+                        {% static 'img/travel_fellows/demin-desktop' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/demin-desktop' %}@2x.jpg 2x
                       ">
-                                <img class="teammates-preview__picture" src="img/demin-tablet@1x.jpg" srcset="
-                        img/demin-tablet@1x.jpg 1x,
-                        img/demin-tablet@2x.jpg 2x
+                                <img class="teammates-preview__picture" src="{% static 'img/travel_fellows/demin-tablet' %}@1x.jpg" srcset="
+                        {% static 'img/travel_fellows/demin-tablet' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/demin-tablet' %}@2x.jpg 2x
                       " alt="User 2" width="270" height="270">
                             </picture>
                         </div>
@@ -457,11 +431,11 @@
                             <div class="teammates-preview__flags-wrapper">
                                 <div class="country-flag country-flag--be teammates-preview__flag"
                                      data-tooltip="Belgium">
-                                    <img class="country-flag__picture" src="img/flag-belgium.svg" alt="Flag of Belgium"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-belgium.svg' %}" alt="Flag of Belgium"
                                          width="35" height="24">
                                 </div>
                                 <div class="country-flag country-flag--cz teammates-preview__flag" data-tooltip="Czech Republic">
-                                    <img class="country-flag__picture" src="img/flag-czech.svg" alt="Flag of Czech Republic"
+                                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Flag of Czech Republic"
                                          width="35" height="24">
                                 </div>
                             </div>
@@ -586,11 +560,11 @@
             </p>
             <ul class="contacts registration__contacts">
                 <li class="contacts__item contacts__item--bottom">
-                    <a class="contact-info contact-info" href="mailto:mail@h">
+                    <a class="contact-info contact-info" href="mailto:mail' %}@h">
                         <svg class="contact-info__icon contact-info__icon--mail" width="18" height="13">
                             <use xlink:href="#icon-contacts-mail"></use>
                         </svg>
-                        <span class="contact-info__text"></span>mail@</a>
+                        <span class="contact-info__text"></span>mail' %}@</a>
                 </li>
             </ul>
         </div>
@@ -601,32 +575,7 @@
     <div class="container">
         <div class="page-footer__content-wrapper">
             <a class="logo page-footer__logo">
-                <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="
-                  img/logo-desktop-blue@1x.webp 1x,
-                  img/logo-desktop-blue@2x.webp 2x
-                ">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="
-                  img/logo-tablet-blue@1x.webp 1x,
-                  img/logo-tablet-blue@2x.webp 2x
-                ">
-                    <source type="image/webp" srcset="
-                  img/logo-mobile-blue@1x.webp 1x,
-                  img/logo-mobile-blue@2x.webp 2x
-                ">
-                    <source media="(min-width: 1440px)" srcset="
-                  img/logo-desktop-blue@1x.png 1x,
-                  img/logo-desktop-blue@2x.png 2x
-                ">
-                    <source media="(min-width: 768px)" srcset="
-                  img/logo-tablet-blue@1x.png 1x,
-                  img/logo-tablet-blue@2x.png 2x
-                ">
-                    <img class="logo__picture" src="img/logo-mobile-blue@1x.png" srcset="
-                  img/logo-mobile-blue@1x.png 1x,
-                  img/logo-mobile-blue@2x.png 2x
-                " alt="Logo of Travel companions">
-                </picture>
+                Travel Fellows
             </a>
             <ul class="social page-footer__social-list">
                 <li class="page-footer__social-item">
