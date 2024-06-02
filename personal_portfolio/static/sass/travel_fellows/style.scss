@@ -1,14 +1,12 @@
 /* normalize.scss */
-@import "../../node_modules/normalize.scss/normalize.scss";
+@import "../vendors/normalize.scss";
 
-/* Глобальные стили */
 @import "variables";
 @import "mixins";
 @import "fonts";
 @import "global";
 @import "animation";
 
-/* Блоки */
 @import "blocks/page";
 @import "blocks/visually-hidden";
 @import "blocks/container";
@@ -57,4 +55,3 @@
 @import "blocks/plan-step";
 @import "blocks/calendar";
 @import "blocks/country-select";
-@import "blocks/chose-country";
