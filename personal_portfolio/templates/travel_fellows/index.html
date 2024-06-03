@@ -1,0 +1,575 @@
+{% extends 'travel_fellows/base.html' %}
+{% load static %}
+{% block body %}
+<body class="page">
+<header class="page-header page-header--main">
+    <nav class="page-nav page-nav--main page-nav--inactive page-nav--no-js">
+        <div class="container">
+            <div class="page-nav__wrapper">
+                <div class="page-nav__logo-wrapper">
+                    <a class="logo page-nav__logo">
+                        Travel Fellows
+                    </a>
+                    <button class="page-nav__toggler" type="button" aria-haspopup="true"
+                            aria-label="Navigation Toggler">
+                        <span class="visually-hidden">Open / Close menu</span>
+                    </button>
+                </div>
+                <div class="page-nav__button-wrapper">
+                    <a class="button button--rounded page-nav__auth-button" href="authorization.html">Authorisation</a>
+                </div>
+                <div class="page-nav__menu-wrapper">
+                    <ul class="page-nav__list">
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__list-link"><span class="page-nav__list-transition-text"
+                                                                 data-hover="About">About</span></a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__list-link" href="form.html"><span class="page-nav__list-transition-text"
+                                                                                  data-hover="Destinations">Destinations</span></a>
+                        </li>
+                        <li class="page-nav__list-item">
+                            <a class="page-nav__list-link" href="catalog.html"><span
+                                    class="page-nav__list-transition-text" data-hover="Fellows">Fellows</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-nav__contacts-wrapper">
+                    <ul class="contacts page-nav__contacts">
+                        <li class="contacts__item">
+                            <a class="contact-url contact-url--email" href="mailto:mail"><span
+                                    class="contact-url__content">mail' %}@</span></a>
+                        </li>
+                    </ul>
+                    <ul class="social page-nav__social">
+                        <li class="social__item">
+                            <a class="social-link social-link--fb" href="" target="_blank" aria-label="Facebook"><span
+                                    class="visually-hidden">Facebook</span></a>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social-link social-link--instagram" href="" target="_blank"
+                               aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section
+            class="promo page-header__content-wrapper page-header__content-wrapper--main page-header__content-wrapper--no-js">
+        <div class="container container--promo">
+            <div class="promo__main-content-wrapper">
+                <div class="page-header__title-wrapper page-header__title-wrapper--main">
+                    <h1 class="heading heading--h1 heading--centered page-header__title page-header__title--main">
+                        Travel with cool Fellows
+                    </h1>
+                </div>
+                <ul class="promo__contacts-list">
+                    <li class="promo__contacts-item">
+                        <a class="contact-button contact-button--email" href="mailto:mail' %}@h"
+                           aria-label="Email us e-mail: mail' %}@htmlacademy.ru">mail' %}@h</a>
+                    </li>
+                    <li class="promo__contacts-item">
+                        <a class="button button--rounded button--promo" href="authorization.html">Authorise</a>
+                    </li>
+                </ul>
+                <div class="promo__quote-wrapper">
+                    <blockquote class="promo__quote">
+                        «The best Application which I ever saw»
+                    </blockquote>
+                    <cite class="promo__quote-author">John Do<br>
+                        Anonymous user</cite>
+                </div>
+            </div>
+            <div class="promo__instruction-wrapper">
+                <ol class="promo__instruction-list">
+                    <li class="promo__instruction-item" data-number="1">
+                        <p class="promo__instruction-text">Choose the Destination</p>
+                    </li>
+                    <li class="promo__instruction-item" data-number="2">
+                        <p class="promo__instruction-text">
+                            Discover Ideas of Fellows
+                        </p>
+                    </li>
+                    <li class="promo__instruction-item" data-number="3">
+                        <p class="promo__instruction-text">
+                            Find people with things in common
+                        </p>
+                    </li>
+                    <li class="promo__instruction-item" data-number="4">
+                        <p class="promo__instruction-text">Travel Together!</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+    <section class="about-us">
+        <div class="container container--about-us">
+            <div class="about-us__content-wrapper">
+                <h2 class="heading heading--h2">About the Service</h2>
+                <p class="text text--white">
+                    Any trip is more fun with companions who are on the same wavelength as you! Share your travel ideas
+                    and get inspired by others.
+                </p>
+                <p class="text text--white text--bold about-us__bold-text">
+                    <b>And if you find someone kindred in spirit, invite them to join your trip!</b>
+                </p>
+                <a class="button button--squared about-us__button" href="">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+    <section class="directions">
+        <div class="container">
+            <div class="directions__common-wrapper">
+                <div class="directions__content-wrapper">
+                    <h2 class="heading heading--h2 directions__heading">
+                        Destinations
+                    </h2>
+                    <p class="text">
+                        We don't sell tours or advertise anything. People themselves write about the countries they
+                        would like to visit and what can be done there.
+                    </p>
+                </div>
+                <div class="directions__item-wrapper">
+                    <section class="directions-card directions__item">
+                        <a class="directions-card__link-wrapper" href="">
+                            <div class="directions-card__image">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 768px)" srcset="
+                          {% static 'img/travel_fellows/thailand-desktop' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/thailand-desktop' %}@2x.webp 2x
+                        ">
+                                    <source type="image/webp" srcset="
+                          {% static 'img/travel_fellows/thailand-mobile' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/thailand-mobile' %}@2x.webp 2x
+                        ">
+                                    <source media="(min-width: 768px)" srcset="
+                          {% static 'img/travel_fellows/thailand-desktop' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/thailand-desktop' %}@2x.jpg 2x
+                        ">
+                                    <img class="directions-card__picture"
+                                         src="{% static 'img/travel_fellows/thailand-mobile' %}@1x.jpg" srcset="
+                          {% static 'img/travel_fellows/thailand-mobile' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/thailand-mobile' %}@2x.jpg 2x
+                        " alt="Trip to Thailand" width="270" height="110">
+                                </picture>
+                            </div>
+                            <div class="directions-card__content-wrapper">
+                                <div class="country-flag country-flag--directions country-flag--big  directions-card__flag"
+                                     data-tooltip="Thailand">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-thailand.svg' %}" alt="Флаг Таиланда"
+                                         width="35" height="24">
+                                </div>
+                                <div class="directions-card__info-wrapper">
+                                    <div class="directions-card__title-wrapper">
+                                        <h3 class="directions-card__title">Thailand</h3>
+                                        <p class="directions-card__description">
+                                            The jungle is calling!
+                                        </p>
+                                    </div>
+                                    <p class="directions-card__users">18321</p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <section class="directions-card directions__item">
+                        <a class="directions-card__link-wrapper" href="">
+                            <div class="directions-card__image">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 768px)" srcset="
+                          {% static 'img/travel_fellows/france-desktop' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/france-desktop' %}@2x.webp 2x
+                        ">
+                                    <source type="image/webp" srcset="
+                          {% static 'img/travel_fellows/france-mobile' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/france-mobile' %}@2x.webp 2x
+                        ">
+                                    <source media="(min-width: 768px)" srcset="
+                          {% static 'img/travel_fellows/france-desktop' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/france-desktop' %}@2x.jpg 2x
+                        ">
+                                    <img class="directions-card__picture"
+                                         src="{% static 'img/travel_fellows/france-mobile' %}@1x.jpg" srcset="
+                          {% static 'img/travel_fellows/france-mobile' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/france-mobile' %}@2x.jpg 2x
+                        " alt="Trip to France" width="270" height="110">
+                                </picture>
+                            </div>
+                            <div class="directions-card__content-wrapper">
+                                <div class="country-flag country-flag--directions country-flag--big directions-card__flag"
+                                     data-tooltip="France">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-france.svg' %}" alt="Флаг Франции"
+                                         width="35" height="24">
+                                </div>
+                                <div class="directions-card__info-wrapper">
+                                    <div class="directions-card__title-wrapper">
+                                        <h3 class="directions-card__title">France</h3>
+                                        <p class="directions-card__description">
+                                            Très bien, magnifique!
+                                        </p>
+                                    </div>
+                                    <p class="directions-card__users">12518</p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <section class="directions-card directions__item">
+                        <a class="directions-card__link-wrapper" href="">
+                            <div class="directions-card__image">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 768px)" srcset="
+                          {% static 'img/travel_fellows/czech-desktop' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/czech-desktop' %}@2x.webp 2x
+                        ">
+                                    <source type="image/webp" srcset="
+                          {% static 'img/travel_fellows/czech-mobile' %}@1x.webp 1x,
+                          {% static 'img/travel_fellows/czech-mobile' %}@2x.webp 2x
+                        ">
+                                    <source media="(min-width: 768px)" srcset="
+                          {% static 'img/travel_fellows/czech-desktop' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/czech-desktop' %}@2x.jpg 2x
+                        ">
+                                    <img class="directions-card__picture"
+                                         src="{% static 'img/travel_fellows/czech-mobile' %}@1x.jpg" srcset="
+                          {% static 'img/travel_fellows/czech-mobile' %}@1x.jpg 1x,
+                          {% static 'img/travel_fellows/czech-mobile' %}@2x.jpg 2x
+                        " alt="Trip to Czech Republic" width="270" height="110">
+                                </picture>
+                            </div>
+                            <div class="directions-card__content-wrapper">
+                                <div class="country-flag country-flag--directions country-flag--big directions-card__flag"
+                                     data-tooltip="Чехия">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
+                                         width="35" height="24">
+                                </div>
+                                <div class="directions-card__info-wrapper">
+                                    <div class="directions-card__title-wrapper">
+                                        <h3 class="directions-card__title">Czech Republic</h3>
+                                        <p class="directions-card__description">
+                                            Corners of Old Europe
+                                        </p>
+                                    </div>
+                                    <p class="directions-card__users">5326</p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+                <div class="directions__button-wrapper">
+                    <a class="button button--squared" href="form.html">Show All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="teammates teammates--upped">
+        <div class="container">
+            <div class="teammates__common-wrapper">
+                <div class="teammates__content-wrapper">
+                    <h2 class="heading heading--h2 teammates__heading">Companions</h2>
+                    <p class="text text--white teammates__text">
+                        We are all individuals with our own views on the perfect vacation. One needs a beach and a
+                        cocktail, another a hiking route.
+                    </p>
+                    <p class="text text--white text--bold teammates__bold-text">
+                        <b>Now it’s easy to <br>
+                            find like-minded people!</b>
+                    </p>
+                </div>
+                <div class="teammates__preview-wrapper">
+                    <section class="teammates-preview teammates__item">
+                        <div class="teammates-preview__image">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/firsova-desktop' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/firsova-desktop' %}@2x.webp 2x
+                      ">
+                                <source type="image/webp" srcset="
+                        {% static 'img/travel_fellows/firsova-tablet' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/firsova-tablet' %}@2x.webp 2x
+                      ">
+                                <source media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/firsova-desktop' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/firsova-desktop' %}@2x.jpg 2x
+                      ">
+                                <img class="teammates-preview__picture"
+                                     src="{% static 'img/travel_fellows/firsova-tablet' %}@1x.jpg" srcset="
+                        {% static 'img/travel_fellows/firsova-tablet' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/firsova-tablet' %}@2x.jpg 2x
+                      " alt="User 1" width="270" height="270">
+                            </picture>
+                        </div>
+                        <div class="teammates-preview__level">
+                            <svg class="teammates-preview__level-percent" width="60" height="60" viewBox="0 0 60 60">
+                                <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                                        stroke-dasharray="170px 5px"></circle>
+                            </svg>
+                            <span class="teammates-preview__level-number">99</span><span
+                                class="teammates-preview__level-description">level</span>
+                        </div>
+                        <div class="teammates-preview__content">
+                            <div class="teammates-preview__flags-wrapper">
+                                <div class="country-flag country-flag--lk teammates-preview__flag"
+                                     data-tooltip="Sri Lanka">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-sri-lanka.svg' %}"
+                                         alt="Flag of Sri Lanka"
+                                         width="35" height="24">
+                                </div>
+                                <div class="country-flag country-flag--th teammates-preview__flag"
+                                     data-tooltip="Thailand">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-thailand.svg' %}"
+                                         alt="Flag of Thailand"
+                                         width="35" height="24">
+                                </div>
+                                <div class="country-flag country-flag--sc teammates-preview__flag"
+                                     data-tooltip="Seychelles">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-seychelles.svg' %}"
+                                         alt="Flag of Seychelles"
+                                         width="35" height="24">
+                                </div>
+                            </div>
+                            <a class="teammates-preview__link-wrapper" href="/user001/profile.html">
+                                <h3 class="teammates-preview__name">
+                                    <span class="teammates-preview__status teammates-preview__status--offline">Name Surename</span>
+                                </h3>
+                            </a>
+                            <p class="teammates-preview__hashtags">
+                                #HealthyLifestyle #ProperNutrition #Fitness #Beach #Avocado #Smoothie
+                            </p>
+                            <ul class="teammates-preview__transport-wrapper">
+                                <li class="teammates-preview__transport teammates-preview__transport--active"
+                                    data-tooltip="Avia">
+                                    <svg width="19" height="21">
+                                        <use xlink:href="#icon-plane"></use>
+                                    </svg>
+                                </li>
+                                <li class="teammates-preview__transport" data-tooltip="Auto">
+                                    <svg width="19" height="21">
+                                        <use xlink:href="#icon-bus"></use>
+                                    </svg>
+                                </li>
+                                <li class="teammates-preview__transport" data-tooltip="Bicycle">
+                                    <svg width="24" height="21">
+                                        <use xlink:href="#icon-bike"></use>
+                                    </svg>
+                                </li>
+                                <li class="teammates-preview__transport" data-tooltip="Hiking">
+                                    <svg width="19" height="21">
+                                        <use xlink:href="#icon-run"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="teammates-preview teammates__item">
+                        <div class="teammates-preview__image">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/demin-desktop' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/demin-desktop' %}@2x.webp 2x
+                      ">
+                                <source type="image/webp" srcset="
+                        {% static 'img/travel_fellows/demin-tablet' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/demin-tablet' %}@2x.webp 2x
+                      ">
+                                <source media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/demin-desktop' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/demin-desktop' %}@2x.jpg 2x
+                      ">
+                                <img class="teammates-preview__picture"
+                                     src="{% static 'img/travel_fellows/demin-tablet' %}@1x.jpg" srcset="
+                        {% static 'img/travel_fellows/demin-tablet' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/demin-tablet' %}@2x.jpg 2x
+                      " alt="User 2" width="270" height="270">
+                            </picture>
+                        </div>
+                        <div class="teammates-preview__level">
+                            <svg class="teammates-preview__level-percent" width="60" height="60" viewBox="0 0 60 60">
+                                <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                                        stroke-dasharray="140px 35px"></circle>
+                            </svg>
+                            <span class="teammates-preview__level-number">80</span><span
+                                class="teammates-preview__level-description">level</span>
+                        </div>
+                        <div class="teammates-preview__content">
+                            <div class="teammates-preview__flags-wrapper">
+                                <div class="country-flag country-flag--be teammates-preview__flag"
+                                     data-tooltip="Belgium">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-belgium.svg' %}" alt="Flag of Belgium"
+                                         width="35" height="24">
+                                </div>
+                                <div class="country-flag country-flag--cz teammates-preview__flag"
+                                     data-tooltip="Czech Republic">
+                                    <img class="country-flag__picture"
+                                         src="{% static 'img/travel_fellows/flag-czech.svg' %}"
+                                         alt="Flag of Czech Republic"
+                                         width="35" height="24">
+                                </div>
+                            </div>
+                            <a class="teammates-preview__link-wrapper" href="/user002/profile.html">
+                                <h3 class="teammates-preview__name">
+                                    <span class="teammates-preview__status teammates-preview__status--online">User 2</span>
+                                </h3>
+                            </a>
+                            <p class="teammates-preview__hashtags">
+                                #Burger #Bar #Football #Concert #Craft
+                            </p>
+                            <ul class="teammates-preview__transport-wrapper">
+                                <li class="teammates-preview__transport teammates-preview__transport--active"
+                                    data-tooltip="Авиаперелет">
+                                    <svg width="19" height="21">
+                                        <use xlink:href="#icon-plane"></use>
+                                    </svg>
+                                </li>
+                                <li class="teammates-preview__transport teammates-preview__transport--active"
+                                    data-tooltip="Auto">
+                                    <svg width="19" height="21">
+                                        <use xlink:href="#icon-bus"></use>
+                                    </svg>
+                                </li>
+                                <li class="teammates-preview__transport" data-tooltip="Bicycle">
+                                    <svg width="24" height="21">
+                                        <use xlink:href="#icon-bike"></use>
+                                    </svg>
+                                </li>
+                                <li class="teammates-preview__transport teammates-preview__transport--active"
+                                    data-tooltip="Hiking">
+                                    <svg width="19" height="21">
+                                        <use xlink:href="#icon-run"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="teammates__button-wrapper">
+                    <a class="button button--squared teammates__button" href="catalog.html">Show all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="add-profile">
+        <div class="container">
+            <div class="add-profile__common-wrapper">
+                <div class="add-profile__heading-wrapper">
+                    <h2 class="heading heading--h2 add-profile__heading">
+                        Add your profile
+                    </h2>
+                </div>
+                <div class="add-profile__image-block"></div>
+                <div class="add-profile__options-wrapper">
+                    <ol class="add-profile__options-list">
+                        <li class="add-profile__options-item" data-number="1">
+                            <span class="add-profile__option-name">Basic Placement</span><span
+                                class="add-profile__option-price">Free</span>
+                        </li>
+                        <li class="add-profile__options-item" data-number="2">
+                            <span class="add-profile__option-name">Top Positions</span><span
+                                class="add-profile__option-price">100$ / m</span>
+                        </li>
+                        <li class="add-profile__options-item" data-number="3">
+                            <span class="add-profile__option-name">Custom Card Color</span><span
+                                class="add-profile__option-price">10$/m</span>
+                        </li>
+                    </ol>
+                </div>
+                <div class="add-profile__button-wrapper">
+                    <a class="add-profile__business-link" href="">Show Business Rates</a>
+                </div>
+            </div>
+        </div>
+        <div class="business-popup add-profile__business-popup">
+            <h2 class="heading heading--h2 business-popup__heading">
+                Business Rates
+            </h2>
+            <ul class="business-popup__list">
+                <li class="business-popup__item">
+                    <p class="business-popup__service">Blogger Advertisement</p>
+                    <p class="business-popup__price">1000$/post</p>
+                </li>
+                <li class="business-popup__item">
+                    <p class="business-popup__service">Follower Boost</p>
+                    <p class="business-popup__price">from 1$/follower</p>
+                </li>
+                <li class="business-popup__item">
+                    <p class="business-popup__service">Bot likes</p>
+                    <p class="business-popup__price">from 25c/like</p>
+                </li>
+                <li class="business-popup__item">
+                    <p class="business-popup__service">Your Product Placement</p>
+                    <p class="business-popup__price">Individually</p>
+                </li>
+            </ul>
+            <button class="business-popup__close-button" type="button">
+                Close
+            </button>
+        </div>
+    </section>
+    <section class="registration registration--upped">
+        <div class="container">
+            <h2 class="heading heading--h2 registration__title">
+                Interested?
+            </h2>
+            <p class="text text--white registration__text">
+                Register, it’s quick and free!<br>
+                Already registered? Then
+                <a class="registration__text-url" href="authorization.html">log in</a>.
+            </p>
+            <form class="registration__form" method="POST" action="https://echfd">
+                <input class="registration__email" type="email" name="email" placeholder="E-mail"
+                       aria-label="Your email E-mail">
+                <button class="button button--registration registration__submit" type="submit">
+                    Register
+                </button>
+            </form>
+            <p class="text text--white registration__text registration__text--bottom">
+                Have a questions? <br class="registration__text-br">Make a request!
+            </p>
+            <ul class="contacts registration__contacts">
+                <li class="contacts__item contacts__item--bottom">
+                    <a class="contact-info contact-info" href="mailto:mail' %}@h">
+                        <svg class="contact-info__icon contact-info__icon--mail" width="18" height="13">
+                            <use xlink:href="#icon-contacts-mail"></use>
+                        </svg>
+                        <span class="contact-info__text"></span>mail' %}@</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="page-footer__content-wrapper">
+            <a class="logo page-footer__logo">
+                Travel Fellows
+            </a>
+            <ul class="social page-footer__social-list">
+                <li class="page-footer__social-item">
+                    <a class="social-button social-button--fb" href="" target="_blank"><span class="visually-hidden">Facebook</span></a>
+                </li>
+                <li class="page-footer__social-item">
+                    <a class="social-button social-button--instagram" href="" target="_blank"><span
+                            class="visually-hidden">Instagram</span></a>
+                </li>
+            </ul>
+            <div class="page-footer__bottom-wrapper">
+                <p class="page-footer__paragraph">Pet Project</p>
+                <a class="academy-logo page-footer__academy-logo" href="https://github.com/Alonasa"
+                   target="_blank"><span class="visually-hidden">by Alonasa</span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
