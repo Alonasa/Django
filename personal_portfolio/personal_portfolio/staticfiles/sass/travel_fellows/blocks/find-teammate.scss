@@ -1,0 +1,12 @@
+.find-teammate {
+  padding-top: 24px;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 86px;
+    width: 285px;
+  }
+}

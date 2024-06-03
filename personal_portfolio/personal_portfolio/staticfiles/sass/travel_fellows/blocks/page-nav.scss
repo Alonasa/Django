@@ -1,0 +1,449 @@
+.page-nav {
+  width: 100%;
+  background-color: transparent;
+  color: $white;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+
+  @media (min-width: $tablet) {
+    padding-top: 47px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 47px;
+    padding-bottom: 10px;
+  }
+
+  &--white {
+    background-color: $white;
+    color: $dark-blue;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &--no-js {
+    position: static;
+    background-color: $white;
+    color: $dark-blue;
+
+    @media (min-width: $desktop) {
+      background-color: $deep-dark-blue;
+      color: $white;
+    }
+  }
+
+  &--inner {
+    padding-top: 9px;
+
+    @media (min-width: $tablet) {
+      padding-top: 47px;
+    }
+  }
+
+  &--scrolled {
+    @media (min-width: $desktop) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.page-nav--inner.page-nav--main {
+  padding-top: 17px;
+
+  @media (min-width: $tablet) {
+    padding-top: 44px;
+  }
+}
+
+.page-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.page-nav__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 0;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet) {
+    width: 360px;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
+}
+
+.page-nav__logo {
+  flex-shrink: 0;
+}
+
+.page-nav--white .page-nav__logo::after,
+.page-nav--no-js .page-nav__logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/travel_fellows/logo-mobile-blue@1x.png");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/travel_fellows/logo-mobile-blue@2x.png");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/travel_fellows/logo-tablet-blue@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/travel_fellows/logo-tablet-blue@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/travel_fellows/logo-desktop-blue@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/travel_fellows/logo-desktop-blue@2x.png");
+    }
+  }
+}
+
+.page-nav--no-js .page-nav__logo::after {
+  @media (min-width: $desktop) {
+    background: none;
+  }
+}
+
+.page-nav__menu-wrapper {
+  padding-top: 61px;
+  padding-bottom: 53px;
+  order: 1;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    padding-top: 90px;
+    padding-left: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    align-items: center;
+    padding-left: 146px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 40px;
+      width: 60px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $white;
+    }
+  }
+}
+
+.page-nav--white .page-nav__menu-wrapper::before {
+  background-color: $dark-blue;
+}
+
+.page-nav__list {
+  @include list-style-reset();
+
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 1.18;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+  }
+}
+
+.page-nav__list-item {
+  @media (min-width: $desktop) {
+    margin-right: 34px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.page-nav__list-link {
+  color: $dark-blue;
+
+  @media (min-width: $desktop) {
+    color: $white;
+  }
+}
+
+.page-nav__list-transition-text {
+  @media (min-width: $desktop) {
+    position: relative;
+    display: flex;
+    transition: transform 0.3s;
+
+    &::before {
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.page-nav__list-link:hover[href] .page-nav__list-transition-text,
+.page-nav__list-link:focus[href] .page-nav__list-transition-text {
+  transform: translateY(-100%);
+  color: $accent-yellow;
+}
+
+.page-nav__list-link:active[href] .page-nav__list-transition-text {
+  color: rgba($accent-yellow, 0.3);
+}
+
+.page-nav--white .page-nav__list-link {
+  color: $dark-blue;
+
+  &:hover[href] > .page-nav__list-transition-text,
+  &:focus[href] > .page-nav__list-transition-text {
+    color: rgba($dark-blue, 0.7);
+  }
+
+  &:active[href] > .page-nav__list-transition-text {
+    color: rgba($dark-blue, 0.3);
+  }
+}
+
+.page-nav__button-wrapper {
+  order: 2;
+
+  @media (min-width: $tablet) {
+    order: 1;
+    margin-left: auto;
+    margin-top: -48px;
+    width: 189px;
+  }
+
+  @media (min-width: $desktop) {
+    order: 4;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.page-nav__auth-button {
+  &:hover,
+  &:focus {
+    background-color: $orange-yellow;
+  }
+
+  &:active {
+    color: rgba($deep-dark-blue, 0.3);
+  }
+
+  @media (min-width: $tablet) {
+    width: 189px;
+  }
+}
+
+.page-nav__contacts-wrapper {
+  padding-top: 54px;
+  order: 3;
+
+  @media (min-width: $tablet) {
+    padding-top: 82px;
+    padding-left: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    flex-direction: row-reverse;
+    margin-left: auto;
+  }
+}
+
+.page-nav__social {
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 50px;
+  }
+}
+
+.page-nav__toggler {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: $white;
+  }
+
+  &::before {
+    top: 14px;
+    left: 17px;
+  }
+
+  &::after {
+    top: 22px;
+    left: 17px;
+  }
+
+  @media (min-width: $tablet) {
+    height: 40px;
+
+    &::before {
+      top: 16px;
+      left: 8px;
+    }
+
+    &::after {
+      top: 24px;
+      left: 8px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.page-nav--no-js .page-nav__toggler {
+  display: none;
+}
+
+.page-nav--white .page-nav__toggler {
+  &::before,
+  &::after {
+    background-color: $grey;
+  }
+}
+
+.page-nav--active .page-nav__toggler {
+  &::before,
+  &::after {
+    height: 2px;
+    border-radius: 0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    top: 19px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 19px;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      top: 20px;
+    }
+
+    &::after {
+      top: 20px;
+    }
+  }
+}
+
+.page-nav__contacts {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 132px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.page-nav--active .page-nav__menu-wrapper,
+.page-nav--active .page-nav__button-wrapper,
+.page-nav--active .page-nav__contacts-wrapper {
+  display: block;
+}
+
+.page-nav--inactive .page-nav__menu-wrapper,
+.page-nav--inactive .page-nav__button-wrapper,
+.page-nav--inactive .page-nav__contacts-wrapper {
+  display: none;
+}
+
+.page-nav--no-js .page-nav__menu-wrapper,
+.page-nav--no-js .page-nav__button-wrapper,
+.page-nav--no-js .page-nav__contacts-wrapper {
+  display: block;
+}
+
+.page-nav--inactive .page-nav__button-wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 50px;
+  }
+}
+
+.page-nav--inactive .page-nav__menu-wrapper,
+.page-nav--inactive .page-nav__contacts-wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.page-nav--active .page-nav__social,
+.page-nav--inactive .page-nav__social {
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}

@@ -20,8 +20,7 @@ class SCSSWatchHandler(FileSystemEventHandler):
             print(f'Compiling {scss_file} to {css_output}')
             compiled_css = sass.compile(filename=scss_file)
             with open(css_output, 'w') as css_file:
-                with open(css_output, 'w') as css_file:
-                    css_file.write(compiled_css)
+                css_file.write(compiled_css)
             print(f'Successfully compiled {scss_file} to {css_output}')
         except Exception as e:
             print(f'Error compiling {scss_file}: {e}')

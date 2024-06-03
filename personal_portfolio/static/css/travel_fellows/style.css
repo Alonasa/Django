@@ -1194,7 +1194,7 @@ a {
 
 .promo {
   color: #ffffff;
-  background: #161c36 url("../img/travel_fellows/globe-back-mobile@1x.jpg") no-repeat left 0;
+  background: #161c36 url("/static/img/travel_fellows/globe-back-mobile@1x.jpg") no-repeat left 0;
   background-size: 320px 569px;
   position: relative;
   padding-bottom: 39px; }
@@ -1209,10 +1209,10 @@ a {
     z-index: -1; }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../img/travel_fellows/globe-back-mobile@2x.jpg"); } }
+      background-image: url("/static/img/travel_fellows/globe-back-mobile@2x.jpg"); } }
   @media (min-width: 768px) {
     .promo {
-      background: url("../img/travel_fellows/globe-back-tablet@1x.jpg") no-repeat center bottom 180px;
+      background: url("/static/img/travel_fellows/globe-back-tablet@1x.jpg") no-repeat center bottom 180px;
       background-size: 1479px 612px; }
       .promo::before {
         display: none; } }

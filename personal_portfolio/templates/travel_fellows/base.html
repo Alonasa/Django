@@ -1,28 +1,3 @@
-{#<!doctype html>#}
-{#<html lang="en">#}
-{#    <head>#}
-{#        <meta charset="UTF-8">#}
-{#        <meta name="viewport"#}
-{#              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">#}
-{#        <meta http-equiv="X-UA-Compatible" content="ie=edge">#}
-{#        <title>Travel Fellows</title>#}
-{#        <link href="https://cdn.jsdelivr.net/npm/bootstrap' %}@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"#}
-{#          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">#}
-{#        {% load static %}#}
-{#    <link rel="stylesheet" href="{% static 'css/personal_portfolio/main.css' %}">#}
-{#    </head>#}
-{#    <body class="container">#}
-{#        <header>#}
-{#        {% include 'travel_fellows/menu.html' with menu=menu %}#}
-{#        </header>#}
-{##}
-{#        {% block content %}#}
-{#        {% endblock %}#}
-{##}
-{#    </body>#}
-{#</html>#}
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -32,11 +7,11 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Travell fellows application">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/travel_fellows/styles.css' %}">
-    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" href="{% static 'css/travel_fellows/style.css' %}">
+    <link rel="preload" href="{% static 'fonts/bloggersans-light.woff2'  %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'fonts/bloggersans.woff2' %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'fonts/bloggersans-medium.woff2' %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'fonts/bloggersans-bold.woff2' %}" as="font" type="font/woff2">
 </head>
 <body class="page">
 <div style="display:none">
@@ -70,16 +45,12 @@
                         </li>
                         <li class="page-nav__list-item">
                             <a class="page-nav__list-link" href="catalog.html"><span
-                                    class="page-nav__list-transition-text" data-hover="Попутчики">Fellows</span></a>
+                                    class="page-nav__list-transition-text" data-hover="Fellows">Fellows</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="page-nav__contacts-wrapper">
                     <ul class="contacts page-nav__contacts">
-                        <li class="contacts__item">
-                            <a class="contact-url contact-url--telephone" href="tel:+0000"><span
-                                    class="contact-url__content">00439</span></a>
-                        </li>
                         <li class="contacts__item">
                             <a class="contact-url contact-url--email" href="mailto:mail"><span
                                     class="contact-url__content">mail' %}@</span></a>

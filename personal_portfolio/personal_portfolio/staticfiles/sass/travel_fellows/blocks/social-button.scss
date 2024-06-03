@@ -1,0 +1,67 @@
+.social-button {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+  background-color: $accent-yellow;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 12px;
+    left: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $orange-yellow;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &--fb::after {
+    background-size: 11px 21px;
+    background-image: url("../img/travel_fellows/facebook.svg");
+  }
+
+  &--vk::after {
+    background-size: 23px 12px;
+    background-image: url("../img/travel_fellows/vk.svg");
+  }
+
+  &--instagram::after {
+    background-size: 18px 18px;
+    background-image: url("../img/travel_fellows/instagram.svg");
+  }
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+
+    &::after {
+      width: 31px;
+      height: 28px;
+      top: 16px;
+      left: 15px;
+    }
+
+    &--fb::after {
+      background-size: 14px 28px;
+    }
+
+    &--vk::after {
+      background-size: 31px 16px;
+    }
+
+    &--instagram::after {
+      background-size: 24px 24px;
+    }
+  }
+}

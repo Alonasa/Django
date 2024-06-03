@@ -1,0 +1,258 @@
+.teammates-catalog {
+  padding: 28px 0 76px;
+
+  @media (min-width: $tablet) {
+    padding-top: 41px;
+    padding-bottom: 123px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 86px;
+    padding-right: 90px;
+    padding-bottom: 136px;
+  }
+}
+
+.teammates-catalog__item-wrapper {
+  margin-bottom: 18px;
+}
+
+.teammates-catalog__item {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 43px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 65px;
+    }
+  }
+}
+
+.teammates-catalog__button-show-all {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.76;
+  color: $twilight-blue;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 63px;
+  }
+}
+
+.teammates-catalog__button-text {
+  padding-left: 35px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 70px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../img/travel_fellows/show-more-plus.svg");
+
+    @media (min-width: $tablet) {
+      width: 27px;
+      height: 27px;
+      top: 2px;
+      left: -7px;
+    }
+  }
+}
+
+.teammates-catalog__pagination {
+  width: 100%;
+  background-color: $white;
+  border-radius: 20px;
+  display: flex;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    padding: 25px 0 25px 28px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 85px;
+  }
+}
+
+.teammates-catalog__pages-list {
+  display: none;
+
+  @media (min-width: $tablet) {
+    @include list-style-reset();
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 2px;
+  }
+}
+
+.teammates-catalog__pages-item {
+  @media (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.teammates-catalog__page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $deep-dark-blue;
+
+  &:hover:not(&--active),
+  &:focus:not(&--active) {
+    opacity: 0.6;
+  }
+
+  &:active:not(&--active) {
+    opacity: 0.3;
+  }
+
+  &--active {
+    background-color: $accent-yellow;
+    border-radius: 50%;
+  }
+}
+
+.teammates-catalog__controls-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet) {
+    width: 124px;
+  }
+}
+
+.teammates-catalog__control-button {
+  display: flex;
+  width: 135px;
+  height: 50px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    border: 10px solid transparent;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    width: 62px;
+  }
+
+  &--prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid $light-violet;
+
+    &::before {
+      border-right-color: $dark-blue;
+      left: 53px;
+    }
+
+    @media (min-width: $tablet) {
+      border-right: none;
+
+      &::before {
+        left: 26px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      &::before {
+        left: 22px;
+      }
+    }
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &::before {
+      border-left-color: $dark-blue;
+      right: 53px;
+    }
+
+    @media (min-width: $tablet) {
+      &::before {
+        right: 25px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      &::before {
+        right: 29px;
+      }
+    }
+  }
+}
