@@ -17,11 +17,11 @@
     bottom: 0;
     margin: 0 auto;
     z-index: 5;
-    background: url("../img/travel_fellows/smolov-back-desktop@1x.png") no-repeat right 25px top 69px, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left -30px top 69px, url("../img/travel_fellows/rogovaya-back-mobile@1x.png") no-repeat left -10px top 340px;
+    background: url("/static/img/travel_fellows/smolov-back-desktop@1x.png") no-repeat right 25px top 69px, url("/static/img/travel_fellows/rectangle-bg-blue.svg") no-repeat left -30px top 69px, url("/static/img/travel_fellows/rogovaya-back-mobile@1x.png") no-repeat left -10px top 340px;
     background-size: 143px 143px, 143px 143px, 71px 71px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/travel_fellows/smolov-back-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"), url("../img/travel_fellows/rogovaya-back-mobile@2x.png");
+      background-image: url("/static/img/travel_fellows/smolov-back-desktop@2x.png"), url("/static/img/travel_fellows/rectangle-bg-blue.svg"), url("/static/img/travel_fellows/rogovaya-back-mobile@2x.png");
     }
   }
 
@@ -46,11 +46,11 @@
 
     &::before {
       width: 768px;
-      background: url("../img/travel_fellows/rogovaya-back-desktop@1x.png") no-repeat right 77px top 140px, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 40px top 140px, url("../img/travel_fellows/smolov-back-desktop@1x.png") no-repeat left 40px top 486px;
+      background: url("/static/img/travel_fellows/rogovaya-back-desktop@1x.png") no-repeat right 77px top 140px, url("/static/img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 40px top 140px, url("/static/img/travel_fellows/smolov-back-desktop@1x.png") no-repeat left 40px top 486px;
       background-size: 285px 285px, 213px 213px, 143px 143px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("./../img/travel_fellows/rogovaya-back-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"), url("../img/travel_fellows/smolov-back-desktop@2x.png");
+        background-image: url(".//static/img/travel_fellows/rogovaya-back-desktop@2x.png"), url("/static/img/travel_fellows/rectangle-bg-blue.svg"), url("/static/img/travel_fellows/smolov-back-desktop@2x.png");
       }
     }
   }
@@ -60,11 +60,11 @@
 
     &::before {
       width: 1440px;
-      background: url("../img/travel_fellows/rogovaya-back-desktop@1x.png") no-repeat left 191px bottom 80px, url("../img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 60px top 128px, url("../img/travel_fellows/smolov-back-desktop@1x.png") no-repeat left 547px top 194px;
+      background: url("/static/img/travel_fellows/rogovaya-back-desktop@1x.png") no-repeat left 191px bottom 80px, url("/static/img/travel_fellows/rectangle-bg-blue.svg") no-repeat left 60px top 128px, url("/static/img/travel_fellows/smolov-back-desktop@1x.png") no-repeat left 547px top 194px;
       background-size: 285px 285px, 213px 213px, 143px 143px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("./../img/travel_fellows/rogovaya-back-desktop@2x.png"), url("../img/travel_fellows/rectangle-bg-blue.svg"), url("../img/travel_fellows/smolov-back-desktop@2x.png");
+        background-image: url(".//static/img/travel_fellows/rogovaya-back-desktop@2x.png"), url("/static/img/travel_fellows/rectangle-bg-blue.svg"), url("/static/img/travel_fellows/smolov-back-desktop@2x.png");
       }
     }
   }

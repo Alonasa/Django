@@ -68,7 +68,7 @@
   }
 
   &--telephone::before {
-    background-image: url("../img/travel_fellows/contacts-phone.svg");
+    background-image: url("/static/img/travel_fellows/contacts-phone.svg");
 
     @media (min-width: $desktop) {
       background-color: $orange;
@@ -85,12 +85,12 @@
 
   &--telephone::after {
     @media (min-width: $desktop) {
-      background-image: url("../img/travel_fellows/topmenu-phone.svg");
+      background-image: url("/static/img/travel_fellows/topmenu-phone.svg");
     }
   }
 
   &--email::before {
-    background-image: url("../img/travel_fellows/contacts-mail.svg");
+    background-image: url("/static/img/travel_fellows/contacts-mail.svg");
 
     @media (min-width: $desktop) {
       background-color: $orange-yellow;
@@ -100,7 +100,7 @@
 
   &--email::after {
     @media (min-width: $desktop) {
-      background-image: url("../img/travel_fellows/topmenu-mail.svg");
+      background-image: url("/static/img/travel_fellows/topmenu-mail.svg");
     }
   }
 

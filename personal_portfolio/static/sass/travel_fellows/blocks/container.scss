@@ -16,20 +16,20 @@
   }
 
   &--promo {
-    background: url("../img/travel_fellows/traveller-illustration-mobile@1x.png") no-repeat
+    background: url("/static/img/travel_fellows/traveller-illustration-mobile@1x.png") no-repeat
       right 50px top 130px;
     background-size: 192px 255px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/travel_fellows/traveller-illustration-mobile@2x.png");
+      background-image: url("/static/img/travel_fellows/traveller-illustration-mobile@2x.png");
     }
 
     @media (min-width: $tablet) {
-      background: url("../img/travel_fellows/traveller-illustration-tablet@1x.png") no-repeat right 112px bottom 280px;
+      background: url("/static/img/travel_fellows/traveller-illustration-tablet@1x.png") no-repeat right 112px bottom 280px;
       background-size: 372px 451px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/travel_fellows/traveller-illustration-tablet@2x.png");
+        background-image: url("/static/img/travel_fellows/traveller-illustration-tablet@2x.png");
       }
     }
 

@@ -71,11 +71,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../img/travel_fellows/rates@1x.png");
+  background-image: url("/static/img/travel_fellows/rates@1x.png");
   margin-left: auto;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/travel_fellows/rates@2x.png");
+    background-image: url("/static/img/travel_fellows/rates@2x.png");
   }
 
   @media (min-width: $tablet) {
@@ -262,7 +262,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      background-image: url("../img/travel_fellows/business.svg");
+      background-image: url("/static/img/travel_fellows/business.svg");
     }
 
     &:hover::after,

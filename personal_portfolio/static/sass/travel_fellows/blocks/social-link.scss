@@ -8,7 +8,7 @@
   &--fb {
     width: 11px;
     height: 21px;
-    background-image: url("../img/travel_fellows/facebook.svg");
+    background-image: url("/static/img/travel_fellows/facebook.svg");
 
     @media (min-width: $tablet) {
       width: 14px;
@@ -19,7 +19,7 @@
   &--vk {
     width: 23px;
     height: 12px;
-    background-image: url("../img/travel_fellows/vk.svg");
+    background-image: url("/static/img/travel_fellows/vk.svg");
 
     @media (min-width: $tablet) {
       width: 31px;
@@ -30,7 +30,7 @@
   &--instagram {
     width: 18px;
     height: 18px;
-    background-image: url("../img/travel_fellows/instagram.svg");
+    background-image: url("/static/img/travel_fellows/instagram.svg");
 
     @media (min-width: $tablet) {
       width: 24px;
