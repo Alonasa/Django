@@ -1,0 +1,192 @@
+{% load static %}
+
+<section class="teammates teammates--upped">
+    <div class="container">
+        <div class="teammates__common-wrapper">
+            <div class="teammates__content-wrapper">
+                <h2 class="heading heading--h2 teammates__heading">Companions</h2>
+                <p class="text text--white teammates__text">
+                    We are all individuals with our own views on the perfect vacation. One needs a beach and a
+                    cocktail, another a hiking route.
+                </p>
+                <p class="text text--white text--bold teammates__bold-text">
+                    <b>Now it’s easy to <br>
+                        find like-minded people!</b>
+                </p>
+            </div>
+            <div class="teammates__preview-wrapper">
+                <section class="teammates-preview teammates__item">
+                    <div class="teammates-preview__image">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/firsova-desktop' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/firsova-desktop' %}@2x.webp 2x
+                      ">
+                            <source type="image/webp" srcset="
+                        {% static 'img/travel_fellows/firsova-tablet' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/firsova-tablet' %}@2x.webp 2x
+                      ">
+                            <source media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/firsova-desktop' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/firsova-desktop' %}@2x.jpg 2x
+                      ">
+                            <img class="teammates-preview__picture"
+                                 src="{% static 'img/travel_fellows/firsova-tablet' %}@1x.jpg" srcset="
+                        {% static 'img/travel_fellows/firsova-tablet' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/firsova-tablet' %}@2x.jpg 2x
+                      " alt="User 1" width="270" height="270">
+                        </picture>
+                    </div>
+                    <div class="teammates-preview__level">
+                        <svg class="teammates-preview__level-percent" width="60" height="60" viewBox="0 0 60 60">
+                            <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                                    stroke-dasharray="170px 5px"></circle>
+                        </svg>
+                        <span class="teammates-preview__level-number">99</span><span
+                            class="teammates-preview__level-description">level</span>
+                    </div>
+                    <div class="teammates-preview__content">
+                        <div class="teammates-preview__flags-wrapper">
+                            <div class="country-flag country-flag--lk teammates-preview__flag"
+                                 data-tooltip="Sri Lanka">
+                                <img class="country-flag__picture"
+                                     src="{% static 'img/travel_fellows/flag-sri-lanka.svg' %}"
+                                     alt="Flag of Sri Lanka"
+                                     width="35" height="24">
+                            </div>
+                            <div class="country-flag country-flag--th teammates-preview__flag"
+                                 data-tooltip="Thailand">
+                                <img class="country-flag__picture"
+                                     src="{% static 'img/travel_fellows/flag-thailand.svg' %}"
+                                     alt="Flag of Thailand"
+                                     width="35" height="24">
+                            </div>
+                            <div class="country-flag country-flag--sc teammates-preview__flag"
+                                 data-tooltip="Seychelles">
+                                <img class="country-flag__picture"
+                                     src="{% static 'img/travel_fellows/flag-seychelles.svg' %}"
+                                     alt="Flag of Seychelles"
+                                     width="35" height="24">
+                            </div>
+                        </div>
+                        <a class="teammates-preview__link-wrapper" href="/user001/profile.html">
+                            <h3 class="teammates-preview__name">
+                                <span class="teammates-preview__status teammates-preview__status--offline">Name Surename</span>
+                            </h3>
+                        </a>
+                        <p class="teammates-preview__hashtags">
+                            #HealthyLifestyle #ProperNutrition #Fitness #Beach #Avocado #Smoothie
+                        </p>
+                        <ul class="teammates-preview__transport-wrapper">
+                            <li class="teammates-preview__transport teammates-preview__transport--active"
+                                data-tooltip="Avia">
+                                <svg width="19" height="21">
+                                    <use xlink:href="#icon-plane"></use>
+                                </svg>
+                            </li>
+                            <li class="teammates-preview__transport" data-tooltip="Auto">
+                                <svg width="19" height="21">
+                                    <use xlink:href="#icon-bus"></use>
+                                </svg>
+                            </li>
+                            <li class="teammates-preview__transport" data-tooltip="Bicycle">
+                                <svg width="24" height="21">
+                                    <use xlink:href="#icon-bike"></use>
+                                </svg>
+                            </li>
+                            <li class="teammates-preview__transport" data-tooltip="Hiking">
+                                <svg width="19" height="21">
+                                    <use xlink:href="#icon-run"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="teammates-preview teammates__item">
+                    <div class="teammates-preview__image">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/demin-desktop' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/demin-desktop' %}@2x.webp 2x
+                      ">
+                            <source type="image/webp" srcset="
+                        {% static 'img/travel_fellows/demin-tablet' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/demin-tablet' %}@2x.webp 2x
+                      ">
+                            <source media="(min-width: 1440px)" srcset="
+                        {% static 'img/travel_fellows/demin-desktop' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/demin-desktop' %}@2x.jpg 2x
+                      ">
+                            <img class="teammates-preview__picture"
+                                 src="{% static 'img/travel_fellows/demin-tablet' %}@1x.jpg" srcset="
+                        {% static 'img/travel_fellows/demin-tablet' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/demin-tablet' %}@2x.jpg 2x
+                      " alt="User 2" width="270" height="270">
+                        </picture>
+                    </div>
+                    <div class="teammates-preview__level">
+                        <svg class="teammates-preview__level-percent" width="60" height="60" viewBox="0 0 60 60">
+                            <circle r="28" cx="30" cy="30" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                                    stroke-dasharray="140px 35px"></circle>
+                        </svg>
+                        <span class="teammates-preview__level-number">80</span><span
+                            class="teammates-preview__level-description">level</span>
+                    </div>
+                    <div class="teammates-preview__content">
+                        <div class="teammates-preview__flags-wrapper">
+                            <div class="country-flag country-flag--be teammates-preview__flag"
+                                 data-tooltip="Belgium">
+                                <img class="country-flag__picture"
+                                     src="{% static 'img/travel_fellows/flag-belgium.svg' %}" alt="Flag of Belgium"
+                                     width="35" height="24">
+                            </div>
+                            <div class="country-flag country-flag--cz teammates-preview__flag"
+                                 data-tooltip="Czech Republic">
+                                <img class="country-flag__picture"
+                                     src="{% static 'img/travel_fellows/flag-czech.svg' %}"
+                                     alt="Flag of Czech Republic"
+                                     width="35" height="24">
+                            </div>
+                        </div>
+                        <a class="teammates-preview__link-wrapper" href="/user002/profile.html">
+                            <h3 class="teammates-preview__name">
+                                <span class="teammates-preview__status teammates-preview__status--online">User 2</span>
+                            </h3>
+                        </a>
+                        <p class="teammates-preview__hashtags">
+                            #Burger #Bar #Football #Concert #Craft
+                        </p>
+                        <ul class="teammates-preview__transport-wrapper">
+                            <li class="teammates-preview__transport teammates-preview__transport--active"
+                                data-tooltip="Авиаперелет">
+                                <svg width="19" height="21">
+                                    <use xlink:href="#icon-plane"></use>
+                                </svg>
+                            </li>
+                            <li class="teammates-preview__transport teammates-preview__transport--active"
+                                data-tooltip="Auto">
+                                <svg width="19" height="21">
+                                    <use xlink:href="#icon-bus"></use>
+                                </svg>
+                            </li>
+                            <li class="teammates-preview__transport" data-tooltip="Bicycle">
+                                <svg width="24" height="21">
+                                    <use xlink:href="#icon-bike"></use>
+                                </svg>
+                            </li>
+                            <li class="teammates-preview__transport teammates-preview__transport--active"
+                                data-tooltip="Hiking">
+                                <svg width="19" height="21">
+                                    <use xlink:href="#icon-run"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="teammates__button-wrapper">
+                <a class="button button--squared teammates__button" href="catalog.html">Show all</a>
+            </div>
+        </div>
+    </div>
+</section>

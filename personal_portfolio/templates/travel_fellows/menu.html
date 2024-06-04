@@ -1,14 +1,68 @@
-<nav class="d-flex justify-content-between m-4 flex-wrap">
-    <ul class="d-flex list-unstyled menu align-items-center">
-        {% for url, name in menu.items %}
-        <li>
-            <a href="{{ url }}">
-                {{ name }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
-    <ul class="list-unstyled d-flex align-items-center">
-        <li class="button button__yellow"><a href="#">Sign in</a></li>
-    </ul>
+{#<nav class="d-flex justify-content-between m-4 flex-wrap">#}
+{#    <ul class="d-flex list-unstyled menu align-items-center">#}
+{#        {% for url, name in menu.items %}#}
+{#            <li>#}
+{#                <a href="{{ url }}">#}
+{#                    {{ name }}#}
+{#                </a>#}
+{#            </li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{#    <ul class="list-unstyled d-flex align-items-center">#}
+{#        <li class="button button__yellow"><a href="#">Sign in</a></li>#}
+{#    </ul>#}
+{#</nav>#}
+
+<nav class="page-nav page-nav--main page-nav--inactive page-nav--no-js">
+    <div class="container">
+        <div class="page-nav__wrapper">
+            <div class="page-nav__logo-wrapper">
+                <a class="logo page-nav__logo">
+                    Travel Fellows
+                </a>
+                <button class="page-nav__toggler" type="button" aria-haspopup="true"
+                        aria-label="Navigation Toggler">
+                    <span class="visually-hidden">Open / Close menu</span>
+                </button>
+            </div>
+            <div class="page-nav__button-wrapper">
+                <a class="button button--rounded page-nav__auth-button" href="authorization.html">Authorisation</a>
+            </div>
+            <div class="page-nav__menu-wrapper">
+                <ul class="page-nav__list">
+                    <li class="page-nav__list-item">
+                        <a class="page-nav__list-link"><span class="page-nav__list-transition-text"
+                                                             data-hover="About">About</span></a>
+                    </li>
+                    <li class="page-nav__list-item">
+                        <a class="page-nav__list-link" href="form.html"><span class="page-nav__list-transition-text"
+                                                                              data-hover="Destinations">Destinations</span></a>
+                    </li>
+                    <li class="page-nav__list-item">
+                        <a class="page-nav__list-link" href="catalog.html"><span
+                                class="page-nav__list-transition-text" data-hover="Fellows">Fellows</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-nav__contacts-wrapper">
+                <ul class="contacts page-nav__contacts">
+                    <li class="contacts__item">
+                        <a class="contact-url contact-url--email" href="mailto:mail"><span
+                                class="contact-url__content">mail' %}@</span></a>
+                    </li>
+                </ul>
+                <ul class="social page-nav__social">
+                    <li class="social__item">
+                        <a class="social-link social-link--fb" href="" target="_blank" aria-label="Facebook"><span
+                                class="visually-hidden">Facebook</span></a>
+                    </li>
+
+                    <li class="social__item">
+                        <a class="social-link social-link--instagram" href="" target="_blank"
+                           aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </nav>
