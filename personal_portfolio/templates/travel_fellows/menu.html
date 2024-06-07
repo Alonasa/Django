@@ -1,23 +1,8 @@
-{#<nav class="d-flex justify-content-between m-4 flex-wrap">#}
-{#    <ul class="d-flex list-unstyled menu align-items-center">#}
-{#        {% for url, name in menu.items %}#}
-{#            <li>#}
-{#                <a href="{{ url }}">#}
-{#                    {{ name }}#}
-{#                </a>#}
-{#            </li>#}
-{#        {% endfor %}#}
-{#    </ul>#}
-{#    <ul class="list-unstyled d-flex align-items-center">#}
-{#        <li class="button button__yellow"><a href="#">Sign in</a></li>#}
-{#    </ul>#}
-{#</nav>#}
-
 <nav class="page-nav page-nav--main page-nav--inactive page-nav--no-js">
     <div class="container">
         <div class="page-nav__wrapper">
             <div class="page-nav__logo-wrapper">
-                <a class="logo page-nav__logo">
+                <a class="logo page-nav__logo page-nav__list-link" href="{% url 'fellows' %}">
                     Travel Fellows
                 </a>
                 <button class="page-nav__toggler" type="button" aria-haspopup="true"
@@ -35,7 +20,7 @@
                                                              data-hover="About">About</span></a>
                     </li>
                     <li class="page-nav__list-item">
-                        <a class="page-nav__list-link" href="{{ 'form' }}"><span class="page-nav__list-transition-text"
+                        <a class="page-nav__list-link" href="{% url 'form' %}"><span class="page-nav__list-transition-text"
                                                                               data-hover="Destinations">Destinations</span></a>
                     </li>
                     <li class="page-nav__list-item">

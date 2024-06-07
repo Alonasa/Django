@@ -1,4 +1,5 @@
 {% extends 'travel_fellows/base.html' %}
+{% load static %}
 {% block body %}
     <header class="page-header page-header--rounded">
         {% include 'travel_fellows/menu.html' %}
@@ -15,7 +16,7 @@
     </header>
 
     <main>
-        <form class="directions-form" method="POST" action="https://echo.htmlacademy.ru">
+        <form class="directions-form" method="POST" action="https://echo">
             <section class="user-information">
                 <div class="container">
                     <h2 class="visually-hidden">Personal Information</h2>
@@ -33,21 +34,21 @@
                             <div class="user-information__image">
                                 <picture>
                                     <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/photo-account-tablet@1x.webp 1x,
-                        img/photo-account-tablet@2x.webp 2x
+                        {% static 'img/travel_fellows/photo-account-tablet' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/photo-account-tablet' %}@2x.webp 2x
                       ">
                                     <source type="image/webp" srcset="
-                        img/photo-account-mobile@1x.webp 1x,
-                        img/photo-account-mobile@2x.webp 2x
+                        {% static 'img/travel_fellows/photo-account-mobile'%}@1x.webp 1x,
+                        {% static 'img/travel_fellows/photo-account-mobile'%}@2x.webp 2x
                       ">
                                     <source media="(min-width: 768px)" srcset="
-                        img/photo-account-tablet@1x.jpg 1x,
-                        img/photo-account-tablet@2x.jpg 2x
+                        {% static 'img/travel_fellows/photo-account-tablet' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/photo-account-tablet' %}@2x.jpg 2x
                       ">
-                                    <img class="user-information__picture" src="img/photo-account-mobile@1x.jpg"
+                                    <img class="user-information__picture" src="{% static 'img/travel_fellows/photo-account-mobile'  %}@1x.jpg"
                                          srcset="
-                        img/photo-account-mobile@1x.jpg 1x,
-                        img/photo-account-mobile@2x.jpg 2x
+                        {% static 'img/travel_fellows/photo-account-mobile' %}@1x.jpg 1x,
+                        {% static 'img/travel_fellows/photo-account-mobile' %}@2x.jpg 2x
                       " alt="my photo" width="100" height="100">
                                 </picture>
                             </div>
@@ -550,7 +551,8 @@
                                     </button>
                                     <div class="plan-step__flag-wrapper plan-step__flag-wrapper--active">
                                         <div class="country-flag country-flag--big" data-tooltip="Босния и Герцеговина">
-                                            <img class="country-flag__picture" src="img/flag-bosnia.svg"
+                                            <img class="country-flag__picture"
+                                                 src="{% static 'img/travel_fellows/flag-bosnia.svg' %}"
                                                  alt="Флаг Боснии и Герцеговины" width="35" height="24">
                                         </div>
                                     </div>
@@ -564,7 +566,7 @@
                                     </button>
                                     <div class="plan-step__flag-wrapper plan-step__flag-wrapper--active">
                                         <div class="country-flag country-flag--big" data-tooltip="Чехия">
-                                            <img class="country-flag__picture" src="img/flag-czech.svg" alt="Флаг Чехии"
+                                            <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
                                                  width="35" height="24">
                                         </div>
                                     </div>
@@ -1527,7 +1529,8 @@
                                         Entertainment
                                     </h3>
                                     <p class="plan-step__description">
-                                        Finally, talk about your plans for spending time. You can write in free form and put tags.
+                                        Finally, talk about your plans for spending time. You can write in free form and
+                                        put tags.
                                     </p>
                                 </div>
                                 <ul class="markers-list">
@@ -1557,7 +1560,7 @@
                                         <label class="plan-step__description-label" for="ba-plans">Босния и
                                             Герцеговина</label>
                                         <div class="country-flag country-flag--big" data-tooltip="Босния и Герцеговина">
-                                            <img class="country-flag__picture" src="img/flag-bosnia.svg"
+                                            <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-bosnia.svg' %}"
                                                  alt="Флаг Боснии и Герцеговины" width="35" height="24">
                                         </div>
                                     </div>
@@ -1573,12 +1576,12 @@
                                     <div class="plan-step__description-title">
                                         <label class="plan-step__description-label" for="cz-plans">Чехия</label>
                                         <div class="country-flag country-flag--big" data-tooltip="Чехия">
-                                            <img class="country-flag__picture" src="img/flag-czech.svg" alt="Флаг Чехии"
+                                            <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
                                                  width="35" height="24">
                                         </div>
                                     </div>
                                     <div class="plan-step__plan-description-wrapper">
-                      <textarea class="plan-step__plan-description" id="cz-plans" required="">Drink beer and climb old castles, enjoy the architecture and that's all.</textarea>
+                                        <textarea class="plan-step__plan-description" id="cz-plans" required="">Drink beer and climb old castles, enjoy the architecture and that's all.</textarea>
                                         <div class="plan-step__plan-description-invalid">
                                             This field must be filled
                                         </div>

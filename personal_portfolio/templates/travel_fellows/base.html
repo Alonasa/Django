@@ -5,13 +5,15 @@
     <title>Travel Fellows</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Travell fellows application">
+    <meta name="description" content="Travel fellows application">
     {% load static %}
+    <link rel="preload" href="{% static 'fonts/travel_fellows/bloggersans-light.woff2' %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'fonts/travel_fellows/bloggersans.woff2' %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'fonts/travel_fellows/bloggersans-medium.woff2' %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'fonts/travel_fellows/bloggersans-bold.woff2' %}" as="font" type="font/woff2">
+
     <link rel="stylesheet" href="{% static 'css/travel_fellows/style.css' %}">
-    <link rel="preload" href="{% static 'fonts/bloggersans-light.woff2'  %}" as="font" type="font/woff2">
-    <link rel="preload" href="{% static 'fonts/bloggersans.woff2' %}" as="font" type="font/woff2">
-    <link rel="preload" href="{% static 'fonts/bloggersans-medium.woff2' %}" as="font" type="font/woff2">
-    <link rel="preload" href="{% static 'fonts/bloggersans-bold.woff2' %}" as="font" type="font/woff2">
+
 </head>
 
 {% block body %}{% endblock %}
@@ -19,10 +21,9 @@
 <script>
     document.createElement("picture");
 </script>
-<script src="{% static 'js/picturefill.js' %}" async=""></script>
-<script src="{% static  'js/svgxuse.js' %}" defer=""></script>
-<script src="{% static 'js/navigation.js' %}"></script>
-<script src="{% static 'js/business-tariffs.js' %}"></script>
-<script src="{% static 'js/map.js' %}"></script>
+<script src="{% static 'js/travel_fellows/picturefill.js' %}" async=""></script>
+<script src="{% static  'js/travel_fellows/svgxuse.js' %}" defer=""></script>
+<script src="{% static 'js/travel_fellows/navigation.js' %}"></script>
+<script src="{% static 'js/travel_fellows/business-tariffs.js' %}"></script>
 </body>
 </html>
