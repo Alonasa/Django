@@ -16,7 +16,7 @@ menu = {
 
 
 def fellows(request):
-    return render(request, "travel_fellows/main-page.html", {"menu": menu})
+    return render(request, "travel_fellows/main-page.html")
 
 
 def generator(request):
