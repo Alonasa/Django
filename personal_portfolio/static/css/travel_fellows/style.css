@@ -6225,6 +6225,7 @@ a {
   @media (min-width: 1440px) {
     .calendar__day-number--arrival::before, .calendar__day-number--departure::before {
       color: #ffffff;
+      font-family: 'Arial', sans-serif;
       font-size: 18px;
       font-weight: normal;
       line-height: 1.67;
@@ -6234,10 +6235,10 @@ a {
       left: 15px; } }
   @media (min-width: 1440px) {
     .calendar__day-number--arrival::before {
-      content: "Заезд"; } }
+      content: 'Arrive'; } }
   @media (min-width: 1440px) {
     .calendar__day-number--departure::before {
-      content: "Выезд"; } }
+      content: 'Depart'; } }
 .calendar__first-month-day {
   display: none; }
   @media (min-width: 1440px) {

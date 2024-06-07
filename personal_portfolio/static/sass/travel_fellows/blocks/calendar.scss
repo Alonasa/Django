@@ -202,6 +202,7 @@
   &--departure::before {
     @media (min-width: $desktop) {
       color: $white;
+      font-family: 'Arial', sans-serif;
       font-size: 18px;
       font-weight: normal;
       line-height: 1.67;
@@ -214,13 +215,13 @@
 
   &--arrival::before {
     @media (min-width: $desktop) {
-      content: "Заезд";
+      content: 'Arrive';
     }
   }
 
   &--departure::before {
     @media (min-width: $desktop) {
-      content: "Выезд";
+      content: 'Depart';
     }
   }
 }
