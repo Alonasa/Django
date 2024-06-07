@@ -1,89 +1,16 @@
-{% include 'base.html' %}
+{% extends 'travel_fellows/base.html' %}
+{% load static %}
+{% block body %}
   <body class="page">
     <header class="page-header page-header--rounded page-header--catalog">
-      <nav class="page-nav page-nav--inner page-nav--inactive page-nav--no-js">
-        <div class="container">
-          <div class="page-nav__wrapper">
-            <div class="page-nav__logo-wrapper">
-              <a href="index.html" class="logo page-nav__logo">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="
-                      img/logo-desktop-white@1x.webp 1x,
-                      img/logo-desktop-white@2x.webp 2x
-                    ">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="
-                      img/logo-tablet-white@1x.webp 1x,
-                      img/logo-tablet-white@2x.webp 2x
-                    ">
-                  <source type="image/webp" srcset="
-                      img/logo-mobile-white@1x.webp 1x,
-                      img/logo-mobile-white@2x.webp 2x
-                    ">
-                  <source media="(min-width: 1440px)" srcset="
-                      img/logo-desktop-white@1x.png 1x,
-                      img/logo-desktop-white@2x.png 2x
-                    ">
-                  <source media="(min-width: 768px)" srcset="
-                      img/logo-tablet-white@1x.png 1x,
-                      img/logo-tablet-white@2x.png 2x
-                    ">
-                  <img class="logo__picture" src="img/logo-mobile-white@1x.png" srcset="
-                      img/logo-mobile-white@1x.png 1x,
-                      img/logo-mobile-white@2x.png 2x
-                    " alt="Логотип приложения Погнали">
-                </picture>
-              </a>
-              <button class="page-nav__toggler" type="button" aria-haspopup="true" aria-label="Переключатель навигации">
-                <span class="visually-hidden">Открыть / закрыть меню</span>
-              </button>
-            </div>
-            <div class="page-nav__button-wrapper">
-              <a class="button button--rounded page-nav__auth-button" href="authorization.html">Авторизация</a>
-            </div>
-            <div class="page-nav__menu-wrapper">
-              <ul class="page-nav__list">
-                <li class="page-nav__list-item">
-                  <a class="page-nav__list-link" href="index.html"><span class="page-nav__list-transition-text" data-hover="О сервисе">О сервисе</span></a>
-                </li>
-                <li class="page-nav__list-item">
-                  <a class="page-nav__list-link" href="form.html"><span class="page-nav__list-transition-text" data-hover="Направления">Направления</span></a>
-                </li>
-                <li class="page-nav__list-item">
-                  <a class="page-nav__list-link"><span class="page-nav__list-transition-text" data-hover="Попутчики">Попутчики</span></a>
-                </li>
-              </ul>
-            </div>
-            <div class="page-nav__contacts-wrapper">
-              <ul class="contacts page-nav__contacts">
-                <li class="contacts__item">
-                  <a class="contact-url contact-url--telephone" href="tel:+88005558628"><span class="contact-url__content">8 800 555-86-28</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a class="contact-url contact-url--email" href="mailto:mail@htmlacademy.ru"><span class="contact-url__content">mail@htmlacademy.ru</span></a>
-                </li>
-              </ul>
-              <ul class="social page-nav__social">
-                <li class="social__item">
-                  <a class="social-link social-link--fb" href="" target="_blank" aria-label="Facebook"><span class="visually-hidden">Facebook</span></a>
-                </li>
-                <li class="social__item">
-                  <a class="social-link social-link--vk" href="" target="_blank" aria-label="Vkontakte"><span class="visually-hidden">VKontakte</span></a>
-                </li>
-                <li class="social__item">
-                  <a class="social-link social-link--instagram" href="" target="_blank" aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+        {% include 'travel_fellows/menu.html' %}
       <div class="page-header__content-wrapper page-header__content-wrapper--inner page-header__content-wrapper--no-js">
         <div class="container">
           <div class="page-header__inner-heading-wrapper">
             <h1 class="heading heading--h1 heading--underline page-header__title">
-              Попутчики
+              Companions
             </h1>
-            <a class="page-header__inner-back" href="index.html">На главную</a>
+            <a class="page-header__inner-back" href="{% url 'fellows' %}">Main page</a>
           </div>
         </div>
       </div>
@@ -93,26 +20,26 @@
         <div class="container">
           <div class="filter__wrapper">
             <h2 class="filter__title">
-              Фильтрация по странам<span class="filter__title-dots">:</span>
+              Filter by country<span class="filter__title-dots">:</span>
             </h2>
             <ul class="filter__region-list">
               <li class="filter__region-list-item">
-                <a href="" class="filter__region-link filter__region-link--active">Европа</a>
+                <a href="" class="filter__region-link filter__region-link--active">Europe</a>
               </li>
               <li class="filter__region-list-item">
-                <a href="" class="filter__region-link">Азия</a>
+                <a href="" class="filter__region-link">Asia</a>
               </li>
               <li class="filter__region-list-item">
-                <a href="" class="filter__region-link">Америка</a>
+                <a href="" class="filter__region-link">America</a>
               </li>
               <li class="filter__region-list-item">
-                <a href="" class="filter__region-link">Острова</a>
+                <a href="" class="filter__region-link">Islands</a>
               </li>
             </ul>
             <div class="filter__toggler-wrapper">
               <button class="filter__toggler filter__toggler--open" type="button" aria-label="Показать все или свернуть">
-                <span class="filter__toggler-text filter__toggler-text--open">Показать все</span>
-                <span class="filter__toggler-text filter__toggler-text--close">Свернуть</span>
+                <span class="filter__toggler-text filter__toggler-text--open">Show All</span>
+                <span class="filter__toggler-text filter__toggler-text--close">Show Less</span>
               </button>
             </div>
           </div>
@@ -866,80 +793,80 @@
             <form class="teammate-search-form find-teammate__form" action="https://echo.htmlacademy.ru" method="GET">
               <div class="teammate-search-form__content-wrapper">
                 <h2 class="heading heading--h2 teammate-search-form__title">
-                  Подберите идеального попутчика
+                  Find ideal companion
                 </h2>
                 <div class="accordion">
                   <div class="accordion__item-wrapper">
                     <button class="accordion__item" type="button">
                       <span class="accordion__title accordion__title--collapse">
-                        Хобби<span class="accordion__title-dots">:</span>
+                        Hobby<span class="accordion__title-dots">:</span>
                       </span>
                     </button>
                     <ul class="accordion__list">
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="gym" id="gym" checked="">
-                        <label class="accordion__checkbox" for="gym">Спортзал</label>
+                        <label class="accordion__checkbox" for="gym">Gym</label>
                       </li>
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="hookah" id="hookah">
-                        <label class="accordion__checkbox" for="hookah">Кальян</label>
+                        <label class="accordion__checkbox" for="hookah">Hookah</label>
                       </li>
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="sofa" id="sofa">
-                        <label class="accordion__checkbox" for="sofa">Диван</label>
+                        <label class="accordion__checkbox" for="sofa">Sofa</label>
                       </li>
                     </ul>
                   </div>
                   <div class="accordion__item-wrapper">
                     <button class="accordion__item" type="button">
                       <span class="accordion__title accordion__title--collapse">
-                        Музыка<span class="accordion__title-dots">:</span>
+                        Music<span class="accordion__title-dots">:</span>
                       </span>
                     </button>
                     <ul class="accordion__list">
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="hard-rock" id="hard-rock" checked="">
-                        <label class="accordion__checkbox" for="hard-rock">Тяжелый рок</label>
+                        <label class="accordion__checkbox" for="hard-rock">Hard Rock</label>
                       </li>
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="russian-rap" id="russian-rap">
-                        <label class="accordion__checkbox" for="russian-rap">Русский рэп</label>
+                        <label class="accordion__checkbox" for="russian-rap">Russian Rap</label>
                       </li>
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="eurodance" id="eurodance">
-                        <label class="accordion__checkbox" for="eurodance">Евроденс</label>
+                        <label class="accordion__checkbox" for="eurodance">Euro Dance</label>
                       </li>
                     </ul>
                   </div>
                   <div class="accordion__item-wrapper">
                     <button class="accordion__item" type="button">
                       <span class="accordion__title accordion__title--collapse">
-                        Еда<span class="accordion__title-dots">:</span>
+                        Food<span class="accordion__title-dots">:</span>
                       </span>
                     </button>
                     <ul class="accordion__list">
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="meat" id="meat" checked="">
-                        <label class="accordion__checkbox" for="meat">Мясоед</label>
+                        <label class="accordion__checkbox" for="meat">Meat</label>
                       </li>
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="healty" id="healty">
-                        <label class="accordion__checkbox" for="healty">Сидит на ПП</label>
+                        <label class="accordion__checkbox" for="healty">Health Food</label>
                       </li>
                       <li class="accordion__list-item">
                         <input class="visually-hidden" type="checkbox" name="vegan" id="vegan">
-                        <label class="accordion__checkbox" for="vegan">Веган-сыроед</label>
+                        <label class="accordion__checkbox" for="vegan">Vegan</label>
                       </li>
                     </ul>
                   </div>
                   <div class="accordion__item-wrapper accordion__item-wrapper--transport">
                     <button class="accordion__item accordion__item--transport" type="button">
                       <span class="accordion__title accordion__title--collapse">
-                        Транспорт<span class="accordion__title-dots">:</span>
+                        Transport<span class="accordion__title-dots">:</span>
                       </span>
                     </button>
                     <ul class="accordion__list accordion__list--transport">
-                      <li class="accordion__transport-item" data-tooltip="Авиаперелет">
+                      <li class="accordion__transport-item" data-tooltip="Avia">
                         <input class="visually-hidden" type="checkbox" name="plane" id="plane" checked="">
                         <label class="transport-type accordion__transport-checkbox" for="plane">
                           <svg class="transport-type__icon transport-type__icon--plane" width="13" height="16">
@@ -947,19 +874,19 @@
                           </svg>
                         </label>
                       </li>
-                      <li class="accordion__transport-item" data-tooltip="Автотранспорт">
+                      <li class="accordion__transport-item" data-tooltip="Automobile">
                         <input class="visually-hidden" type="checkbox" name="bus" id="bus" checked="">
                         <label class="transport-type accordion__transport-checkbox" for="bus"><svg class="transport-type__icon transport-type__icon--bus" width="13" height="16">
                           <use xlink:href="#icon-bus"></use>
                         </svg></label>
                       </li>
-                      <li class="accordion__transport-item" data-tooltip="Велосипед">
+                      <li class="accordion__transport-item" data-tooltip="Bicycle">
                         <input class="visually-hidden" type="checkbox" name="bike" id="bike">
                         <label class="transport-type accordion__transport-checkbox" for="bike"><svg class="transport-type__icon transport-type__icon--bike" width="19" height="17">
                           <use xlink:href="#icon-bike"></use>
                         </svg></label>
                       </li>
-                      <li class="accordion__transport-item" data-tooltip="Пешком">
+                      <li class="accordion__transport-item" data-tooltip="Hiking">
                         <input class="visually-hidden" type="checkbox" name="feet" id="feet" checked="">
                         <label class="transport-type accordion__transport-checkbox" for="feet"><svg class="transport-type__icon transport-type__icon--run" width="15" height="17">
                           <use xlink:href="#icon-run"></use>
@@ -970,21 +897,21 @@
                   <div class="accordion__item-wrapper accordion__item-wrapper--level">
                     <button class="accordion__item accordion__item--level" type="button">
                       <span class="accordion__title accordion__title--collapse">
-                        Левел<span class="accordion__title-dots">:</span>
+                        Level<span class="accordion__title-dots">:</span>
                       </span>
                     </button>
                     <div class="accordion__level-wrapper">
                       <div class="accordion__inputs-wrapper">
-                        <input class="accordion__level-input" type="text" value="30" name="level" aria-label="Минимальный уровень">
-                        <input class="accordion__level-input" type="text" value="100" name="level" aria-label="Максимальный уровень">
+                        <input class="accordion__level-input" type="text" value="30" name="level" aria-label="Minimal level data">
+                        <input class="accordion__level-input" type="text" value="100" name="level" aria-label="Maximal level data">
                       </div>
                       <div class="accordion__range-wrapper">
                         <div class="accordion__range-controls">
                           <div class="accordion__range-scale">
                             <div style="width: 70%" class="accordion__range-bar"></div>
                           </div>
-                          <button class="accordion__range-toggle accordion__range-toggle--min" type="button" aria-label="Указатель минимальной цены"></button>
-                          <button class="accordion__range-toggle accordion__range-toggle--max" type="button" aria-label="Указатель максимальной цены"></button>
+                          <button class="accordion__range-toggle accordion__range-toggle--min" type="button" aria-label="Minimal level pointer"></button>
+                          <button class="accordion__range-toggle accordion__range-toggle--max" type="button" aria-label="Maximal level pointer"></button>
                         </div>
                       </div>
                     </div>
@@ -993,14 +920,14 @@
               </div>
               <div class="teammate-search-form__button-wrapper">
                 <button class="button button--rounded button--white teammate-search-form__button" type="submit">
-                  Показать
+                  Show
                 </button>
               </div>
             </form>
           </section>
 
           <section class="teammates-catalog">
-            <h2 class="visually-hidden">Список попутчиков</h2>
+            <h2 class="visually-hidden">Companions list</h2>
             <div class="teammates-catalog__item-wrapper">
               <section class="teammates-card teammates-catalog__item">
                 <a class="teammates-card__image-wrapper" href="/user001/profile.html">
@@ -1474,7 +1401,7 @@
                 </div>
               </section>
             </div>
-            <a class="teammates-catalog__button-show-all" href="all-teammates.html"><span class="teammates-catalog__button-text">Показать еще</span></a>
+            <a class="teammates-catalog__button-show-all" href="all-teammates.html"><span class="teammates-catalog__button-text">Show more</span></a>
             <div class="teammates-catalog__pagination">
               <ul class="teammates-catalog__pages-list">
                 <li class="teammates-catalog__pages-item">
@@ -1499,63 +1426,6 @@
         </div>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__content-wrapper">
-          <a class="logo page-footer__logo" href="index.html">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="
-                  img/logo-desktop-blue@1x.webp 1x,
-                  img/logo-desktop-blue@2x.webp 2x
-                ">
-              <source type="image/webp" media="(min-width: 768px)" srcset="
-                  img/logo-tablet-blue@1x.webp 1x,
-                  img/logo-tablet-blue@2x.webp 2x
-                ">
-              <source type="image/webp" srcset="
-                  img/logo-mobile-blue@1x.webp 1x,
-                  img/logo-mobile-blue@2x.webp 2x
-                ">
-              <source media="(min-width: 1440px)" srcset="
-                  img/logo-desktop-blue@1x.png 1x,
-                  img/logo-desktop-blue@2x.png 2x
-                ">
-              <source media="(min-width: 768px)" srcset="
-                  img/logo-tablet-blue@1x.png 1x,
-                  img/logo-tablet-blue@2x.png 2x
-                ">
-              <img class="logo__picture" src="img/logo-mobile-blue@1x.png" srcset="
-                  img/logo-mobile-blue@1x.png 1x,
-                  img/logo-mobile-blue@2x.png 2x
-                " alt="Логотип приложения Погнали">
-            </picture>
-          </a>
-          <ul class="social page-footer__social-list">
-            <li class="page-footer__social-item">
-              <a class="social-button social-button--fb" href="" target="_blank"><span class="visually-hidden">Facebook</span></a>
-            </li>
-            <li class="page-footer__social-item">
-              <a class="social-button social-button--vk" href="" target="_blank"><span class="visually-hidden">VKontakte</span></a>
-            </li>
-            <li class="page-footer__social-item">
-              <a class="social-button social-button--instagram" href="" target="_blank"><span class="visually-hidden">Instagram</span></a>
-            </li>
-          </ul>
-          <div class="page-footer__bottom-wrapper">
-            <p class="page-footer__paragraph">Разработано</p>
-            <a class="academy-logo page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><span class="visually-hidden">HTML Academy</span></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    {% include 'travel_fellows/footer.html' %}
 
-    <script>
-      document.createElement("picture");
-    </script>
-    <script src="js/picturefill.js" async=""></script>
-    <script src="js/svgxuse.js" defer=""></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="js/accordion.js"></script>
-  </body>
-</html>
+{% endblock %}

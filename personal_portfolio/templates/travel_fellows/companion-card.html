@@ -1,0 +1,114 @@
+<section class="teammates-card teammates-catalog__item">
+    <a class="teammates-card__image-wrapper" href="/user002/profile.html">
+        <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="
+                        img/demin-desktop@1x.webp 1x,
+                        img/demin-desktop@2x.webp 2x
+                      ">
+            <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/demin-tablet@1x.webp 1x,
+                        img/demin-tablet@2x.webp 2x
+                      ">
+            <source type="image/webp" srcset="
+                        img/demin-mobile@1x.webp 1x,
+                        img/demin-mobile@2x.webp 2x
+                      ">
+            <source media="(min-width: 1440px)" srcset="
+                        img/demin-desktop@1x.jpg 1x,
+                        img/demin-desktop@2x.jpg 2x
+                      ">
+            <source media="(min-width: 768px)" srcset="
+                        img/demin-tablet@1x.jpg 1x,
+                        img/demin-tablet@2x.jpg 2x
+                      ">
+            <img class="teammates-card__picture" src="img/demin-mobile@1x.jpg" srcset="
+                        img/demin-mobile@1x.jpg 1x,
+                        img/demin-mobile@2x.jpg 2x
+                      " alt="Петя Демин" width="70" height="70">
+        </picture>
+    </a>
+    <div class="teammates-card__info-wrapper">
+        <a class="teammates-card__name-link" href="/user002/profile.html">
+            <h3 class="teammates-card__name teammates-card__name--offline">
+                {{ username }}
+            </h3>
+        </a>
+        {% for tag in hashtags %}
+            <p class="teammates-card__hashtags">
+                #{{ tag }}
+            </p>
+        {% endfor %}
+    </div>
+    <div class="teammates-card__wishlist">
+        <p class="teammates-card__title teammates-card__title--wishlist">
+            Want to visit:
+        </p>
+        <div class="teammates-card__all-countries">
+            {% for country in country_wishlist %}
+            <div class="teammates-card__wishlist-wrapper">
+                <div class="country-flag teammates-card__flag" data-tooltip="{{ country }}">
+                    <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-'%}{{ country }}.svg" alt="Flag {{ country }}" width="35"
+                         height="24">
+                </div>
+                <p class="teammates-card__wishlist-description">
+                    {{ country }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="teammates-card__titles">
+        <p class="teammates-card__title teammates-card__title--transport">
+            Transport:
+        </p>
+        <p class="teammates-card__title teammates-card__title--level">
+            Lvl:
+        </p>
+    </div>
+    <div class="teammates-card__transport-and-level">
+        <ul class="teammates-card__transport-wrapper">
+            <li class="teammates-card__transport teammates-card__transport--active" data-tooltip="Avia">
+                <svg class="teammates-card__transport-icon teammates-card__transport-icon--plane" width="14"
+                     height="16">
+                    <use xlink:href="#icon-plane"></use>
+                </svg>
+            </li>
+            <li class="teammates-card__transport teammates-card__transport--active" data-tooltip="Automobile">
+                <svg class="teammates-card__transport-icon teammates-card__transport-icon--bus" width="14" height="16">
+                    <use xlink:href="#icon-bus"></use>
+                </svg>
+            </li>
+            <li class="teammates-card__transport" data-tooltip="Bicycle">
+                <svg class="teammates-card__transport-icon teammates-card__transport-icon--bike" width="19" height="17">
+                    <use xlink:href="#icon-bike"></use>
+                </svg>
+            </li>
+            <li class="teammates-card__transport teammates-card__transport--active" data-tooltip="Пешком">
+                <svg class="teammates-card__transport-icon teammates-card__transport-icon--run" width="15" height="17">
+                    <use xlink:href="#icon-run"></use>
+                </svg>
+            </li>
+        </ul>
+        <div class="teammates-card__level">
+            <svg class="teammates-card__level-percent" width="45" height="45" viewBox="0 0 45 45">
+                <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                        stroke-dasharray="105px 20px"></circle>
+            </svg>
+            <span class="teammates-card__level-number">{{ level }}</span><span
+                class="teammates-card__level-description">level</span>
+        </div>
+    </div>
+    <div class="teammates-card__button-and-like">
+        <div class="teammates-card__button-wrapper">
+            <a class="button button--rounded teammates-card__button" href="call-teammate.html">Invite!</a>
+        </div>
+        <div class="teammates-card__like-wrapper">
+            <button class="teammates-card__like" type="button">
+                Like / Unlike
+            </button>
+            <p class="teammates-card__likes-number">
+                {{ likes_counter }}
+            </p>
+        </div>
+    </div>
+</section>
