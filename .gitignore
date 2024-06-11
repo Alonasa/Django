@@ -3,4 +3,6 @@ venv
 myenv
 .vscode
 personal_portfolio/static/sass
-
+.env
+/.env
+db.sqlite3

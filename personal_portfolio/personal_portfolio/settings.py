@@ -10,7 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
+
+from environs import Env
 from pathlib import Path
+
+env = Env()
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'livereload'
+    'livereload',
+    'travel_fellows'
 ]
 
 MIDDLEWARE = [
@@ -78,10 +84,11 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "OPTIONS": {
-            "service": "travel_fellows",
-            "passfile": ".my_tfpass",
-        },
+        "NAME": "travel_fellows",
+        'USER': env.str('DB_USER'),
+        'PASSWORD': env.int('DB_PASS'),
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
