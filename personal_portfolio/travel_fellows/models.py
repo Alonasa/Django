@@ -5,7 +5,7 @@ from django.db import models
 
 
 class User(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.IntegerField(primary_key=True, null=False)
     name = models.CharField(max_length=120, default='name')
     surname = models.CharField(max_length=120, default='surename')
     email = models.EmailField(max_length=100, unique=True, default='my@mail.com')
@@ -13,5 +13,5 @@ class User(models.Model):
 
 
 class UserProfile(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.IntegerField(primary_key=True, null=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
