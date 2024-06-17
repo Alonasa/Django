@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'livereload',
-    'travel_fellows'
+    'travel_fellows',
 ]
 
 MIDDLEWARE = [
