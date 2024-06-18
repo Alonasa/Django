@@ -5,13 +5,13 @@ from django.db import models
 
 
 class User(models.Model):
-    id = models.IntegerField(primary_key=True, null=False)
-    name = models.CharField(max_length=120, default='name')
-    surname = models.CharField(max_length=120, default='surename')
-    email = models.EmailField(max_length=100, unique=True, default='my@mail.com')
-    password = models.CharField(max_length=120, default='1111')
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=120, null=False)
+    surname = models.CharField(max_length=120, null=False)
+    email = models.EmailField(max_length=100, unique=True, null=False)
+    password = models.CharField(max_length=120)
 
 
 class UserProfile(models.Model):
-    id = models.IntegerField(primary_key=True, null=False)
+    id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
