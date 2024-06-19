@@ -1,4 +1,5 @@
 from django.contrib.auth.models import AbstractUser
+from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
 # Create your models here.
@@ -15,3 +16,14 @@ class User(models.Model):
 class UserProfile(models.Model):
     id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    photo = models.FilePathField(default='photos/default.jpg')
+    hashtags = ArrayField(models.CharField(max_length=300), blank=False, default=list)
+    destinations = ArrayField(models.CharField(max_length=200), blank=False, default=list)
+    level = models.IntegerField(default=1)
+    likes_count = models.IntegerField(default=0)
+    hobbies = ArrayField(models.CharField(max_length=300), blank=False, default=list)
+    music = ArrayField(models.CharField(max_length=300), blank=False, default=list)
+    food = ArrayField(models.CharField(max_length=300), blank=False, default=list)
+    transport = ArrayField(models.CharField(max_length=300), blank=False, default=list)
+
+
