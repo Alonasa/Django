@@ -130,8 +130,11 @@
 }
 
 .registration__form {
-  position: relative;
   margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 
   @media (min-width: $tablet) {
     padding: 0 35px;
@@ -144,12 +147,10 @@
   }
 }
 
-.registration__email {
+.registration__email, .registration__password, registration__submit {
   width: 230px;
   height: 62px;
   border-radius: 10px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   background-color: $white;
   padding: 18px 70px 20px 22px;
   color: $greyish-brown;
@@ -199,8 +200,6 @@
     padding: 25px 35px 23px 35px;
     font-size: 24px;
     border-radius: 20px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
   @media (min-width: $desktop) {
@@ -211,19 +210,15 @@
 
 .registration__submit {
   border: none;
-  position: absolute;
-  top: 0;
-  right: 0;
+  border-radius: 10px;
 
   @media (min-width: $tablet) {
-    right: 35px;
   }
 
   @media (min-width: $desktop) {
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
-    right: 73px;
   }
 }
 

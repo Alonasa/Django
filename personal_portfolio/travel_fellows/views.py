@@ -11,3 +11,8 @@ def companions(request):
 
 def fellows(request):
     return render(request, "travel_fellows/main-page.html")
+
+
+def auth(request):
+    return render(request, "travel_fellows/register.html")
+
