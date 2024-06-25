@@ -126,17 +126,6 @@
     align-items: center;
     padding-left: 146px;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 18px;
-      left: 40px;
-      width: 60px;
-      height: 2px;
-      border-radius: 1px;
-      background-color: $white;
-    }
   }
 }
 
