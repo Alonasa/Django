@@ -471,17 +471,10 @@ a {
     background-color: #ffffff; }
   .button--registration {
     font-size: 0;
-    width: 60px;
+    color: white;
+    width: 60%;
     height: 62px;
-    padding: 24px 23px 24px 27px;
-    position: relative; }
-    .button--registration::after {
-      content: "";
-      position: absolute;
-      top: 23px;
-      right: 15px;
-      border: 8px solid transparent;
-      border-left: 10px solid #1d2e5b; }
+    padding: 24px 23px 24px 27px; }
     .button--registration:hover, .button--registration:focus {
       background-color: #ffbd30; }
     .button--registration:active {
@@ -490,19 +483,7 @@ a {
       border-left-color: rgba(29, 46, 91, 0.3); }
     @media (min-width: 768px) {
       .button--registration {
-        width: 82px;
-        height: 81px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px; }
-        .button--registration::after {
-          top: 33px;
-          right: 30px; } }
-    @media (min-width: 1440px) {
-      .button--registration {
-        width: 324px;
-        padding-left: 35px; } }
+        height: 81px; } }
   .button--violet {
     background-color: #dfe3f0; }
     .button--violet:hover, .button--violet:focus {
@@ -2471,7 +2452,8 @@ a {
   margin-bottom: 28px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  gap: 20px; }
   @media (min-width: 768px) {
     .registration__form {
       padding: 0 35px;
@@ -2526,7 +2508,9 @@ a {
       padding: 25px 35px 23px 35px; } }
 .registration__submit {
   border: none;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-size: 1em;
+  justify-content: center; }
   @media (min-width: 1440px) {
     .registration__submit {
       font-size: 24px;
