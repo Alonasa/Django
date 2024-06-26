@@ -579,7 +579,7 @@ a {
         padding-top: 80px; } }
     @media (min-width: 1440px) {
       .page-header__content-wrapper--no-js {
-        padding-top: 100px; } }
+        padding-top: 125px; } }
   @media (min-width: 1440px) {
     .page-header__content-wrapper--inner {
       padding-top: 163px; } }
@@ -624,7 +624,8 @@ a {
   @media (min-width: 1440px) {
     .page-nav {
       padding-top: 47px;
-      padding-bottom: 10px; } }
+      padding-bottom: 10px;
+      position: relative; } }
   .page-nav--white {
     background-color: #ffffff;
     color: #192144;
@@ -1523,11 +1524,11 @@ a {
       border-bottom-right-radius: 60px; }
       .directions::before {
         width: 768px;
-        background: url("/static/img/travel_fellows/flags-back@1x.png") no-repeat right 40px top 80px, url("/static/img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 40px top 406px;
+        background: url("/static/img/travel_fellows/flags-back.png") no-repeat right 40px top 80px, url("/static/img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 40px top 406px;
         background-size: 289px 575px, 141px 141px; } }
     @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
       .directions::before {
-        background-image: url("/static/img/travel_fellows/flags-back@2x.png"), url("/static/img/travel_fellows/rectangle-bg-violet.svg"); } }
+        background-image: url("/static/img/travel_fellows/flags-back.png"), url("/static/img/travel_fellows/rectangle-bg-violet.svg"); } }
   @media (min-width: 768px) {
       .directions::after {
         height: 61px;
@@ -1539,11 +1540,11 @@ a {
       padding-bottom: 138px; }
       .directions::before {
         width: 1440px;
-        background: url("/static/img/travel_fellows/flags-back@1x.png") no-repeat right 60px top 88px, url("/static/img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 60px top 89px;
+        background: url("/static/img/travel_fellows/flags-back.png") no-repeat right 60px top 88px, url("/static/img/travel_fellows/rectangle-bg-violet.svg") no-repeat left 60px top 89px;
         background-size: 289px 575px, 141px 141px; } }
     @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
       .directions::before {
-        background-image: url("/static/img/travel_fellows/flags-back@2x.png"), url("/static/img/travel_fellows/rectangle-bg-violet.svg"); } }
+        background-image: url("/static/img/travel_fellows/flags-back.png"), url("/static/img/travel_fellows/rectangle-bg-violet.svg"); } }
 @media (min-width: 1440px) {
   .directions__common-wrapper {
     display: flex;

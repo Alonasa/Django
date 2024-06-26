@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
+import subprocess
 
 from environs import Env
 from pathlib import Path
@@ -138,3 +139,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
+
+
+script_path = os.path.join(BASE_DIR.parent, 'personal_portfolio/build_scss.py')
+
+
+def run_script():
+    subprocess.run(['python', script_path], check=True)
+
+
+if __name__ == '__main__':
+    run_script()

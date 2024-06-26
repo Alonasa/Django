@@ -16,3 +16,7 @@ def fellows(request):
 def auth(request):
     return render(request, "travel_fellows/register.html")
 
+
+def authorize_user(request):
+    if request.POST:
+        return f'<h1>USER WANT TO AUTHORIZE {request["password"]}</h1>'

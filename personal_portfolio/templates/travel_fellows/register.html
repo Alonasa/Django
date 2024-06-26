@@ -12,10 +12,11 @@
                 Already registered? Then
                 <a class="registration__text-url" href="authorization.html">log in</a>.
             </p>
-            <form class="registration__form" method="POST" action="https://echfd">
-                <input class="registration__email" type="email" name="email" placeholder="E-mail"
+            <form class="registration__form" method="POST" action="{% url 'authorize' %}">
+                {% csrf_token %}
+                <input class="registration__email" id="email" type="email" name="email" placeholder="E-mail"
                        aria-label="Your email E-mail">
-                <input class="registration__password" type="password" name="password" placeholder="Password"
+                <input class="registration__password" id="password" type="password" name="password" placeholder="Password"
                        aria-label="Your password Password">
                 <button class="button button--registration registration__submit" type="submit" value="Register">
                     {% if login %} Login {% else %} Register {% endif %}</button>

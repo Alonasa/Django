@@ -6,5 +6,6 @@ urlpatterns = [
     path('', views.fellows, name="fellows"),
     path('destinations/', views.destinations, name="destinations"),
     path('companions/', views.companions, name="companions"),
-    path('authorization/', views.auth, name="authorization")
+    path('authorization/', views.auth, name="authorization"),
+    path('authorize_user/', views.auth, name="authorize")
 ]
