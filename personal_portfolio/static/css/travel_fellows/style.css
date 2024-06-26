@@ -737,7 +737,9 @@ a {
       margin-right: 0; } }
 
 .page-nav__list-link {
-  color: #192144; }
+  color: #192144;
+  color: #ffd74b;
+  font-weight: bold; }
   @media (min-width: 1440px) {
     .page-nav__list-link {
       color: #ffffff; } }
@@ -2608,6 +2610,8 @@ a {
     .location__button {
       width: 324px; } }
 .contact-info {
+  width: 50%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   font-size: 16px;

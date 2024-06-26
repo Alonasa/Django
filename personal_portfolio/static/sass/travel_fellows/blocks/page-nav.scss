@@ -171,6 +171,8 @@
 
 .page-nav__list-link {
   color: $dark-blue;
+  color: #ffd74b;
+  font-weight: bold;
 
   @media (min-width: $desktop) {
     color: $white;
