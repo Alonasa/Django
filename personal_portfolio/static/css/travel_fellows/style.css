@@ -815,7 +815,8 @@ a {
   padding: 0;
   border: none;
   background-color: transparent;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .page-nav__toggler::before, .page-nav__toggler::after {
     content: "";
     position: absolute;
@@ -2230,10 +2231,7 @@ a {
   padding: 0 50px 0 25px; }
   @media (min-width: 768px) {
     .add-profile__options-list {
-      padding-left: 92px;
-      padding-right: 34px;
-      padding-top: 44px;
-      padding-bottom: 35px;
+      padding: 44px 34px 35px 92px;
       position: relative; }
       .add-profile__options-list::after {
         content: "";
@@ -2257,6 +2255,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 20px;
   padding: 12px 0 9px 0;
   line-height: 1.38;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -2363,6 +2362,7 @@ a {
   background-color: #192144;
   color: #ffffff;
   padding-top: 70px;
+  margin-top: 20px;
   padding-bottom: 12px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -2372,8 +2372,7 @@ a {
     padding-top: 100px; }
     @media (min-width: 768px) {
       .registration--upped {
-        padding-top: 135px;
-        margin-top: -60px; } }
+        padding-top: 135px; } }
     @media (min-width: 1440px) {
       .registration--upped {
         padding-top: 166px; } }

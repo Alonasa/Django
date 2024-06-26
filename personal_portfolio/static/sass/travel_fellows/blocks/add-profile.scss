@@ -112,10 +112,7 @@
   padding: 0 50px 0 25px;
 
   @media (min-width: $tablet) {
-    padding-left: 92px;
-    padding-right: 34px;
-    padding-top: 44px;
-    padding-bottom: 35px;
+    padding: 44px 34px 35px 92px;
     position: relative;
 
     &::after {
@@ -147,6 +144,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 20px;
   padding: 12px 0 9px 0;
   line-height: 1.38;
   border-bottom: 1px solid rgba($black, 0.05);
