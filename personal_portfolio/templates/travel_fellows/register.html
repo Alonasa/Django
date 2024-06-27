@@ -10,16 +10,17 @@
             <p class="text text--white registration__text">
                 Register, it’s quick and free!<br>
                 Already registered? Then
-                <a class="registration__text-url" href="authorization.html">log in</a>.
+                <a class="registration__text-url" href="{% url 'authorize' %}">log in</a>.
             </p>
-            <form class="registration__form" method="POST" action="{% url 'authorize' %}">
+            <form class="registration__form" method="POST" action="{% url 'auth-user' %}">
                 {% csrf_token %}
-                <input class="registration__email" id="email" type="email" name="email" placeholder="E-mail"
-                       aria-label="Your email E-mail">
-                <input class="registration__password" id="password" type="password" name="password" placeholder="Password"
-                       aria-label="Your password Password">
-                <button class="button button--registration registration__submit" type="submit" value="Register">
-                    {% if login %} Login {% else %} Register {% endif %}</button>
+                {{ form }}
+{#                <input class="registration__email" id="email" type="email" name="email" placeholder="E-mail"#}
+{#                       aria-label="Your email E-mail">#}
+{#                <input class="registration__password" id="password" type="password" name="password" placeholder="Password"#}
+{#                       aria-label="Your password Password">#}
+{#                <button class="button button--registration registration__submit" type="submit" value="Register">#}
+{#                    {% if login %} Login {% else %} Register {% endif %}</button>}#}
             </form>
             <p class="text text--white registration__text registration__text--bottom">
                 Have a questions? <br class="registration__text-br">Make a request!
