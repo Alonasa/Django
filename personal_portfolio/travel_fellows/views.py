@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+
 from .forms import AuthorizeForm
 
 
@@ -22,8 +23,15 @@ def auth(request):
 
 def authorize_user(request):
     if request.method == 'POST':
+        form = AuthorizeForm(request.POST)
         password = request.POST.get('password', '')
-        if password == 'correct_password':
-            return HttpResponse('User authorized successfully!')
+        email = request.POST.get('email', '')
+        if form.is_valid():
+            if password == 'correct_password':
+                return HttpResponse('User authorized successfully!')
+            else:
+                return HttpResponse(f'<h1>USER WANT TO AUTHORIZE {password} {email}</h1>')
         else:
-            return HttpResponse(f'<h1>USER WANT TO AUTHORIZE {password}</h1>')
+            return render(request, "travel_fellows/register", context={"form": form})
+    else:
+        form = AuthorizeForm()
