@@ -1,13 +1,20 @@
+from wsgiref import validate
 from django import forms
+from django.core import validators
+from django.core.validators import EmailValidator
 
 
 class AuthorizeForm(forms.Form):
     email = forms.EmailField(
         label='',
-        required=True,
-        widget=forms.TextInput(attrs={'id': 'email', 'class': 'registration__email', 'name': 'email', 'placeholder': 'E-mail'}))
+        widget=forms.TextInput(
+            attrs={'id': 'email', 'class': 'registration__email', 'name': 'email', 'placeholder': 'E-mail'}),
+    )
     password = forms.CharField(
         label='',
-        required=True,
-        widget=forms.PasswordInput(attrs={'id': 'password', 'class': 'registration__password', 'type': 'password', 'name': 'password',
-                                          'placeholder': 'Password'}))
+        widget=forms.PasswordInput(
+            attrs={'id': 'password', 'class': 'registration__password', 'type': 'password', 'name': 'password',
+                   'placeholder': 'Password'}),
+        min_length=8
+    )
+
