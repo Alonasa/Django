@@ -8,9 +8,12 @@
                 {% if login %}Login{% else %} Register {% endif %}
             </h2>
             <p class="text text--white registration__text">
-                Register, it’s quick and free!<br>
-                Already registered? Then
-                <a class="registration__text-url" href="{% url 'authorize' %}">log in</a>.
+                {% if not login %}
+                    Register, it’s quick and free!<br>
+
+                    Already registered? Then
+                    <a class="registration__text-url" href="{% url 'authorize' %}">log in</a>.
+                {% endif %}
             </p>
             <form class="registration__form" method="POST" action="{% url 'auth-user' %}">
                 {% csrf_token %}

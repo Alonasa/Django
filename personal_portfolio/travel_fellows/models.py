@@ -34,5 +34,3 @@ class UserPlans(models.Model):
     dates_start = models.DateField()
     dates_end = models.DateField()
     kids = models.BooleanField(default=False)
-
-
