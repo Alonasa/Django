@@ -1,8 +1,6 @@
-from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
-from django.views.decorators.cache import never_cache
 
 from .forms import AuthorizeForm, RegisterForm
 from .models import User
@@ -24,10 +22,9 @@ def auth(request):
     form = RegisterForm(request.POST)
     return render(request, "travel_fellows/register.html", {"form": form, "login": False})
 
-
-def authorize_user(request):
-    form = AuthorizeForm(request.POST)
-    if request.method == 'POST':
+class AuthorizeUser(View):
+    def post(self, request):
+        form = AuthorizeForm()
         password = form.cleaned_data['password']
         email = form.cleaned_data['email']
         if form.is_valid():
@@ -37,8 +34,10 @@ def authorize_user(request):
                 return HttpResponse(f'<h1>USER WANT TO AUTHORIZE {password} {email}</h1>')
         else:
             return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors})
-    else:
+
+    def get(self, request):
         form = AuthorizeForm()
+        return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors})
 
 
 class RegisterUser(View):
