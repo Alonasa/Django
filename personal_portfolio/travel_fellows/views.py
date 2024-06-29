@@ -1,6 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views import View
 from django.views.decorators.cache import never_cache
 
 from .forms import AuthorizeForm, RegisterForm
@@ -40,9 +41,13 @@ def authorize_user(request):
         form = AuthorizeForm()
 
 
-def register_user(request):
-    form = RegisterForm(request.POST)
-    if request.method == 'POST':
+class RegisterUser(View):
+    def get(self, request):
+        form = AuthorizeForm()
+        return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors})
+
+    def post(self, request):
+        form = RegisterForm(request.POST)
         if form.is_valid():
             password_confirm = form.cleaned_data['password']
             password = form.cleaned_data['password_confirm']
@@ -56,5 +61,3 @@ def register_user(request):
                 return HttpResponse(f'Registration went wrong')
         else:
             return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors})
-    else:
-        form = AuthorizeForm()
