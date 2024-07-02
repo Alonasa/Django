@@ -1,5 +1,9 @@
+import logging
+import pdb
+
+from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 
 from .forms import AuthorizeForm, RegisterForm
@@ -19,30 +23,50 @@ def fellows(request):
 
 
 def auth(request):
-    form = RegisterForm(request.POST)
-    return render(request, "travel_fellows/register.html", {"form": form, "login": False})
+    print("HELLO")
+    if request.method == 'POST':
+        form = AuthorizeForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+            print(email)
+            user = authenticate(request, username=email, password=password)
+            if user is not None:
+                return HttpResponse("USER Logged In")
+            else:
+                return redirect("auth-form")
+    else:
+        form = AuthorizeForm()
+
+    return render(request, "travel_fellows/register.html", {"form": form, "login": True})
+
 
 class AuthorizeUser(View):
-    def post(self, request):
-        form = AuthorizeForm()
-        password = form.cleaned_data['password']
-        email = form.cleaned_data['email']
-        if form.is_valid():
-            if password == 'correct_password':
-                return HttpResponse('User authorized successfully!')
-            else:
-                return HttpResponse(f'<h1>USER WANT TO AUTHORIZE {password} {email}</h1>')
-        else:
-            return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors})
+    print("AUTH FUNC")
 
     def get(self, request):
         form = AuthorizeForm()
         return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors})
 
+    def post(self, request):
+        form = AuthorizeForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+            print(email)
+
+            user = authenticate(request, username=email, password=password)
+            if user is not None:
+                return HttpResponse("USER Logged In")
+            else:
+                return redirect("auth-form")
+        else:
+            return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors, "login": True})
 
 class RegisterUser(View):
+    print("CHECK REGISTER")
     def get(self, request):
-        form = AuthorizeForm()
+        form = RegisterForm()
         return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors})
 
     def post(self, request):

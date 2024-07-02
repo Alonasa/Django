@@ -147,6 +147,26 @@ script_path = os.path.join(BASE_DIR.parent, 'personal_portfolio/build_scss.py')
 def run_script():
     subprocess.run(['python', script_path], check=True)
 
+#
+# LOGGING_CONFIG = 'logging.config.dictConfig'
+#
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#             'level': 'DEBUG',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }
 
 if __name__ == '__main__':
     run_script()

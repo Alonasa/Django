@@ -1,7 +1,10 @@
 from django import forms
+from django.forms import ModelForm
+
+from .models import User
 
 
-class AuthorizeForm(forms.Form):
+class AuthorizeForm(ModelForm):
     email = forms.EmailField(
         label='',
         widget=forms.TextInput(
@@ -16,6 +19,10 @@ class AuthorizeForm(forms.Form):
         min_length=8,
         error_messages={"required": "*Required Field", "max_length": "Min password length is 8 Characters"}
     )
+
+    class Meta:
+        model = User
+        fields = ['email', 'password']
 
 
 class RegisterForm(AuthorizeForm):
