@@ -1,0 +1,318 @@
+INFO 2024-07-03 10:28:41,870 autoreload 3980 12584 Watching for file changes with StatReloader
+INFO 2024-07-03 10:29:42,153 autoreload 3980 12584 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 10:29:43,821 autoreload 18028 21012 Watching for file changes with StatReloader
+INFO 2024-07-03 10:35:49,634 autoreload 18028 21012 A:\DJANGO\portfolio_projects\personal_portfolio\manage.py changed, reloading.
+INFO 2024-07-03 10:35:50,975 autoreload 16280 18548 Watching for file changes with StatReloader
+INFO 2024-07-03 10:37:16,456 autoreload 16280 18548 A:\DJANGO\portfolio_projects\personal_portfolio\manage.py changed, reloading.
+INFO 2024-07-03 10:37:17,860 autoreload 13716 15884 Watching for file changes with StatReloader
+INFO 2024-07-03 10:37:34,040 autoreload 13716 15884 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 10:37:35,600 autoreload 20188 4080 Watching for file changes with StatReloader
+INFO 2024-07-03 10:38:42,267 autoreload 6632 19988 Watching for file changes with StatReloader
+INFO 2024-07-03 10:41:03,997 autoreload 6632 19988 A:\DJANGO\portfolio_projects\personal_portfolio\manage.py changed, reloading.
+INFO 2024-07-03 10:41:05,507 autoreload 15364 4432 Watching for file changes with StatReloader
+INFO 2024-07-03 10:41:42,544 autoreload 15364 4432 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\urls.py changed, reloading.
+INFO 2024-07-03 10:41:44,257 autoreload 4372 10708 Watching for file changes with StatReloader
+INFO 2024-07-03 10:42:11,692 autoreload 4372 10708 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 10:42:12,923 autoreload 16280 18548 Watching for file changes with StatReloader
+INFO 2024-07-03 10:42:51,364 autoreload 16280 18548 A:\DJANGO\portfolio_projects\personal_portfolio\personal_portfolio\settings.py changed, reloading.
+INFO 2024-07-03 10:43:07,486 autoreload 14512 15868 Watching for file changes with StatReloader
+INFO 2024-07-03 10:43:24,298 autoreload 14512 15868 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
+INFO 2024-07-03 10:43:26,353 autoreload 19072 12668 Watching for file changes with StatReloader
+INFO 2024-07-03 10:59:24,033 autoreload 19072 12668 A:\DJANGO\portfolio_projects\personal_portfolio\personal_portfolio\settings.py changed, reloading.
+INFO 2024-07-03 10:59:25,439 autoreload 12992 15860 Watching for file changes with StatReloader
+INFO 2024-07-03 11:02:09,816 autoreload 12992 15860 A:\DJANGO\portfolio_projects\personal_portfolio\personal_portfolio\settings.py changed, reloading.
+INFO 2024-07-03 11:02:11,428 autoreload 14924 20808 Watching for file changes with StatReloader
+INFO 2024-07-03 11:02:47,448 autoreload 14924 20808 A:\DJANGO\portfolio_projects\personal_portfolio\personal_portfolio\settings.py changed, reloading.
+INFO 2024-07-03 11:02:49,886 autoreload 7016 4668 Watching for file changes with StatReloader
+INFO 2024-07-03 11:06:32,725 autoreload 7016 4668 A:\DJANGO\portfolio_projects\personal_portfolio\portfolio\urls.py changed, reloading.
+INFO 2024-07-03 11:06:34,018 autoreload 408 17036 Watching for file changes with StatReloader
+INFO 2024-07-03 11:12:06,988 autoreload 16512 4316 Watching for file changes with StatReloader
+INFO 2024-07-03 11:12:57,619 autoreload 16512 4316 A:\DJANGO\portfolio_projects\personal_portfolio\personal_portfolio\settings.py changed, reloading.
+INFO 2024-07-03 11:13:00,460 autoreload 20536 10628 Watching for file changes with StatReloader
+INFO 2024-07-03 11:13:58,469 autoreload 20492 19608 Watching for file changes with StatReloader
+INFO 2024-07-03 11:14:07,819 autoreload 20492 19608 A:\DJANGO\portfolio_projects\personal_portfolio\personal_portfolio\settings.py changed, reloading.
+INFO 2024-07-03 11:14:09,569 autoreload 3016 8080 Watching for file changes with StatReloader
+INFO 2024-07-03 11:18:22,441 autoreload 3016 8080 A:\DJANGO\portfolio_projects\personal_portfolio\manage.py changed, reloading.
+INFO 2024-07-03 11:18:26,617 autoreload 9400 20712 Watching for file changes with StatReloader
+INFO 2024-07-03 11:19:21,107 autoreload 9400 20712 A:\DJANGO\portfolio_projects\personal_portfolio\manage.py changed, reloading.
+INFO 2024-07-03 11:19:23,701 autoreload 20684 3152 Watching for file changes with StatReloader
+INFO 2024-07-03 11:19:27,661 autoreload 20684 3152 A:\DJANGO\portfolio_projects\personal_portfolio\manage.py changed, reloading.
+INFO 2024-07-03 11:19:30,210 autoreload 3116 4736 Watching for file changes with StatReloader
+INFO 2024-07-03 11:22:49,465 autoreload 12540 6960 Watching for file changes with StatReloader
+INFO 2024-07-03 11:22:57,065 basehttp 12540 20332 - Broken pipe from ('127.0.0.1', 14060)
+INFO 2024-07-03 11:22:58,775 basehttp 12540 7416 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139593
+INFO 2024-07-03 11:23:00,776 basehttp 12540 2160 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-03 11:23:00,805 basehttp 12540 7416 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-03 11:23:00,865 basehttp 12540 14824 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-03 11:23:00,959 basehttp 12540 14316 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-03 11:23:00,978 basehttp 12540 7416 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-03 11:23:01,334 basehttp 12540 16252 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203249
+INFO 2024-07-03 11:23:01,339 basehttp 12540 7752 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-03 11:23:01,357 basehttp 12540 16252 "GET /static/img/travel_fellows/photo-account-tablet@1x.webp HTTP/1.1" 200 3190
+INFO 2024-07-03 11:23:01,380 basehttp 12540 16252 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-03 11:23:01,538 basehttp 12540 16252 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-03 11:23:01,591 basehttp 12540 16252 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-03 11:23:01,620 basehttp 12540 16252 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-03 11:23:02,215 basehttp 12540 16252 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-03 11:23:02,234 basehttp 12540 16252 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-03 11:23:02,238 basehttp 12540 7752 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-03 11:23:02,248 basehttp 12540 14316 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-03 11:23:02,249 basehttp 12540 7416 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-03 11:23:02,251 basehttp 12540 2160 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-03 11:23:02,257 basehttp 12540 14824 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-03 11:23:02,284 basehttp 12540 7752 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-03 11:23:02,285 basehttp 12540 16252 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-03 11:23:02,683 basehttp 12540 7752 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-03 11:23:02,695 basehttp 12540 16252 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-03 11:23:05,649 basehttp 12540 16252 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+WARNING 2024-07-03 11:23:05,768 log 12540 7752 Not Found: /favicon.ico
+WARNING 2024-07-03 11:23:05,771 basehttp 12540 7752 "GET /favicon.ico HTTP/1.1" 404 2443
+WARNING 2024-07-03 11:23:08,867 log 12540 7752 Not Found: /favicon.ico
+WARNING 2024-07-03 11:23:08,871 basehttp 12540 7752 "GET /favicon.ico HTTP/1.1" 404 2443
+INFO 2024-07-03 11:29:10,711 autoreload 12540 6960 A:\DJANGO\portfolio_projects\personal_portfolio\personal_portfolio\settings.py changed, reloading.
+INFO 2024-07-03 11:29:12,844 autoreload 7416 12264 Watching for file changes with StatReloader
+INFO 2024-07-03 11:29:58,331 autoreload 7416 12264 A:\DJANGO\portfolio_projects\personal_portfolio\manage.py changed, reloading.
+INFO 2024-07-03 11:53:06,773 autoreload 15884 14960 Watching for file changes with StatReloader
+INFO 2024-07-03 11:55:29,776 autoreload 5272 9880 Watching for file changes with StatReloader
+INFO 2024-07-03 11:55:53,777 autoreload 16728 21332 Watching for file changes with StatReloader
+INFO 2024-07-03 11:57:36,802 basehttp 15884 2192 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 11:58:10,539 autoreload 18988 16168 Watching for file changes with StatReloader
+INFO 2024-07-03 11:58:23,062 autoreload 14844 7556 Watching for file changes with StatReloader
+INFO 2024-07-03 11:59:09,318 autoreload 18760 10464 Watching for file changes with StatReloader
+INFO 2024-07-03 12:01:23,650 autoreload 14984 7968 Watching for file changes with StatReloader
+INFO 2024-07-03 12:02:17,087 autoreload 15468 15268 Watching for file changes with StatReloader
+INFO 2024-07-03 12:02:18,568 basehttp 15468 4536 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:02:57,860 basehttp 15468 5360 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 12:03:41,040 autoreload 15468 15268 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 12:03:43,674 autoreload 1948 20708 Watching for file changes with StatReloader
+INFO 2024-07-03 12:03:45,765 basehttp 1948 7052 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:05:10,838 autoreload 1948 20708 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 12:05:12,275 autoreload 19392 16432 Watching for file changes with StatReloader
+INFO 2024-07-03 12:05:13,441 basehttp 19392 1416 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:05:20,128 basehttp 19392 1416 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:05:43,172 basehttp 19392 17028 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 12:07:18,936 basehttp 19392 17028 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:07:19,690 autoreload 19392 16432 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 12:07:21,568 autoreload 1804 1552 Watching for file changes with StatReloader
+INFO 2024-07-03 12:07:35,888 basehttp 1804 19160 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 12:08:16,194 basehttp 1804 19160 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 12:09:23,236 autoreload 1804 1552 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 12:09:24,885 autoreload 14124 6276 Watching for file changes with StatReloader
+INFO 2024-07-03 12:09:27,080 basehttp 14124 16412 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:09:41,008 basehttp 14124 16412 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 12:10:44,864 basehttp 14124 16412 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:11:05,516 basehttp 14124 16412 "GET / HTTP/1.1" 200 1173
+INFO 2024-07-03 12:11:05,897 basehttp 14124 16412 "GET /static/css/main.css HTTP/1.1" 200 171
+INFO 2024-07-03 12:11:06,177 basehttp 14124 16412 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-07-03 12:11:06,236 basehttp 14124 16412 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4218
+INFO 2024-07-03 12:11:06,702 basehttp 14124 16412 "GET /static/admin/css/base.css HTTP/1.1" 200 21764
+INFO 2024-07-03 12:11:06,732 basehttp 14124 144 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-07-03 12:11:06,757 basehttp 14124 16412 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-07-03 12:11:06,763 basehttp 14124 144 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-07-03 12:11:06,782 basehttp 14124 16412 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-07-03 12:11:06,908 basehttp 14124 16412 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-07-03 12:11:07,005 basehttp 14124 16412 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-07-03 12:11:11,205 basehttp 14124 16412 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-07-03 12:11:11,347 basehttp 14124 16412 "GET /admin/ HTTP/1.1" 200 6677
+INFO 2024-07-03 12:11:11,541 basehttp 14124 16412 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+WARNING 2024-07-03 12:11:11,878 basehttp 14124 144 "GET /static/img/travel_fellows/icon-changelink.svg HTTP/1.1" 404 1873
+WARNING 2024-07-03 12:11:11,879 basehttp 14124 16412 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+INFO 2024-07-03 12:11:16,951 basehttp 14124 7556 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9106
+INFO 2024-07-03 12:11:17,188 basehttp 14124 7556 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-07-03 12:11:17,196 basehttp 14124 20584 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-07-03 12:11:17,213 basehttp 14124 7556 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-07-03 12:11:17,217 basehttp 14124 20584 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-07-03 12:11:17,221 basehttp 14124 7556 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-07-03 12:11:17,226 basehttp 14124 20584 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-07-03 12:11:17,236 basehttp 14124 7556 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-07-03 12:11:17,237 basehttp 14124 20584 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-07-03 12:11:17,262 basehttp 14124 7556 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-07-03 12:11:17,338 basehttp 14124 9628 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-07-03 12:11:17,472 basehttp 14124 9628 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+WARNING 2024-07-03 12:11:18,802 basehttp 14124 9628 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+INFO 2024-07-03 12:11:21,914 basehttp 14124 7556 "GET /admin/travel_fellows/user/2/change/ HTTP/1.1" 200 10505
+INFO 2024-07-03 12:11:22,181 basehttp 14124 5856 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-07-03 12:11:22,202 basehttp 14124 7556 "GET /static/admin/css/forms.css HTTP/1.1" 200 9130
+INFO 2024-07-03 12:11:22,332 basehttp 14124 20584 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-07-03 12:11:22,392 basehttp 14124 7556 "GET /static/admin/css/widgets.css HTTP/1.1" 200 12080
+INFO 2024-07-03 12:11:22,506 basehttp 14124 7556 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+WARNING 2024-07-03 12:11:23,817 basehttp 14124 7556 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-07-03 12:11:36,472 log 14124 20584 Forbidden (CSRF token from POST incorrect.): /portfolio/fellows/auth-form/
+WARNING 2024-07-03 12:11:36,474 basehttp 14124 20584 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 403 2577
+WARNING 2024-07-03 12:12:32,587 log 14124 13652 Forbidden (CSRF token from POST incorrect.): /portfolio/fellows/auth-form/
+WARNING 2024-07-03 12:12:32,588 basehttp 14124 13652 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 403 2577
+INFO 2024-07-03 12:12:37,793 basehttp 14124 13652 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:13:35,087 autoreload 14124 6276 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 12:13:36,734 autoreload 12936 14772 Watching for file changes with StatReloader
+INFO 2024-07-03 12:13:38,047 basehttp 12936 21436 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 12:14:01,215 basehttp 12936 21436 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 16:32:18,997 basehttp 14984 16960 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139593
+INFO 2024-07-03 16:32:44,163 basehttp 14984 20060 "GET /portfolio/fellows/ HTTP/1.1" 200 31891
+INFO 2024-07-03 16:32:44,882 basehttp 14984 20060 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-03 16:32:44,884 basehttp 14984 4504 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-03 16:32:44,905 basehttp 14984 20060 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-03 16:32:44,908 basehttp 14984 4504 "GET /static/img/travel_fellows/firsova-desktop@1x.webp HTTP/1.1" 200 39212
+INFO 2024-07-03 16:32:44,929 basehttp 14984 4504 "GET /static/img/travel_fellows/demin-desktop@1x.webp HTTP/1.1" 200 12932
+INFO 2024-07-03 16:32:44,955 basehttp 14984 4504 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-03 16:32:44,970 basehttp 14984 4504 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-03 16:32:44,985 basehttp 14984 4504 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-03 16:32:45,000 basehttp 14984 4504 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-03 16:32:45,024 basehttp 14984 4504 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-03 16:32:46,149 basehttp 14984 20060 "GET /static/img/travel_fellows/globe-back-desktop@1x.jpg HTTP/1.1" 200 29406
+INFO 2024-07-03 16:32:46,150 basehttp 14984 4504 "GET /static/img/travel_fellows/traveller-illustration-desktop@1x.png HTTP/1.1" 200 17005
+INFO 2024-07-03 16:32:46,167 basehttp 14984 20060 "GET /static/img/travel_fellows/rectangle-bg-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-03 16:32:46,182 basehttp 14984 20060 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-03 16:32:46,200 basehttp 14984 20060 "GET /static/img/travel_fellows/rectangle-bg-violet.svg HTTP/1.1" 200 420
+INFO 2024-07-03 16:32:46,207 basehttp 14984 4504 "GET /static/img/travel_fellows/about-desktop@1x.png HTTP/1.1" 200 300932
+INFO 2024-07-03 16:32:46,232 basehttp 14984 4504 "GET /static/img/travel_fellows/user.svg HTTP/1.1" 200 292
+INFO 2024-07-03 16:32:46,244 basehttp 14984 20060 "GET /static/img/travel_fellows/rogovaya-back-desktop@1x.png HTTP/1.1" 200 39349
+INFO 2024-07-03 16:32:46,255 basehttp 14984 4504 "GET /static/img/travel_fellows/smolov-back-desktop@1x.png HTTP/1.1" 200 20932
+INFO 2024-07-03 16:32:46,274 basehttp 14984 20060 "GET /static/img/travel_fellows/rates@1x.png HTTP/1.1" 200 6635
+INFO 2024-07-03 16:32:46,289 basehttp 14984 4504 "GET /static/img/travel_fellows/business.svg HTTP/1.1" 200 448
+INFO 2024-07-03 16:57:26,526 basehttp 14984 12940 - Broken pipe from ('127.0.0.1', 11731)
+INFO 2024-07-03 16:58:28,981 autoreload 14472 9424 Watching for file changes with StatReloader
+INFO 2024-07-03 16:58:30,032 basehttp 14472 19060 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7133
+INFO 2024-07-03 16:59:13,465 autoreload 14472 9424 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 16:59:22,695 autoreload 14768 20468 Watching for file changes with StatReloader
+INFO 2024-07-03 16:59:23,700 basehttp 14768 21188 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7655
+INFO 2024-07-03 16:59:39,663 basehttp 14768 21188 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 17:00:11,824 autoreload 22012 4760 Watching for file changes with StatReloader
+INFO 2024-07-03 17:00:47,181 autoreload 2864 14548 Watching for file changes with StatReloader
+INFO 2024-07-03 22:20:08,893 basehttp 2864 17796 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 22:20:44,543 basehttp 2864 22092 "GET /portfolio/fellows/companions/ HTTP/1.1" 200 90311
+WARNING 2024-07-03 22:20:45,268 log 2864 22092 Not Found: /portfolio/fellows/companions/img/firsova-desktop@1x.webp
+WARNING 2024-07-03 22:20:45,272 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/firsova-desktop@1x.webp HTTP/1.1" 404 4410
+WARNING 2024-07-03 22:20:45,407 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-sri-lanka.svg
+WARNING 2024-07-03 22:20:45,411 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-sri-lanka.svg HTTP/1.1" 404 4395
+WARNING 2024-07-03 22:20:45,534 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-thailand.svg
+WARNING 2024-07-03 22:20:45,540 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-thailand.svg HTTP/1.1" 404 4392
+WARNING 2024-07-03 22:20:45,651 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-seychelles.svg
+WARNING 2024-07-03 22:20:45,655 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-seychelles.svg HTTP/1.1" 404 4398
+WARNING 2024-07-03 22:20:45,887 log 2864 22092 Not Found: /portfolio/fellows/companions/img/demin-desktop@1x.webp
+WARNING 2024-07-03 22:20:45,898 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/demin-desktop@1x.webp HTTP/1.1" 404 4404
+WARNING 2024-07-03 22:20:46,020 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-belgium.svg
+WARNING 2024-07-03 22:20:46,033 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-belgium.svg HTTP/1.1" 404 4389
+WARNING 2024-07-03 22:20:46,163 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-czech.svg
+WARNING 2024-07-03 22:20:46,166 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-czech.svg HTTP/1.1" 404 4383
+WARNING 2024-07-03 22:20:46,242 log 2864 22092 Not Found: /portfolio/fellows/companions/img/smolov-desktop@1x.webp
+WARNING 2024-07-03 22:20:46,253 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/smolov-desktop@1x.webp HTTP/1.1" 404 4407
+WARNING 2024-07-03 22:20:46,325 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-usa.svg
+WARNING 2024-07-03 22:20:46,333 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-usa.svg HTTP/1.1" 404 4377
+WARNING 2024-07-03 22:20:46,466 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-australia.svg
+WARNING 2024-07-03 22:20:46,469 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-australia.svg HTTP/1.1" 404 4395
+WARNING 2024-07-03 22:20:46,609 log 2864 22092 Not Found: /portfolio/fellows/companions/img/flag-dominica.svg
+WARNING 2024-07-03 22:20:46,635 basehttp 2864 22092 "GET /portfolio/fellows/companions/img/flag-dominica.svg HTTP/1.1" 404 4392
+WARNING 2024-07-03 22:20:46,722 log 2864 5588 Not Found: /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp
+WARNING 2024-07-03 22:20:46,724 basehttp 2864 5588 "GET /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp HTTP/1.1" 404 4413
+WARNING 2024-07-03 22:20:47,054 log 2864 15284 Not Found: /portfolio/fellows/companions/img/flag-germany.svg
+WARNING 2024-07-03 22:20:47,131 log 2864 22300 Not Found: /portfolio/fellows/companions/img/flag-united-kingdom.svg
+WARNING 2024-07-03 22:20:47,135 basehttp 2864 15284 "GET /portfolio/fellows/companions/img/flag-germany.svg HTTP/1.1" 404 4389
+WARNING 2024-07-03 22:20:47,147 basehttp 2864 22300 "GET /portfolio/fellows/companions/img/flag-united-kingdom.svg HTTP/1.1" 404 4410
+INFO 2024-07-03 22:20:47,164 basehttp 2864 22092 "GET /static/img/travel_fellows/dots.svg HTTP/1.1" 200 301
+INFO 2024-07-03 22:20:47,181 basehttp 2864 22300 "GET /static/img/travel_fellows/show-more-plus.svg HTTP/1.1" 200 268
+INFO 2024-07-03 22:20:47,182 basehttp 2864 15284 "GET /static/img/travel_fellows/heart.svg HTTP/1.1" 200 360
+INFO 2024-07-03 22:20:47,202 basehttp 2864 5588 "GET /static/img/travel_fellows/heart-active.svg HTTP/1.1" 200 219
+INFO 2024-07-03 22:20:47,453 basehttp 2864 9040 "GET /static/img/travel_fellows/filter.svg HTTP/1.1" 200 193
+INFO 2024-07-03 22:20:47,502 basehttp 2864 20240 "GET /static/img/travel_fellows/return.svg HTTP/1.1" 200 251
+INFO 2024-07-03 22:21:06,681 basehttp 2864 9040 "GET /portfolio/fellows/companions/ HTTP/1.1" 200 90311
+WARNING 2024-07-03 22:21:07,322 log 2864 9040 Not Found: /portfolio/fellows/companions/img/firsova-desktop@1x.webp
+WARNING 2024-07-03 22:21:07,327 basehttp 2864 9040 "GET /portfolio/fellows/companions/img/firsova-desktop@1x.webp HTTP/1.1" 404 4410
+INFO 2024-07-03 22:21:07,344 autoreload 2864 14548 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 22:21:12,592 autoreload 20252 21108 Watching for file changes with StatReloader
+INFO 2024-07-03 22:22:17,176 autoreload 17496 1092 Watching for file changes with StatReloader
+INFO 2024-07-03 22:22:19,134 basehttp 17496 22068 "GET /portfolio/fellows/ HTTP/1.1" 200 31891
+INFO 2024-07-03 22:22:24,464 basehttp 17496 22068 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7655
+INFO 2024-07-03 22:22:59,936 basehttp 17496 22068 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 22:25:39,544 autoreload 20928 13760 Watching for file changes with StatReloader
+INFO 2024-07-03 22:25:59,611 autoreload 8708 15300 Watching for file changes with StatReloader
+INFO 2024-07-03 22:27:08,751 autoreload 8100 3928 Watching for file changes with StatReloader
+INFO 2024-07-03 22:27:13,768 basehttp 8100 8484 "GET /portfolio/fellows HTTP/1.1" 301 0
+INFO 2024-07-03 22:27:13,827 basehttp 8100 13184 "GET /portfolio/fellows/ HTTP/1.1" 200 31891
+INFO 2024-07-03 22:27:40,029 basehttp 8100 10596 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7655
+INFO 2024-07-03 22:28:19,462 basehttp 8100 10596 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 22:36:26,545 autoreload 8100 3928 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 22:36:28,621 autoreload 15904 19916 Watching for file changes with StatReloader
+INFO 2024-07-03 22:36:29,335 basehttp 15904 15252 "GET /portfolio/fellows/companions/ HTTP/1.1" 200 90311
+WARNING 2024-07-03 22:36:30,407 log 15904 15252 Not Found: /portfolio/fellows/companions/img/firsova-desktop@1x.webp
+WARNING 2024-07-03 22:36:30,409 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/firsova-desktop@1x.webp HTTP/1.1" 404 4410
+WARNING 2024-07-03 22:36:30,446 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-sri-lanka.svg
+WARNING 2024-07-03 22:36:30,448 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-sri-lanka.svg HTTP/1.1" 404 4395
+WARNING 2024-07-03 22:36:30,574 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-thailand.svg
+WARNING 2024-07-03 22:36:30,576 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-thailand.svg HTTP/1.1" 404 4392
+WARNING 2024-07-03 22:36:30,606 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-seychelles.svg
+WARNING 2024-07-03 22:36:30,608 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-seychelles.svg HTTP/1.1" 404 4398
+WARNING 2024-07-03 22:36:30,639 log 15904 15252 Not Found: /portfolio/fellows/companions/img/demin-desktop@1x.webp
+WARNING 2024-07-03 22:36:30,641 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/demin-desktop@1x.webp HTTP/1.1" 404 4404
+WARNING 2024-07-03 22:36:30,673 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-belgium.svg
+WARNING 2024-07-03 22:36:30,675 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-belgium.svg HTTP/1.1" 404 4389
+WARNING 2024-07-03 22:36:30,707 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-czech.svg
+WARNING 2024-07-03 22:36:30,709 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-czech.svg HTTP/1.1" 404 4383
+WARNING 2024-07-03 22:36:30,736 log 15904 15252 Not Found: /portfolio/fellows/companions/img/smolov-desktop@1x.webp
+WARNING 2024-07-03 22:36:30,738 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/smolov-desktop@1x.webp HTTP/1.1" 404 4407
+WARNING 2024-07-03 22:36:30,800 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-usa.svg
+WARNING 2024-07-03 22:36:30,801 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-usa.svg HTTP/1.1" 404 4377
+WARNING 2024-07-03 22:36:30,825 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-australia.svg
+WARNING 2024-07-03 22:36:30,827 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-australia.svg HTTP/1.1" 404 4395
+WARNING 2024-07-03 22:36:30,855 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-dominica.svg
+WARNING 2024-07-03 22:36:30,857 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-dominica.svg HTTP/1.1" 404 4392
+WARNING 2024-07-03 22:36:30,890 log 15904 15252 Not Found: /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp
+WARNING 2024-07-03 22:36:30,891 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp HTTP/1.1" 404 4413
+WARNING 2024-07-03 22:36:30,926 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-united-kingdom.svg
+WARNING 2024-07-03 22:36:30,927 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-united-kingdom.svg HTTP/1.1" 404 4410
+WARNING 2024-07-03 22:36:30,962 log 15904 15252 Not Found: /portfolio/fellows/companions/img/flag-germany.svg
+WARNING 2024-07-03 22:36:30,964 basehttp 15904 15252 "GET /portfolio/fellows/companions/img/flag-germany.svg HTTP/1.1" 404 4389
+INFO 2024-07-03 22:36:33,577 basehttp 15904 15252 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7655
+INFO 2024-07-03 22:36:53,377 basehttp 15904 15252 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7435
+INFO 2024-07-03 22:39:06,082 autoreload 15904 19916 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
+INFO 2024-07-03 22:39:07,612 autoreload 10696 7896 Watching for file changes with StatReloader
+INFO 2024-07-03 22:40:39,236 autoreload 10696 7896 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
+INFO 2024-07-03 22:40:40,792 autoreload 21444 20232 Watching for file changes with StatReloader
+INFO 2024-07-03 22:40:46,290 autoreload 21444 20232 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
+INFO 2024-07-03 22:40:48,309 autoreload 2188 436 Watching for file changes with StatReloader
+INFO 2024-07-03 22:40:48,996 basehttp 2188 2220 "GET /portfolio/fellows/ HTTP/1.1" 200 31891
+INFO 2024-07-03 22:40:52,883 basehttp 2188 2220 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7838
+INFO 2024-07-03 22:41:19,118 basehttp 2188 2220 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7618
+INFO 2024-07-03 22:43:52,791 autoreload 2188 436 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
+INFO 2024-07-03 22:43:54,322 autoreload 2080 4116 Watching for file changes with StatReloader
+INFO 2024-07-03 22:49:27,571 autoreload 2080 4116 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 22:49:29,214 autoreload 17728 22196 Watching for file changes with StatReloader
+INFO 2024-07-03 23:02:34,697 autoreload 17728 22196 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-03 23:02:36,355 autoreload 9796 21264 Watching for file changes with StatReloader
+INFO 2024-07-03 23:02:48,293 basehttp 9796 2488 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7415
+INFO 2024-07-03 23:02:52,886 basehttp 9796 2488 "GET /portfolio/fellows/companions/ HTTP/1.1" 200 90311
+WARNING 2024-07-03 23:02:53,329 log 9796 2488 Not Found: /portfolio/fellows/companions/img/firsova-desktop@1x.webp
+WARNING 2024-07-03 23:02:53,331 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/firsova-desktop@1x.webp HTTP/1.1" 404 4410
+WARNING 2024-07-03 23:02:53,453 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-sri-lanka.svg
+WARNING 2024-07-03 23:02:53,454 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-sri-lanka.svg HTTP/1.1" 404 4395
+WARNING 2024-07-03 23:02:53,522 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-thailand.svg
+WARNING 2024-07-03 23:02:53,524 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-thailand.svg HTTP/1.1" 404 4392
+WARNING 2024-07-03 23:02:53,563 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-seychelles.svg
+WARNING 2024-07-03 23:02:53,565 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-seychelles.svg HTTP/1.1" 404 4398
+WARNING 2024-07-03 23:02:53,592 log 9796 2488 Not Found: /portfolio/fellows/companions/img/demin-desktop@1x.webp
+WARNING 2024-07-03 23:02:53,593 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/demin-desktop@1x.webp HTTP/1.1" 404 4404
+WARNING 2024-07-03 23:02:53,619 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-belgium.svg
+WARNING 2024-07-03 23:02:53,621 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-belgium.svg HTTP/1.1" 404 4389
+WARNING 2024-07-03 23:02:53,647 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-czech.svg
+WARNING 2024-07-03 23:02:53,649 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-czech.svg HTTP/1.1" 404 4383
+WARNING 2024-07-03 23:02:53,673 log 9796 2488 Not Found: /portfolio/fellows/companions/img/smolov-desktop@1x.webp
+WARNING 2024-07-03 23:02:53,674 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/smolov-desktop@1x.webp HTTP/1.1" 404 4407
+WARNING 2024-07-03 23:02:53,698 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-usa.svg
+WARNING 2024-07-03 23:02:53,699 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-usa.svg HTTP/1.1" 404 4377
+WARNING 2024-07-03 23:02:53,727 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-australia.svg
+WARNING 2024-07-03 23:02:53,729 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-australia.svg HTTP/1.1" 404 4395
+WARNING 2024-07-03 23:02:53,756 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-dominica.svg
+WARNING 2024-07-03 23:02:53,757 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-dominica.svg HTTP/1.1" 404 4392
+WARNING 2024-07-03 23:02:53,779 log 9796 2488 Not Found: /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp
+WARNING 2024-07-03 23:02:53,780 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp HTTP/1.1" 404 4413
+WARNING 2024-07-03 23:02:53,801 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-united-kingdom.svg
+WARNING 2024-07-03 23:02:53,802 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-united-kingdom.svg HTTP/1.1" 404 4410
+WARNING 2024-07-03 23:02:53,823 log 9796 2488 Not Found: /portfolio/fellows/companions/img/flag-germany.svg
+WARNING 2024-07-03 23:02:53,824 basehttp 9796 2488 "GET /portfolio/fellows/companions/img/flag-germany.svg HTTP/1.1" 404 4389
+INFO 2024-07-03 23:02:56,751 basehttp 9796 2488 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7626
+INFO 2024-07-03 23:03:13,303 autoreload 6020 3592 Watching for file changes with StatReloader
+INFO 2024-07-03 23:03:15,399 basehttp 6020 13640 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139593
+INFO 2024-07-03 23:03:19,209 basehttp 6020 13640 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7626
+INFO 2024-07-03 23:03:35,238 basehttp 6020 13640 "POST /portfolio/fellows/auth/ HTTP/1.1" 200 7104
+INFO 2024-07-03 23:03:52,472 basehttp 6020 13640 "POST /portfolio/fellows/auth/ HTTP/1.1" 200 7104
+INFO 2024-07-03 23:04:01,393 basehttp 6020 13640 "POST /portfolio/fellows/auth/ HTTP/1.1" 200 7104
+INFO 2024-07-03 23:04:05,150 basehttp 6020 13640 "POST /portfolio/fellows/auth/ HTTP/1.1" 200 7104

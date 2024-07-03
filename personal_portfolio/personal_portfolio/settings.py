@@ -75,8 +75,6 @@ TEMPLATES = [
     },
 ]
 
-
-
 WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 
 # Database
@@ -92,7 +90,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -137,9 +134,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
-
 
 script_path = os.path.join(BASE_DIR.parent, 'personal_portfolio/build_scss.py')
 
@@ -147,26 +142,47 @@ script_path = os.path.join(BASE_DIR.parent, 'personal_portfolio/build_scss.py')
 def run_script():
     subprocess.run(['python', script_path], check=True)
 
-#
-# LOGGING_CONFIG = 'logging.config.dictConfig'
-#
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'console': {
-#             'class': 'logging.StreamHandler',
-#             'level': 'DEBUG',
-#         },
-#     },
-#     'loggers': {
-#         'django': {
-#             'handlers': ['console'],
-#             'level': 'DEBUG',
-#             'propagate': True,
-#         },
-#     },
-# }
+
+# Logging configuration
+LOGGING_CONFIG = 'logging.config.dictConfig'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'django.log',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'myapp': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+}
 
 if __name__ == '__main__':
     run_script()

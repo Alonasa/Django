@@ -15,7 +15,7 @@
                     <a class="registration__text-url" href="{% url 'authorize' %}">log in</a>.
                 {% endif %}
             </p>
-            <form class="registration__form" method="POST" action="{% url 'auth-user' %}">
+            <form class="registration__form" method="POST" action="{% url 'form_address' %}">
                 {% csrf_token %}
                 {% for field in form %}
                     <div class="form-group{% if field.errors %} has-error{% endif %}">
