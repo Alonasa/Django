@@ -1,10 +1,26 @@
 from django import forms
 from django.forms import ModelForm
+from .models import User, AuthUser
 
-from .models import User
+
+class BaseForm(ModelForm):
+    email = forms.EmailField(
+        label='',
+        widget=forms.TextInput(
+            attrs={'id': 'email', 'class': 'registration__email', 'name': 'email', 'placeholder': 'E-mail'}),
+        error_messages={"required": "*Required Field"}
+    )
+    password = forms.CharField(
+        label='',
+        widget=forms.PasswordInput(
+            attrs={'id': 'password', 'class': 'registration__password', 'type': 'password', 'name': 'password',
+                   'placeholder': 'Password'}),
+        min_length=8,
+        error_messages={"required": "*Required Field", "max_length": "Min password length is 8 Characters"}
+    )
 
 
-class AuthorizeForm(ModelForm):
+class AuthorizeForm(BaseForm):
     email = forms.EmailField(
         label='',
         widget=forms.TextInput(
@@ -21,11 +37,11 @@ class AuthorizeForm(ModelForm):
     )
 
     class Meta:
-        model = User
-        fields = ['email', 'password']
+        model = AuthUser
+        fields = ('email', 'password')
 
 
-class RegisterForm(AuthorizeForm):
+class RegisterForm(BaseForm):
     field_order = ['name', 'surname']
     password_confirm = forms.CharField(
         label='',
@@ -51,5 +67,9 @@ class RegisterForm(AuthorizeForm):
         min_length=2,
         error_messages={"required": "*Required Field", "max_length": "Surame can't be less 2 Characters"}
     )
+
+    class Meta:
+        model = User
+        fields = "__all__"
 
 

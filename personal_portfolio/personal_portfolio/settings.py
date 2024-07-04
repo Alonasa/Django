@@ -58,6 +58,11 @@ MIDDLEWARE = [
     'livereload.middleware.LiveReloadScript',
 ]
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'personal_portfolio.authentication.EmailAuthBackend'
+]
+
 ROOT_URLCONF = 'personal_portfolio.urls'
 TEMPLATES = [
     {

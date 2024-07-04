@@ -1,3 +1,4 @@
+from django.contrib.auth.models import AbstractUser, UserManager
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
@@ -10,6 +11,15 @@ class User(models.Model):
     surname = models.CharField(max_length=120, null=False)
     email = models.EmailField(max_length=100, unique=True, null=False)
     password = models.CharField(max_length=120)
+
+    USERNAME_FIELD = 'email'
+
+
+class AuthUser(models.Model):
+    email = models.EmailField(max_length=100, null=False)
+    password = models.CharField(max_length=120, null=False)
+
+    USERNAME_FIELD = 'email'
 
 
 class UserProfile(models.Model):

@@ -15,7 +15,7 @@
                     <a class="registration__text-url" href="{% url 'authorize' %}">log in</a>.
                 {% endif %}
             </p>
-            <form class="registration__form" method="POST" action="{% url 'form_address' %}">
+            <form class="registration__form" method="POST" action="{{ form_address }}">
                 {% csrf_token %}
                 {% for field in form %}
                     <div class="form-group{% if field.errors %} has-error{% endif %}">
@@ -33,7 +33,7 @@
                     {% if login %} Login {% else %} Register {% endif %}</button>
             </form>
             <p class="text text--white registration__text registration__text--bottom">
-                Have a questions? <br class="registration__text-br">Make a request!
+                Have questions? <br class="registration__text-br">Make a request!
                 <a class="contact-info" href="mailto:mail' %}@h">
                     <svg class="contact-info__icon contact-info__icon--mail" width="18" height="13">
                         <use xlink:href="{% static 'img/travel_fellows/sprite.svg' %}#icon-contacts-mail"></use>
