@@ -46,33 +46,26 @@ def auth(request):
 
 class AuthorizeUser(View):
     def get(self, request):
-        print("GET AUTH")
         form = AuthorizeForm()
         return render(request, "travel_fellows/register.html",
                       {"form": form, "form_errors": form.errors, "form_address": reverse_lazy('auth-user')})
 
     def post(self, request):
         form = AuthorizeForm(request.POST)
-        print("AUTHO POST")
-        print(form.is_valid())
         if form.is_valid():
             password = form.cleaned_data['password']
             email = form.cleaned_data['username']
-            username = User.objects.get(username=email).username
-            user, created = User.objects.get_or_create(username=username, password=password)
-            user_authenticated = authenticate(username=username, password=password, backend='personal_portfolio.authentication.EmailAuthBackend')
-            if created:
-                print("AUTH CREATED")
-                login(request, user, backend='personal_portfolio.authentication.EmailAuthBackend')
+            username = User.objects.filter(username=email).first()
+            if username is not None:
+                user = authenticate(request, username=username, password=password, backend='personal_portfolio.authentication.EmailAuthBackend')
 
-            print(f"print{user}")
-            print(user_authenticated is not None)
-            print(f"{user} ITS A USER")
-            if user_authenticated:
-                login(request, user, backend='personal_portfolio.authentication.EmailAuthBackend')
-                print("TRY AUTHORIZE TRUE")
-                return HttpResponse("USER Logged In")
-            return HttpResponse(f"USER NOT Logged, WRONG DATA AUTHUSER {form.errors}")
+                if user is not None:
+                    login(request, user, backend='personal_portfolio.authentication.EmailAuthBackend')
+                    return HttpResponse("USER Logged In")
+                return HttpResponse(f"USER NOT Logged, WRONG DATA AUTHUSER")
+            else:
+                return HttpResponse(f"WE DONT FIND SUCH USERNAME IN OUR DATABASE")
+
         return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors, "login": True,
                                                                 "form_address": reverse_lazy("auth-user")})
 
@@ -91,9 +84,10 @@ class RegisterUser(View):
             password = form.cleaned_data['password_confirm']
             email = form.cleaned_data['username']
             if password == password_confirm:
-                user = User.objects.create_user(name=form.cleaned_data['name'], surname=form.cleaned_data['surname'],
+                user = User.objects.create(name=form.cleaned_data['name'], surname=form.cleaned_data['surname'],
                                            username=email,
                                            password=password)
+                user.set_password(password)
                 user.save()
                 return HttpResponse('User registered successfully!')
             else:

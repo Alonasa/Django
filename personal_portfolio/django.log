@@ -8076,3 +8076,475 @@ INFO 2024-07-05 20:40:12,299 basehttp 7736 24556 "POST /portfolio/fellows/auth-f
 INFO 2024-07-05 20:40:35,195 autoreload 7736 7412 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
 INFO 2024-07-05 20:40:36,525 autoreload 16200 6308 Watching for file changes with StatReloader
 INFO 2024-07-05 20:40:42,401 basehttp 16200 18416 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 21:31:21,730 autoreload 15756 15296 Watching for file changes with StatReloader
+INFO 2024-07-05 21:32:11,869 basehttp 15756 20916 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 21:35:02,557 basehttp 15756 20916 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 21:36:35,977 autoreload 15756 15296 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 21:36:39,952 autoreload 12348 25540 Watching for file changes with StatReloader
+INFO 2024-07-05 21:37:02,537 basehttp 12348 24072 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 21:37:26,098 basehttp 12348 4456 - Broken pipe from ('127.0.0.1', 25907)
+INFO 2024-07-05 21:37:26,100 basehttp 12348 24072 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 21:37:39,253 basehttp 12348 24072 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 21:37:59,485 autoreload 12220 17400 Watching for file changes with StatReloader
+INFO 2024-07-05 21:39:00,898 basehttp 12220 14504 - Broken pipe from ('127.0.0.1', 26003)
+INFO 2024-07-05 21:39:00,901 basehttp 12220 18084 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 21:40:24,925 autoreload 12220 17400 A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\backends.py changed, reloading.
+INFO 2024-07-05 21:40:29,080 autoreload 22968 7056 Watching for file changes with StatReloader
+INFO 2024-07-05 21:40:55,346 basehttp 22968 6352 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 21:51:01,005 autoreload 22968 7056 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 21:51:05,341 autoreload 4396 24344 Watching for file changes with StatReloader
+INFO 2024-07-05 21:51:15,149 autoreload 4396 24344 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 21:51:18,974 autoreload 15648 18580 Watching for file changes with StatReloader
+INFO 2024-07-05 21:51:51,287 autoreload 15648 18580 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 21:51:54,154 autoreload 20336 2288 Watching for file changes with StatReloader
+INFO 2024-07-05 21:51:56,365 basehttp 20336 24360 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 21:52:38,947 basehttp 20336 24172 "POST /portfolio/fellows/register-form/ HTTP/1.1" 200 29
+INFO 2024-07-05 21:52:50,932 basehttp 20336 24172 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 21:52:57,863 basehttp 20336 24172 "GET /admin/travel_fellows/user/ HTTP/1.1" 302 0
+INFO 2024-07-05 21:52:58,329 basehttp 20336 24172 "GET /admin/login/?next=/admin/travel_fellows/user/ HTTP/1.1" 200 3785
+INFO 2024-07-05 21:53:41,871 basehttp 20336 18172 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-07-05 21:53:42,068 basehttp 20336 18172 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3745
+WARNING 2024-07-05 21:54:35,683 log 20336 10888 Not Found: /admin
+WARNING 2024-07-05 21:54:35,686 basehttp 20336 10888 "GET /admin HTTP/1.1" 404 2425
+INFO 2024-07-05 21:55:05,370 autoreload 17244 11164 Watching for file changes with StatReloader
+WARNING 2024-07-05 21:55:05,993 log 17244 12516 Not Found: /admin
+WARNING 2024-07-05 21:55:05,994 basehttp 17244 12516 "GET /admin HTTP/1.1" 404 2425
+INFO 2024-07-05 21:55:11,821 basehttp 17244 12516 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3745
+INFO 2024-07-05 21:55:39,180 basehttp 17244 12516 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3911
+INFO 2024-07-05 21:55:58,027 basehttp 17244 19232 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-07-05 21:55:58,244 basehttp 17244 19232 "GET /admin/ HTTP/1.1" 200 8128
+WARNING 2024-07-05 21:56:00,703 basehttp 17244 17208 "GET /static/img/travel_fellows/icon-deletelink.svg HTTP/1.1" 404 1873
+WARNING 2024-07-05 21:56:00,703 basehttp 17244 19232 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-07-05 21:56:00,706 basehttp 17244 10904 "GET /static/img/travel_fellows/icon-changelink.svg HTTP/1.1" 404 1873
+INFO 2024-07-05 21:56:07,266 basehttp 17244 23616 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9965
+INFO 2024-07-05 21:56:07,678 basehttp 17244 23616 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 21:56:09,104 basehttp 17244 23616 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+INFO 2024-07-05 21:56:11,876 basehttp 17244 22804 "GET /admin/travel_fellows/user/14/change/ HTTP/1.1" 200 18907
+INFO 2024-07-05 21:56:12,403 basehttp 17244 22804 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 21:56:14,529 basehttp 17244 22804 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+WARNING 2024-07-05 21:56:14,545 basehttp 17244 21680 "GET /static/img/travel_fellows/icon-clock.svg HTTP/1.1" 404 1858
+INFO 2024-07-05 21:56:19,217 basehttp 17244 25336 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9965
+INFO 2024-07-05 21:56:24,398 basehttp 17244 25336 "GET /admin/travel_fellows/user/12/change/ HTTP/1.1" 200 18887
+INFO 2024-07-05 21:56:24,861 basehttp 17244 25336 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 21:56:26,835 basehttp 17244 25336 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+WARNING 2024-07-05 21:56:26,885 basehttp 17244 22932 "GET /static/img/travel_fellows/icon-clock.svg HTTP/1.1" 404 1858
+INFO 2024-07-05 21:56:31,328 basehttp 17244 7460 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9965
+INFO 2024-07-05 21:56:45,343 basehttp 17244 7460 "POST /admin/travel_fellows/user/ HTTP/1.1" 200 7793
+INFO 2024-07-05 21:56:49,099 basehttp 17244 7460 "POST /admin/travel_fellows/user/ HTTP/1.1" 302 0
+INFO 2024-07-05 21:56:49,275 basehttp 17244 7460 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 8954
+INFO 2024-07-05 21:56:49,698 basehttp 17244 7460 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 21:56:50,987 basehttp 17244 7460 "GET /static/img/travel_fellows/icon-yes.svg HTTP/1.1" 404 1852
+INFO 2024-07-05 21:56:53,212 basehttp 17244 26144 "GET /admin/travel_fellows/user/11/change/ HTTP/1.1" 200 18858
+INFO 2024-07-05 21:56:53,641 basehttp 17244 26144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 21:56:55,708 basehttp 17244 26144 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+WARNING 2024-07-05 21:56:55,732 basehttp 17244 2472 "GET /static/img/travel_fellows/icon-clock.svg HTTP/1.1" 404 1858
+INFO 2024-07-05 21:56:58,650 basehttp 17244 25144 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 8819
+WARNING 2024-07-05 21:57:10,887 log 17244 25144 Forbidden (CSRF token from POST incorrect.): /portfolio/fellows/register-form/
+WARNING 2024-07-05 21:57:10,889 basehttp 17244 25144 "POST /portfolio/fellows/register-form/ HTTP/1.1" 403 2577
+INFO 2024-07-05 21:57:16,415 basehttp 17244 25144 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 21:57:22,306 basehttp 17244 25144 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 21:57:54,800 basehttp 17244 25144 "POST /portfolio/fellows/register-form/ HTTP/1.1" 200 29
+INFO 2024-07-05 21:58:01,658 basehttp 17244 25144 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9100
+INFO 2024-07-05 21:58:02,149 basehttp 17244 25144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 21:58:03,511 basehttp 17244 25144 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-07-05 21:58:03,516 basehttp 17244 23128 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+INFO 2024-07-05 21:58:06,543 basehttp 17244 6116 "GET /admin/travel_fellows/user/16/change/ HTTP/1.1" 200 18859
+INFO 2024-07-05 21:58:07,038 basehttp 17244 6116 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 21:58:08,879 basehttp 17244 6116 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+WARNING 2024-07-05 21:58:08,927 basehttp 17244 22244 "GET /static/img/travel_fellows/icon-clock.svg HTTP/1.1" 404 1858
+INFO 2024-07-05 22:03:51,775 autoreload 17244 11164 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:03:54,013 autoreload 25868 2288 Watching for file changes with StatReloader
+INFO 2024-07-05 22:05:22,702 autoreload 25868 2288 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:05:24,261 autoreload 23008 14736 Watching for file changes with StatReloader
+INFO 2024-07-05 22:05:24,944 basehttp 23008 21820 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 22:05:30,603 basehttp 23008 21820 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:05:35,232 basehttp 23008 21820 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 22:05:45,581 basehttp 23008 21820 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 22:05:54,117 basehttp 23008 21820 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 22:06:23,512 basehttp 23008 21820 "POST /portfolio/fellows/register-form/ HTTP/1.1" 200 29
+INFO 2024-07-05 22:06:33,636 basehttp 23008 21820 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 22:06:37,010 basehttp 23008 21820 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:06:43,063 basehttp 23008 21820 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 22:06:50,263 basehttp 23008 21820 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9379
+INFO 2024-07-05 22:06:50,774 basehttp 23008 21820 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 22:06:52,123 basehttp 23008 21820 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-07-05 22:06:52,127 basehttp 23008 17376 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+INFO 2024-07-05 22:06:55,238 basehttp 23008 11628 "GET /admin/travel_fellows/user/17/change/ HTTP/1.1" 200 18855
+INFO 2024-07-05 22:06:55,645 basehttp 23008 11628 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 22:06:57,651 basehttp 23008 11628 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+WARNING 2024-07-05 22:06:57,703 basehttp 23008 23888 "GET /static/img/travel_fellows/icon-clock.svg HTTP/1.1" 404 1858
+INFO 2024-07-05 22:11:48,268 autoreload 23008 14736 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:11:49,808 autoreload 24936 4324 Watching for file changes with StatReloader
+INFO 2024-07-05 22:11:58,451 basehttp 24936 23648 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:12:02,441 basehttp 24936 23648 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 37
+INFO 2024-07-05 22:12:12,709 basehttp 24936 23648 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 22:12:40,916 basehttp 24936 23648 "POST /portfolio/fellows/register-form/ HTTP/1.1" 200 29
+INFO 2024-07-05 22:12:53,113 basehttp 24936 23648 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9660
+INFO 2024-07-05 22:12:53,625 basehttp 24936 23648 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 22:12:54,842 basehttp 24936 15928 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+WARNING 2024-07-05 22:12:54,842 basehttp 24936 23648 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+INFO 2024-07-05 22:12:57,045 basehttp 24936 3956 "GET /admin/travel_fellows/user/18/change/ HTTP/1.1" 200 18938
+INFO 2024-07-05 22:12:57,492 basehttp 24936 3956 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-05 22:12:59,475 basehttp 24936 3956 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+WARNING 2024-07-05 22:12:59,521 basehttp 24936 10116 "GET /static/img/travel_fellows/icon-clock.svg HTTP/1.1" 404 1858
+INFO 2024-07-05 22:13:05,737 basehttp 24936 2440 "GET /portfolio/fellows/register-form/ HTTP/1.1" 200 8231
+INFO 2024-07-05 22:13:09,904 basehttp 24936 2440 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+ERROR 2024-07-05 22:13:14,786 log 24936 2440 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_fellows_user_email_33e157e3_uniq"
+DETAIL:  Key (username)=(ann@mail.com) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 62, in post
+    user, created = User.objects.get_or_create(username=username, password=password)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 955, in get_or_create
+    return self.create(**params), True
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_fellows_user_email_33e157e3_uniq"
+DETAIL:  Key (username)=(ann@mail.com) already exists.
+
+ERROR 2024-07-05 22:13:14,804 basehttp 24936 2440 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 184116
+INFO 2024-07-05 22:19:55,100 autoreload 24936 4324 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:19:56,684 autoreload 23492 17184 Watching for file changes with StatReloader
+ERROR 2024-07-05 22:20:45,431 log 23492 12536 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 62, in post
+    user, created = User.objects.get(username=username, password=password)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-07-05 22:20:45,437 basehttp 23492 12536 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 92477
+INFO 2024-07-05 22:21:45,956 autoreload 23492 17184 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:21:47,292 autoreload 23684 6972 Watching for file changes with StatReloader
+ERROR 2024-07-05 22:21:55,255 log 23684 18824 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 62, in post
+    user = User.objects.get(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-07-05 22:21:55,264 basehttp 23684 18824 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 92503
+INFO 2024-07-05 22:22:03,284 basehttp 23684 18824 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+ERROR 2024-07-05 22:22:07,298 log 23684 18824 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 62, in post
+    user = User.objects.get(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-07-05 22:22:07,304 basehttp 23684 18824 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 92503
+INFO 2024-07-05 22:22:53,981 autoreload 23684 6972 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:22:55,391 autoreload 23188 2104 Watching for file changes with StatReloader
+INFO 2024-07-05 22:23:10,723 basehttp 23188 26596 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 14
+INFO 2024-07-05 22:23:15,022 basehttp 23188 26596 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+ERROR 2024-07-05 22:23:25,308 log 23188 26596 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 61, in post
+    username = User.objects.get(username=email).username
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-07-05 22:23:25,318 basehttp 23188 26596 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 92121
+INFO 2024-07-05 22:23:41,487 basehttp 23188 26596 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+ERROR 2024-07-05 22:23:48,518 log 23188 26596 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 61, in post
+    username = User.objects.get(username=email).username
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-07-05 22:23:48,523 basehttp 23188 26596 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 92117
+INFO 2024-07-05 22:25:59,806 autoreload 23188 2104 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:26:01,881 autoreload 7712 9488 Watching for file changes with StatReloader
+INFO 2024-07-05 22:26:59,278 autoreload 7712 9488 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:27:01,683 autoreload 21480 14220 Watching for file changes with StatReloader
+INFO 2024-07-05 22:29:03,390 autoreload 21480 14220 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:29:05,049 autoreload 12268 17244 Watching for file changes with StatReloader
+INFO 2024-07-05 22:32:00,255 autoreload 12268 17244 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:32:01,746 autoreload 10524 8172 Watching for file changes with StatReloader
+INFO 2024-07-05 22:32:22,698 basehttp 10524 23400 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7436
+INFO 2024-07-05 22:32:32,363 basehttp 10524 23400 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7440
+ERROR 2024-07-05 22:32:47,343 log 10524 23400 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 61, in post
+    username = User.objects.get(username=email).username
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-07-05 22:32:47,352 basehttp 10524 23400 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 92018
+INFO 2024-07-05 22:35:03,221 autoreload 10524 8172 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:35:05,122 autoreload 23692 25844 Watching for file changes with StatReloader
+INFO 2024-07-05 22:35:16,207 basehttp 23692 21896 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 14
+INFO 2024-07-05 22:35:46,788 basehttp 23692 940 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:35:47,933 basehttp 23692 940 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-05 22:35:47,944 basehttp 23692 18420 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-05 22:35:48,553 basehttp 23692 24460 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203249
+INFO 2024-07-05 22:35:48,584 basehttp 23692 15728 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-05 22:35:48,593 basehttp 23692 25548 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-05 22:35:48,606 basehttp 23692 25860 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-05 22:35:48,637 basehttp 23692 25548 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-05 22:35:49,613 basehttp 23692 15728 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-05 22:35:50,634 basehttp 23692 24460 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-05 22:35:50,660 basehttp 23692 25548 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-05 22:35:50,661 basehttp 23692 25860 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-05 22:35:50,662 basehttp 23692 18420 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-05 22:36:22,609 autoreload 23692 25844 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:36:24,243 autoreload 22560 24492 Watching for file changes with StatReloader
+ERROR 2024-07-05 22:36:36,063 log 22560 10524 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 58, in post
+    username = User.objects.get(username=email)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-07-05 22:36:36,073 basehttp 22560 10524 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 90467
+INFO 2024-07-05 22:38:37,100 autoreload 22560 24492 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:38:38,743 autoreload 11212 4540 Watching for file changes with StatReloader
+INFO 2024-07-05 22:41:26,330 autoreload 11212 4540 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:41:27,916 autoreload 4992 2864 Watching for file changes with StatReloader
+INFO 2024-07-05 22:41:31,733 basehttp 4992 15388 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:41:32,778 basehttp 4992 15388 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-05 22:41:32,836 basehttp 4992 17208 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-05 22:41:33,384 basehttp 4992 24596 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-05 22:41:33,441 basehttp 4992 24420 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-05 22:41:33,578 basehttp 4992 17052 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-05 22:41:33,581 basehttp 4992 18140 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203249
+INFO 2024-07-05 22:41:33,638 basehttp 4992 17052 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-05 22:41:34,468 basehttp 4992 24420 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-05 22:41:35,585 basehttp 4992 24420 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-05 22:41:35,606 basehttp 4992 18140 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-05 22:41:35,628 basehttp 4992 17208 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-05 22:41:35,629 basehttp 4992 24596 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-05 22:41:35,630 basehttp 4992 17052 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+ERROR 2024-07-05 22:41:41,463 log 4992 18140 Internal Server Error: /portfolio/fellows/auth-form/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 59, in post
+    if username > 0:
+       ^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+ERROR 2024-07-05 22:41:41,468 basehttp 4992 18140 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 500 81937
+INFO 2024-07-05 22:42:15,107 autoreload 4992 2864 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:42:16,934 autoreload 16252 20960 Watching for file changes with StatReloader
+INFO 2024-07-05 22:42:25,536 autoreload 16252 20960 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:42:27,030 autoreload 25048 22224 Watching for file changes with StatReloader
+INFO 2024-07-05 22:42:30,661 basehttp 25048 19756 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:42:31,728 basehttp 25048 16072 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-05 22:42:31,732 basehttp 25048 19756 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-05 22:42:32,268 basehttp 25048 24632 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-05 22:42:32,298 basehttp 25048 21820 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-05 22:42:32,457 basehttp 25048 18540 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203249
+INFO 2024-07-05 22:42:32,479 basehttp 25048 24748 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-05 22:42:32,541 basehttp 25048 24748 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-05 22:42:33,376 basehttp 25048 24632 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-05 22:42:34,500 basehttp 25048 24632 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-05 22:42:34,541 basehttp 25048 18540 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-05 22:42:34,558 basehttp 25048 21820 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-05 22:42:34,559 basehttp 25048 24748 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-05 22:42:34,560 basehttp 25048 19756 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-05 22:42:39,529 basehttp 25048 18540 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 42
+INFO 2024-07-05 22:43:07,903 basehttp 25048 4344 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:43:17,554 basehttp 25048 4344 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 14
+INFO 2024-07-05 22:44:00,902 basehttp 25048 4344 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:44:01,133 autoreload 25048 22224 A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\__init__.py changed, reloading.
+INFO 2024-07-05 22:44:03,278 autoreload 16928 22536 Watching for file changes with StatReloader
+INFO 2024-07-05 22:44:08,033 basehttp 16928 26532 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 42
+INFO 2024-07-05 22:44:22,460 basehttp 16928 26532 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 14
+INFO 2024-07-05 22:44:33,335 basehttp 16928 26532 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7140
+INFO 2024-07-05 22:44:45,633 basehttp 16928 26532 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 36
+INFO 2024-07-05 22:45:44,620 autoreload 16928 22536 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-05 22:45:46,162 autoreload 21720 24280 Watching for file changes with StatReloader
