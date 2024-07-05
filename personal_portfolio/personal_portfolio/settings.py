@@ -59,9 +59,11 @@ MIDDLEWARE = [
 ]
 
 AUTHENTICATION_BACKENDS = [
+    'personal_portfolio.authentication.EmailAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
-    'personal_portfolio.authentication.EmailAuthBackend'
 ]
+
+AUTH_USER_MODEL = 'travel_fellows.User'
 
 ROOT_URLCONF = 'personal_portfolio.urls'
 TEMPLATES = [

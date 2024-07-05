@@ -1,13 +1,14 @@
 from django import forms
 from django.forms import ModelForm
-from .models import User, AuthUser
+
+from .models import User
 
 
 class BaseForm(ModelForm):
-    email = forms.EmailField(
+    username = forms.EmailField(
         label='',
         widget=forms.TextInput(
-            attrs={'id': 'email', 'class': 'registration__email', 'name': 'email', 'placeholder': 'E-mail'}),
+            attrs={'id': 'username', 'class': 'registration__email', 'name': 'username', 'placeholder': 'E-mail'}),
         error_messages={"required": "*Required Field"}
     )
     password = forms.CharField(
@@ -20,11 +21,11 @@ class BaseForm(ModelForm):
     )
 
 
-class AuthorizeForm(BaseForm):
-    email = forms.EmailField(
+class AuthorizeForm(forms.Form):
+    username = forms.EmailField(
         label='',
         widget=forms.TextInput(
-            attrs={'id': 'email', 'class': 'registration__email', 'name': 'email', 'placeholder': 'E-mail'}),
+            attrs={'id': 'username', 'class': 'registration__email', 'name': 'username', 'placeholder': 'E-mail'}),
         error_messages={"required": "*Required Field"}
     )
     password = forms.CharField(
@@ -35,10 +36,6 @@ class AuthorizeForm(BaseForm):
         min_length=8,
         error_messages={"required": "*Required Field", "max_length": "Min password length is 8 Characters"}
     )
-
-    class Meta:
-        model = AuthUser
-        fields = ('email', 'password')
 
 
 class RegisterForm(BaseForm):
@@ -70,6 +67,6 @@ class RegisterForm(BaseForm):
 
     class Meta:
         model = User
-        fields = "__all__"
+        fields = ['name', 'surname', 'username', 'password', 'password_confirm']
 
 
