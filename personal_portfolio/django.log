@@ -8548,3 +8548,343 @@ INFO 2024-07-05 22:44:33,335 basehttp 16928 26532 "GET /portfolio/fellows/auth/ 
 INFO 2024-07-05 22:44:45,633 basehttp 16928 26532 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 36
 INFO 2024-07-05 22:45:44,620 autoreload 16928 22536 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
 INFO 2024-07-05 22:45:46,162 autoreload 21720 24280 Watching for file changes with StatReloader
+INFO 2024-07-06 16:48:49,551 basehttp 21720 13792 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139593
+INFO 2024-07-06 16:48:49,790 basehttp 21720 13792 "GET /static/css/travel_fellows/style.css HTTP/1.1" 304 0
+INFO 2024-07-06 16:48:56,071 basehttp 21720 13792 "GET /portfolio/fellows/companions/ HTTP/1.1" 200 90311
+WARNING 2024-07-06 16:48:56,708 log 21720 13792 Not Found: /portfolio/fellows/companions/img/firsova-desktop@1x.webp
+WARNING 2024-07-06 16:48:56,710 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/firsova-desktop@1x.webp HTTP/1.1" 404 4410
+WARNING 2024-07-06 16:48:56,753 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-sri-lanka.svg
+WARNING 2024-07-06 16:48:56,755 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-sri-lanka.svg HTTP/1.1" 404 4395
+WARNING 2024-07-06 16:48:56,815 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-thailand.svg
+WARNING 2024-07-06 16:48:56,816 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-thailand.svg HTTP/1.1" 404 4392
+WARNING 2024-07-06 16:48:56,847 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-seychelles.svg
+WARNING 2024-07-06 16:48:56,848 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-seychelles.svg HTTP/1.1" 404 4398
+WARNING 2024-07-06 16:48:56,870 log 21720 13792 Not Found: /portfolio/fellows/companions/img/demin-desktop@1x.webp
+WARNING 2024-07-06 16:48:56,871 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/demin-desktop@1x.webp HTTP/1.1" 404 4404
+WARNING 2024-07-06 16:48:56,893 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-belgium.svg
+WARNING 2024-07-06 16:48:56,894 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-belgium.svg HTTP/1.1" 404 4389
+WARNING 2024-07-06 16:48:56,915 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-czech.svg
+WARNING 2024-07-06 16:48:56,916 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-czech.svg HTTP/1.1" 404 4383
+WARNING 2024-07-06 16:48:56,939 log 21720 13792 Not Found: /portfolio/fellows/companions/img/smolov-desktop@1x.webp
+WARNING 2024-07-06 16:48:56,941 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/smolov-desktop@1x.webp HTTP/1.1" 404 4407
+WARNING 2024-07-06 16:48:56,967 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-usa.svg
+WARNING 2024-07-06 16:48:56,968 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-usa.svg HTTP/1.1" 404 4377
+WARNING 2024-07-06 16:48:56,991 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-australia.svg
+WARNING 2024-07-06 16:48:56,992 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-australia.svg HTTP/1.1" 404 4395
+WARNING 2024-07-06 16:48:57,011 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-dominica.svg
+WARNING 2024-07-06 16:48:57,012 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-dominica.svg HTTP/1.1" 404 4392
+WARNING 2024-07-06 16:48:57,035 log 21720 13792 Not Found: /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp
+WARNING 2024-07-06 16:48:57,036 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp HTTP/1.1" 404 4413
+WARNING 2024-07-06 16:48:57,059 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-united-kingdom.svg
+WARNING 2024-07-06 16:48:57,060 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-united-kingdom.svg HTTP/1.1" 404 4410
+WARNING 2024-07-06 16:48:57,080 log 21720 13792 Not Found: /portfolio/fellows/companions/img/flag-germany.svg
+WARNING 2024-07-06 16:48:57,081 basehttp 21720 13792 "GET /portfolio/fellows/companions/img/flag-germany.svg HTTP/1.1" 404 4389
+ERROR 2024-07-06 17:19:41,449 log 21720 22328 Internal Server Error: /portfolio/fellows/companions/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 16, in companions
+    return render(request, "travel_fellows/catalog.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+ERROR 2024-07-06 17:19:41,468 basehttp 21720 22328 "GET /portfolio/fellows/companions/ HTTP/1.1" 500 220350
+INFO 2024-07-06 17:21:13,357 autoreload 21720 24280 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\urls.py changed, reloading.
+INFO 2024-07-06 17:21:15,646 autoreload 26460 16180 Watching for file changes with StatReloader
+INFO 2024-07-06 17:22:54,915 autoreload 26460 16180 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:22:56,509 autoreload 15912 17208 Watching for file changes with StatReloader
+INFO 2024-07-06 17:23:13,197 basehttp 15912 20428 "GET /portfolio/fellows/companions/ HTTP/1.1" 200 90340
+WARNING 2024-07-06 17:23:13,830 log 15912 20428 Not Found: /portfolio/fellows/companions/img/firsova-desktop@1x.webp
+WARNING 2024-07-06 17:23:13,832 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/firsova-desktop@1x.webp HTTP/1.1" 404 4644
+WARNING 2024-07-06 17:23:13,955 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-sri-lanka.svg
+WARNING 2024-07-06 17:23:13,957 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-sri-lanka.svg HTTP/1.1" 404 4629
+WARNING 2024-07-06 17:23:14,004 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-thailand.svg
+WARNING 2024-07-06 17:23:14,006 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-thailand.svg HTTP/1.1" 404 4626
+WARNING 2024-07-06 17:23:14,041 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-seychelles.svg
+WARNING 2024-07-06 17:23:14,043 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-seychelles.svg HTTP/1.1" 404 4632
+WARNING 2024-07-06 17:23:14,092 log 15912 20428 Not Found: /portfolio/fellows/companions/img/demin-desktop@1x.webp
+WARNING 2024-07-06 17:23:14,094 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/demin-desktop@1x.webp HTTP/1.1" 404 4638
+WARNING 2024-07-06 17:23:14,125 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-belgium.svg
+WARNING 2024-07-06 17:23:14,126 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-belgium.svg HTTP/1.1" 404 4623
+WARNING 2024-07-06 17:23:14,167 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-czech.svg
+WARNING 2024-07-06 17:23:14,168 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-czech.svg HTTP/1.1" 404 4617
+WARNING 2024-07-06 17:23:14,194 log 15912 20428 Not Found: /portfolio/fellows/companions/img/smolov-desktop@1x.webp
+WARNING 2024-07-06 17:23:14,196 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/smolov-desktop@1x.webp HTTP/1.1" 404 4641
+WARNING 2024-07-06 17:23:14,218 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-usa.svg
+WARNING 2024-07-06 17:23:14,219 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-usa.svg HTTP/1.1" 404 4611
+WARNING 2024-07-06 17:23:14,244 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-australia.svg
+WARNING 2024-07-06 17:23:14,245 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-australia.svg HTTP/1.1" 404 4629
+WARNING 2024-07-06 17:23:14,268 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-dominica.svg
+WARNING 2024-07-06 17:23:14,269 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-dominica.svg HTTP/1.1" 404 4626
+WARNING 2024-07-06 17:23:14,292 log 15912 20428 Not Found: /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp
+WARNING 2024-07-06 17:23:14,293 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/rogovaya-desktop@1x.webp HTTP/1.1" 404 4647
+WARNING 2024-07-06 17:23:14,316 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-united-kingdom.svg
+WARNING 2024-07-06 17:23:14,317 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-united-kingdom.svg HTTP/1.1" 404 4644
+WARNING 2024-07-06 17:23:14,342 log 15912 20428 Not Found: /portfolio/fellows/companions/img/flag-germany.svg
+WARNING 2024-07-06 17:23:14,343 basehttp 15912 20428 "GET /portfolio/fellows/companions/img/flag-germany.svg HTTP/1.1" 404 4623
+INFO 2024-07-06 17:23:21,175 basehttp 15912 20428 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-06 17:23:22,214 basehttp 15912 20428 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-06 17:23:22,224 basehttp 15912 20428 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-06 17:23:23,089 basehttp 15912 7880 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 304 0
+INFO 2024-07-06 17:23:23,091 basehttp 15912 19008 "GET /static/img/travel_fellows/rectangle-bg-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-06 17:23:23,123 basehttp 15912 20428 "GET /static/img/travel_fellows/about-desktop@1x.png HTTP/1.1" 200 300932
+INFO 2024-07-06 17:23:23,142 basehttp 15912 20428 "GET /static/img/travel_fellows/rates@1x.png HTTP/1.1" 304 0
+ERROR 2024-07-06 17:23:26,475 log 15912 20428 Internal Server Error: /portfolio/fellows/logout/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2024-07-06 17:23:26,538 basehttp 15912 20428 "GET /portfolio/fellows/logout/ HTTP/1.1" 500 3562890
+INFO 2024-07-06 17:23:59,116 autoreload 15912 17208 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:24:00,791 autoreload 12336 24612 Watching for file changes with StatReloader
+ERROR 2024-07-06 17:24:03,338 log 12336 18092 Internal Server Error: /portfolio/fellows/logout/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2024-07-06 17:24:03,412 basehttp 12336 18092 "GET /portfolio/fellows/logout/ HTTP/1.1" 500 3569740
+INFO 2024-07-06 17:24:12,895 autoreload 12336 24612 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:24:14,612 autoreload 28108 12852 Watching for file changes with StatReloader
+INFO 2024-07-06 17:24:16,865 basehttp 28108 21828 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139622
+ERROR 2024-07-06 17:24:22,130 log 28108 21828 Internal Server Error: /portfolio/fellows/logout/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2024-07-06 17:24:22,191 basehttp 28108 21828 "GET /portfolio/fellows/logout/ HTTP/1.1" 500 3569616
+INFO 2024-07-06 17:24:41,706 autoreload 28108 12852 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:24:44,214 autoreload 3676 28340 Watching for file changes with StatReloader
+ERROR 2024-07-06 17:24:49,158 log 3676 20568 Internal Server Error: /portfolio/fellows/logout/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2024-07-06 17:24:49,221 basehttp 3676 20568 "GET /portfolio/fellows/logout/ HTTP/1.1" 500 3568657
+INFO 2024-07-06 17:25:51,479 autoreload 3676 28340 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:25:53,724 autoreload 13100 21752 Watching for file changes with StatReloader
+ERROR 2024-07-06 17:27:28,447 log 13100 11568 Internal Server Error: /portfolio/fellows/logout/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2024-07-06 17:27:28,528 basehttp 13100 11568 "GET /portfolio/fellows/logout/ HTTP/1.1" 500 3562903
+INFO 2024-07-06 17:27:35,876 autoreload 13100 21752 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:27:37,508 autoreload 15996 26220 Watching for file changes with StatReloader
+ERROR 2024-07-06 17:27:43,772 log 15996 28668 Internal Server Error: /portfolio/fellows/logout/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 74, in logout
+    logout(request)
+  [Previous line repeated 956 more times]
+RecursionError: maximum recursion depth exceeded
+ERROR 2024-07-06 17:27:43,833 basehttp 15996 28668 "GET /portfolio/fellows/logout/ HTTP/1.1" 500 3561944
+INFO 2024-07-06 17:29:32,057 autoreload 15996 26220 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:29:33,623 autoreload 12644 27020 Watching for file changes with StatReloader
+ERROR 2024-07-06 17:29:39,146 log 12644 25236 Internal Server Error: /portfolio/fellows/logout/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 75, in logOut
+    return redirect('')
+           ^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2024-07-06 17:29:39,152 basehttp 12644 25236 "GET /portfolio/fellows/logout/ HTTP/1.1" 500 90332
+INFO 2024-07-06 17:30:03,519 autoreload 12644 27020 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:30:05,293 autoreload 27780 23400 Watching for file changes with StatReloader
+INFO 2024-07-06 17:30:06,217 basehttp 27780 22464 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-06 17:30:09,067 basehttp 27780 22464 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-06 17:30:13,675 basehttp 27780 22464 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-06 17:30:19,398 basehttp 27780 22464 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 14
+INFO 2024-07-06 17:31:29,812 autoreload 27780 23400 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:31:31,320 autoreload 27376 18232 Watching for file changes with StatReloader
+INFO 2024-07-06 17:31:34,768 basehttp 27376 26220 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7169
+INFO 2024-07-06 17:31:38,578 basehttp 27376 26220 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-06 17:31:45,547 basehttp 27376 26220 "GET /portfolio/fellows/logout/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:31:45,561 basehttp 27376 26220 "GET / HTTP/1.1" 200 1173
+INFO 2024-07-06 17:32:01,232 basehttp 27376 26220 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-06 17:32:11,754 basehttp 27376 26220 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-06 17:32:33,956 autoreload 27376 18232 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:32:36,166 autoreload 3508 28592 Watching for file changes with StatReloader
+INFO 2024-07-06 17:32:37,507 basehttp 3508 12808 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-06 17:32:40,558 basehttp 3508 12808 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-06 17:32:52,758 autoreload 3508 28592 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-06 17:32:54,413 autoreload 26800 25188 Watching for file changes with StatReloader
+INFO 2024-07-06 17:32:56,481 basehttp 26800 25696 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-06 17:33:01,772 basehttp 26800 25696 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:33:01,892 basehttp 26800 25696 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-06 17:33:10,254 basehttp 26800 25696 "GET /portfolio/fellows/logout/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:33:10,271 basehttp 26800 25696 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-06 17:33:14,710 basehttp 26800 25696 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-06 17:33:19,684 basehttp 26800 25696 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:33:19,794 basehttp 26800 25696 "GET /portfolio/fellows/ HTTP/1.1" 200 31920

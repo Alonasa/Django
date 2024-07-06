@@ -11,7 +11,11 @@
                 </button>
             </div>
             <div class="page-nav__button-wrapper">
+                {% if user.is_authenticated %}
+                <a class="button button--rounded page-nav__auth-button" href="{% url 'logout' %}">Logout</a>
+                {% else %}
                 <a class="button button--rounded page-nav__auth-button" href="{% url 'authorize' %}">Authorisation</a>
+                {% endif %}
             </div>
             <div class="page-nav__menu-wrapper">
                 <ul class="page-nav__list">

@@ -1,6 +1,6 @@
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import View
 
@@ -21,25 +21,7 @@ def fellows(request):
 
 
 def auth(request):
-    # if request.method == 'POST':
-    #     print("POST")
-    #
-    #     form = AuthorizeForm(request.POST, data=request.POST)
-    #     if form.is_valid():
-    #         password = form.cleaned_data['password']
-    #         email = form.cleaned_data['username']
-    #         user = authenticate(request, username=email, password=password)
-    #         print(user)
-    #         if user is not None:
-    #             login(request, user)
-    #             print("TRY AUTH TRUE")
-    #             return HttpResponse("USER Logged In")
-    #         else:
-    #             return HttpResponse("USER NOT Logged")
-    # else:
-    #     print("GET")
     form = AuthorizeForm()
-
     return render(request, "travel_fellows/register.html",
                   {"form": form, "form-errors": form.errors, "form_address": reverse_lazy('auth-user'), "login": True})
 
@@ -61,13 +43,18 @@ class AuthorizeUser(View):
 
                 if user is not None:
                     login(request, user, backend='personal_portfolio.authentication.EmailAuthBackend')
-                    return HttpResponse("USER Logged In")
+                    return redirect('fellows')
                 return HttpResponse(f"USER NOT Logged, WRONG DATA AUTHUSER")
             else:
                 return HttpResponse(f"WE DONT FIND SUCH USERNAME IN OUR DATABASE")
 
         return render(request, "travel_fellows/register.html", {"form": form, "form_errors": form.errors, "login": True,
                                                                 "form_address": reverse_lazy("auth-user")})
+
+
+def logOut(request):
+    logout(request)
+    return redirect('fellows')
 
 
 class RegisterUser(View):
