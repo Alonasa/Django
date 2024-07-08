@@ -8888,3 +8888,46 @@ INFO 2024-07-06 17:33:10,271 basehttp 26800 25696 "GET /portfolio/fellows/ HTTP/
 INFO 2024-07-06 17:33:14,710 basehttp 26800 25696 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
 INFO 2024-07-06 17:33:19,684 basehttp 26800 25696 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 302 0
 INFO 2024-07-06 17:33:19,794 basehttp 26800 25696 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-06 17:34:57,286 basehttp 26800 25696 "GET /portfolio/fellows/logout/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:34:57,354 basehttp 26800 25696 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-06 17:35:03,805 basehttp 26800 25696 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-06 17:35:09,973 basehttp 26800 25696 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139627
+INFO 2024-07-06 17:36:10,514 basehttp 26800 25696 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-06 17:36:15,880 basehttp 26800 25696 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:36:16,008 basehttp 26800 25696 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-06 17:37:08,031 basehttp 26800 25696 "GET /admin/travel_fellows/user/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:37:08,217 basehttp 26800 25696 "GET /admin/login/?next=/admin/travel_fellows/user/ HTTP/1.1" 200 3785
+INFO 2024-07-06 17:37:08,510 basehttp 26800 25696 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-07-06 17:37:21,796 basehttp 26800 25696 "POST /admin/login/?next=/admin/travel_fellows/user/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:37:21,993 basehttp 26800 25696 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9660
+INFO 2024-07-06 17:37:22,551 basehttp 26800 25696 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-06 17:37:24,486 basehttp 26800 21548 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+WARNING 2024-07-06 17:37:24,487 basehttp 26800 25696 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+INFO 2024-07-06 17:37:38,548 basehttp 26800 9804 "POST /admin/travel_fellows/user/ HTTP/1.1" 200 7634
+INFO 2024-07-06 17:37:41,938 basehttp 26800 9804 "POST /admin/travel_fellows/user/ HTTP/1.1" 302 0
+INFO 2024-07-06 17:37:42,060 basehttp 26800 9804 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 8954
+INFO 2024-07-06 17:37:42,434 basehttp 26800 9804 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-06 17:37:43,786 basehttp 26800 9804 "GET /static/img/travel_fellows/icon-yes.svg HTTP/1.1" 404 1852
+WARNING 2024-07-06 21:54:35,545 basehttp 26800 25244 "GET /static/img/travel_fellows/icon-yes.svg HTTP/1.1" 404 1852
+INFO 2024-07-06 21:54:35,860 basehttp 26800 27344 "GET /static/img/travel_fellows/traveller-illustration-desktop@2x.png HTTP/1.1" 200 38257
+INFO 2024-07-06 21:54:36,069 basehttp 26800 8008 "GET /static/img/travel_fellows/globe-back-desktop@2x.jpg HTTP/1.1" 200 94225
+INFO 2024-07-06 21:54:36,122 basehttp 26800 20916 "GET /static/img/travel_fellows/about-desktop@2x.png HTTP/1.1" 200 1021232
+INFO 2024-07-06 21:54:37,381 basehttp 26800 27344 "GET /static/img/travel_fellows/rates@2x.png HTTP/1.1" 200 13187
+INFO 2024-07-06 21:54:37,383 basehttp 26800 8008 "GET /static/img/travel_fellows/smolov-back-desktop@2x.png HTTP/1.1" 200 68766
+WARNING 2024-07-06 21:54:37,383 basehttp 26800 20916 "GET /static/css/travel_fellows//static/img/travel_fellows/rogovaya-back-desktop@2x.png HTTP/1.1" 404 1981
+INFO 2024-07-08 23:52:08,353 autoreload 26800 25188 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-08 23:52:11,199 autoreload 37696 3800 Watching for file changes with StatReloader
+INFO 2024-07-08 23:52:29,793 autoreload 27364 35248 Watching for file changes with StatReloader
+INFO 2024-07-08 23:54:07,444 autoreload 27364 35248 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-08 23:54:08,821 autoreload 21244 16276 Watching for file changes with StatReloader
+INFO 2024-07-08 23:54:13,963 basehttp 21244 22676 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139622
+INFO 2024-07-08 23:54:14,210 basehttp 21244 22676 "GET /static/css/travel_fellows/style.css HTTP/1.1" 304 0
+INFO 2024-07-08 23:54:14,211 basehttp 21244 2760 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 304 0
+INFO 2024-07-08 23:54:14,308 basehttp 21244 2760 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 304 0
+INFO 2024-07-08 23:54:15,836 basehttp 21244 2760 "GET /static/img/travel_fellows/photo-account-tablet@2x.webp HTTP/1.1" 200 7408
+INFO 2024-07-08 23:54:15,863 basehttp 21244 2760 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 304 0
+INFO 2024-07-08 23:56:12,637 autoreload 21244 16276 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-08 23:56:14,064 autoreload 32056 6720 Watching for file changes with StatReloader
+INFO 2024-07-08 23:56:19,534 basehttp 32056 25252 "GET /portfolio/fellows/destinations/ HTTP/1.1" 200 139622
+INFO 2024-07-08 23:58:58,226 autoreload 32056 6720 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-08 23:59:00,521 autoreload 25824 6388 Watching for file changes with StatReloader
