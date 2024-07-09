@@ -1,4 +1,5 @@
 from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
@@ -59,8 +60,9 @@ def logOut(request):
     return redirect('fellows')
 
 
+@login_required
 def userProfile(request, id):
-    return render(request, f"travel_fellows/destinations", {"id": id})
+    return render(request, "travel_fellows/form.html", {"id": id})
 
 class RegisterUser(View):
     def get(self, request):

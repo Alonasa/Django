@@ -53,7 +53,15 @@ class UserProfile(models.Model):
     hobbies = ArrayField(models.CharField(max_length=300), blank=False, default=list)
     music = ArrayField(models.CharField(max_length=300), blank=False, default=list)
     food = ArrayField(models.CharField(max_length=300), blank=False, default=list)
-    transport = ArrayField(models.CharField(max_length=300), blank=False, default=list)
+
+    TRANSPORT_CHOICES = (
+        ('AV', 'Avia'),
+        ('AU', 'Automobile'),
+        ('BI', 'Bicycle'),
+        ('HI', 'Hiking')
+    )
+
+    transport = models.CharField(max_length=2, choices=TRANSPORT_CHOICES, blank=True, default='AU')
 
 
 class UserPlans(models.Model):

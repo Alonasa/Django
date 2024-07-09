@@ -9,5 +9,5 @@ urlpatterns = [
     path('auth-form/', views.AuthorizeUser.as_view(), name="auth-user"),
     path('register-form/', views.RegisterUser.as_view(), name="register"),
     path('logout/', views.logOut, name="logout"),
-    # path('user/<id: string>', views.userProfile, name="user"),
+    path('user/<str:id>/', views.userProfile, name="user"),
 ]
