@@ -1,9 +1,12 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.postgres.fields import ArrayField
+from django.core.validators import FileExtensionValidator
 from django.db import models
 
+
 # Create your models here.
+ALLOWED_IMAGE_EXTENSIONS = ["jpg", "jpeg", "png", "gif"]
 
 
 class UserManager(BaseUserManager):
@@ -45,7 +48,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 class UserProfile(models.Model):
     id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    photo = models.FileField(upload_to="img", default=False)
+    photo = models.ImageField(upload_to="img", blank=True)
     hashtags = ArrayField(models.CharField(max_length=300), blank=False, default=list)
     destinations = ArrayField(models.CharField(max_length=200), blank=False, default=list)
     level = models.IntegerField(default=1)

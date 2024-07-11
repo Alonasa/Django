@@ -56,12 +56,25 @@
                             </div>
                         </div>
                         <div class="user-information__upload-photo">
-                            <input class="visually-hidden" type="file" name="user-photo"
-                                   id="upload-photo" onchange="this.form.submit()">
+                            {{ form.user_photo }}
                             <label class="button button--rounded button--violet user-information__button"
                                    for="upload-photo"><span
-                                    class="user-information__button-hidden-text">Change&nbsp;</span>photo</label>
-
+                                    class="user-information__button-hidden-text">Change&nbsp;</span>photo
+                            </label>
+                            {% if form.errors or form.user_photo.errors %}
+                                <div class="form-errors">
+                                    {% if form.non_field_errors %}
+                                        {% for error in form.non_field_errors %}
+                                            <p>{{ error }}</p>
+                                        {% endfor %}
+                                    {% endif %}
+                                    {% if form.user_photo.errors %}
+                                        {% for error in form.user_photo.errors %}
+                                            <p>{{ error }}</p>
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
+                            {% endif %}
                         </div>
                         <div class="user-information__wrapper">
                             <p class="user-information__title user-information__title--tags">

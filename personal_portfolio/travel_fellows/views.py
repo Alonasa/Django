@@ -64,14 +64,16 @@ def logOut(request):
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
     def get(self, request):
-        return render(request, "travel_fellows/form.html")
+        form = UserPhotoForm()
+        return render(request, "travel_fellows/form.html", {"form": form})
 
     def post(self, request):
-        photo = request.FILES.get('user-photo')
-        if photo:
-            profile = UserProfile(user_id=18, photo=request.FILES['user-photo'])
+        form = UserPhotoForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            profile = UserProfile(user_id=18, photo=request.FILES['user_photo'])
             profile.save()
-        return render(request, "travel_fellows/form.html")
+        return render(request, "travel_fellows/form.html", {"form": form})
 
 
 class RegisterUser(View):

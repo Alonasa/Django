@@ -1,4 +1,5 @@
 from django import forms
+from django.core.validators import FileExtensionValidator
 from django.forms import ModelForm
 
 from .models import User
@@ -71,4 +72,12 @@ class RegisterForm(BaseForm):
 
 
 class UserPhotoForm(forms.Form):
-    user_photo = forms.ImageField(required=True)
+    user_photo = forms.ImageField(
+        label='Change photo',
+        required=False,
+        widget=forms.FileInput(
+            attrs={'class': 'visually-hidden', 'id': 'upload-photo', 'onchange': 'this.form.submit()'}),
+        validators=[
+            FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png'])
+        ]
+    )

@@ -163,6 +163,8 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
     margin-bottom: 27px;
     padding-right: 94px;
     margin-top: -66px;
