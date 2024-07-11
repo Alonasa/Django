@@ -1,12 +1,13 @@
+from django import forms
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+from django.utils.decorators import method_decorator
 from django.views import View
-
-from .forms import AuthorizeForm, RegisterForm
-from .models import User
+from .forms import AuthorizeForm, RegisterForm, UserPhotoForm
+from .models import User, UserProfile
 
 
 def destinations(request):
@@ -60,9 +61,18 @@ def logOut(request):
     return redirect('fellows')
 
 
-@login_required
-def userProfile(request, id):
-    return render(request, "travel_fellows/form.html", {"id": id})
+@method_decorator(login_required, name='dispatch')
+class ViewUserProfile(View):
+    def get(self, request):
+        return render(request, "travel_fellows/form.html")
+
+    def post(self, request):
+        photo = request.FILES.get('user-photo')
+        if photo:
+            profile = UserProfile(user_id=18, photo=request.FILES['user-photo'])
+            profile.save()
+        return render(request, "travel_fellows/form.html")
+
 
 class RegisterUser(View):
     def get(self, request):

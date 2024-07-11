@@ -70,3 +70,5 @@ class RegisterForm(BaseForm):
         fields = ['name', 'surname', 'username', 'password', 'password_confirm']
 
 
+class UserPhotoForm(forms.Form):
+    user_photo = forms.ImageField(required=True)

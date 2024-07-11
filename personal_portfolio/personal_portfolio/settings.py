@@ -191,5 +191,8 @@ LOGGING = {
     },
 }
 
+
+MEDIA_ROOT = BASE_DIR / "temp"
+
 if __name__ == '__main__':
     run_script()

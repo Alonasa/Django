@@ -16,7 +16,8 @@
     </header>
 
     <main>
-        <form class="directions-form" method="POST" action="https://echo">
+        <form class="directions-form" method="POST" action="{% url 'user' %}" enctype="multipart/form-data">
+            {% csrf_token %}
             <section class="user-information">
                 <div class="container">
                     <h2 class="visually-hidden">Personal Information</h2>
@@ -38,14 +39,15 @@
                         {% static 'img/travel_fellows/photo-account-tablet' %}@2x.webp 2x
                       ">
                                     <source type="image/webp" srcset="
-                        {% static 'img/travel_fellows/photo-account-mobile'%}@1x.webp 1x,
-                        {% static 'img/travel_fellows/photo-account-mobile'%}@2x.webp 2x
+                        {% static 'img/travel_fellows/photo-account-mobile' %}@1x.webp 1x,
+                        {% static 'img/travel_fellows/photo-account-mobile' %}@2x.webp 2x
                       ">
                                     <source media="(min-width: 768px)" srcset="
                         {% static 'img/travel_fellows/photo-account-tablet' %}@1x.jpg 1x,
                         {% static 'img/travel_fellows/photo-account-tablet' %}@2x.jpg 2x
                       ">
-                                    <img class="user-information__picture" src="{% static 'img/travel_fellows/photo-account-mobile'  %}@1x.jpg"
+                                    <img class="user-information__picture"
+                                         src="{% static 'img/travel_fellows/photo-account-mobile' %}@1x.jpg"
                                          srcset="
                         {% static 'img/travel_fellows/photo-account-mobile' %}@1x.jpg 1x,
                         {% static 'img/travel_fellows/photo-account-mobile' %}@2x.jpg 2x
@@ -54,11 +56,12 @@
                             </div>
                         </div>
                         <div class="user-information__upload-photo">
-                            <input class="visually-hidden" type="file" accept="image/*" name="user-photo"
-                                   id="upload-photo">
+                            <input class="visually-hidden" type="file" name="user-photo"
+                                   id="upload-photo" onchange="this.form.submit()">
                             <label class="button button--rounded button--violet user-information__button"
                                    for="upload-photo"><span
                                     class="user-information__button-hidden-text">Change&nbsp;</span>photo</label>
+
                         </div>
                         <div class="user-information__wrapper">
                             <p class="user-information__title user-information__title--tags">
@@ -566,7 +569,8 @@
                                     </button>
                                     <div class="plan-step__flag-wrapper plan-step__flag-wrapper--active">
                                         <div class="country-flag country-flag--big" data-tooltip="Чехия">
-                                            <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
+                                            <img class="country-flag__picture"
+                                                 src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
                                                  width="35" height="24">
                                         </div>
                                     </div>
@@ -1560,7 +1564,8 @@
                                         <label class="plan-step__description-label" for="ba-plans">Босния и
                                             Герцеговина</label>
                                         <div class="country-flag country-flag--big" data-tooltip="Босния и Герцеговина">
-                                            <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-bosnia.svg' %}"
+                                            <img class="country-flag__picture"
+                                                 src="{% static 'img/travel_fellows/flag-bosnia.svg' %}"
                                                  alt="Флаг Боснии и Герцеговины" width="35" height="24">
                                         </div>
                                     </div>
@@ -1576,7 +1581,8 @@
                                     <div class="plan-step__description-title">
                                         <label class="plan-step__description-label" for="cz-plans">Чехия</label>
                                         <div class="country-flag country-flag--big" data-tooltip="Чехия">
-                                            <img class="country-flag__picture" src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
+                                            <img class="country-flag__picture"
+                                                 src="{% static 'img/travel_fellows/flag-czech.svg' %}" alt="Флаг Чехии"
                                                  width="35" height="24">
                                         </div>
                                     </div>
