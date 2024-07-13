@@ -192,7 +192,7 @@ LOGGING = {
 }
 
 
-MEDIA_ROOT = BASE_DIR / "temp"
+MEDIA_ROOT = BASE_DIR / "static/img/"
 
 if __name__ == '__main__':
     run_script()

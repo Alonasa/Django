@@ -69,11 +69,20 @@ class ViewUserProfile(View):
 
     def post(self, request):
         form = UserPhotoForm(request.POST, request.FILES)
+        user = UserProfile.objects.get(id=request.user.id)
+        print(user)
+
+        context = {
+            "form": form,
+            "user": user,
+            "image": user.photo.url
+        }
 
         if form.is_valid():
-            profile = UserProfile(user_id=18, photo=request.FILES['user_photo'])
+            print(user.photo.url)
+            profile = UserProfile(user_id=request.user.id, photo=request.FILES['user_photo'])
             profile.save()
-        return render(request, "travel_fellows/form.html", {"form": form})
+        return render(request, "travel_fellows/form.html", context)
 
 
 class RegisterUser(View):
