@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
 from .forms import AuthorizeForm, RegisterForm, UserPhotoForm
-from .models import User, UserProfile
+from .models import User
 
 
 def destinations(request):
@@ -69,20 +69,8 @@ class ViewUserProfile(View):
 
     def post(self, request):
         form = UserPhotoForm(request.POST, request.FILES)
-        user = UserProfile.objects.get(id=request.user.id)
-        print(user)
 
-        context = {
-            "form": form,
-            "user": user,
-            "image": user.photo.url
-        }
-
-        if form.is_valid():
-            print(user.photo.url)
-            profile = UserProfile(user_id=request.user.id, photo=request.FILES['user_photo'])
-            profile.save()
-        return render(request, "travel_fellows/form.html", context)
+        return render(request, "travel_fellows/form.html")
 
 
 class RegisterUser(View):

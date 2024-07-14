@@ -14477,3 +14477,1335 @@ INFO 2024-07-13 23:57:24,100 basehttp 19956 5720 "GET /static/js/travel_fellows/
 INFO 2024-07-13 23:57:24,139 basehttp 19956 21520 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
 INFO 2024-07-13 23:57:24,141 basehttp 19956 17376 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
 INFO 2024-07-13 23:57:24,142 basehttp 19956 24932 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:18:29,485 autoreload 13588 24608 Watching for file changes with StatReloader
+ERROR 2024-07-14 19:18:51,961 log 13588 14904 Internal Server Error: /admin/travel_fellows/userprofile/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column travel_fellows_userprofile.id does not exist
+LINE 1: SELECT "travel_fellows_userprofile"."id", "travel_fellows_us...
+               ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column travel_fellows_userprofile.id does not exist
+LINE 1: SELECT "travel_fellows_userprofile"."id", "travel_fellows_us...
+               ^
+
+ERROR 2024-07-14 19:18:51,983 basehttp 13588 14904 "GET /admin/travel_fellows/userprofile/ HTTP/1.1" 500 172204
+INFO 2024-07-14 19:18:57,711 basehttp 13588 14904 "GET /admin/travel_fellows/user/18/change/ HTTP/1.1" 200 19301
+ERROR 2024-07-14 19:19:02,344 log 13588 14904 Internal Server Error: /admin/travel_fellows/userprofile/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column travel_fellows_userprofile.id does not exist
+LINE 1: SELECT "travel_fellows_userprofile"."id", "travel_fellows_us...
+               ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column travel_fellows_userprofile.id does not exist
+LINE 1: SELECT "travel_fellows_userprofile"."id", "travel_fellows_us...
+               ^
+
+ERROR 2024-07-14 19:19:02,354 basehttp 13588 14904 "GET /admin/travel_fellows/userprofile/ HTTP/1.1" 500 172067
+INFO 2024-07-14 19:19:06,699 basehttp 13588 14904 "GET /admin/travel_fellows/user/18/change/ HTTP/1.1" 200 19301
+INFO 2024-07-14 19:19:10,742 basehttp 13588 14904 "POST /admin/logout/ HTTP/1.1" 200 3613
+INFO 2024-07-14 19:19:15,347 basehttp 13588 14904 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-07-14 19:19:15,505 basehttp 13588 14904 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4218
+INFO 2024-07-14 19:19:23,522 basehttp 13588 14904 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-07-14 19:19:23,690 basehttp 13588 14904 "GET /admin/ HTTP/1.1" 200 9654
+WARNING 2024-07-14 19:19:26,145 basehttp 13588 14904 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-07-14 19:19:26,146 basehttp 13588 11996 "GET /static/img/travel_fellows/icon-changelink.svg HTTP/1.1" 404 1873
+WARNING 2024-07-14 19:19:26,151 basehttp 13588 14708 "GET /static/img/travel_fellows/icon-deletelink.svg HTTP/1.1" 404 1873
+ERROR 2024-07-14 19:19:28,559 log 13588 4768 Internal Server Error: /admin/travel_fellows/userprofile/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column travel_fellows_userprofile.id does not exist
+LINE 1: SELECT "travel_fellows_userprofile"."id", "travel_fellows_us...
+               ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column travel_fellows_userprofile.id does not exist
+LINE 1: SELECT "travel_fellows_userprofile"."id", "travel_fellows_us...
+               ^
+
+ERROR 2024-07-14 19:19:28,570 basehttp 13588 4768 "GET /admin/travel_fellows/userprofile/ HTTP/1.1" 500 172037
+INFO 2024-07-14 19:20:19,181 autoreload 13588 24608 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-07-14 19:20:20,662 autoreload 4236 13144 Watching for file changes with StatReloader
+INFO 2024-07-14 19:20:36,353 autoreload 4236 13144 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-07-14 19:20:38,126 autoreload 4856 20752 Watching for file changes with StatReloader
+INFO 2024-07-14 19:29:02,301 autoreload 4856 20752 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\admin.py changed, reloading.
+INFO 2024-07-14 19:29:03,757 autoreload 9092 20720 Watching for file changes with StatReloader
+INFO 2024-07-14 19:44:45,870 autoreload 21380 2296 Watching for file changes with StatReloader
+INFO 2024-07-14 19:45:18,451 basehttp 21380 1068 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139109
+INFO 2024-07-14 19:45:19,318 basehttp 21380 25456 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:45:19,369 basehttp 21380 4088 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:45:19,441 basehttp 21380 22132 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:45:19,442 basehttp 21380 22148 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:45:19,446 basehttp 21380 8768 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:45:19,839 basehttp 21380 1068 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:45:20,228 basehttp 21380 25456 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+WARNING 2024-07-14 19:45:21,202 basehttp 21380 22132 "GET /static/ HTTP/1.1" 404 1767
+INFO 2024-07-14 19:45:21,781 basehttp 21380 22148 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-14 19:45:22,015 basehttp 21380 8768 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:45:22,044 basehttp 21380 1068 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-14 19:45:22,045 basehttp 21380 4088 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:45:22,048 basehttp 21380 25456 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:45:22,358 basehttp 21380 22148 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:45:22,403 basehttp 21380 25432 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:45:22,611 basehttp 21380 8768 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:45:22,698 basehttp 21380 1068 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-14 19:45:22,753 basehttp 21380 4088 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-14 19:45:22,960 basehttp 21380 22148 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-14 19:45:22,991 basehttp 21380 25456 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-14 19:45:22,997 basehttp 21380 25432 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-14 19:45:23,204 basehttp 21380 8768 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-14 19:45:23,298 basehttp 21380 1068 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+ERROR 2024-07-14 19:45:30,531 log 21380 1068 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 19:45:30,546 basehttp 21380 1068 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160836
+INFO 2024-07-14 19:45:42,733 basehttp 21380 1068 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139109
+INFO 2024-07-14 19:45:43,422 basehttp 21380 8768 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:45:43,435 basehttp 21380 25432 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:45:43,438 basehttp 21380 25456 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:45:43,446 basehttp 21380 22148 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:45:43,535 basehttp 21380 4088 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:45:44,224 basehttp 21380 1068 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:45:44,855 basehttp 21380 1068 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+WARNING 2024-07-14 19:45:45,590 basehttp 21380 22148 "GET /static/ HTTP/1.1" 404 1767
+INFO 2024-07-14 19:45:46,188 basehttp 21380 8768 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-14 19:45:46,445 basehttp 21380 4088 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:45:46,474 basehttp 21380 1068 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:45:46,476 basehttp 21380 25432 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:45:46,527 basehttp 21380 25456 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:45:46,776 basehttp 21380 8768 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:45:46,832 basehttp 21380 24624 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:45:47,051 basehttp 21380 4088 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-14 19:45:47,142 basehttp 21380 25456 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-14 19:45:47,190 basehttp 21380 1068 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-14 19:45:47,349 basehttp 21380 8768 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-14 19:45:47,418 basehttp 21380 25432 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-14 19:45:47,425 basehttp 21380 24624 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-14 19:45:47,646 basehttp 21380 4088 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-14 19:46:45,397 basehttp 21380 2500 "GET /admin/travel_fellows/user/ HTTP/1.1" 200 9146
+INFO 2024-07-14 19:46:45,893 basehttp 21380 2500 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-07-14 19:46:57,617 log 21380 2500 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 19:46:57,632 basehttp 21380 2500 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160628
+INFO 2024-07-14 19:47:03,809 basehttp 21380 2500 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139109
+INFO 2024-07-14 19:47:04,551 basehttp 21380 22432 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:04,585 basehttp 21380 3316 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:04,906 basehttp 21380 23864 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:04,907 basehttp 21380 12320 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:04,911 basehttp 21380 23056 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:47:06,625 basehttp 21380 3316 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 19:47:06,627 basehttp 21380 12320 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+WARNING 2024-07-14 19:47:07,241 basehttp 21380 3316 "GET /static/ HTTP/1.1" 404 1767
+INFO 2024-07-14 19:47:07,540 basehttp 21380 23056 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-14 19:47:07,596 basehttp 21380 12320 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:47:07,606 basehttp 21380 22432 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:47:07,607 basehttp 21380 2500 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-14 19:47:07,609 basehttp 21380 23864 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:47:08,122 basehttp 21380 24036 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:47:08,137 basehttp 21380 23056 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:47:08,186 basehttp 21380 12320 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:47:08,725 basehttp 21380 24036 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-14 19:47:08,726 basehttp 21380 23056 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-14 19:47:08,735 basehttp 21380 23864 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-14 19:47:08,735 basehttp 21380 2500 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-14 19:47:08,736 basehttp 21380 22432 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-14 19:47:08,784 basehttp 21380 12320 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-14 19:47:09,327 basehttp 21380 23864 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-14 19:47:10,414 basehttp 21380 23864 "GET /portfolio/fellows/logout/ HTTP/1.1" 302 0
+INFO 2024-07-14 19:47:10,776 basehttp 21380 23864 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-14 19:47:11,666 basehttp 21380 23864 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:11,732 basehttp 21380 12320 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:11,756 basehttp 21380 22432 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:11,761 basehttp 21380 2500 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:11,769 basehttp 21380 23056 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:47:13,753 basehttp 21380 12320 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-14 19:47:13,754 basehttp 21380 2500 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-14 19:47:14,465 basehttp 21380 12320 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-14 19:47:14,529 basehttp 21380 2500 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-14 19:47:14,891 basehttp 21380 22432 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:47:14,895 basehttp 21380 23056 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-14 19:47:14,895 basehttp 21380 23864 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 19:47:14,896 basehttp 21380 24036 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-14 19:47:15,118 basehttp 21380 12320 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:15,277 basehttp 21380 2500 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:15,486 basehttp 21380 22432 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:15,487 basehttp 21380 23864 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:15,488 basehttp 21380 24036 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:47:15,536 basehttp 21380 23056 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:47:16,096 basehttp 21380 24036 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-14 19:47:16,150 basehttp 21380 23056 "GET /static/img/travel_fellows/traveller-illustration-tablet@1x.png HTTP/1.1" 200 9109
+INFO 2024-07-14 19:47:16,272 basehttp 21380 12320 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:47:16,866 basehttp 21380 2500 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-14 19:47:17,122 basehttp 21380 22432 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-14 19:47:17,124 basehttp 21380 23056 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:47:17,191 basehttp 21380 23864 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-14 19:47:17,193 basehttp 21380 24036 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-14 19:47:17,198 basehttp 21380 12320 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-14 19:47:17,639 basehttp 21380 24036 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:17,704 basehttp 21380 23864 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:47:17,706 basehttp 21380 22432 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:17,708 basehttp 21380 2500 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:17,710 basehttp 21380 12320 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:17,717 basehttp 21380 23056 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:47:18,293 basehttp 21380 23864 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 19:47:19,805 basehttp 21380 22432 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:47:20,892 basehttp 21380 23056 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:47:20,972 basehttp 21380 22432 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:47:20,976 basehttp 21380 2500 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:47:20,977 basehttp 21380 12320 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:47:26,087 basehttp 21380 12320 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 200 7494
+INFO 2024-07-14 19:47:26,969 basehttp 21380 12320 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:26,979 basehttp 21380 2500 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:26,988 basehttp 21380 23056 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:26,990 basehttp 21380 22432 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:26,996 basehttp 21380 24036 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:47:27,742 basehttp 21380 23864 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:47:28,368 basehttp 21380 23864 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 19:47:29,110 basehttp 21380 23056 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:47:30,199 basehttp 21380 24036 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:47:30,251 basehttp 21380 23056 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:47:30,254 basehttp 21380 2500 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:47:30,254 basehttp 21380 12320 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:47:38,762 basehttp 21380 24036 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 302 0
+INFO 2024-07-14 19:47:38,925 basehttp 21380 24036 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-14 19:47:39,587 basehttp 21380 24036 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:39,598 basehttp 21380 12320 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:39,602 basehttp 21380 2500 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:39,615 basehttp 21380 22432 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:47:39,616 basehttp 21380 23056 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:40,402 basehttp 21380 23864 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-14 19:47:41,266 basehttp 21380 23864 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-14 19:47:41,674 basehttp 21380 2500 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-14 19:47:42,003 basehttp 21380 23864 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-14 19:47:42,374 basehttp 21380 2500 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-14 19:47:42,824 basehttp 21380 23864 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:47:42,869 basehttp 21380 24036 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:47:42,869 basehttp 21380 22432 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 19:47:42,870 basehttp 21380 23056 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-14 19:47:42,870 basehttp 21380 12320 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-14 19:47:42,999 basehttp 21380 2500 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:43,419 basehttp 21380 23864 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:43,455 basehttp 21380 23056 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:43,460 basehttp 21380 24036 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:43,467 basehttp 21380 22432 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-14 19:47:43,473 basehttp 21380 12320 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:47:43,917 basehttp 21380 2500 "GET /static/img/travel_fellows/traveller-illustration-tablet@1x.png HTTP/1.1" 200 9109
+INFO 2024-07-14 19:47:44,072 basehttp 21380 12320 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:47:44,585 basehttp 21380 22432 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:47:44,697 basehttp 21380 12320 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-14 19:47:44,743 basehttp 21380 2500 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-14 19:47:45,091 basehttp 21380 23864 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-14 19:47:45,121 basehttp 21380 23056 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:47:45,132 basehttp 21380 24036 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:47:45,205 basehttp 21380 22432 "GET /static/img/travel_fellows/about-tablet@1x.png HTTP/1.1" 200 152618
+INFO 2024-07-14 19:47:45,314 basehttp 21380 12320 "GET /static/img/travel_fellows/rectangle-bg-big-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 19:47:45,331 basehttp 21380 2500 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-14 19:47:45,700 basehttp 21380 23864 "GET /static/img/travel_fellows/rectangle-bg-violet.svg HTTP/1.1" 200 420
+INFO 2024-07-14 19:47:45,828 basehttp 21380 24036 "GET /static/img/travel_fellows/user.svg HTTP/1.1" 200 292
+INFO 2024-07-14 19:47:45,910 basehttp 21380 12320 "GET /static/img/travel_fellows/rogovaya-back-desktop@1x.png HTTP/1.1" 200 39349
+INFO 2024-07-14 19:47:46,295 basehttp 21380 23864 "GET /static/img/travel_fellows/rectangle-bg-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 19:47:46,420 basehttp 21380 24036 "GET /static/img/travel_fellows/smolov-back-desktop@1x.png HTTP/1.1" 200 20932
+INFO 2024-07-14 19:47:46,433 basehttp 21380 23056 "GET /static/img/travel_fellows/rates@1x.png HTTP/1.1" 200 6635
+INFO 2024-07-14 19:47:46,480 basehttp 21380 2500 "GET /static/img/travel_fellows/business.svg HTTP/1.1" 200 448
+INFO 2024-07-14 19:47:52,433 basehttp 21380 22432 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-14 19:47:53,244 basehttp 21380 22432 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:53,289 basehttp 21380 24036 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:53,306 basehttp 21380 2500 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:53,308 basehttp 21380 23056 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:53,312 basehttp 21380 12320 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:47:53,970 basehttp 21380 23864 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-14 19:47:54,844 basehttp 21380 23864 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-14 19:47:55,256 basehttp 21380 22432 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-14 19:47:55,589 basehttp 21380 23864 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-14 19:47:55,970 basehttp 21380 22432 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-14 19:47:56,073 basehttp 21380 2500 "GET /portfolio/fellows/user HTTP/1.1" 301 0
+INFO 2024-07-14 19:47:56,413 basehttp 21380 23864 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:47:56,560 basehttp 21380 12320 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 19:47:56,561 basehttp 21380 24036 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-14 19:47:56,562 basehttp 21380 23056 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-14 19:47:56,598 basehttp 21380 22432 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:47:56,940 basehttp 21380 24072 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:57,014 basehttp 21380 23864 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:57,156 basehttp 21380 24036 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:57,168 basehttp 21380 12320 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:57,188 basehttp 21380 22432 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-14 19:47:57,309 basehttp 21380 23056 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139124
+INFO 2024-07-14 19:47:58,099 basehttp 21380 9800 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:47:58,103 basehttp 21380 14300 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:47:58,121 basehttp 21380 8700 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:47:58,127 basehttp 21380 11996 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:47:58,393 basehttp 21380 7336 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:47:58,904 basehttp 21380 23056 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:47:59,520 basehttp 21380 23056 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+WARNING 2024-07-14 19:48:00,221 basehttp 21380 11996 "GET /static/ HTTP/1.1" 404 1767
+INFO 2024-07-14 19:48:00,795 basehttp 21380 9800 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-14 19:48:01,104 basehttp 21380 7336 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:48:01,126 basehttp 21380 14300 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:48:01,128 basehttp 21380 23056 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:48:01,165 basehttp 21380 8700 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:48:01,379 basehttp 21380 9800 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:48:01,469 basehttp 21380 12476 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:48:01,699 basehttp 21380 7336 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-14 19:48:01,760 basehttp 21380 8700 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-14 19:48:01,820 basehttp 21380 14300 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-14 19:48:01,978 basehttp 21380 9800 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-14 19:48:02,060 basehttp 21380 12476 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-14 19:48:02,060 basehttp 21380 23056 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-14 19:48:02,289 basehttp 21380 7336 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+ERROR 2024-07-14 19:48:09,331 log 21380 7336 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 19:48:09,342 basehttp 21380 7336 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160851
+INFO 2024-07-14 19:48:41,342 autoreload 21380 2296 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-07-14 19:48:43,474 autoreload 22384 2280 Watching for file changes with StatReloader
+ERROR 2024-07-14 19:48:49,062 log 22384 9088 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ..."music", "travel_fellows_userprofile"."food" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ..."music", "travel_fellows_userprofile"."food" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 19:48:49,078 basehttp 22384 9088 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160482
+INFO 2024-07-14 19:49:06,630 basehttp 22384 9088 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139124
+INFO 2024-07-14 19:49:07,814 basehttp 22384 18440 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 19:49:07,825 basehttp 22384 8076 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 19:49:08,209 basehttp 22384 9088 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 19:49:08,233 basehttp 22384 23816 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 19:49:08,304 basehttp 22384 1384 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 19:49:08,327 basehttp 22384 21072 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 19:49:08,768 basehttp 22384 8076 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+WARNING 2024-07-14 19:49:09,463 basehttp 22384 21072 "GET /static/ HTTP/1.1" 404 1767
+INFO 2024-07-14 19:49:10,089 basehttp 22384 8076 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-14 19:49:10,286 basehttp 22384 1384 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 19:49:10,317 basehttp 22384 18440 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-14 19:49:10,320 basehttp 22384 9088 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 19:49:10,323 basehttp 22384 23816 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 19:49:10,662 basehttp 22384 2076 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 19:49:10,679 basehttp 22384 8076 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 19:49:10,869 basehttp 22384 1384 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 19:49:10,948 basehttp 22384 18440 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-14 19:49:11,018 basehttp 22384 9088 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-14 19:49:11,245 basehttp 22384 23816 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-14 19:49:11,250 basehttp 22384 2076 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-14 19:49:11,256 basehttp 22384 8076 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-14 19:49:11,473 basehttp 22384 1384 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-14 19:49:11,546 basehttp 22384 18440 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+ERROR 2024-07-14 19:49:19,923 log 22384 18440 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ..."music", "travel_fellows_userprofile"."food" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ..."music", "travel_fellows_userprofile"."food" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 19:49:19,937 basehttp 22384 18440 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160478
+INFO 2024-07-14 22:29:22,187 autoreload 22384 2280 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\admin.py changed, reloading.
+INFO 2024-07-14 22:29:23,933 autoreload 14280 3236 Watching for file changes with StatReloader
+INFO 2024-07-14 22:31:13,974 autoreload 14280 3236 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-07-14 22:31:15,306 autoreload 22344 22384 Watching for file changes with StatReloader
+ERROR 2024-07-14 22:31:41,950 log 22344 8768 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 22:31:41,966 basehttp 22344 8768 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160847
+ERROR 2024-07-14 22:31:59,529 log 22344 8768 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 22:31:59,540 basehttp 22344 8768 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160847
+INFO 2024-07-14 22:32:21,181 autoreload 13636 23156 Watching for file changes with StatReloader
+ERROR 2024-07-14 22:32:28,538 log 13636 25240 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 22:32:28,551 basehttp 13636 25240 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160847
+INFO 2024-07-14 22:32:43,578 basehttp 13636 25240 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-14 22:32:44,801 basehttp 13636 25240 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:32:44,884 basehttp 13636 25040 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:32:44,901 basehttp 13636 10720 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:32:45,138 basehttp 13636 1676 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:32:45,145 basehttp 13636 25372 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 22:32:45,504 basehttp 13636 15528 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-14 22:32:46,083 basehttp 13636 25240 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-14 22:32:46,286 basehttp 13636 15528 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-14 22:32:46,817 basehttp 13636 25240 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-14 22:32:46,986 basehttp 13636 15528 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-14 22:32:47,614 basehttp 13636 25372 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 22:32:47,614 basehttp 13636 10720 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-14 22:32:47,615 basehttp 13636 1676 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 22:32:47,617 basehttp 13636 25040 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-14 22:32:47,619 basehttp 13636 25240 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 22:32:47,652 basehttp 13636 15528 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-14 22:32:48,205 basehttp 13636 25372 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:32:48,206 basehttp 13636 1676 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:32:48,212 basehttp 13636 10720 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:32:48,217 basehttp 13636 25040 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:32:48,246 basehttp 13636 25240 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-14 22:32:48,261 basehttp 13636 15528 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 22:32:48,887 basehttp 13636 15528 "GET /static/img/travel_fellows/traveller-illustration-tablet@1x.png HTTP/1.1" 200 9109
+INFO 2024-07-14 22:32:49,460 basehttp 13636 25240 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 22:32:49,722 basehttp 13636 15528 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 22:32:50,069 basehttp 13636 25240 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-14 22:32:50,159 basehttp 13636 10720 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-14 22:32:50,235 basehttp 13636 1676 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-14 22:32:50,237 basehttp 13636 25372 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 22:32:50,237 basehttp 13636 25040 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 22:32:50,324 basehttp 13636 15528 "GET /static/img/travel_fellows/about-tablet@1x.png HTTP/1.1" 200 152618
+INFO 2024-07-14 22:32:50,656 basehttp 13636 25240 "GET /static/img/travel_fellows/rectangle-bg-big-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:32:50,774 basehttp 13636 10720 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-14 22:32:50,874 basehttp 13636 1676 "GET /static/img/travel_fellows/rectangle-bg-violet.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:32:50,968 basehttp 13636 25372 "GET /static/img/travel_fellows/user.svg HTTP/1.1" 200 292
+INFO 2024-07-14 22:32:51,275 basehttp 13636 25240 "GET /static/img/travel_fellows/rogovaya-back-desktop@1x.png HTTP/1.1" 200 39349
+INFO 2024-07-14 22:32:51,358 basehttp 13636 25040 "GET /static/img/travel_fellows/rectangle-bg-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:32:51,484 basehttp 13636 1676 "GET /static/img/travel_fellows/smolov-back-desktop@1x.png HTTP/1.1" 200 20932
+INFO 2024-07-14 22:32:51,557 basehttp 13636 25372 "GET /static/img/travel_fellows/rates@1x.png HTTP/1.1" 200 6635
+INFO 2024-07-14 22:32:51,728 basehttp 13636 10720 "GET /static/img/travel_fellows/business.svg HTTP/1.1" 200 448
+INFO 2024-07-14 22:33:29,382 basehttp 13636 15528 "GET /portfolio/fellows/logout/ HTTP/1.1" 302 0
+INFO 2024-07-14 22:33:29,822 basehttp 13636 15528 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-14 22:33:30,854 basehttp 13636 15528 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:33:30,856 basehttp 13636 25240 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:33:30,857 basehttp 13636 10720 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:33:30,859 basehttp 13636 1676 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:33:30,863 basehttp 13636 25372 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 22:33:31,838 basehttp 13636 25040 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-14 22:33:32,696 basehttp 13636 25040 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-14 22:33:32,927 basehttp 13636 1676 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-14 22:33:33,449 basehttp 13636 25040 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-14 22:33:33,636 basehttp 13636 1676 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-14 22:33:34,019 basehttp 13636 25372 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 22:33:34,020 basehttp 13636 15528 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-14 22:33:34,021 basehttp 13636 10720 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 22:33:34,022 basehttp 13636 25240 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-14 22:33:34,134 basehttp 13636 25040 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:33:34,274 basehttp 13636 1676 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:33:34,610 basehttp 13636 25372 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:33:34,610 basehttp 13636 15528 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:33:34,614 basehttp 13636 10720 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-14 22:33:34,619 basehttp 13636 25240 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 22:33:35,187 basehttp 13636 25040 "GET /static/img/travel_fellows/traveller-illustration-tablet@1x.png HTTP/1.1" 200 9109
+INFO 2024-07-14 22:33:35,221 basehttp 13636 25240 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 22:33:35,720 basehttp 13636 10720 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 22:33:35,788 basehttp 13636 1676 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 22:33:35,824 basehttp 13636 25240 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-14 22:33:35,946 basehttp 13636 25040 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-14 22:33:36,135 basehttp 13636 25372 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-14 22:33:36,153 basehttp 13636 15528 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 22:33:36,309 basehttp 13636 10720 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 22:33:36,390 basehttp 13636 1676 "GET /static/img/travel_fellows/about-tablet@1x.png HTTP/1.1" 200 152618
+INFO 2024-07-14 22:33:36,430 basehttp 13636 25240 "GET /static/img/travel_fellows/rectangle-bg-big-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:33:36,478 basehttp 13636 10720 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-14 22:33:36,577 basehttp 13636 25040 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-14 22:33:36,725 basehttp 13636 25372 "GET /static/img/travel_fellows/rectangle-bg-violet.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:33:37,020 basehttp 13636 25240 "GET /static/img/travel_fellows/user.svg HTTP/1.1" 200 292
+INFO 2024-07-14 22:33:37,051 basehttp 13636 15528 "GET /static/img/travel_fellows/rogovaya-back-desktop@1x.png HTTP/1.1" 200 39349
+INFO 2024-07-14 22:33:37,378 basehttp 13636 25040 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:33:37,432 basehttp 13636 25240 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:33:37,446 basehttp 13636 25372 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:33:37,446 basehttp 13636 13544 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:33:37,756 basehttp 13636 24996 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 22:33:38,423 basehttp 13636 21556 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 22:33:39,047 basehttp 13636 21556 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 22:33:39,644 basehttp 13636 21556 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 22:33:40,482 basehttp 13636 24996 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 22:33:40,519 basehttp 13636 13544 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 22:33:40,523 basehttp 13636 25240 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 22:33:40,524 basehttp 13636 25372 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 22:33:45,620 basehttp 13636 24996 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 302 0
+INFO 2024-07-14 22:33:45,746 basehttp 13636 24996 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-14 22:33:46,499 basehttp 13636 24996 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:33:46,515 basehttp 13636 25372 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:33:46,534 basehttp 13636 25240 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:33:46,535 basehttp 13636 13544 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:33:46,539 basehttp 13636 21556 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 22:33:47,277 basehttp 13636 25040 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-14 22:33:48,148 basehttp 13636 25040 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-14 22:33:48,585 basehttp 13636 24996 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-14 22:33:48,883 basehttp 13636 25040 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-14 22:33:49,273 basehttp 13636 24996 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-14 22:33:49,695 basehttp 13636 25040 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 22:33:49,769 basehttp 13636 21556 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 22:33:49,776 basehttp 13636 13544 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-14 22:33:49,778 basehttp 13636 25240 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 22:33:49,779 basehttp 13636 25372 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-14 22:33:49,915 basehttp 13636 24996 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:33:50,281 basehttp 13636 25040 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:33:50,362 basehttp 13636 13544 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:33:50,367 basehttp 13636 25240 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-14 22:33:50,369 basehttp 13636 21556 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:33:50,371 basehttp 13636 25372 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 22:33:50,818 basehttp 13636 24996 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 22:33:50,979 basehttp 13636 25372 "GET /static/img/travel_fellows/traveller-illustration-tablet@1x.png HTTP/1.1" 200 9109
+INFO 2024-07-14 22:33:51,418 basehttp 13636 24996 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 22:33:51,483 basehttp 13636 25240 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-14 22:33:51,799 basehttp 13636 25372 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-14 22:33:51,862 basehttp 13636 25040 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-14 22:33:51,977 basehttp 13636 21556 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 22:33:51,981 basehttp 13636 13544 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 22:33:51,994 basehttp 13636 24996 "GET /static/img/travel_fellows/about-tablet@1x.png HTTP/1.1" 200 152618
+INFO 2024-07-14 22:33:52,098 basehttp 13636 25240 "GET /static/img/travel_fellows/rectangle-bg-big-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:33:52,397 basehttp 13636 25372 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-14 22:33:52,458 basehttp 13636 25040 "GET /static/img/travel_fellows/rectangle-bg-violet.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:33:52,693 basehttp 13636 25240 "GET /static/img/travel_fellows/user.svg HTTP/1.1" 200 292
+INFO 2024-07-14 22:33:52,725 basehttp 13636 13544 "GET /static/img/travel_fellows/rogovaya-back-desktop@1x.png HTTP/1.1" 200 39349
+INFO 2024-07-14 22:33:53,057 basehttp 13636 25040 "GET /static/img/travel_fellows/rectangle-bg-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:33:53,250 basehttp 13636 21556 "GET /static/img/travel_fellows/smolov-back-desktop@1x.png HTTP/1.1" 200 20932
+INFO 2024-07-14 22:33:53,299 basehttp 13636 25240 "GET /static/img/travel_fellows/rates@1x.png HTTP/1.1" 200 6635
+INFO 2024-07-14 22:33:53,553 basehttp 13636 25372 "GET /static/img/travel_fellows/business.svg HTTP/1.1" 200 448
+INFO 2024-07-14 22:34:00,775 basehttp 13636 24996 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-14 22:34:01,675 basehttp 13636 24996 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:34:01,817 basehttp 13636 25372 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:34:01,819 basehttp 13636 25040 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-14 22:34:01,822 basehttp 13636 21556 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:34:01,823 basehttp 13636 25240 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:34:01,829 basehttp 13636 13544 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 22:34:02,675 basehttp 13636 25040 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-14 22:34:03,387 basehttp 13636 24996 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-14 22:34:03,653 basehttp 13636 25040 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-14 22:34:04,085 basehttp 13636 24996 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-14 22:34:04,460 basehttp 13636 25040 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 22:34:04,772 basehttp 13636 24996 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-14 22:34:05,012 basehttp 13636 13544 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-14 22:34:05,013 basehttp 13636 25372 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 22:34:05,014 basehttp 13636 25240 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-14 22:34:05,014 basehttp 13636 21556 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-14 22:34:05,077 basehttp 13636 25040 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-14 22:34:05,364 basehttp 13636 24996 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:34:05,603 basehttp 13636 13544 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:34:05,620 basehttp 13636 25240 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:34:05,624 basehttp 13636 25372 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:34:05,646 basehttp 13636 25040 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-14 22:34:05,649 basehttp 13636 21556 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 22:34:06,252 basehttp 13636 21556 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 22:34:06,594 basehttp 13636 24996 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 22:34:06,828 basehttp 13636 25040 "GET /static/img/travel_fellows/traveller-illustration-tablet@1x.png HTTP/1.1" 200 9109
+INFO 2024-07-14 22:34:06,866 basehttp 13636 21556 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-14 22:34:07,181 basehttp 13636 24996 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 22:34:07,302 basehttp 13636 25240 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 22:34:07,342 basehttp 13636 13544 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-14 22:34:07,347 basehttp 13636 25372 "GET /static/img/travel_fellows/about-tablet@1x.png HTTP/1.1" 200 152618
+INFO 2024-07-14 22:34:07,488 basehttp 13636 21556 "GET /static/img/travel_fellows/rectangle-bg-big-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:34:07,489 basehttp 13636 25040 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-14 22:34:08,000 basehttp 13636 13544 "GET /static/img/travel_fellows/rectangle-bg-violet.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:34:08,068 basehttp 13636 25240 "GET /static/img/travel_fellows/user.svg HTTP/1.1" 200 292
+INFO 2024-07-14 22:34:08,134 basehttp 13636 21556 "GET /static/img/travel_fellows/rogovaya-back-desktop@1x.png HTTP/1.1" 200 39349
+INFO 2024-07-14 22:34:08,384 basehttp 13636 24996 "GET /static/img/travel_fellows/rectangle-bg-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-14 22:34:08,559 basehttp 13636 25040 "GET /static/img/travel_fellows/smolov-back-desktop@1x.png HTTP/1.1" 200 20932
+INFO 2024-07-14 22:34:08,599 basehttp 13636 13544 "GET /static/img/travel_fellows/rates@1x.png HTTP/1.1" 200 6635
+INFO 2024-07-14 22:34:08,665 basehttp 13636 25240 "GET /static/img/travel_fellows/business.svg HTTP/1.1" 200 448
+INFO 2024-07-14 22:34:09,001 basehttp 13636 24996 "GET /portfolio/fellows/user HTTP/1.1" 301 0
+INFO 2024-07-14 22:34:09,726 basehttp 13636 25040 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139124
+INFO 2024-07-14 22:34:10,778 basehttp 13636 25372 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-14 22:34:10,785 basehttp 13636 13544 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-14 22:34:10,786 basehttp 13636 25240 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-14 22:34:10,789 basehttp 13636 21556 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-14 22:34:11,102 basehttp 13636 20724 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203310
+INFO 2024-07-14 22:34:11,491 basehttp 13636 25040 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-14 22:34:12,090 basehttp 13636 25040 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+WARNING 2024-07-14 22:34:12,899 basehttp 13636 21556 "GET /static/ HTTP/1.1" 404 1767
+INFO 2024-07-14 22:34:13,525 basehttp 13636 25372 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-14 22:34:13,812 basehttp 13636 20724 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-14 22:34:13,825 basehttp 13636 25240 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-14 22:34:13,826 basehttp 13636 25040 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-14 22:34:13,827 basehttp 13636 13544 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-14 22:34:14,096 basehttp 13636 25372 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-14 22:34:14,173 basehttp 13636 24596 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-14 22:34:14,398 basehttp 13636 20724 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-14 22:34:14,479 basehttp 13636 25040 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-14 22:34:14,541 basehttp 13636 25240 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-14 22:34:14,693 basehttp 13636 25372 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-14 22:34:14,790 basehttp 13636 24596 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-14 22:34:14,804 basehttp 13636 13544 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-14 22:34:14,988 basehttp 13636 20724 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-14 22:34:15,067 basehttp 13636 25040 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+ERROR 2024-07-14 22:34:25,033 log 13636 25040 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 72, in post
+    user = UserProfile.objects.get(id=request.user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "travel_fellows_userprofile" does not exist
+LINE 1: ...d", "travel_fellows_userprofile"."transport" FROM "travel_fe...
+                                                             ^
+
+ERROR 2024-07-14 22:34:25,041 basehttp 13636 25040 "POST /portfolio/fellows/user/ HTTP/1.1" 500 160847
+INFO 2024-07-14 22:39:03,267 autoreload 13636 23156 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
