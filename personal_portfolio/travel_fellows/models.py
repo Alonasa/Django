@@ -44,8 +44,8 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 class UserProfile(models.Model):
     id = models.AutoField(primary_key=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    photo = models.ImageField(upload_to="travel_fellows/profile", blank=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    photo = models.ImageField(upload_to="travel_fellows/profile/", blank=True)
     hashtags = ArrayField(models.CharField(max_length=300), blank=False, default=list)
     destinations = ArrayField(models.CharField(max_length=200), blank=False, default=list)
     level = models.IntegerField(default=1)
