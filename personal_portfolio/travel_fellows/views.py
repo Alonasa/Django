@@ -63,14 +63,27 @@ def logOut(request):
 
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
+    def get_context(self, form, user_profile):
+        context = {
+            "form": form,
+            "user": user_profile,
+            "image": f"img/{user_profile.photo.url}"
+        }
+
+        return context
+
+
     def get(self, request):
         form = UserPhotoForm()
-        return render(request, "travel_fellows/form.html", {"form": form})
+        user_profile = UserProfile.objects.get(user=request.user)
+        context = self.get_context(form, user_profile)
+        return render(request, "travel_fellows/form.html", context)
 
     def post(self, request):
         form = UserPhotoForm(request.POST, request.FILES)
-        print("CHECK")
+        user_profile = UserProfile.objects.get(user=request.user)
 
+        context = self.get_context(form, user_profile)
         if form.is_valid():
             try:
                 user_profile = UserProfile.objects.get(user=request.user)
@@ -82,14 +95,10 @@ class ViewUserProfile(View):
                     photo=request.FILES['user_photo']
                 )
 
-            context = {
-                "form": form,
-                "user": user_profile,
-                "image": f"img/{user_profile.photo.url}"
-            }
+            context = self.get_context(form, user_profile)
             return render(request, "travel_fellows/form.html", context)
 
-        return render(request, "travel_fellows/form.html", {"form": form})
+        return render(request, "travel_fellows/form.html", context)
 
 
 class RegisterUser(View):
