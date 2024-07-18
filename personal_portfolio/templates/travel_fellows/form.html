@@ -70,9 +70,11 @@
                             <p class="user-information__title user-information__title--tags">
                                 Hashtags
                             </p>
-                            <textarea class="user-information__textfield"
-                                      placeholder="Short information about your interests in 6-10 tags">
-#burger #bar #footbal #concert #craft</textarea>
+                            {{ textarea_form.as_p }}
+{#                            <textarea class="user-information__textfield"#}
+{#                                      placeholder="Short information about your interests in 6-10 tags">#}
+{##burger #bar #footbal #concert #craft</textarea>#}
+
                         </div>
                         <div class="user-information__wrapper user-information__wrapper--transport">
                             <p class="user-information__title">Transport</p>

@@ -1,11 +1,11 @@
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import HttpResponse, request
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
-from .forms import AuthorizeForm, RegisterForm, UserPhotoForm
+from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm
 from .models import User, UserProfile
 
 
@@ -62,11 +62,13 @@ def logOut(request):
 
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
-    def get_context(self, form, user_profile):
+
+    def get_context(self, form, user_profile, hashtags_form):
         context = {
             "form": form,
             "user": user_profile,
-            "image": f"img/{user_profile.photo.url}"
+            "image": f"img/{user_profile.photo.url}",
+            "textarea_form": hashtags_form
         }
 
         return context
@@ -74,15 +76,17 @@ class ViewUserProfile(View):
 
     def get(self, request):
         form = UserPhotoForm()
+        hashtags_form = UserHashtagsForm(request.POST)
         user_profile = UserProfile.objects.get(user=request.user)
-        context = self.get_context(form, user_profile)
+        context = self.get_context(form, user_profile, hashtags_form)
         return render(request, "travel_fellows/form.html", context)
 
     def post(self, request):
         form = UserPhotoForm(request.POST, request.FILES)
+        hashtags_form = UserHashtagsForm(request.POST)
         user_profile = UserProfile.objects.get(user=request.user)
 
-        context = self.get_context(form, user_profile)
+        context = self.get_context(form, user_profile, hashtags_form)
         if form.is_valid():
             try:
                 user_profile = UserProfile.objects.get(user=request.user)

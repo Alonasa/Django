@@ -44,7 +44,8 @@ class RegisterForm(BaseForm):
     password_confirm = forms.CharField(
         label='',
         widget=forms.PasswordInput(
-            attrs={'id': 'repeat_password', 'class': 'registration__password', 'type': 'password', 'name': 'repeat_password',
+            attrs={'id': 'repeat_password', 'class': 'registration__password', 'type': 'password',
+                   'name': 'repeat_password',
                    'placeholder': 'Password'}),
         min_length=8,
         error_messages={"required": "*Required Field", "max_length": "Min password length is 8 Characters"}
@@ -81,3 +82,8 @@ class UserPhotoForm(forms.Form):
             FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png'])
         ]
     )
+
+
+class UserHashtagsForm(forms.Form):
+    hashtags = forms.CharField(label='', required=False, widget=forms.Textarea(attrs={'class': 'user-information__textfield', 'rows': '1',
+                                                            'placeholder': 'Short information about your interests in 6-10 tags', 'onchange': 'this.form.submit()'}))
