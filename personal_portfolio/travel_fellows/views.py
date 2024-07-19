@@ -88,9 +88,10 @@ class ViewUserProfile(View):
 
         context = self.get_context(form, user_profile, hashtags_form)
         if form.is_valid():
+            print(form.changed_data)
             try:
                 user_profile = UserProfile.objects.get(user=request.user)
-                user_profile.photo = request.FILES['user_photo']
+                user_profile.hashtags = form.cleaned_data.get('hashtags', '')
                 user_profile.save()
             except UserProfile.DoesNotExist:
                 user_profile = UserProfile.objects.create(

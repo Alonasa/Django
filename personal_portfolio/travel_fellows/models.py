@@ -46,7 +46,6 @@ class UserProfile(models.Model):
     id = models.AutoField(primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     photo = models.ImageField(upload_to="travel_fellows/profile/", blank=True)
-    hashtags = ArrayField(models.CharField(max_length=300), blank=False, default=list)
     destinations = ArrayField(models.CharField(max_length=200), blank=False, default=list)
     level = models.IntegerField(default=1)
     likes_count = models.IntegerField(default=0)
@@ -63,6 +62,10 @@ class UserProfile(models.Model):
 
     transport = models.CharField(max_length=2, choices=TRANSPORT_CHOICES, blank=True, default='AU')
 
+
+class HashTag(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    user = models.ManyToManyField(User)
 
 class UserPlans(models.Model):
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
