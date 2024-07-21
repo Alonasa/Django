@@ -91,7 +91,6 @@ class ViewUserProfile(View):
             print(form.changed_data)
             try:
                 user_profile = UserProfile.objects.get(user=request.user)
-                user_profile.hashtags = form.cleaned_data.get('hashtags', '')
                 user_profile.save()
             except UserProfile.DoesNotExist:
                 user_profile = UserProfile.objects.create(

@@ -26722,3 +26722,34 @@ INFO 2024-07-19 10:46:35,609 autoreload 13128 22848 A:\DJANGO\portfolio_projects
 INFO 2024-07-19 10:46:38,800 autoreload 17668 4128 Watching for file changes with StatReloader
 INFO 2024-07-19 14:02:51,489 basehttp 17668 21328 "GET /portfolio/fellows/companions/ HTTP/1.1" 200 90340
 INFO 2024-07-19 23:47:18,346 autoreload 17668 4128 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-07-21 23:13:34,389 autoreload 14012 15196 Watching for file changes with StatReloader
+ERROR 2024-07-21 23:13:36,079 log 14012 22072 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 102, in post
+    context = self.get_context(form, user_profile)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ViewUserProfile.get_context() missing 1 required positional argument: 'hashtags_form'
+ERROR 2024-07-21 23:13:36,084 basehttp 14012 22072 "POST /portfolio/fellows/user/ HTTP/1.1" 500 95442
+WARNING 2024-07-21 23:13:45,214 log 14012 22072 Not Found: /favicon.ico
+WARNING 2024-07-21 23:13:45,215 basehttp 14012 22072 "GET /favicon.ico HTTP/1.1" 404 2443
+INFO 2024-07-21 23:17:07,763 autoreload 14012 15196 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
+INFO 2024-07-21 23:17:11,309 autoreload 11524 22260 Watching for file changes with StatReloader
+INFO 2024-07-21 23:18:36,412 autoreload 11524 22260 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.

@@ -86,7 +86,8 @@ class UserPhotoForm(forms.Form):
 
 class UserHashtagsForm(forms.Form):
     hashtags = forms.CharField(
-        label='', required=False,
+        label='',
+        required=False,
         widget=forms.Textarea(
             attrs={'class': 'user-information__textfield', 'rows': '1',
                    'placeholder': 'Short information about your interests in 6-10 tags',
