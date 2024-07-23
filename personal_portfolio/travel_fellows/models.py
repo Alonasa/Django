@@ -65,7 +65,6 @@ class UserProfile(models.Model):
 
 class HashTag(models.Model):
     hashtag = models.CharField(max_length=100, unique=True)
-    hashtags = models.ManyToManyField(hashtag, related_name='posts', blank=True)
     user = models.ManyToManyField(User)
 
 class UserPlans(models.Model):

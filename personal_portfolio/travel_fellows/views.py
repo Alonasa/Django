@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
 from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm
-from .models import User, UserProfile
+from .models import User, UserProfile, HashTag
 
 
 def destinations(request):
@@ -68,7 +68,7 @@ class ViewUserProfile(View):
             "form": form,
             "user": user_profile,
             "image": f"img/{user_profile.photo.url}",
-            "textarea_form": hashtags_form
+            "textarea_form": hashtags_form,
         }
 
         return context
@@ -76,7 +76,7 @@ class ViewUserProfile(View):
 
     def get(self, request):
         form = UserPhotoForm()
-        hashtags_form = UserHashtagsForm(request.POST)
+        hashtags_form = UserHashtagsForm()
         user_profile = UserProfile.objects.get(user=request.user)
         context = self.get_context(form, user_profile, hashtags_form)
         return render(request, "travel_fellows/form.html", context)
@@ -88,17 +88,33 @@ class ViewUserProfile(View):
 
         context = self.get_context(form, user_profile, hashtags_form)
         if form.is_valid():
-            print(form.changed_data)
             try:
                 user_profile = UserProfile.objects.get(user=request.user)
                 user_profile.save()
+
+                if hashtags_form.is_valid():
+                    hashtags = hashtags_form.data.get('hashtags').split(' ')
+                    print(hashtags)
+                    hashtags_string = ' '.join(hashtags)
+                    print(hashtags_string)
+
+                    unique_hashtags = set(hashtags)
+
+                    for tag in unique_hashtags:
+                        try:
+                            hash_tag = HashTag.objects.get(hashtag=tag)
+                        except HashTag.DoesNotExist:
+                            hash_tag = HashTag.objects.create(hashtag=tag)
+
+                        hash_tag.save()
+
             except UserProfile.DoesNotExist:
                 user_profile = UserProfile.objects.create(
                     user=request.user,
                     photo=request.FILES['user_photo']
                 )
+                user_profile.save()
 
-            context = self.get_context(form, user_profile)
             return render(request, "travel_fellows/form.html", context)
 
         return render(request, "travel_fellows/form.html", context)

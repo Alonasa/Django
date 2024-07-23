@@ -4990,8 +4990,7 @@ a {
   @media (min-width: 768px) {
     .user-information__textfield {
       font-size: 20px;
-      line-height: 1.2;
-      padding: 34px 38px 8px; } }
+      line-height: 1.2; } }
 .user-information__transport-wrapper {
   list-style: none;
   padding-left: 0;
