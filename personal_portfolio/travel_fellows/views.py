@@ -63,12 +63,13 @@ def logOut(request):
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
 
-    def get_context(self, form, user_profile, hashtags_form):
+    def get_context(self, form, user_profile, hashtags_form, hashtags):
         context = {
             "form": form,
             "user": user_profile,
             "image": f"img/{user_profile.photo.url}",
             "textarea_form": hashtags_form,
+            "hashtags": hashtags
         }
 
         return context
@@ -76,37 +77,40 @@ class ViewUserProfile(View):
 
     def get(self, request):
         form = UserPhotoForm()
-        hashtags_form = UserHashtagsForm()
         user_profile = UserProfile.objects.get(user=request.user)
-        context = self.get_context(form, user_profile, hashtags_form)
+        hashtags = request.user.hashtag_set.all()
+        str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
+        hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
+        context = self.get_context(form, user_profile, hashtags_form, str_hashtags)
         return render(request, "travel_fellows/form.html", context)
 
     def post(self, request):
         form = UserPhotoForm(request.POST, request.FILES)
-        hashtags_form = UserHashtagsForm(request.POST)
         user_profile = UserProfile.objects.get(user=request.user)
+        hashtags = request.user.hashtag_set.all()
+        str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
+        hashtags_form = UserHashtagsForm(request.POST, initial={'hashtags': str_hashtags})
+        context = self.get_context(form, user_profile, hashtags_form, str_hashtags)
 
-        context = self.get_context(form, user_profile, hashtags_form)
         if form.is_valid():
             try:
                 user_profile = UserProfile.objects.get(user=request.user)
                 user_profile.save()
 
                 if hashtags_form.is_valid():
-                    hashtags = hashtags_form.data.get('hashtags').split(' ')
-                    print(hashtags)
-                    hashtags_string = ' '.join(hashtags)
-                    print(hashtags_string)
-
+                    hashtags = hashtags_form.data.get('hashtags').strip().split(' ')
                     unique_hashtags = set(hashtags)
 
                     for tag in unique_hashtags:
-                        try:
-                            hash_tag = HashTag.objects.get(hashtag=tag)
-                        except HashTag.DoesNotExist:
-                            hash_tag = HashTag.objects.create(hashtag=tag)
-
-                        hash_tag.save()
+                        if tag.startswith('#'):
+                            try:
+                                hash_tag = HashTag.objects.get(hashtag=tag.lower())
+                            except HashTag.DoesNotExist:
+                                hash_tag = HashTag.objects.create(hashtag=tag.lower())
+                                user = request.user
+                                user.hashtag_set.add(hash_tag)
+                                user.save()
+                            hash_tag.save()
 
             except UserProfile.DoesNotExist:
                 user_profile = UserProfile.objects.create(

@@ -28858,3 +28858,1265 @@ INFO 2024-07-23 22:17:33,954 basehttp 20020 7848 "GET /admin/jsi18n/ HTTP/1.1" 2
 INFO 2024-07-23 22:17:39,136 basehttp 20020 7848 "GET /admin/travel_fellows/hashtag/ HTTP/1.1" 200 11287
 INFO 2024-07-23 22:18:32,094 autoreload 20020 6972 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
 INFO 2024-07-23 22:18:33,605 autoreload 7296 21108 Watching for file changes with StatReloader
+INFO 2024-07-23 22:20:02,010 basehttp 7296 13308 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-23 22:20:03,082 basehttp 7296 10468 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-23 22:20:03,262 basehttp 7296 13308 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-23 22:20:03,554 basehttp 7296 5944 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-23 22:20:03,747 basehttp 7296 11788 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-23 22:20:03,832 basehttp 7296 7512 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-23 22:20:04,268 basehttp 7296 13308 "GET /static/img/travel_fellows/thailand-desktop@1x.webp HTTP/1.1" 200 7664
+INFO 2024-07-23 22:20:04,294 basehttp 7296 14920 "GET /static/img/travel_fellows/france-desktop@1x.webp HTTP/1.1" 200 12326
+INFO 2024-07-23 22:20:05,071 basehttp 7296 13308 "GET /static/img/travel_fellows/czech-desktop@1x.webp HTTP/1.1" 200 8804
+INFO 2024-07-23 22:20:05,134 basehttp 7296 14920 "GET /static/img/travel_fellows/firsova-tablet@1x.webp HTTP/1.1" 200 19716
+INFO 2024-07-23 22:20:05,795 basehttp 7296 13308 "GET /static/img/travel_fellows/demin-tablet@1x.webp HTTP/1.1" 200 7512
+INFO 2024-07-23 22:20:05,985 basehttp 7296 14920 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-23 22:20:06,052 basehttp 7296 5944 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-23 22:20:06,061 basehttp 7296 7512 "GET /static/img/travel_fellows/flag-france.svg HTTP/1.1" 200 369
+INFO 2024-07-23 22:20:06,061 basehttp 7296 11788 "GET /static/img/travel_fellows/flag-thailand.svg HTTP/1.1" 200 272
+INFO 2024-07-23 22:20:06,062 basehttp 7296 10468 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-23 22:20:06,441 basehttp 7296 13308 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-23 22:20:06,584 basehttp 7296 14920 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-23 22:20:06,650 basehttp 7296 5944 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-23 22:20:06,651 basehttp 7296 11788 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-23 22:20:06,657 basehttp 7296 7512 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-23 22:20:06,662 basehttp 7296 10468 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-23 22:20:07,267 basehttp 7296 10468 "GET /static/img/travel_fellows/traveller-illustration-tablet@1x.png HTTP/1.1" 200 9109
+INFO 2024-07-23 22:20:07,267 basehttp 7296 7512 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-23 22:20:07,800 basehttp 7296 13308 "GET /static/img/travel_fellows/globe-back-tablet@1x.jpg HTTP/1.1" 200 23424
+INFO 2024-07-23 22:20:07,871 basehttp 7296 7512 "GET /static/img/travel_fellows/flag-sri-lanka.svg HTTP/1.1" 200 5577
+INFO 2024-07-23 22:20:08,075 basehttp 7296 10468 "GET /static/img/travel_fellows/flag-seychelles.svg HTTP/1.1" 200 598
+INFO 2024-07-23 22:20:08,354 basehttp 7296 5944 "GET /static/img/travel_fellows/flag-belgium.svg HTTP/1.1" 200 372
+INFO 2024-07-23 22:20:08,373 basehttp 7296 11788 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-23 22:20:08,513 basehttp 7296 7512 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-23 22:20:08,566 basehttp 7296 13308 "GET /static/img/travel_fellows/about-tablet@1x.png HTTP/1.1" 200 152618
+INFO 2024-07-23 22:20:08,567 basehttp 7296 14920 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139256
+INFO 2024-07-23 22:20:08,671 basehttp 7296 10468 "GET /static/img/travel_fellows/rectangle-bg-big-blue.svg HTTP/1.1" 200 420
+INFO 2024-07-23 22:20:08,942 basehttp 7296 5944 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-23 22:20:09,207 basehttp 7296 10468 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-23 22:20:09,238 basehttp 7296 7512 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-23 22:20:09,555 basehttp 7296 15672 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-23 22:20:09,556 basehttp 7296 19132 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-23 22:20:09,559 basehttp 7296 14584 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-23 22:20:09,931 basehttp 7296 14920 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-23 22:20:10,544 basehttp 7296 14920 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-23 22:20:11,357 basehttp 7296 19132 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-23 22:20:12,467 basehttp 7296 14584 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-23 22:20:12,483 basehttp 7296 15672 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-23 22:20:12,485 basehttp 7296 7512 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-23 22:20:12,486 basehttp 7296 14920 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-23 22:20:12,521 basehttp 7296 10468 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-23 22:20:12,727 basehttp 7296 19132 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-23 22:20:13,060 basehttp 7296 14584 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-23 22:20:13,070 basehttp 7296 15672 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-23 22:20:13,112 basehttp 7296 10468 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-23 22:20:13,189 basehttp 7296 7512 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-23 22:20:13,316 basehttp 7296 19132 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-23 22:20:13,440 basehttp 7296 14920 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-23 22:20:13,666 basehttp 7296 15672 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-23 22:20:13,666 basehttp 7296 14584 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-23 22:40:14,887 autoreload 7296 21108 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-07-23 22:40:16,421 autoreload 14924 8432 Watching for file changes with StatReloader
+INFO 2024-07-23 22:40:18,528 basehttp 14924 17140 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-23 22:46:00,963 autoreload 14924 8432 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-23 22:46:02,575 autoreload 1652 15352 Watching for file changes with StatReloader
+INFO 2024-07-23 22:49:33,889 autoreload 1652 15352 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-23 22:49:35,400 autoreload 11944 14712 Watching for file changes with StatReloader
+ERROR 2024-07-23 22:49:46,617 log 11944 14900 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 96, in post
+    hashtags = hashtags_form.data.get('hashtags').split(' ').lower()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'lower'
+ERROR 2024-07-23 22:49:46,622 basehttp 11944 14900 "POST /portfolio/fellows/user/ HTTP/1.1" 500 95488
+INFO 2024-07-23 22:50:18,741 autoreload 11944 14712 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-23 22:50:20,226 autoreload 16884 11632 Watching for file changes with StatReloader
+INFO 2024-07-23 22:50:22,731 basehttp 16884 9752 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139265
+INFO 2024-07-23 22:50:23,997 basehttp 16884 9732 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-23 22:50:24,011 basehttp 16884 19124 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-23 22:50:24,224 basehttp 16884 4424 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-23 22:50:24,270 basehttp 16884 10440 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-23 22:50:24,359 basehttp 16884 4704 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-23 22:50:24,676 basehttp 16884 9752 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-23 22:50:25,136 basehttp 16884 9732 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-23 22:50:25,742 basehttp 16884 9732 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-23 22:50:26,563 basehttp 16884 4424 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-23 22:50:26,576 basehttp 16884 4704 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-23 22:50:26,584 basehttp 16884 19124 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-23 22:50:26,585 basehttp 16884 9752 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-23 22:50:26,586 basehttp 16884 10440 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-23 22:50:26,936 basehttp 16884 9732 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-23 22:50:27,150 basehttp 16884 4424 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-23 22:50:27,159 basehttp 16884 4704 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-23 22:50:27,243 basehttp 16884 19124 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-23 22:50:27,304 basehttp 16884 9752 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-23 22:50:27,527 basehttp 16884 9732 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-23 22:50:27,531 basehttp 16884 10440 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-23 22:50:27,779 basehttp 16884 4704 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-23 22:50:27,791 basehttp 16884 4424 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-23 22:50:27,865 basehttp 16884 19124 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-23 22:50:32,002 basehttp 16884 19124 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139267
+INFO 2024-07-23 22:50:32,688 basehttp 16884 4424 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-23 22:50:32,720 basehttp 16884 10440 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-23 22:50:32,721 basehttp 16884 4704 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-23 22:50:32,725 basehttp 16884 9732 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-23 22:50:32,730 basehttp 16884 9752 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-23 22:50:33,487 basehttp 16884 19124 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-23 22:50:34,093 basehttp 16884 19124 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-23 22:50:34,829 basehttp 16884 9732 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-23 22:50:35,893 basehttp 16884 9752 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-23 22:50:35,905 basehttp 16884 4704 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-23 22:50:35,911 basehttp 16884 10440 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-23 22:50:35,911 basehttp 16884 4424 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-23 22:50:35,941 basehttp 16884 19124 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-23 22:50:36,144 basehttp 16884 9732 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-23 22:50:36,473 basehttp 16884 9752 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-23 22:50:36,486 basehttp 16884 4704 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-23 22:50:36,539 basehttp 16884 19124 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-23 22:50:36,617 basehttp 16884 10440 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-23 22:50:36,742 basehttp 16884 9732 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-23 22:50:36,852 basehttp 16884 4424 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-23 22:50:37,060 basehttp 16884 9752 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-23 22:50:37,068 basehttp 16884 4704 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-23 22:50:52,728 basehttp 16884 19600 "GET /admin/travel_fellows/hashtag/ HTTP/1.1" 200 11886
+INFO 2024-07-23 22:50:52,951 basehttp 16884 19600 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-23 22:50:54,932 basehttp 16884 9672 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+WARNING 2024-07-23 22:50:54,932 basehttp 16884 19600 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+INFO 2024-07-23 22:50:58,277 basehttp 16884 17132 "GET /admin/travel_fellows/hashtag/11/change/ HTTP/1.1" 200 10313
+INFO 2024-07-23 22:50:58,476 basehttp 16884 17132 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-07-23 22:51:04,417 basehttp 16884 17132 "GET /admin/travel_fellows/hashtag/ HTTP/1.1" 200 11886
+INFO 2024-07-23 22:51:08,345 basehttp 16884 17132 "GET /admin/travel_fellows/hashtag/10/change/ HTTP/1.1" 200 10311
+INFO 2024-07-23 22:51:08,516 basehttp 16884 17132 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-07-23 22:51:17,924 basehttp 16884 17132 "GET /admin/travel_fellows/hashtag/ HTTP/1.1" 200 11886
+INFO 2024-07-23 22:51:46,702 autoreload 16884 11632 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-23 22:51:48,155 autoreload 15048 12212 Watching for file changes with StatReloader
+INFO 2024-07-23 22:51:52,578 autoreload 15048 12212 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-23 22:51:54,614 autoreload 18232 8184 Watching for file changes with StatReloader
+INFO 2024-07-23 22:51:58,921 basehttp 18232 18184 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139270
+INFO 2024-07-23 22:52:00,110 basehttp 18232 7404 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-23 22:52:00,184 basehttp 18232 11240 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-23 22:52:00,569 basehttp 18232 20928 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-23 22:52:00,630 basehttp 18232 9568 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-23 22:52:00,690 basehttp 18232 9672 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-23 22:52:00,857 basehttp 18232 18184 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-23 22:52:01,261 basehttp 18232 7404 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-23 22:52:01,907 basehttp 18232 9672 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-23 22:52:02,926 basehttp 18232 20928 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-23 22:52:02,936 basehttp 18232 7404 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-23 22:52:02,941 basehttp 18232 18184 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-23 22:52:02,944 basehttp 18232 9568 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-23 22:52:02,971 basehttp 18232 11240 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-23 22:52:03,259 basehttp 18232 9672 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-23 22:52:03,526 basehttp 18232 7404 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-23 22:52:03,556 basehttp 18232 20928 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-23 22:52:03,575 basehttp 18232 11240 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-23 22:52:03,647 basehttp 18232 18184 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-23 22:52:03,853 basehttp 18232 9672 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-23 22:52:03,887 basehttp 18232 9568 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-23 22:52:04,122 basehttp 18232 7404 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-23 22:52:04,133 basehttp 18232 20928 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-23 22:52:15,779 basehttp 18232 5684 "GET /admin/travel_fellows/hashtag/ HTTP/1.1" 200 12184
+INFO 2024-07-23 22:52:16,017 basehttp 18232 5684 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-23 22:52:17,981 basehttp 18232 19444 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+WARNING 2024-07-23 22:52:17,981 basehttp 18232 5684 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+INFO 2024-07-23 22:52:19,706 basehttp 18232 19820 "GET /admin/travel_fellows/hashtag/12/change/ HTTP/1.1" 200 10316
+INFO 2024-07-23 22:52:19,980 basehttp 18232 19820 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-07-23 22:52:21,870 basehttp 18232 19820 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+INFO 2024-07-23 22:52:27,595 basehttp 18232 19144 "GET /admin/travel_fellows/hashtag/ HTTP/1.1" 200 12184
+INFO 2024-07-24 09:45:37,439 autoreload 18232 8184 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 09:45:39,830 autoreload 18244 13348 Watching for file changes with StatReloader
+ERROR 2024-07-24 09:48:15,151 log 18244 9852 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 90, in post
+    hashtags = HashTag.objects.get(user=request.user)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+ERROR 2024-07-24 09:48:15,161 basehttp 18244 9852 "POST /portfolio/fellows/user/ HTTP/1.1" 500 103981
+INFO 2024-07-24 09:49:17,838 autoreload 18244 13348 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 09:49:19,485 autoreload 3380 6872 Watching for file changes with StatReloader
+ERROR 2024-07-24 09:49:20,519 log 3380 18436 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 90, in post
+    hashtags = HashTag.objects.get(user=request.user).hashtag
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+ERROR 2024-07-24 09:49:20,525 basehttp 3380 18436 "POST /portfolio/fellows/user/ HTTP/1.1" 500 103997
+INFO 2024-07-24 09:56:00,165 autoreload 3380 6872 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 09:56:01,560 autoreload 3040 14184 Watching for file changes with StatReloader
+INFO 2024-07-24 09:58:52,483 autoreload 3040 14184 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 09:58:54,750 autoreload 22140 6256 Watching for file changes with StatReloader
+ERROR 2024-07-24 09:58:58,319 log 22140 21448 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 108, in post
+    hash_tag = HashTag.objects.get(hashtag=tag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 110, in post
+    hash_tag = HashTag.objects.create(hashtag=tag.lower())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+ERROR 2024-07-24 09:58:58,344 basehttp 22140 21448 "POST /portfolio/fellows/user/ HTTP/1.1" 500 191487
+ERROR 2024-07-24 09:59:16,823 log 22140 21448 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 108, in post
+    hash_tag = HashTag.objects.get(hashtag=tag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 110, in post
+    hash_tag = HashTag.objects.create(hashtag=tag.lower())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+ERROR 2024-07-24 09:59:16,840 basehttp 22140 21448 "POST /portfolio/fellows/user/ HTTP/1.1" 500 191487
+INFO 2024-07-24 10:00:37,765 autoreload 22140 6256 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:00:39,915 autoreload 5812 17048 Watching for file changes with StatReloader
+ERROR 2024-07-24 10:00:40,709 log 5812 22440 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 108, in post
+    hash_tag = HashTag.objects.get(hashtag=tag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 110, in post
+    hash_tag = HashTag.objects.create(hashtag=tag.lower())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+ERROR 2024-07-24 10:00:40,729 basehttp 5812 22440 "POST /portfolio/fellows/user/ HTTP/1.1" 500 191487
+ERROR 2024-07-24 10:00:49,127 log 5812 22440 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 108, in post
+    hash_tag = HashTag.objects.get(hashtag=tag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 110, in post
+    hash_tag = HashTag.objects.create(hashtag=tag.lower())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+ERROR 2024-07-24 10:00:49,135 basehttp 5812 22440 "POST /portfolio/fellows/user/ HTTP/1.1" 500 191487
+INFO 2024-07-24 10:14:41,052 autoreload 5812 17048 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:14:44,538 autoreload 14576 22116 Watching for file changes with StatReloader
+ERROR 2024-07-24 10:14:45,879 log 14576 20756 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 108, in post
+    hash_tag = HashTag.objects.get(hashtag=tag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 110, in post
+    hash_tag = HashTag.objects.create(hashtag=tag.lower())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_fellows_hashtag_name_key"
+DETAIL:  Key (hashtag)=(#dskldsliihjh) already exists.
+
+ERROR 2024-07-24 10:14:45,910 basehttp 14576 20756 "POST /portfolio/fellows/user/ HTTP/1.1" 500 191459
+INFO 2024-07-24 10:16:28,200 autoreload 14576 22116 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:16:30,392 autoreload 16136 4580 Watching for file changes with StatReloader
+ERROR 2024-07-24 10:16:31,994 log 16136 10956 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 108, in post
+    hash_tag = set(HashTag.objects.get(hashtag=tag))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'HashTag' object is not iterable
+ERROR 2024-07-24 10:16:32,008 basehttp 16136 10956 "POST /portfolio/fellows/user/ HTTP/1.1" 500 96501
+INFO 2024-07-24 10:17:24,638 autoreload 16136 4580 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:17:27,014 autoreload 6184 8508 Watching for file changes with StatReloader
+INFO 2024-07-24 10:17:27,836 basehttp 6184 21576 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139304
+INFO 2024-07-24 10:17:29,029 basehttp 6184 21572 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:17:29,071 basehttp 6184 4536 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:17:29,328 basehttp 6184 12460 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:17:29,389 basehttp 6184 18064 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:17:29,489 basehttp 6184 12252 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:17:29,830 basehttp 6184 21576 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:17:30,109 basehttp 6184 21572 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:17:30,709 basehttp 6184 21572 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:17:31,659 basehttp 6184 12252 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:17:31,663 basehttp 6184 4536 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-24 10:17:31,664 basehttp 6184 18064 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:17:31,665 basehttp 6184 21576 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:17:31,667 basehttp 6184 12460 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:17:31,959 basehttp 6184 21572 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:17:32,230 basehttp 6184 12252 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:17:32,235 basehttp 6184 18064 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:17:32,306 basehttp 6184 4536 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:17:32,372 basehttp 6184 21576 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:17:32,558 basehttp 6184 21572 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:17:32,604 basehttp 6184 12460 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:17:32,833 basehttp 6184 18064 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:17:32,839 basehttp 6184 12252 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:17:32,901 basehttp 6184 4536 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:18:00,536 autoreload 6184 8508 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:18:02,745 autoreload 14684 9192 Watching for file changes with StatReloader
+INFO 2024-07-24 10:18:03,881 basehttp 14684 10124 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139318
+INFO 2024-07-24 10:18:04,854 basehttp 14684 3584 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:18:04,927 basehttp 14684 11828 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:18:05,253 basehttp 14684 22216 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:18:05,289 basehttp 14684 16200 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:18:05,363 basehttp 14684 21204 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:18:05,528 basehttp 14684 10124 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:18:06,159 basehttp 14684 10124 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:18:06,749 basehttp 14684 10124 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:18:07,603 basehttp 14684 16200 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:18:07,618 basehttp 14684 21204 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:18:07,620 basehttp 14684 3584 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:18:07,622 basehttp 14684 22216 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:18:07,653 basehttp 14684 11828 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:18:07,974 basehttp 14684 10124 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:18:08,199 basehttp 14684 21204 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:18:08,223 basehttp 14684 16200 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:18:08,242 basehttp 14684 11828 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:18:08,350 basehttp 14684 3584 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:18:08,552 basehttp 14684 22216 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:18:08,563 basehttp 14684 10124 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:18:08,793 basehttp 14684 21204 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:18:08,801 basehttp 14684 16200 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:19:13,044 basehttp 14684 11096 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139401
+INFO 2024-07-24 10:19:13,694 basehttp 14684 17320 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:19:13,711 basehttp 14684 21560 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:19:14,020 basehttp 14684 420 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:19:14,021 basehttp 14684 22464 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:19:14,027 basehttp 14684 17852 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:19:14,771 basehttp 14684 11096 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:19:15,371 basehttp 14684 11096 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:19:15,978 basehttp 14684 11096 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:19:16,832 basehttp 14684 17852 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:19:16,857 basehttp 14684 22464 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:19:16,861 basehttp 14684 420 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:19:16,863 basehttp 14684 17320 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:19:16,894 basehttp 14684 21560 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:19:17,191 basehttp 14684 11096 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:19:17,427 basehttp 14684 22464 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:19:17,455 basehttp 14684 17852 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:19:17,488 basehttp 14684 21560 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:19:17,564 basehttp 14684 17320 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:19:17,785 basehttp 14684 11096 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:19:17,791 basehttp 14684 420 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:19:18,016 basehttp 14684 22464 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:19:18,047 basehttp 14684 17852 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:20:02,887 basehttp 14684 17852 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139299
+INFO 2024-07-24 10:20:03,518 basehttp 14684 22464 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:20:03,528 basehttp 14684 420 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:20:03,541 basehttp 14684 11096 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:20:03,552 basehttp 14684 17320 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:20:03,560 basehttp 14684 21560 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:20:04,683 basehttp 14684 17852 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:20:05,283 basehttp 14684 17852 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:20:05,867 basehttp 14684 17852 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:20:06,493 basehttp 14684 21560 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:20:06,507 basehttp 14684 17320 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:20:06,513 basehttp 14684 22464 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:20:06,515 basehttp 14684 420 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:20:06,546 basehttp 14684 11096 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:20:06,965 basehttp 14684 17852 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:20:07,092 basehttp 14684 17320 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:20:07,121 basehttp 14684 21560 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:20:07,135 basehttp 14684 11096 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:20:07,214 basehttp 14684 22464 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:20:07,447 basehttp 14684 420 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:20:07,559 basehttp 14684 17852 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:20:07,685 basehttp 14684 17320 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:20:07,700 basehttp 14684 21560 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:20:26,699 basehttp 14684 21560 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139299
+INFO 2024-07-24 10:20:27,370 basehttp 14684 17320 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:20:27,385 basehttp 14684 17852 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:20:27,387 basehttp 14684 420 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:20:27,388 basehttp 14684 22464 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:20:27,394 basehttp 14684 11096 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:20:28,186 basehttp 14684 21560 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139299
+INFO 2024-07-24 10:20:29,064 basehttp 14684 6640 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:20:29,095 basehttp 14684 9712 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:20:29,097 basehttp 14684 1072 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:20:29,097 basehttp 14684 8304 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:20:29,098 basehttp 14684 14132 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:20:29,481 basehttp 14684 21560 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:20:30,094 basehttp 14684 21560 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:20:31,229 basehttp 14684 1072 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:20:32,323 basehttp 14684 6640 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:20:32,414 basehttp 14684 8304 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:20:32,423 basehttp 14684 14132 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:20:32,426 basehttp 14684 9712 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:20:32,445 basehttp 14684 21560 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:20:32,560 basehttp 14684 1072 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:20:32,915 basehttp 14684 6640 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:20:33,013 basehttp 14684 8304 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:20:33,042 basehttp 14684 21560 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:20:33,135 basehttp 14684 9712 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:20:33,142 basehttp 14684 1072 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:20:33,355 basehttp 14684 14132 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:20:33,514 basehttp 14684 6640 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:20:33,607 basehttp 14684 8304 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:21:36,883 basehttp 14684 8304 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139299
+INFO 2024-07-24 10:21:37,583 basehttp 14684 6640 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:21:37,611 basehttp 14684 9712 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:21:37,612 basehttp 14684 14132 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:21:37,613 basehttp 14684 1072 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:21:37,622 basehttp 14684 21560 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:21:38,569 basehttp 14684 8304 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:21:39,171 basehttp 14684 8304 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:21:39,788 basehttp 14684 8304 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:21:40,715 basehttp 14684 21560 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:21:40,732 basehttp 14684 9712 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:21:40,733 basehttp 14684 6640 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:21:40,735 basehttp 14684 14132 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:21:40,761 basehttp 14684 1072 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:21:41,040 basehttp 14684 8304 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:21:41,308 basehttp 14684 21560 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:21:41,337 basehttp 14684 9712 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:21:41,371 basehttp 14684 1072 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:21:41,459 basehttp 14684 6640 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:21:41,636 basehttp 14684 8304 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:21:41,680 basehttp 14684 14132 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:21:41,902 basehttp 14684 21560 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:21:41,912 basehttp 14684 9712 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:21:53,028 autoreload 14684 9192 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:21:55,565 autoreload 22384 12656 Watching for file changes with StatReloader
+INFO 2024-07-24 10:21:56,929 basehttp 22384 8820 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139299
+INFO 2024-07-24 10:21:58,090 basehttp 22384 21648 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:21:58,092 basehttp 22384 22244 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:21:58,358 basehttp 22384 22232 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:21:58,449 basehttp 22384 8820 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:21:58,497 basehttp 22384 3564 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:21:58,520 basehttp 22384 21580 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:21:59,055 basehttp 22384 8820 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:21:59,713 basehttp 22384 21580 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:22:00,662 basehttp 22384 22232 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:22:00,675 basehttp 22384 8820 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:22:00,681 basehttp 22384 22244 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:22:00,683 basehttp 22384 3564 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:22:00,713 basehttp 22384 21648 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:22:00,969 basehttp 22384 21580 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:22:01,252 basehttp 22384 22232 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:22:01,262 basehttp 22384 8820 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:22:01,301 basehttp 22384 21648 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:22:01,407 basehttp 22384 22244 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:22:01,569 basehttp 22384 21580 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:22:01,613 basehttp 22384 3564 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:22:01,848 basehttp 22384 22232 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:22:01,852 basehttp 22384 8820 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:22:18,498 autoreload 22384 12656 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:22:21,255 autoreload 4136 4140 Watching for file changes with StatReloader
+INFO 2024-07-24 10:22:30,727 basehttp 4136 15576 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139305
+INFO 2024-07-24 10:22:31,725 basehttp 4136 17172 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:22:31,748 basehttp 4136 17428 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:22:32,026 basehttp 4136 5696 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:22:32,113 basehttp 4136 4460 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:22:32,204 basehttp 4136 12692 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:22:32,451 basehttp 4136 15576 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:22:33,052 basehttp 4136 15576 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:22:33,652 basehttp 4136 15576 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:22:34,440 basehttp 4136 5696 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:22:34,457 basehttp 4136 12692 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:22:34,458 basehttp 4136 17172 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:22:34,460 basehttp 4136 4460 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:22:34,487 basehttp 4136 17428 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:22:34,825 basehttp 4136 15576 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:22:35,036 basehttp 4136 5696 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:22:35,042 basehttp 4136 12692 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:22:35,080 basehttp 4136 17428 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:22:35,173 basehttp 4136 17172 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:22:35,399 basehttp 4136 4460 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:22:35,406 basehttp 4136 15576 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:22:35,637 basehttp 4136 12692 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:22:35,637 basehttp 4136 5696 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:24:39,170 autoreload 4136 4140 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:24:41,182 autoreload 13300 10712 Watching for file changes with StatReloader
+INFO 2024-07-24 10:24:59,232 autoreload 13300 10712 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:25:02,830 autoreload 16300 21900 Watching for file changes with StatReloader
+INFO 2024-07-24 10:25:18,391 basehttp 16300 21980 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139308
+INFO 2024-07-24 10:25:19,642 basehttp 16300 4776 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:25:19,713 basehttp 16300 21920 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:25:19,986 basehttp 16300 18244 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:25:20,023 basehttp 16300 14992 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:25:20,176 basehttp 16300 5636 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:25:20,270 basehttp 16300 21980 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:25:20,546 basehttp 16300 4776 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:25:21,196 basehttp 16300 18244 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:25:22,421 basehttp 16300 5636 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:25:22,435 basehttp 16300 14992 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:25:22,438 basehttp 16300 21980 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:25:22,439 basehttp 16300 4776 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:25:22,470 basehttp 16300 21920 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:25:22,592 basehttp 16300 18244 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:25:23,016 basehttp 16300 5636 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:25:23,023 basehttp 16300 14992 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:25:23,062 basehttp 16300 21920 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:25:23,153 basehttp 16300 21980 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:25:23,171 basehttp 16300 18244 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:25:23,370 basehttp 16300 4776 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:25:23,607 basehttp 16300 5636 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:25:23,616 basehttp 16300 14992 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:28:31,687 autoreload 16300 21900 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:28:33,725 autoreload 1652 20716 Watching for file changes with StatReloader
+ERROR 2024-07-24 10:28:38,790 log 1652 18484 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 90, in post
+    print(HashTag.objects.get(user=request.user))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+travel_fellows.models.HashTag.DoesNotExist: HashTag matching query does not exist.
+ERROR 2024-07-24 10:28:38,798 basehttp 1652 18484 "POST /portfolio/fellows/user/ HTTP/1.1" 500 104108
+INFO 2024-07-24 10:30:24,033 autoreload 1652 20716 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:30:26,871 autoreload 22004 15576 Watching for file changes with StatReloader
+INFO 2024-07-24 10:30:28,106 basehttp 22004 3440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139309
+INFO 2024-07-24 10:30:29,299 basehttp 22004 18932 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:30:29,348 basehttp 22004 14496 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:30:29,519 basehttp 22004 20640 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:30:29,538 basehttp 22004 10712 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:30:29,635 basehttp 22004 4560 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:30:30,092 basehttp 22004 3440 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:30:30,496 basehttp 22004 18932 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:30:31,090 basehttp 22004 18932 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:30:31,901 basehttp 22004 20640 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:30:31,917 basehttp 22004 4560 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:30:31,922 basehttp 22004 14496 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-07-24 10:30:31,923 basehttp 22004 3440 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:30:31,924 basehttp 22004 10712 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:30:32,284 basehttp 22004 18932 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:30:32,496 basehttp 22004 20640 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:30:32,507 basehttp 22004 4560 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:30:32,587 basehttp 22004 14496 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:30:32,649 basehttp 22004 3440 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:30:32,865 basehttp 22004 10712 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:30:32,876 basehttp 22004 18932 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:30:33,086 basehttp 22004 20640 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:30:33,093 basehttp 22004 4560 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:30:33,179 basehttp 22004 14496 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:31:07,050 autoreload 22004 15576 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:31:09,152 autoreload 2848 22428 Watching for file changes with StatReloader
+INFO 2024-07-24 10:31:10,253 basehttp 2848 7228 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139309
+INFO 2024-07-24 10:31:11,378 basehttp 2848 21572 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:31:11,584 basehttp 2848 20284 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:31:11,692 basehttp 2848 21656 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:31:11,800 basehttp 2848 11772 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:31:11,912 basehttp 2848 22216 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:31:12,024 basehttp 2848 7228 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:31:12,369 basehttp 2848 21572 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:31:13,131 basehttp 2848 22216 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:31:14,153 basehttp 2848 21656 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:31:14,169 basehttp 2848 11772 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:31:14,172 basehttp 2848 20284 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:31:14,175 basehttp 2848 21572 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:31:14,205 basehttp 2848 7228 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:31:14,417 basehttp 2848 22216 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:31:14,752 basehttp 2848 11772 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:31:14,753 basehttp 2848 21656 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:31:14,793 basehttp 2848 7228 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:31:14,890 basehttp 2848 20284 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:31:15,016 basehttp 2848 22216 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:31:15,105 basehttp 2848 21572 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:31:15,355 basehttp 2848 11772 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:31:15,356 basehttp 2848 21656 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:31:19,011 basehttp 2848 11772 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139311
+INFO 2024-07-24 10:31:19,776 basehttp 2848 21656 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:31:19,816 basehttp 2848 20284 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:31:19,818 basehttp 2848 21572 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:31:19,819 basehttp 2848 22216 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:31:19,825 basehttp 2848 7228 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:31:20,557 basehttp 2848 11772 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:31:21,178 basehttp 2848 11772 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:31:21,935 basehttp 2848 20284 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:31:23,029 basehttp 2848 7228 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:31:23,044 basehttp 2848 21572 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:31:23,047 basehttp 2848 22216 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:31:23,048 basehttp 2848 21656 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:31:23,075 basehttp 2848 11772 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:31:23,256 basehttp 2848 20284 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:31:23,618 basehttp 2848 7228 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:31:23,624 basehttp 2848 21572 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:31:23,664 basehttp 2848 11772 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:31:23,756 basehttp 2848 22216 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:31:23,854 basehttp 2848 20284 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:31:23,974 basehttp 2848 21656 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:31:24,220 basehttp 2848 21572 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:31:24,221 basehttp 2848 7228 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:32:11,986 autoreload 2848 22428 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:32:14,336 autoreload 13176 7708 Watching for file changes with StatReloader
+INFO 2024-07-24 10:32:18,790 basehttp 13176 4504 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139311
+INFO 2024-07-24 10:32:19,911 basehttp 13176 15196 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:32:19,933 basehttp 13176 22124 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:32:20,179 basehttp 13176 12204 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:32:20,267 basehttp 13176 13892 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:32:20,372 basehttp 13176 15040 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:32:20,525 basehttp 13176 4504 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:32:21,003 basehttp 13176 15196 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:32:21,618 basehttp 13176 15196 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:32:22,517 basehttp 13176 13892 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:32:22,530 basehttp 13176 15040 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:32:22,534 basehttp 13176 4504 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:32:22,537 basehttp 13176 12204 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:32:22,565 basehttp 13176 22124 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:32:22,842 basehttp 13176 15196 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:32:23,110 basehttp 13176 13892 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:32:23,114 basehttp 13176 15040 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:32:23,156 basehttp 13176 22124 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:32:23,217 basehttp 13176 4504 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:32:23,439 basehttp 13176 15196 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:32:23,468 basehttp 13176 12204 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:32:23,704 basehttp 13176 15040 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:32:23,708 basehttp 13176 13892 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:34:13,071 autoreload 13176 7708 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:34:14,610 autoreload 12752 19400 Watching for file changes with StatReloader
+INFO 2024-07-24 10:34:24,676 autoreload 12752 19400 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:34:26,285 autoreload 20724 16340 Watching for file changes with StatReloader
+INFO 2024-07-24 10:34:28,951 basehttp 20724 3440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139311
+INFO 2024-07-24 10:34:29,909 basehttp 20724 20928 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 10:34:29,947 basehttp 20724 16288 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 10:34:30,368 basehttp 20724 7228 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 10:34:30,382 basehttp 20724 1452 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 10:34:30,390 basehttp 20724 1528 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 10:34:30,410 basehttp 20724 3440 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 10:34:31,032 basehttp 20724 3440 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 10:34:31,709 basehttp 20724 1528 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 10:34:32,761 basehttp 20724 7228 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 10:34:32,783 basehttp 20724 1452 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 10:34:32,794 basehttp 20724 16288 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 10:34:32,799 basehttp 20724 3440 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 10:34:32,827 basehttp 20724 20928 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 10:34:33,017 basehttp 20724 1528 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 10:34:33,264 basehttp 20724 16288 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 10:34:33,273 basehttp 20724 1528 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 10:34:33,274 basehttp 20724 20928 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 10:34:33,279 basehttp 20724 1452 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 10:34:33,280 basehttp 20724 3440 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 10:34:33,282 basehttp 20724 7228 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 10:34:33,320 basehttp 20724 7228 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 10:34:33,326 basehttp 20724 3440 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 10:36:59,513 autoreload 20724 16340 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-07-24 10:37:01,882 autoreload 11932 12440 Watching for file changes with StatReloader
+INFO 2024-07-24 10:37:06,458 basehttp 11932 16088 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139311
+INFO 2024-07-24 10:38:33,312 autoreload 11932 12440 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:38:35,366 autoreload 11672 2308 Watching for file changes with StatReloader
+INFO 2024-07-24 10:38:43,927 basehttp 11672 12392 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139311
+INFO 2024-07-24 10:38:57,350 basehttp 11672 12392 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139310
+INFO 2024-07-24 10:39:17,979 autoreload 11672 2308 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:39:19,387 autoreload 21620 17892 Watching for file changes with StatReloader
+INFO 2024-07-24 10:39:22,753 basehttp 21620 11592 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139309
+INFO 2024-07-24 10:41:45,036 autoreload 21620 17892 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:41:46,848 autoreload 20632 20656 Watching for file changes with StatReloader
+INFO 2024-07-24 10:42:07,747 autoreload 20632 20656 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:42:09,267 autoreload 15040 12028 Watching for file changes with StatReloader
+INFO 2024-07-24 10:42:18,041 basehttp 15040 6784 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139309
+INFO 2024-07-24 10:42:24,431 basehttp 15040 6784 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139310
+INFO 2024-07-24 10:42:49,645 autoreload 15040 12028 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:42:51,333 autoreload 1436 1760 Watching for file changes with StatReloader
+INFO 2024-07-24 10:45:30,428 autoreload 1436 1760 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:45:32,652 autoreload 8624 20520 Watching for file changes with StatReloader
+INFO 2024-07-24 10:45:39,736 basehttp 8624 2440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139310
+INFO 2024-07-24 10:45:48,638 basehttp 8624 2440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139321
+INFO 2024-07-24 10:46:13,533 basehttp 8624 2440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139409
+INFO 2024-07-24 10:46:35,232 basehttp 8624 2440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139414
+INFO 2024-07-24 10:46:45,778 basehttp 8624 2440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139503
+INFO 2024-07-24 10:47:24,953 basehttp 8624 2440 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139582
+INFO 2024-07-24 10:49:10,529 autoreload 8624 20520 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:49:13,000 autoreload 2440 21292 Watching for file changes with StatReloader
+INFO 2024-07-24 10:49:14,498 basehttp 2440 7020 "POST /portfolio/fellows/user/ HTTP/1.1" 200 140041
+INFO 2024-07-24 10:53:19,630 autoreload 2440 21292 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:53:22,799 autoreload 1624 21732 Watching for file changes with StatReloader
+INFO 2024-07-24 10:53:26,616 basehttp 1624 22380 "POST /portfolio/fellows/user/ HTTP/1.1" 200 140041
+INFO 2024-07-24 10:53:34,295 basehttp 1624 22380 "POST /portfolio/fellows/user/ HTTP/1.1" 200 140042
+INFO 2024-07-24 10:53:59,174 autoreload 1624 21732 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:54:00,980 autoreload 15692 11588 Watching for file changes with StatReloader
+INFO 2024-07-24 10:54:04,050 basehttp 15692 12248 "POST /portfolio/fellows/user/ HTTP/1.1" 200 140040
+INFO 2024-07-24 10:54:35,827 autoreload 15692 11588 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:54:37,299 autoreload 18484 10792 Watching for file changes with StatReloader
+INFO 2024-07-24 10:54:46,871 basehttp 18484 21928 "POST /portfolio/fellows/user/ HTTP/1.1" 200 140041
+INFO 2024-07-24 10:56:16,541 autoreload 18484 10792 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:56:18,021 autoreload 21612 648 Watching for file changes with StatReloader
+INFO 2024-07-24 10:59:01,499 autoreload 21612 648 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:59:02,918 autoreload 3040 21776 Watching for file changes with StatReloader
+INFO 2024-07-24 10:59:50,833 autoreload 3040 21776 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 10:59:52,732 autoreload 21824 12004 Watching for file changes with StatReloader
+INFO 2024-07-24 10:59:56,973 basehttp 21824 18248 "POST /portfolio/fellows/user/ HTTP/1.1" 200 140341
+INFO 2024-07-24 11:00:04,335 basehttp 21824 18248 "POST /portfolio/fellows/user/ HTTP/1.1" 200 140342
+INFO 2024-07-24 11:00:44,878 basehttp 21824 11916 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139443
+INFO 2024-07-24 11:01:05,105 autoreload 21824 12004 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:01:07,709 autoreload 8008 6980 Watching for file changes with StatReloader
+INFO 2024-07-24 11:01:27,338 basehttp 8008 17724 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139445
+INFO 2024-07-24 11:03:49,243 autoreload 8008 6980 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:03:51,263 autoreload 20524 8444 Watching for file changes with StatReloader
+INFO 2024-07-24 11:04:00,624 autoreload 20524 8444 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:04:03,700 autoreload 14752 13164 Watching for file changes with StatReloader
+INFO 2024-07-24 11:05:33,761 autoreload 14752 13164 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:05:35,502 autoreload 20996 4476 Watching for file changes with StatReloader
+INFO 2024-07-24 11:06:04,043 basehttp 20996 15040 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139318
+INFO 2024-07-24 11:06:36,801 basehttp 20996 12192 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139329
+INFO 2024-07-24 11:07:19,542 basehttp 20996 12192 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139330
+INFO 2024-07-24 11:07:32,758 basehttp 20996 12192 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139330
+INFO 2024-07-24 11:18:11,320 autoreload 20996 4476 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:18:14,431 autoreload 3384 1576 Watching for file changes with StatReloader
+INFO 2024-07-24 11:18:17,415 basehttp 3384 14416 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139330
+INFO 2024-07-24 11:18:23,390 basehttp 3384 14416 "GET /portfolio/fellows/logout/ HTTP/1.1" 302 0
+INFO 2024-07-24 11:18:23,435 basehttp 3384 14416 "GET /portfolio/fellows/ HTTP/1.1" 200 31925
+INFO 2024-07-24 11:18:25,774 basehttp 3384 6704 "GET /static/img/travel_fellows/rectangle-bg-violet.svg HTTP/1.1" 200 420
+INFO 2024-07-24 11:18:25,778 basehttp 3384 14416 "GET /static/img/travel_fellows/flags-back.png HTTP/1.1" 200 31518
+INFO 2024-07-24 11:18:26,900 basehttp 3384 14416 "GET /portfolio/fellows/auth/ HTTP/1.1" 200 7174
+INFO 2024-07-24 11:18:33,138 basehttp 3384 14416 "POST /portfolio/fellows/auth-form/ HTTP/1.1" 302 0
+INFO 2024-07-24 11:18:33,255 basehttp 3384 14416 "GET /portfolio/fellows/ HTTP/1.1" 200 31920
+INFO 2024-07-24 11:18:39,365 basehttp 3384 14416 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139461
+INFO 2024-07-24 11:21:02,658 autoreload 3384 1576 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:21:04,537 autoreload 21776 21732 Watching for file changes with StatReloader
+INFO 2024-07-24 11:21:06,152 basehttp 21776 22084 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139291
+INFO 2024-07-24 11:22:25,840 autoreload 21776 21732 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:22:28,729 autoreload 4736 11300 Watching for file changes with StatReloader
+INFO 2024-07-24 11:22:29,616 basehttp 4736 21524 "GET /portfolio/fellows/user/ HTTP/1.1" 200 139335
+INFO 2024-07-24 11:22:31,563 basehttp 4736 18436 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 11:22:31,579 basehttp 4736 2756 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 11:22:31,826 basehttp 4736 4808 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 11:22:31,858 basehttp 4736 18652 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 11:22:31,985 basehttp 4736 21288 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 11:22:32,017 basehttp 4736 21524 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 11:22:32,086 basehttp 4736 21524 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 11:22:33,780 basehttp 4736 7364 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 11:22:34,393 basehttp 4736 7364 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 11:22:34,508 basehttp 4736 11424 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 11:22:34,521 basehttp 4736 3512 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 11:22:34,521 basehttp 4736 13520 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 11:22:34,543 basehttp 4736 22352 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 11:22:34,573 basehttp 4736 22008 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 11:22:34,985 basehttp 4736 7364 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 11:22:35,114 basehttp 4736 3512 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 11:22:35,142 basehttp 4736 22352 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 11:22:35,148 basehttp 4736 22008 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 11:22:35,228 basehttp 4736 13520 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 11:22:35,437 basehttp 4736 11424 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 11:22:35,581 basehttp 4736 7364 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 11:22:51,723 basehttp 4736 13400 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139340
+INFO 2024-07-24 11:22:52,287 basehttp 4736 3632 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 11:22:52,324 basehttp 4736 22080 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 11:22:52,642 basehttp 4736 18484 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 11:22:52,643 basehttp 4736 11048 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 11:22:52,647 basehttp 4736 12012 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 11:22:53,048 basehttp 4736 13400 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 11:22:53,669 basehttp 4736 13400 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 11:22:54,472 basehttp 4736 11048 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 11:22:55,571 basehttp 4736 12012 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 11:22:55,586 basehttp 4736 18484 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 11:22:55,590 basehttp 4736 22080 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 11:22:55,592 basehttp 4736 13400 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 11:22:55,622 basehttp 4736 3632 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 11:22:55,804 basehttp 4736 11048 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 11:22:56,165 basehttp 4736 12012 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 11:22:56,172 basehttp 4736 18484 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 11:22:56,211 basehttp 4736 3632 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 11:22:56,309 basehttp 4736 22080 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 11:22:56,393 basehttp 4736 11048 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 11:22:56,521 basehttp 4736 13400 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 11:22:56,752 basehttp 4736 12012 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 11:22:56,761 basehttp 4736 18484 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 11:23:03,257 basehttp 4736 18484 "POST /portfolio/fellows/user/ HTTP/1.1" 200 139351
+INFO 2024-07-24 11:23:03,915 basehttp 4736 12012 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-24 11:23:03,977 basehttp 4736 13400 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-24 11:23:03,978 basehttp 4736 11048 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-24 11:23:03,980 basehttp 4736 22080 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-24 11:23:03,988 basehttp 4736 3632 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203279
+INFO 2024-07-24 11:23:04,604 basehttp 4736 18484 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-24 11:23:05,219 basehttp 4736 18484 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-24 11:23:06,056 basehttp 4736 22080 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-24 11:23:07,125 basehttp 4736 3632 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-24 11:23:07,138 basehttp 4736 13400 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-24 11:23:07,143 basehttp 4736 12012 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-24 11:23:07,145 basehttp 4736 11048 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-24 11:23:07,174 basehttp 4736 18484 "GET /static/img/travel_fellows/topmenu-mail.svg HTTP/1.1" 200 525
+INFO 2024-07-24 11:23:07,385 basehttp 4736 22080 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-24 11:23:07,716 basehttp 4736 3632 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-24 11:23:07,723 basehttp 4736 13400 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-07-24 11:23:07,764 basehttp 4736 18484 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-24 11:23:07,839 basehttp 4736 12012 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-24 11:23:07,982 basehttp 4736 22080 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-24 11:23:08,108 basehttp 4736 11048 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-24 11:23:08,314 basehttp 4736 3632 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-24 11:23:08,314 basehttp 4736 13400 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-24 11:24:48,462 autoreload 4736 11300 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-07-24 11:24:50,577 autoreload 1912 18652 Watching for file changes with StatReloader

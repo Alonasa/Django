@@ -67,6 +67,10 @@ class HashTag(models.Model):
     hashtag = models.CharField(max_length=100, unique=True)
     user = models.ManyToManyField(User)
 
+    def __str__(self):
+        return f'#{self.hashtag}'
+
+
 class UserPlans(models.Model):
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     destinations = ArrayField(models.CharField(max_length=100), blank=False, default=list)
