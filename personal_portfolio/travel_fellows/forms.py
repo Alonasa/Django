@@ -1,8 +1,10 @@
 from django import forms
 from django.core.validators import FileExtensionValidator
 from django.forms import ModelForm
-
-from .models import User
+from django.templatetags.static import static
+from django.utils.html import format_html
+from django.utils.safestring import mark_safe
+from .models import User, UserTransportation
 
 
 class BaseForm(ModelForm):
@@ -93,3 +95,27 @@ class UserHashtagsForm(forms.Form):
                    'placeholder': 'Short information about your interests in 6-10 tags',
                    'onchange': 'this.form.submit()'})
     )
+
+
+class UserTransportationForm(forms.ModelForm):
+    class Meta:
+        model = UserTransportation
+        fields = ['plane', 'bus', 'bike', 'feet']
+
+    def render_field(self, name):
+        label_class = 'transport-type user-information__transport-type'
+        icon_class = f'transport-type__icon transport-type__icon--{name if name != "feet" else "run"}'
+        icon_svg = format_html(
+            f'<svg class="{icon_class}" width="13" height="16"><use xlink:href="{static("img/travel_fellows/sprite.svg")}#icon-{name if name != "feet" else "run"}"></use></svg>',
+            icon_class, static("img/travel_fellows/sprite.svg"), name
+        )
+        label = f'<label class="{label_class}" for="{name}">{icon_svg}</label>'
+        input = f'<input class="visually-hidden" type="checkbox" name="{name}" id="{name}" checked="">'
+
+        return format_html(
+            f'<li class="user-information__transport-item" data-tooltip="{name.capitalize()}">{input}{label}</li>',
+            name.capitalize(), input, label
+        )
+
+    def as_p(self):
+        return mark_safe(''.join(f'{self.render_field(name)}' for name in self.fields))

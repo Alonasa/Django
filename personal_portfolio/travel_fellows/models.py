@@ -53,22 +53,24 @@ class UserProfile(models.Model):
     music = ArrayField(models.CharField(max_length=300), blank=False, default=list)
     food = ArrayField(models.CharField(max_length=300), blank=False, default=list)
 
-    TRANSPORT_CHOICES = (
-        ('AV', 'Avia'),
-        ('AU', 'Automobile'),
-        ('BI', 'Bicycle'),
-        ('HI', 'Hiking')
-    )
-
-    transport = models.CharField(max_length=2, choices=TRANSPORT_CHOICES, blank=True, default='AU')
-
 
 class HashTag(models.Model):
     hashtag = models.CharField(max_length=100, unique=True)
     user = models.ManyToManyField(User)
 
     def __str__(self):
-        return f'#{self.hashtag}'
+        return f'{self.hashtag}'
+
+
+class UserTransportation(models.Model):
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='transportation')
+    plane = models.BooleanField(default=True)
+    bus = models.BooleanField(default=True)
+    bike = models.BooleanField(default=False)
+    feet = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"{self.user.user.name}'s transportation"
 
 
 class UserPlans(models.Model):

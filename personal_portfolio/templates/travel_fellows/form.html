@@ -75,42 +75,7 @@
                         <div class="user-information__wrapper user-information__wrapper--transport">
                             <p class="user-information__title">Transport</p>
                             <ul class="user-information__transport-wrapper">
-                                <li class="user-information__transport-item" data-tooltip="Avia">
-                                    <input class="visually-hidden" type="checkbox" name="plane" id="plane" checked="">
-                                    <label class="transport-type user-information__transport-type" for="plane">
-                                        <svg class="transport-type__icon transport-type__icon--plane" width="14"
-                                             height="16">
-                                            <use xlink:href="{% static 'img/travel_fellows/sprite.svg' %}#icon-plane"></use>
-                                        </svg>
-                                    </label>
-                                </li>
-                                <li class="user-information__transport-item" data-tooltip="Automobile">
-                                    <input class="visually-hidden" type="checkbox" name="bus" id="bus" checked="">
-                                    <label class="transport-type user-information__transport-type" for="bus">
-                                        <svg class="transport-type__icon transport-type__icon--bus" width="13"
-                                             height="16">
-                                            <use xlink:href="{% static 'img/travel_fellows/sprite.svg' %}#icon-bus"></use>
-                                        </svg>
-                                    </label>
-                                </li>
-                                <li class="user-information__transport-item" data-tooltip="Bicycle">
-                                    <input class="visually-hidden" type="checkbox" name="bike" id="bike">
-                                    <label class="transport-type user-information__transport-type" for="bike">
-                                        <svg class="transport-type__icon transport-type__icon--bike" width="19"
-                                             height="17">
-                                            <use xlink:href="{% static 'img/travel_fellows/sprite.svg' %}#icon-bike"></use>
-                                        </svg>
-                                    </label>
-                                </li>
-                                <li class="user-information__transport-item" data-tooltip="Hiking">
-                                    <input class="visually-hidden" type="checkbox" name="feet" id="feet" checked="">
-                                    <label class="transport-type user-information__transport-type" for="feet">
-                                        <svg class="transport-type__icon transport-type__icon--run" width="15"
-                                             height="17">
-                                            <use xlink:href="{% static 'img/travel_fellows/sprite.svg' %}#icon-run"></use>
-                                        </svg>
-                                    </label>
-                                </li>
+                                {{ transportation_form.as_p }}
                             </ul>
                         </div>
                     </div>
