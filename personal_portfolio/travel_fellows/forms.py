@@ -43,36 +43,71 @@ class AuthorizeForm(forms.Form):
 
 
 class RegisterForm(BaseForm):
-    field_order = ['name', 'surname']
+    field_order = [
+        'name',
+        'surname',
+    ]
     password_confirm = forms.CharField(
         label='',
         widget=forms.PasswordInput(
-            attrs={'id': 'repeat_password', 'class': 'registration__password', 'type': 'password',
-                   'name': 'repeat_password',
-                   'placeholder': 'Password'}),
+            attrs={
+                'id': 'repeat_password',
+                'class': 'registration__password',
+                'type': 'password',
+                'name': 'repeat_password',
+                'placeholder': 'Password',
+            }
+        ),
         min_length=8,
-        error_messages={"required": "*Required Field", "max_length": "Min password length is 8 Characters"}
+        error_messages={
+            "required": "*Required Field",
+            "max_length": "Min password length is 8 Characters",
+        }
     )
     name = forms.CharField(
         label='',
         widget=forms.TextInput(
-            attrs={'id': 'name', 'class': 'registration__password', 'type': 'text', 'name': 'name',
-                   'placeholder': 'Your name'}),
+            attrs={
+                'id': 'name',
+                'class': 'registration__password',
+                'type': 'text',
+                'name': 'name',
+                'placeholder': 'Your name',
+            }
+        ),
         min_length=2,
-        error_messages={"required": "*Required Field", "max_length": "Name can't be less 2 Characters"}
+        error_messages={
+            "required": "*Required Field",
+            "max_length": "Name can't be less 2 Characters",
+        }
     )
     surname = forms.CharField(
         label='',
         widget=forms.TextInput(
-            attrs={'id': 'sur_name', 'class': 'registration__password', 'type': 'text', 'name': 'sur_name',
-                   'placeholder': 'Your Surname'}),
+            attrs={
+                'id': 'sur_name',
+                'class': 'registration__password',
+                'type': 'text',
+                'name': 'sur_name',
+                'placeholder': 'Your Surname',
+            }
+        ),
         min_length=2,
-        error_messages={"required": "*Required Field", "max_length": "Surame can't be less 2 Characters"}
+        error_messages={
+            "required": "*Required Field",
+            "max_length": "Surname can't be less 2 Characters",
+        }
     )
 
     class Meta:
         model = User
-        fields = ['name', 'surname', 'username', 'password', 'password_confirm']
+        fields = [
+            'name',
+            'surname',
+            'username',
+            'password',
+            'password_confirm',
+        ]
 
 
 class UserPhotoForm(forms.Form):
@@ -80,9 +115,18 @@ class UserPhotoForm(forms.Form):
         label='Change photo',
         required=False,
         widget=forms.FileInput(
-            attrs={'class': 'visually-hidden', 'id': 'upload-photo', 'onchange': 'this.form.submit()'}),
+            attrs={
+                'class': 'visually-hidden',
+                'id': 'upload-photo',
+                'onchange': 'this.form.submit()',
+            }
+        ),
         validators=[
-            FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png'])
+            FileExtensionValidator(allowed_extensions=[
+                'jpg',
+                'jpeg',
+                'png',
+            ])
         ]
     )
 
@@ -92,29 +136,43 @@ class UserHashtagsForm(forms.Form):
         label='',
         required=False,
         widget=forms.Textarea(
-            attrs={'class': 'user-information__textfield', 'rows': '1',
-                   'placeholder': 'Short information about your interests in 6-10 tags',
-                   'onchange': 'this.form.submit()'})
+            attrs={
+                'class': 'user-information__textfield',
+                'rows': '1',
+                'placeholder': 'Short information about your interests in 6-10 tags',
+                'onchange': 'this.form.submit()',
+            }
+        )
     )
 
 
 class UserTransportationForm(forms.ModelForm):
     class Meta:
         model = UserTransportation
-        fields = ['plane', 'bus', 'bike', 'feet']
+        fields = [
+            'plane',
+            'bus',
+            'bike',
+            'feet',
+        ]
 
     def render_field(self, name):
         label_class = 'transport-type user-information__transport-type'
         icon_class = f'transport-type__icon transport-type__icon--{name if name != "feet" else "run"}'
         icon_svg = format_html(
-            f'<svg class="{icon_class}" width="13" height="16"><use xlink:href="{static("img/travel_fellows/sprite.svg")}#icon-{name if name != "feet" else "run"}"></use></svg>',
+            f'<svg class="{icon_class}" width="13" height="16">'
+            f'<use xlink:href="{static("img/travel_fellows/sprite.svg")}#icon-{name if name != "feet" else "run"}">'
+            f'</use>'
+            f'</svg>',
             icon_class, static("img/travel_fellows/sprite.svg"), name
         )
         label = f'<label class="{label_class}" for="{name}">{icon_svg}</label>'
-        input = f'<input class="visually-hidden" type="checkbox" name="{name}" id="{name}" onchange=this.form.submit() {"checked" if getattr(self.instance, name, False) else ""}>'
+        input = (f'<input class="visually-hidden" type="checkbox" name="{name}" id="{name}" onchange=this.form.submit()'
+                 f' {"checked" if getattr(self.instance, name, True) else ""}>')
 
         return format_html(
-            f'<li class="user-information__transport-item" data-tooltip="{name.capitalize()}">{input}{label}</li>',
+            f'<li class="user-information__transport-item" '
+            f'data-tooltip="{name.capitalize()}">{input}{label}</li>',
             name.capitalize(), input, label
         )
 
