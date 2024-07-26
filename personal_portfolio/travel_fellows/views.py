@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
 from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm, UserTransportationForm
-from .models import User, UserProfile, HashTag
+from .models import User, UserProfile, HashTag, UserTransportation
 
 
 def destinations(request):
@@ -81,7 +81,8 @@ class ViewUserProfile(View):
         hashtags = request.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
-        transportation_form = UserTransportationForm(request.POST)
+        user_transportation, created = UserTransportation.objects.get_or_create(user=request.user)
+        transportation_form = UserTransportationForm(request.POST, instance=user_transportation)
         context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags)
         return render(request, "travel_fellows/form.html", context)
 
@@ -91,7 +92,10 @@ class ViewUserProfile(View):
         hashtags = request.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(request.POST, initial={'hashtags': str_hashtags})
-        transportation_form = UserTransportationForm(request.POST)
+
+        user_transportation, _ = UserTransportation.objects.get_or_create(user=request.user)
+        transportation_form = UserTransportationForm(request.POST, instance=user_transportation)
+
         context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags)
 
         if form.is_valid():
@@ -113,6 +117,9 @@ class ViewUserProfile(View):
                                 user.hashtag_set.add(hash_tag)
                                 user.save()
                             hash_tag.save()
+
+                if transportation_form.is_valid():
+                    transportation_form.save()
 
             except UserProfile.DoesNotExist:
                 user_profile = UserProfile.objects.create(

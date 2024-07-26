@@ -63,14 +63,14 @@ class HashTag(models.Model):
 
 
 class UserTransportation(models.Model):
-    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='transportation')
-    plane = models.BooleanField(default=True)
-    bus = models.BooleanField(default=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='transportation')
+    plane = models.BooleanField(default=False)
+    bus = models.BooleanField(default=False)
     bike = models.BooleanField(default=False)
-    feet = models.BooleanField(default=True)
+    feet = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.user.user.name}'s transportation"
+        return f"{self.user.name}'s transportation"
 
 
 class UserPlans(models.Model):

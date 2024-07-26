@@ -4,6 +4,7 @@ from django.forms import ModelForm
 from django.templatetags.static import static
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
+
 from .models import User, UserTransportation
 
 
@@ -110,7 +111,7 @@ class UserTransportationForm(forms.ModelForm):
             icon_class, static("img/travel_fellows/sprite.svg"), name
         )
         label = f'<label class="{label_class}" for="{name}">{icon_svg}</label>'
-        input = f'<input class="visually-hidden" type="checkbox" name="{name}" id="{name}" checked="">'
+        input = f'<input class="visually-hidden" type="checkbox" name="{name}" id="{name}" onchange=this.form.submit() {"checked" if getattr(self.instance, name, False) else ""}>'
 
         return format_html(
             f'<li class="user-information__transport-item" data-tooltip="{name.capitalize()}">{input}{label}</li>',
