@@ -16,70 +16,77 @@
     </header>
 
     <main>
-        <form class="directions-form" method="POST" action="{% url 'user' %}" enctype="multipart/form-data">
-            {% csrf_token %}
+        <div>
             <section class="user-information">
-                <div class="container">
-                    <h2 class="visually-hidden">Personal Information</h2>
-                    <div class="user-information__common-wrapper">
-                        <div class="user-information__top">
-                            <div class="user-information__level">
-                                <svg class="user-information__level-percent" width="100" height="100"
-                                     viewBox="0 0 100 100">
-                                    <circle r="47" cx="50" cy="50" fill="transparent" stroke="#ff8d30" stroke-width="3"
-                                            stroke-dasharray="251px 63px"></circle>
-                                </svg>
-                                <span class="user-information__level-number">
-                                    {% if user.level < 10 %}
-                                        {{ user.level|stringformat:"02d"|default:"80" }}
-                                    {% else %}
-                                        {{ user.level|default:80  }}
-                                    {% endif %}</span>
-                                <span class="user-information__level-description">level</span>
-                            </div>
-                            <div class="user-information__image">
-                                <picture>
-                                    <img class="user-information__picture"
-                                         src="{% static image|default:'img/travel_fellows/photo-account-mobile@1x.jpg' %}"
-                                          alt="photo of {{user.user.name}} {{user.user.surname}}" width="100" height="100">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="user-information__upload-photo">
-                            {{ form.user_photo }}
-                            <label class="button button--rounded button--violet user-information__button"
-                                   for="upload-photo"><span
-                                    class="user-information__button-hidden-text">Change&nbsp;</span>photo
-                            </label>
-                            {% if form.errors or form.user_photo.errors %}
-                                <div class="form-errors">
-                                    {% if form.non_field_errors %}
-                                        {% for error in form.non_field_errors %}
-                                            <p>{{ error }}</p>
-                                        {% endfor %}
-                                    {% endif %}
-                                    {% if form.user_photo.errors %}
-                                        {% for error in form.user_photo.errors %}
-                                            <p>{{ error }}</p>
-                                        {% endfor %}
-                                    {% endif %}
+                <form class="user-form" method="POST" action="{% url 'user' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                    <div class="container">
+                        <h2 class="visually-hidden">Personal Information</h2>
+                        <div class="user-information__common-wrapper">
+                            <div class="user-information__top">
+                                <div class="user-information__level">
+                                    <svg class="user-information__level-percent" width="100" height="100"
+                                         viewBox="0 0 100 100">
+                                        <circle r="47" cx="50" cy="50" fill="transparent" stroke="#ff8d30" stroke-width="3"
+                                                stroke-dasharray="251px 63px"></circle>
+                                    </svg>
+                                    <span class="user-information__level-number">
+                                        {% if user.level < 10 %}
+                                            {{ user.level|stringformat:"02d"|default:"80" }}
+                                        {% else %}
+                                            {{ user.level|default:80 }}
+                                        {% endif %}</span>
+                                    <span class="user-information__level-description">level</span>
                                 </div>
-                            {% endif %}
-                        </div>
-                        <div class="user-information__wrapper">
-                            <p class="user-information__title user-information__title--tags">
-                                Hashtags
-                            </p>
-                            {{ textarea_form.as_p }}
-                        </div>
-                        <div class="user-information__wrapper user-information__wrapper--transport">
-                            <p class="user-information__title">Transport</p>
-                            <ul class="user-information__transport-wrapper">
-                                {{ transportation_form.as_p }}
-                            </ul>
+                                <div class="user-information__image">
+                                    <picture>
+                                        <img class="user-information__picture"
+                                             src="{% static image|default:'img/travel_fellows/photo-account-mobile@1x.jpg' %}"
+                                             alt="photo of {{ user.user.name }} {{ user.user.surname }}" width="100"
+                                             height="100">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="user-information__upload-photo">
+                                {{ form.user_photo }}
+                                <label class="button button--rounded button--violet user-information__button"
+                                       for="upload-photo"><span
+                                        class="user-information__button-hidden-text">Change&nbsp;</span>photo
+                                </label>
+                                {% if form.errors or form.user_photo.errors %}
+                                    <div class="form-errors">
+                                        {% if form.non_field_errors %}
+                                            {% for error in form.non_field_errors %}
+                                                <p>{{ error }}</p>
+                                            {% endfor %}
+                                        {% endif %}
+                                        {% if form.user_photo.errors %}
+                                            {% for error in form.user_photo.errors %}
+                                                <p>{{ error }}</p>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="user-information__wrapper">
+                                <p class="user-information__title user-information__title--tags">
+                                    Hashtags
+                                </p>
+                                {% if textarea_form %}
+                                    {{ textarea_form.as_p }}
+                                {% else %}
+
+                                {% endif %}
+                            </div>
+                            <div class="user-information__wrapper user-information__wrapper--transport">
+                                <p class="user-information__title">Transport</p>
+                                <ul class="user-information__transport-wrapper">
+                                    {{ transportation_form.as_p }}
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </section>
             <section class="user-plans">
                 <div class="container">
@@ -179,7 +186,7 @@
                                             <button class="plan-step__number-input-button plan-step__number-input-button--decrease"
                                                     type="button">Decrease by 1
                                             </button>
-                                            <input class="plan-step__number-input" type="number" id="teammates-quantity"
+                                            <input class="plan-step__number-input" type="number" data-input="teammates-quantity" id="teammates-quantity"
                                                    name="teammates-quantity" value="2" min="0">
                                             <button class="plan-step__number-input-button plan-step__number-input-button--increase"
                                                     type="button">Increase by 1
@@ -195,7 +202,7 @@
                                             <button class="plan-step__number-input-button plan-step__number-input-button--decrease"
                                                     type="button">Decrease by 1
                                             </button>
-                                            <input class="plan-step__number-input" type="number" id="travel-term"
+                                            <input class="plan-step__number-input" type="number" data-input="travel-term" id="travel-term"
                                                    name="travel-term" value="2" min="1">
                                             <button class="plan-step__number-input-button plan-step__number-input-button--increase"
                                                     type="button">Increase by 1
@@ -1573,14 +1580,15 @@
                     </div>
                 </div>
             </section>
-        </form>
+        </div>
     </main>
 
 
     {% include 'travel_fellows/footer.html' %}
-    <script>
-        document.createElement("picture");
-    </script>
 
 
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'js/travel_fellows/form-page.js' %}" async=""></script>
 {% endblock %}
