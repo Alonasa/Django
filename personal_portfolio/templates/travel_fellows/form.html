@@ -183,12 +183,12 @@
                                             companions:</label>
                                         <span class="plan-step__label-tip">Peoples</span>
                                         <div class="plan-step__number-input-wrapper">
-                                            <button class="plan-step__number-input-button plan-step__number-input-button--decrease"
+                                            <button data-input="teammates-quantity" class="plan-step__number-input-button plan-step__number-input-button--decrease"
                                                     type="button">Decrease by 1
                                             </button>
-                                            <input class="plan-step__number-input" type="number" data-input="teammates-quantity" id="teammates-quantity"
+                                            <input class="plan-step__number-input" type="number" id="teammates-quantity"
                                                    name="teammates-quantity" value="2" min="0">
-                                            <button class="plan-step__number-input-button plan-step__number-input-button--increase"
+                                            <button data-input="teammates-quantity" class="plan-step__number-input-button plan-step__number-input-button--increase"
                                                     type="button">Increase by 1
                                             </button>
                                         </div>
@@ -200,12 +200,12 @@
                                         <span class="plan-step__label-tip">d.</span>
                                         <div class="plan-step__number-input-wrapper">
                                             <button class="plan-step__number-input-button plan-step__number-input-button--decrease"
-                                                    type="button">Decrease by 1
+                                                    type="button" data-input="travel-term">Decrease by 1
                                             </button>
-                                            <input class="plan-step__number-input" type="number" data-input="travel-term" id="travel-term"
+                                            <input class="plan-step__number-input" type="number" id="travel-term"
                                                    name="travel-term" value="2" min="1">
                                             <button class="plan-step__number-input-button plan-step__number-input-button--increase"
-                                                    type="button">Increase by 1
+                                                    type="button" data-input="travel-term">Increase by 1
                                             </button>
                                         </div>
                                     </div>
@@ -1590,5 +1590,5 @@
 {% endblock %}
 
 {% block script %}
-    <script src="{% static 'js/travel_fellows/form-page.js' %}" async=""></script>
+    <script src="{% static 'js/travel_fellows/form-page.js' %}"></script>
 {% endblock %}
