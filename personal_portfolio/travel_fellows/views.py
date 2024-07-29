@@ -5,7 +5,8 @@ from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
-from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm, UserTransportationForm
+from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm, UserTransportationForm, UserPlans, \
+    UserPlansForm
 from .models import User, UserProfile, HashTag, UserTransportation
 
 
@@ -63,7 +64,7 @@ def logOut(request):
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
 
-    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags):
+    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form):
         context = {
             "form": form,
             "user": user_profile,
@@ -71,6 +72,7 @@ class ViewUserProfile(View):
             "textarea_form": hashtags_form,
             "transportation_form": transportation_form,
             "hashtags": hashtags,
+            "plans_form": plans_form,
         }
 
         return context
@@ -83,7 +85,8 @@ class ViewUserProfile(View):
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
         user_transportation, created = UserTransportation.objects.get_or_create(user=request.user)
         transportation_form = UserTransportationForm(request.POST, instance=user_transportation)
-        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags)
+        plans_form = UserPlansForm()
+        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form)
         return render(request, "travel_fellows/form.html", context)
 
     def post(self, request):
@@ -92,11 +95,10 @@ class ViewUserProfile(View):
         hashtags = request.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(request.POST, initial={'hashtags': str_hashtags})
-
         user_transportation, _ = UserTransportation.objects.get_or_create(user=request.user)
         transportation_form = UserTransportationForm(request.POST, instance=user_transportation)
-
-        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags)
+        plans_form = UserPlansForm()
+        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form)
 
         if form.is_valid():
             try:

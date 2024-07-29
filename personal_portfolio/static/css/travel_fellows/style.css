@@ -5711,7 +5711,9 @@ a {
     .plan-step__custom-checkbox::before {
       left: 3px; }
     .plan-step__custom-checkbox::after {
-      left: 15px; } }
+      left: 15px;
+      width: 15px;
+      height: 15px; } }
 .plan-step__input-wrapper--checkbox input:checked + .plan-step__custom-checkbox::after {
   display: block; }
 

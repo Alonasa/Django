@@ -1,11 +1,10 @@
 from django import forms
 from django.core.validators import FileExtensionValidator
-from django.forms import ModelForm
+from django.forms import ModelForm, Form
 from django.templatetags.static import static
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
-
-from .models import User, UserTransportation
+from .models import User, UserTransportation, UserPlans
 
 
 class BaseForm(ModelForm):
@@ -25,7 +24,7 @@ class BaseForm(ModelForm):
     )
 
 
-class AuthorizeForm(forms.Form):
+class AuthorizeForm(Form):
     username = forms.EmailField(
         label='',
         widget=forms.TextInput(
@@ -43,6 +42,16 @@ class AuthorizeForm(forms.Form):
 
 
 class RegisterForm(BaseForm):
+    class Meta:
+        model = User
+        fields = [
+            'name',
+            'surname',
+            'username',
+            'password',
+            'password_confirm',
+        ]
+
     field_order = [
         'name',
         'surname',
@@ -99,18 +108,8 @@ class RegisterForm(BaseForm):
         }
     )
 
-    class Meta:
-        model = User
-        fields = [
-            'name',
-            'surname',
-            'username',
-            'password',
-            'password_confirm',
-        ]
 
-
-class UserPhotoForm(forms.Form):
+class UserPhotoForm(Form):
     user_photo = forms.ImageField(
         label='Change photo',
         required=False,
@@ -131,7 +130,7 @@ class UserPhotoForm(forms.Form):
     )
 
 
-class UserHashtagsForm(forms.Form):
+class UserHashtagsForm(Form):
     hashtags = forms.CharField(
         label='',
         required=False,
@@ -146,7 +145,7 @@ class UserHashtagsForm(forms.Form):
     )
 
 
-class UserTransportationForm(forms.ModelForm):
+class UserTransportationForm(ModelForm):
     class Meta:
         model = UserTransportation
         fields = [
@@ -178,3 +177,46 @@ class UserTransportationForm(forms.ModelForm):
 
     def as_p(self):
         return mark_safe(''.join(f'{self.render_field(name)}' for name in self.fields))
+
+
+class UserPlansForm(ModelForm):
+    class Meta:
+        model = UserPlans
+        fields = '__all__'
+
+    companions = forms.IntegerField(
+        label='',
+        widget=forms.NumberInput(
+            attrs={
+                'class': 'plan-step__number-input',
+                'id': 'teammates-quantity',
+                'name': 'teammates-quantity',
+                'min': '1',
+                'value': '2',
+            }
+        ),
+    )
+    length = forms.IntegerField(
+        label='',
+        widget=forms.NumberInput(
+            attrs={
+                'class': 'plan-step__number-input',
+                'id': 'travel-term',
+                'name': 'travel-term',
+                'min': '1',
+                'value': '2',
+            },
+        )
+    )
+
+    kids = forms.BooleanField(
+        label=mark_safe('<label class="plan-step__custom-checkbox" for="with-kids">With kids?</label>'),
+        widget=forms.CheckboxInput(
+            attrs={
+                'class': 'visually-hidden',
+                'name': 'with-kids',
+                'id': 'with-kids',
+            }
+        )
+    )
+
