@@ -268,4 +268,3 @@ class UserPlansForm(ModelForm):
         )
     )
 
-    cale = forms.DateField(widget=DatePickerInput({'mode': 'range'}, options=FlatpickrOptions(static='true', inline='true', appendTo='calendar__title', showAlways="true")))

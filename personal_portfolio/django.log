@@ -42039,3 +42039,5 @@ INFO 2024-07-30 21:20:40,351 basehttp 27968 35308 "GET /static/img/travel_fellow
 INFO 2024-07-30 21:20:40,354 basehttp 27968 16336 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
 INFO 2024-07-30 21:20:40,367 basehttp 27968 30864 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
 INFO 2024-07-30 21:20:40,372 basehttp 27968 36624 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-30 21:22:30,499 autoreload 27968 28828 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
+INFO 2024-07-30 21:22:32,268 autoreload 23424 27628 Watching for file changes with StatReloader
