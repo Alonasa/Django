@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'livereload',
     'travel_fellows',
+    'django_flatpickr'
 ]
 
 MIDDLEWARE = [

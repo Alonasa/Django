@@ -1,12 +1,16 @@
+import calendar
+import datetime
+
+from django import forms
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse, request
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
 from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm, UserTransportationForm, UserPlans, \
-    UserPlansForm
+    UserPlansForm, CalendarWidget
 from .models import User, UserProfile, HashTag, UserTransportation
 
 
@@ -60,11 +64,10 @@ def logOut(request):
     logout(request)
     return redirect('fellows')
 
-
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
 
-    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form):
+    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form, calendar):
         context = {
             "form": form,
             "user": user_profile,
@@ -73,9 +76,15 @@ class ViewUserProfile(View):
             "transportation_form": transportation_form,
             "hashtags": hashtags,
             "plans_form": plans_form,
+            "calendar": calendar
         }
 
         return context
+
+    def cal(self):
+        cal = forms.DateField(widget=CalendarWidget)
+        print(cal)
+        return cal
 
     def get(self, request):
         form = UserPhotoForm()
@@ -86,7 +95,8 @@ class ViewUserProfile(View):
         user_transportation, created = UserTransportation.objects.get_or_create(user=request.user)
         transportation_form = UserTransportationForm(request.POST, instance=user_transportation)
         plans_form = UserPlansForm()
-        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form)
+        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form,
+                                   self.cal())
         return render(request, "travel_fellows/form.html", context)
 
     def post(self, request):
@@ -98,7 +108,8 @@ class ViewUserProfile(View):
         user_transportation, _ = UserTransportation.objects.get_or_create(user=request.user)
         transportation_form = UserTransportationForm(request.POST, instance=user_transportation)
         plans_form = UserPlansForm()
-        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form)
+        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form,
+                                   self.cal())
 
         if form.is_valid():
             try:
