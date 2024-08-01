@@ -42041,3 +42041,28 @@ INFO 2024-07-30 21:20:40,367 basehttp 27968 30864 "GET /static/img/travel_fellow
 INFO 2024-07-30 21:20:40,372 basehttp 27968 36624 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
 INFO 2024-07-30 21:22:30,499 autoreload 27968 28828 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\forms.py changed, reloading.
 INFO 2024-07-30 21:22:32,268 autoreload 23424 27628 Watching for file changes with StatReloader
+INFO 2024-07-30 21:24:06,055 basehttp 23424 18708 "GET /portfolio/fellows/user/ HTTP/1.1" 200 126340
+INFO 2024-07-30 21:24:07,321 basehttp 23424 35432 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-07-30 21:24:07,347 basehttp 23424 35432 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-07-30 21:24:07,348 basehttp 23424 33268 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-07-30 21:24:07,365 basehttp 23424 18708 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-07-30 21:24:07,665 basehttp 23424 18708 "GET /static/js/travel_fellows/form-page.js HTTP/1.1" 200 5277
+INFO 2024-07-30 21:24:07,890 basehttp 23424 33984 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-07-30 21:24:07,915 basehttp 23424 36492 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-07-30 21:24:07,947 basehttp 23424 36492 "GET /static/img/travel_fellows/profile/Dream_Shopping_XNrsDJu.png HTTP/1.1" 200 87625
+INFO 2024-07-30 21:24:07,959 basehttp 23424 33728 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203320
+INFO 2024-07-30 21:24:08,115 basehttp 23424 33728 "GET /static/img/travel_fellows/flag-bosnia.svg HTTP/1.1" 200 2469
+INFO 2024-07-30 21:24:08,122 basehttp 23424 36492 "GET /static/img/travel_fellows/flag-czech.svg HTTP/1.1" 200 430
+INFO 2024-07-30 21:24:08,165 basehttp 23424 36492 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-07-30 21:24:08,172 basehttp 23424 33728 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-07-30 21:24:08,319 basehttp 23424 33728 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-07-30 21:24:08,330 basehttp 23424 36492 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-07-30 21:24:08,386 basehttp 23424 36492 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-07-30 21:24:08,390 basehttp 23424 33728 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-07-30 21:24:08,393 basehttp 23424 18708 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-07-30 21:24:08,395 basehttp 23424 33984 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-07-30 21:24:08,396 basehttp 23424 35432 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-07-30 21:24:08,424 basehttp 23424 33268 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-07-30 21:24:08,442 basehttp 23424 35432 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-07-31 08:21:13,348 autoreload 30256 22844 Watching for file changes with StatReloader
+INFO 2024-08-01 14:45:47,648 autoreload 33416 37208 Watching for file changes with StatReloader
