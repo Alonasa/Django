@@ -145,3 +145,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let datesList = document.querySelectorAll('.calendar__day-number');
+    const dates = []
+
+
+
+    let counter = 1;
+    datesList.forEach(el=>{
+        el.addEventListener('click', ()=> {
+            let currentId = el.getAttribute('for');
+            console.log(counter)
+            console.log(currentId)
+        })
+    })
+
+
+});
+
