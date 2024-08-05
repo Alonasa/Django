@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+let todaysDate
+
 document.addEventListener('DOMContentLoaded', function () {
     const currentDate = new Date();
     let displayedDate = new Date(currentDate)
@@ -59,8 +61,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     checkbox.type = 'checkbox';
                     checkbox.name = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
                     checkbox.id = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
+                    todaysDate = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
                     if (dayNumber === currentDate.getDate() && currentMonth === month) {
                         checkbox.checked = true;
+                        todaysDate = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
                     }
 
                     if (dayNumber < currentDate.getDate() && currentDate.getMonth() === currentDate.getMonth()) {
@@ -128,40 +132,68 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const date = document.querySelector('.calendar__title');
         date.innerText = `${currentMonth} ${selectedYear}`
+        return todaysDate
     }
 
-
     renderCalendar()
+    datesPicker()
 
     previousMonth.addEventListener('click', function () {
         displayedDate.setMonth(displayedDate.getMonth() - 1);
         renderCalendar()
+        datesPicker()
     })
 
     nextMonth.addEventListener('click', function () {
         displayedDate.setMonth(displayedDate.getMonth() + 1);
         renderCalendar()
+        datesPicker()
     })
 
 
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+const uncheckCheckboxes = (elements) => {
+    elements.forEach(d => {
+        d.checked = false
+    });
+}
+
+const datesPicker = () => {
     let datesList = document.querySelectorAll('.calendar__day-number');
-    const dates = []
+    let datesCheckboxes = document.querySelectorAll('.calendar__table-cell input');
+    let dates = [];
+    let counter = 0;
 
 
-
-    let counter = 1;
-    datesList.forEach(el=>{
-        el.addEventListener('click', ()=> {
+    datesList.forEach(el => {
+        el.addEventListener('click', () => {
             let currentId = el.getAttribute('for');
-            console.log(counter)
-            console.log(currentId)
+            counter += 1;
+            switch (counter) {
+                case 1: {
+                    dates = [];
+                    dates[0] = currentId;
+                    uncheckCheckboxes(datesCheckboxes)
+                    break
+                }
+                case 2: {
+                    let oldChoice = new Date(dates[0].replace("-", " "));
+                    let newChoice = new Date(currentId.replace("-", " "));
+                    if (newChoice < oldChoice) {
+                        dates[0] = currentId;
+                        counter = 1;
+                        uncheckCheckboxes(datesCheckboxes)
+                        return counter
+                    } else {
+                        dates[1] = currentId
+                    }
+                    counter = 0
+                    return counter
+                }
+            }
         })
     })
-
-
-});
+};
 
