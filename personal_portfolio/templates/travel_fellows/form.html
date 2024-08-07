@@ -135,7 +135,8 @@
                 </div>
             </section>
             <section class="add-plan">
-                <form class="add-plans-form" method="POST" enctype="multipart/form-data">
+                <form class="add-plans-form" method="POST" action="{% url 'user' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
                     <div class="container">
                         <div class="add-plan__common-wrapper">
                             <div class="add-plan__heading-wrapper">
@@ -1360,7 +1361,7 @@
                                     </div>
                                 </div>
                                 <div class="plan-step__button-wrapper">
-                                    <button class="button button--rounded plan-step__button-next" type="submit">
+                                    <button class="button button--rounded plan-step__button-next" type="submit" name="plans">
                                         Send
                                     </button>
                                     <a class="button button button--rounded button--no-bg plan-step__button-prev"

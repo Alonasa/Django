@@ -146,7 +146,7 @@ class UserHashtagsForm(Form):
                 'placeholder': 'Short information about your interests in 6-10 tags',
                 'onchange': 'this.form.submit()',
             }
-        )
+        ),
     )
 
 
@@ -171,60 +171,17 @@ class UserTransportationForm(ModelForm):
             icon_class, static("img/travel_fellows/sprite.svg"), name
         )
         label = f'<label class="{label_class}" for="{name}">{icon_svg}</label>'
-        input = (f'<input class="visually-hidden" type="checkbox" name="{name}" id="{name}" onchange=this.form.submit()'
-                 f' {"checked" if getattr(self.instance, name, True) else ""}>')
+        input_el = (f'<input class="visually-hidden" type="checkbox" name="{name}" id="{name}"'
+                    f'onclick=this.form.submit() {"checked" if getattr(self.instance, name, True) else ""}>')
 
         return format_html(
             f'<li class="user-information__transport-item" '
-            f'data-tooltip="{name.capitalize()}">{input}{label}</li>',
-            name.capitalize(), input, label
+            f'data-tooltip="{name.capitalize()}">{input_el}{label}</li>',
+            name.capitalize(), input_el, label
         )
 
     def as_p(self):
         return mark_safe(''.join(f'{self.render_field(name)}' for name in self.fields))
-
-class CalendarWidget(forms.Widget):
-    def render(self, name, value, attrs=None, renderer=None):
-        if value:
-            current_date = value
-        else:
-            current_date = datetime.now()
-
-        # Get the first day of the current month
-        first_day_of_month = datetime(current_date.year, current_date.month, 1)
-
-        # Get the last day of the current month
-        last_day_of_month = (first_day_of_month + timedelta(days=32)).replace(day=1) - timedelta(
-            days=1)
-
-        # Determine the starting day of the week (Monday)
-        start_day = first_day_of_month.weekday()
-
-        # Generate the calendar HTML
-        calendar_html = f'<table class="calendar">'
-        calendar_html += '<thead><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead>'
-        calendar_html += '<tbody><tr>'
-
-        # Fill in the dates for the previous month's days
-        for i in range(start_day):
-            calendar_html += f'<td class="prev-month">{first_day_of_month - timedelta(days=start_day - i)}</td>'
-
-        # Fill in the dates for the current month
-        current_day = first_day_of_month
-        while current_day <= last_day_of_month:
-            if current_day.weekday() == 0 and current_day != first_day_of_month:
-                calendar_html += '</tr><tr>'
-            calendar_html += f'<td>{current_day.day}</td>'
-            current_day += timedelta(days=1)
-
-        # Fill in the dates for the next month's days
-        while len(calendar_html.split('<td>')) - 1 < 42:
-            calendar_html += f'<td class="next-month">{current_day.day}</td>'
-            current_day += timedelta(days=1)
-
-        calendar_html += '</tr></tbody></table>'
-        return calendar_html
-
 
 
 class UserPlansForm(ModelForm):
@@ -265,6 +222,6 @@ class UserPlansForm(ModelForm):
                 'name': 'with-kids',
                 'id': 'with-kids',
             }
-        )
+        ),
+        required=False
     )
-

@@ -196,4 +196,3 @@ const datesPicker = () => {
         })
     })
 };
-
