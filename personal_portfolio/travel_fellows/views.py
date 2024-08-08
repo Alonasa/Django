@@ -87,7 +87,7 @@ class ViewUserProfile(View):
         hashtags = request.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
-        transportation_form = UserTransportationForm()
+        transportation_form = UserTransportationForm(instance=UserTransportation.objects.get(user=request.user))
         plans_form = UserPlansForm(request.GET, prefix='plans')
         context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form)
         return render(request, "travel_fellows/form.html", context)
@@ -143,13 +143,15 @@ class ViewUserProfile(View):
 
         photo_form = self.handle_photo_form(request, user_profile)
         hashtags_form = self.handle_hashtags_form(request, user)
-        transportation_form = self.handle_transportation_form(request, user)
         plans_form = self.handle_plans_form(request, user)
-        if transportation_form.has_changed():
-            print('CJJ')
+        transportation_form = self.handle_transportation_form(request, user)
 
-        if 'pans' in request.POST:
-            print("Plans CHanged")
+        if 'transportation_form' in request.POST:
+            print('CJJ')
+            transportation_form = self.handle_transportation_form(request, user)
+
+        if 'plans' in request.POST:
+            print('plans')
 
         context = self.get_context(
             photo_form, user_profile, hashtags_form, transportation_form,
@@ -157,6 +159,13 @@ class ViewUserProfile(View):
         )
 
         return render(request, "travel_fellows/form.html", context)
+
+
+def handlePlans(request):
+    if request.method == 'POST':
+        print(request.POST.items)
+        return redirect("user")
+
 
 
 class RegisterUser(View):

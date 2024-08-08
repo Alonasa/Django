@@ -135,7 +135,7 @@
                 </div>
             </section>
             <section class="add-plan">
-                <form class="add-plans-form" method="POST" action="{% url 'user' %}" enctype="multipart/form-data">
+                <form class="add-plans-form" method="POST" action="{% url 'user-plans' %}" enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="container">
                         <div class="add-plan__common-wrapper">
