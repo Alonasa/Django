@@ -59,7 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     const checkbox = document.createElement('input');
                     checkbox.classList.add('visually-hidden');
                     checkbox.type = 'checkbox';
-                    checkbox.name = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
+                    checkbox.name = 'picked-date'
+                    checkbox.value = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
                     checkbox.id = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
                     todaysDate = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
                     if (dayNumber === currentDate.getDate() && currentMonth === month) {
@@ -73,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     const label = document.createElement('label');
                     label.classList.add('calendar__day-number');
-                    label.textContent = dayNumber;
+                    label.textContent = dayNumber.toString();
                     label.setAttribute('for', `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`);
 
                     tableCell.appendChild(checkbox);
@@ -90,13 +91,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     const checkbox = document.createElement('input');
                     checkbox.classList.add('visually-hidden');
                     checkbox.type = 'checkbox';
-                    checkbox.name = `${prevMonthName}-${prevMonthDayNumber}-${displayedDate.getFullYear()}`;
+                    checkbox.name = 'picked-date'
+                    checkbox.value = `${prevMonthName}-${prevMonthDayNumber}-${displayedDate.getFullYear()}`;
                     checkbox.id = `${prevMonthName}-${prevMonthDayNumber}-${displayedDate.getFullYear()}`;
                     checkbox.disabled = true;
 
                     const label = document.createElement('label');
                     label.classList.add('calendar__day-number', 'prev-month');
-                    label.textContent = prevMonthDayNumber;
+                    label.textContent = prevMonthDayNumber.toString();
                     label.setAttribute('for', `${prevMonthName}-${prevMonthDayNumber}-${displayedDate.getFullYear()}`);
 
                     tableCell.appendChild(checkbox);
@@ -110,7 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     checkbox.classList.add('visually-hidden');
                     checkbox.type = 'checkbox';
-                    checkbox.name = `${nextMonthName}-${nextMonthDayNumber}-${displayedDate.getFullYear()}`;
+                    checkbox.name = 'picked-date'
+                    checkbox.value = `${nextMonthName}-${nextMonthDayNumber}-${displayedDate.getFullYear()}`;
                     checkbox.id = `${nextMonthName}-${nextMonthDayNumber}-${displayedDate.getFullYear()}`;
 
                     const label = document.createElement('label');

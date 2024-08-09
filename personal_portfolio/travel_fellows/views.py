@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -7,7 +9,7 @@ from django.utils.decorators import method_decorator
 from django.views import View
 
 from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm, UserTransportationForm, UserPlansForm
-from .models import User, UserProfile, HashTag, UserTransportation
+from .models import User, UserProfile, HashTag, UserTransportation, UserPlans
 
 
 def destinations(request):
@@ -63,7 +65,6 @@ def logOut(request):
 
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
-
     def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form):
         hashtags = user_profile.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
@@ -122,20 +123,13 @@ class ViewUserProfile(View):
         user_transportation, _ = UserTransportation.objects.get_or_create(user=user)
         transportation_form = UserTransportationForm(request.POST, instance=user_transportation)
         if transportation_form.is_valid():
-            if transportation_form.cleaned_data:
-                for field, value in transportation_form.cleaned_data.items():
-                    print(f"{field}: {value}")
-                print("TRANSPORT CHANED")
-                transportation_form.save()
+            transportation_form.save()
         return transportation_form
 
-    def handle_plans_form(self, request, user):
-        plans_form = UserPlansForm(request.POST, prefix='plans')
+    def handle_plans_form(self, request):
+        plans_form = UserPlansForm(request.POST)
         if plans_form.is_valid():
-            checked_dates = request.POST.items()
-            print(checked_dates)
-            # UserPlans.objects.create(user=user)
-        return plans_form
+            return plans_form
 
     def post(self, request):
         user = request.user
@@ -143,15 +137,8 @@ class ViewUserProfile(View):
 
         photo_form = self.handle_photo_form(request, user_profile)
         hashtags_form = self.handle_hashtags_form(request, user)
-        plans_form = self.handle_plans_form(request, user)
+        plans_form = self.handle_plans_form(request)
         transportation_form = self.handle_transportation_form(request, user)
-
-        if 'transportation_form' in request.POST:
-            print('CJJ')
-            transportation_form = self.handle_transportation_form(request, user)
-
-        if 'plans' in request.POST:
-            print('plans')
 
         context = self.get_context(
             photo_form, user_profile, hashtags_form, transportation_form,
@@ -163,9 +150,40 @@ class ViewUserProfile(View):
 
 def handlePlans(request):
     if request.method == 'POST':
-        print(request.POST.items)
-        return redirect("user")
+        form_data = dict(request.POST)
+        print(form_data)
+        cleaned_data = {}
+        for key, value in form_data.items():
+            if key == 'csrfmiddlewaretoken':
+                cleaned_data[key] = value[0]
+            elif key.endswith('-companions') or key.endswith('-length'):
+                cleaned_data[key] = int(value[0])
+            elif key == 'picked-date':
+                cleaned_data[key] = [datetime.strptime(date, '%B-%d-%Y').date() for date in value]
+            elif key == 'country-letter' or key == 'plans-kids':
+                cleaned_data[key] = 'on' in value
+            else:
+                cleaned_data[key] = value[0]
+        print(cleaned_data)
 
+        user = request.user
+        print(user.id)
+        start_trip = cleaned_data['picked-date'][0]
+        end_trip = cleaned_data['picked-date'][1]
+        companions = cleaned_data['plans-companions']
+        length = cleaned_data['plans-length']
+
+        try:
+            kids = cleaned_data['plans-kids']
+        except KeyError:
+            kids = False
+
+        plans = [cleaned_data['plans']]
+
+        UserPlans.objects.create(user=user, destinations=[], companions=companions, length=length, dates_start=start_trip,
+                                 dates_end=end_trip, kids=kids, plans=plans)
+
+        return redirect("user")
 
 
 class RegisterUser(View):

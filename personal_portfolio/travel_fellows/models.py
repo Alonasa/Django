@@ -74,6 +74,10 @@ class UserTransportation(models.Model):
 
 
 class UserPlans(models.Model):
+    class Meta:
+        verbose_name = 'User Plans'
+        verbose_name_plural = 'User Plans'
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     destinations = ArrayField(models.CharField(max_length=100), blank=True, default=list)
     plans = ArrayField(models.CharField(max_length=1000), blank=True, default=list)
