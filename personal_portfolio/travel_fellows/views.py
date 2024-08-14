@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
+from django_countries import countries
 
 from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm, UserTransportationForm, UserPlansForm
 from .models import User, UserProfile, HashTag, UserTransportation, UserPlans
@@ -63,9 +64,15 @@ def logOut(request):
     return redirect('fellows')
 
 
+def get_letters():
+    return ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
-    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form):
+
+    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form, letters):
         hashtags = user_profile.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
@@ -78,6 +85,7 @@ class ViewUserProfile(View):
             "transportation_form": transportation_form,
             "hashtags": hashtags,
             "plans_form": plans_form,
+            "letters": letters,
         }
 
         return context
@@ -90,7 +98,7 @@ class ViewUserProfile(View):
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
         transportation_form = UserTransportationForm(instance=UserTransportation.objects.get(user=request.user))
         plans_form = UserPlansForm(request.GET, prefix='plans')
-        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form)
+        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form, get_letters())
         return render(request, "travel_fellows/form.html", context)
 
     def handle_photo_form(self, request, user_profile):
@@ -142,7 +150,8 @@ class ViewUserProfile(View):
 
         context = self.get_context(
             photo_form, user_profile, hashtags_form, transportation_form,
-            user.hashtag_set.values_list('hashtag', flat=True), plans_form
+            user.hashtag_set.values_list('hashtag', flat=True), plans_form,
+            get_letters()
         )
 
         return render(request, "travel_fellows/form.html", context)
@@ -164,10 +173,8 @@ def handlePlans(request):
                 cleaned_data[key] = 'on' in value
             else:
                 cleaned_data[key] = value[0]
-        print(cleaned_data)
 
         user = request.user
-        print(user.id)
         start_trip = cleaned_data['picked-date'][0]
         end_trip = cleaned_data['picked-date'][1]
         companions = cleaned_data['plans-companions']
@@ -180,8 +187,14 @@ def handlePlans(request):
 
         plans = [cleaned_data['plans']]
 
-        UserPlans.objects.create(user=user, destinations=[], companions=companions, length=length, dates_start=start_trip,
-                                 dates_end=end_trip, kids=kids, plans=plans)
+        UserPlans.objects.create(user=user,
+                                 destinations=[],
+                                 companions=companions,
+                                 length=length,
+                                 dates_start=start_trip,
+                                 dates_end=end_trip,
+                                 kids=kids,
+                                 plans=plans)
 
         return redirect("user")
 
@@ -202,7 +215,8 @@ class RegisterUser(View):
             password = form.cleaned_data['password_confirm']
             email = form.cleaned_data['username']
             if password == password_confirm:
-                user = User.objects.create(name=name, surname=surname,
+                user = User.objects.create(name=name,
+                                           surname=surname,
                                            username=email,
                                            password=password)
                 user.set_password(password)

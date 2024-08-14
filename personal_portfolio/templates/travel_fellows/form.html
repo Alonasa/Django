@@ -393,163 +393,72 @@
                                                 <input class="visually-hidden chose-country__letter-toggler chose-country__letter-toggler--25"
                                                        type="radio" name="country-letter" id="country-letter-25">
                                                 <ul class="chose-country__letters-list">
-                                                    <li class="chose-country__letters-list-item">
+                                                    
+                                                    {% for letter in letters %}
+                                                        <li class="chose-country__letters-list-item">
                                                         <label class="chose-country__letter-button"
-                                                               for="country-letter-1">А</label>
+                                                               for="country-letter-{{ forloop.counter }}">{{ letter }}</label>
                                                     </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-2">Б</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-3">В</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-4">Г</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-5">Д</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-6">Е</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-7">З</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-8">И</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-9">К</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-10">Л</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-11">М</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-12">Н</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-13">О</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-14">П</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-15">Р</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-16">С</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-17">Т</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-18">У</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-19">Ф</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-20">Х</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-21">Ч</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-22">Ш</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-23">Э</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-24">Ю</label>
-                                                    </li>
-                                                    <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-25">Я</label>
-                                                    </li>
+                                                    {% endfor %}
+                                                    
+                                                    
                                                 </ul>
                                                 <ul class="chose-country__all-countries">
                                                     <li class="chose-country__all-countries-item">
                                                         <ul class="chose-country__countries-list chose-country__countries-list--1">
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/islands/australia.html"
-                                                                   class="chose-country__country-link">Австралия
+                                                                   class="chose-country__country-link">Australia
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/europe/austria.html"
-                                                                   class="chose-country__country-link">Австрия
+                                                                   class="chose-country__country-link">Austria
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/azerbaijan.html"
-                                                                   class="chose-country__country-link">Азербайджан
+                                                                   class="chose-country__country-link">Azerbaijan
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/europe/albania.html"
-                                                                   class="chose-country__country-link">Албания
+                                                                   class="chose-country__country-link">Albania
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/algeria.html"
-                                                                   class="chose-country__country-link">Алжир
+                                                                   class="chose-country__country-link">Algeria
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/angola.html"
-                                                                   class="chose-country__country-link">Ангола
+                                                                   class="chose-country__country-link">Angola
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/europe/andorra.html"
-                                                                   class="chose-country__country-link">Андорра
+                                                                   class="chose-country__country-link">Andorra
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/islands/antigua-i-barbuda.html"
-                                                                   class="chose-country__country-link">Антигуа и Барбуда
+                                                                   class="chose-country__country-link">Antigua
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/america/argentina.html"
-                                                                   class="chose-country__country-link">Аргентина
+                                                                   class="chose-country__country-link">Argentina
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/armenia.html"
-                                                                   class="chose-country__country-link">Армения
+                                                                   class="chose-country__country-link">Armenia
                                                                 </a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/afganistan.html"
-                                                                   class="chose-country__country-link">Афганистан
+                                                                   class="chose-country__country-link">Afganistan
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -920,12 +829,16 @@
                                                                    class="chose-country__country-link">Мальдивы</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
-                                                                <a href="/europe/malta.html"
-                                                                   class="chose-country__country-link">Мальта</a>
+                                                                <a href="/europe/montenegro.html"
+                                                                   class="chose-country__country-link">Montenegro</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
-                                                                <a href="/asia/marocco.html"
-                                                                   class="chose-country__country-link">Марокко</a>
+                                                                <a href="/europe/malta.html"
+                                                                   class="chose-country__country-link">Malta</a>
+                                                            </li>
+                                                            <li class="chose-country__countries-list-item">
+                                                                <a href="/asia/morocco.html"
+                                                                   class="chose-country__country-link">Morocco</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/america/mexico.html"
@@ -1188,19 +1101,15 @@
                                                         <ul class="chose-country__countries-list chose-country__countries-list--21">
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/chad.html"
-                                                                   class="chose-country__country-link">Чад</a>
-                                                            </li>
-                                                            <li class="chose-country__countries-list-item">
-                                                                <a href="/europe/montenegro.html"
-                                                                   class="chose-country__country-link">Черногория</a>
+                                                                   class="chose-country__country-link">Chad</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/europe/cheque.html"
-                                                                   class="chose-country__country-link">Чехия</a>
+                                                                   class="chose-country__country-link">Checz Republic</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/america/chili.html"
-                                                                   class="chose-country__country-link">Чили</a>
+                                                                   class="chose-country__country-link">Chili</a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -1208,15 +1117,15 @@
                                                         <ul class="chose-country__countries-list chose-country__countries-list--22">
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/europe/switzerland.html"
-                                                                   class="chose-country__country-link">Швейцария</a>
+                                                                   class="chose-country__country-link">Switzerland</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/europe/sweden.html"
-                                                                   class="chose-country__country-link">Швеция</a>
+                                                                   class="chose-country__country-link">Sweden</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/islands/sri-lanka.html"
-                                                                   class="chose-country__country-link">Шри-Ланка</a>
+                                                                   class="chose-country__country-link">Shri Lanka</a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -1224,23 +1133,23 @@
                                                         <ul class="chose-country__countries-list chose-country__countries-list--23">
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/america/ecuador.html"
-                                                                   class="chose-country__country-link">Эквадор</a>
+                                                                   class="chose-country__country-link">Ecuador</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/eritrea.html"
-                                                                   class="chose-country__country-link">Эритрея</a>
+                                                                   class="chose-country__country-link">Eritrea</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/eswatini.html"
-                                                                   class="chose-country__country-link">Эсватини</a>
+                                                                   class="chose-country__country-link">Eswatini</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/europe/estonia.html"
-                                                                   class="chose-country__country-link">Эстония</a>
+                                                                   class="chose-country__country-link">Estonia</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/ephiopia.html"
-                                                                   class="chose-country__country-link">Эфиопия</a>
+                                                                   class="chose-country__country-link">Ephiopia</a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -1248,11 +1157,11 @@
                                                         <ul class="chose-country__countries-list chose-country__countries-list--24">
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/south-africa.html"
-                                                                   class="chose-country__country-link">ЮАР</a>
+                                                                   class="chose-country__country-link">South Africa</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/south-sudan.html"
-                                                                   class="chose-country__country-link">Южный Судан</a>
+                                                                   class="chose-country__country-link">South Sudan</a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -1260,11 +1169,11 @@
                                                         <ul class="chose-country__countries-list chose-country__countries-list--25">
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/islands/jamaica.html"
-                                                                   class="chose-country__country-link">Ямайка</a>
+                                                                   class="chose-country__country-link">Jamaica</a>
                                                             </li>
                                                             <li class="chose-country__countries-list-item">
                                                                 <a href="/asia/japain.html"
-                                                                   class="chose-country__country-link">Япония</a>
+                                                                   class="chose-country__country-link">Japain</a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -1385,4 +1294,5 @@
 
 {% block script %}
     <script src="{% static 'js/travel_fellows/form-page.js' %}"></script>
+    <script src="{% static 'js/travel_fellows/chose-country.js' %}"></script>
 {% endblock %}
