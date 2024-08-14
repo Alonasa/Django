@@ -1,6 +1,7 @@
 const countrySelectButton = document.querySelector(".country-select--choose");
 const countryDeleteButton = document.querySelector(".plan-step__delete-country--removable");
 const countrySelectPopup = document.querySelector(".chose-country");
+const countriesChosen = document.querySelectorAll(".country-select--chosen");
 
 countrySelectButton.addEventListener("click", function(){
   countrySelectPopup.classList.toggle("chose-country--active");
@@ -20,3 +21,10 @@ window.addEventListener("keydown", function(event){
     }
   }
 });
+
+window.addEventListener("DOMContentLoaded", function(){
+  const countriesList = Array.from(countriesChosen).map((country) => country.textContent.trim());
+  console.log(countriesList)
+  const selectedCountriesInput = document.getElementById('selected-countries');
+  selectedCountriesInput.value = countriesList.join(',');
+})

@@ -1,5 +1,6 @@
 from datetime import datetime
 
+from cities_light.loading import get_cities_models
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -7,7 +8,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.views import View
-from django_countries import countries
+from cities_light.models import Country
 
 from .forms import AuthorizeForm, RegisterForm, UserPhotoForm, UserHashtagsForm, UserTransportationForm, UserPlansForm
 from .models import User, UserProfile, HashTag, UserTransportation, UserPlans
@@ -68,11 +69,18 @@ def get_letters():
     return ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
             'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
+def get_countries():
+    countries = Country.objects.all()
+    countries_list = [country.name for country in countries]
+    return countries_list
+
 
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
 
-    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form, letters):
+
+    def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form, letters,
+                    countries):
         hashtags = user_profile.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
@@ -86,6 +94,7 @@ class ViewUserProfile(View):
             "hashtags": hashtags,
             "plans_form": plans_form,
             "letters": letters,
+            "countries": countries
         }
 
         return context
@@ -97,8 +106,9 @@ class ViewUserProfile(View):
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
         transportation_form = UserTransportationForm(instance=UserTransportation.objects.get(user=request.user))
-        plans_form = UserPlansForm(request.GET, prefix='plans')
-        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form, get_letters())
+        plans_form = UserPlansForm(request.GET)
+        context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form,
+                                   get_letters(), get_countries())
         return render(request, "travel_fellows/form.html", context)
 
     def handle_photo_form(self, request, user_profile):
@@ -137,7 +147,8 @@ class ViewUserProfile(View):
     def handle_plans_form(self, request):
         plans_form = UserPlansForm(request.POST)
         if plans_form.is_valid():
-            return plans_form
+            plans_form.save()
+        return plans_form
 
     def post(self, request):
         user = request.user
@@ -151,7 +162,7 @@ class ViewUserProfile(View):
         context = self.get_context(
             photo_form, user_profile, hashtags_form, transportation_form,
             user.hashtag_set.values_list('hashtag', flat=True), plans_form,
-            get_letters()
+            get_letters(), get_countries()
         )
 
         return render(request, "travel_fellows/form.html", context)
@@ -165,11 +176,11 @@ def handlePlans(request):
         for key, value in form_data.items():
             if key == 'csrfmiddlewaretoken':
                 cleaned_data[key] = value[0]
-            elif key.endswith('-companions') or key.endswith('-length'):
+            elif key == 'companions' or key == 'length':
                 cleaned_data[key] = int(value[0])
             elif key == 'picked-date':
                 cleaned_data[key] = [datetime.strptime(date, '%B-%d-%Y').date() for date in value]
-            elif key == 'country-letter' or key == 'plans-kids':
+            elif key == 'country-letter' or key == 'kids':
                 cleaned_data[key] = 'on' in value
             else:
                 cleaned_data[key] = value[0]
@@ -177,11 +188,11 @@ def handlePlans(request):
         user = request.user
         start_trip = cleaned_data['picked-date'][0]
         end_trip = cleaned_data['picked-date'][1]
-        companions = cleaned_data['plans-companions']
-        length = cleaned_data['plans-length']
+        companions = cleaned_data['companions']
+        length = cleaned_data['length']
 
         try:
-            kids = cleaned_data['plans-kids']
+            kids = cleaned_data['kids']
         except KeyError:
             kids = False
 

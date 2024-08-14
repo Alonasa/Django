@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'livereload',
     'travel_fellows',
     'django_countries',
-    'cities_light'
+    'cities_light',
+    'travel_fellows.templatetags'
 ]
 
 MIDDLEWARE = [
