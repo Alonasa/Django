@@ -366,7 +366,7 @@
                                                     <li class="chose-country__all-countries-item">
                                                         <ul class="chose-country__countries-list chose-country__countries-list--{{ forloop.counter }}">
                                                             {% for country in countries %}
-                                                                {% if country|lower|startswith:letter|lower %}
+                                                                {% if country|startswith:letter %}
 
                                                                 <li class="chose-country__countries-list-item">
                                                                     <a href="{{ country }}.html" class="chose-country__country-link">{{ country }}</a>
