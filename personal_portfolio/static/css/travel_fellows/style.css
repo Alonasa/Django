@@ -6509,24 +6509,23 @@ a {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  border: none;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border-collapse: collapse; }
   @media (min-width: 768px) {
     .chose-country__letters-list {
-      border: 1px solid #cbced9;
-      border-bottom: none;
-      width: 263px; } }
+      width: 263px;
+      box-sizing: border-box; } }
   @media (min-width: 1440px) {
     .chose-country__letters-list {
-      border: none;
       width: 360px; } }
 .chose-country__letters-list-item {
   width: 20%;
   height: 41px;
-  border-right: 1px solid #cbced9;
-  border-bottom: 1px solid #cbced9; }
-  .chose-country__letters-list-item:nth-child(5n) {
-    border-right: none; }
+  border: 1px solid #cbced9;
+  margin-right: -1px;
+  margin-bottom: -1px; }
   @media (min-width: 768px) {
     .chose-country__letters-list-item {
       width: 52px;
@@ -6584,9 +6583,7 @@ a {
   padding-left: 0;
   margin: 0;
   display: none;
-  padding-top: 56px;
-  padding-left: 20px;
-  padding-bottom: 20px; }
+  padding: 56px 15px 20px 20px; }
   @media (min-width: 768px) {
     .chose-country__countries-list {
       padding-top: 0;

@@ -58,17 +58,17 @@
   @include list-style-reset();
   margin-top: 0;
   margin-bottom: 0;
+  border: none;
   display: flex;
   flex-wrap: wrap;
+  border-collapse: collapse;
 
   @media (min-width: $tablet) {
-    border: 1px solid $light-grey;
-    border-bottom: none;
     width: 263px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop) {
-    border: none;
     width: 360px;
   }
 }
@@ -76,12 +76,10 @@
 .chose-country__letters-list-item {
   width: 20%;
   height: 41px;
-  border-right: 1px solid $light-grey;
-  border-bottom: 1px solid $light-grey;
+  border: 1px solid $light-grey;
+  margin-right: -1px;
+  margin-bottom: -1px;
 
-  &:nth-child(5n) {
-    border-right: none;
-  }
 
   @media (min-width: $tablet) {
     width: 52px;
@@ -155,9 +153,8 @@
   @include list-style-reset();
   margin: 0;
   display: none;
-  padding-top: 56px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 56px 15px 20px 20px;
+
 
   @media (min-width: $tablet) {
     padding-top: 0;
