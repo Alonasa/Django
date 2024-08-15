@@ -6536,9 +6536,7 @@ a {
       height: 70px;
       margin-right: 15px;
       margin-bottom: 15px;
-      border: none; }
-      .chose-country__letters-list-item:nth-child(5n) {
-        margin-right: 0; } }
+      border: none; } }
 .chose-country__letter-button {
   display: flex;
   align-items: center;
@@ -6553,6 +6551,8 @@ a {
   letter-spacing: 1.4px;
   padding-top: 4px;
   cursor: pointer; }
+  .chose-country__letter-button:hover {
+    border-color: #959bb2; }
   @media (min-width: 768px) {
     .chose-country__letter-button {
       font-size: 20px;
@@ -6560,9 +6560,7 @@ a {
   @media (min-width: 1440px) {
     .chose-country__letter-button {
       border: 1px solid #cbced9;
-      border-radius: 4px; }
-      .chose-country__letter-button:hover {
-        border-color: #959bb2; } }
+      border-radius: 4px; } }
 .chose-country__all-countries {
   list-style: none;
   padding-left: 0;
@@ -6599,7 +6597,8 @@ a {
   line-height: 1.38;
   color: #444444; }
   .chose-country__country-link:hover, .chose-country__country-link:focus {
-    color: #1d2e5b; }
+    color: #1d2e5b;
+    font-weight: bold; }
   .chose-country__country-link:active {
     color: rgba(29, 46, 91, 0.3); }
   @media (min-width: 768px) {

@@ -80,7 +80,6 @@
   margin-right: -1px;
   margin-bottom: -1px;
 
-
   @media (min-width: $tablet) {
     width: 52px;
     height: 69px;
@@ -92,11 +91,6 @@
     margin-right: 15px;
     margin-bottom: 15px;
     border: none;
-
-
-    &:nth-child(5n) {
-      margin-right: 0;
-    }
   }
 }
 
@@ -115,6 +109,10 @@
   padding-top: 4px;
   cursor: pointer;
 
+  &:hover {
+    border-color: $step-hover-violet;
+  }
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 0.9;
@@ -123,10 +121,6 @@
   @media (min-width: $desktop) {
     border: 1px solid $light-grey;
     border-radius: 4px;
-
-    &:hover {
-      border-color: $step-hover-violet;
-    }
   }
 }
 
@@ -177,6 +171,7 @@
   &:hover,
   &:focus {
     color: $twilight-blue;
+    font-weight: bold;
   }
 
   &:active {

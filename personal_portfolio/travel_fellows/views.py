@@ -77,8 +77,6 @@ def get_countries():
 
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
-
-
     def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form, letters,
                     countries):
         hashtags = user_profile.user.hashtag_set.all()
