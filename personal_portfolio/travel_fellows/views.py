@@ -188,6 +188,7 @@ def handlePlans(request):
         end_trip = cleaned_data['picked-date'][1]
         companions = cleaned_data['companions']
         length = cleaned_data['length']
+        countries = cleaned_data['selected-countries'].split(",")
 
         try:
             kids = cleaned_data['kids']
@@ -197,7 +198,7 @@ def handlePlans(request):
         plans = [cleaned_data['plans']]
 
         UserPlans.objects.create(user=user,
-                                 destinations=[],
+                                 destinations=countries,
                                  companions=companions,
                                  length=length,
                                  dates_start=start_trip,

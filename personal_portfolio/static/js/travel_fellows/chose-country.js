@@ -26,13 +26,13 @@ window.addEventListener("keydown", function (event) {
     }
 });
 
-window.addEventListener("DOMContentLoaded", function () {
+const getCountriesData = () => {
     const countriesChosen = document.querySelectorAll(".country-select--chosen");
     const countriesList = Array.from(countriesChosen).map((country) => country.textContent.trim());
 
     const selectedCountriesInput = document.getElementById('selected-countries');
     selectedCountriesInput.value = countriesList.join(',');
-})
+}
 
 choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
     event.preventDefault();
@@ -63,14 +63,10 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
     newElementNode.innerHTML = newElement;
     const lastElement = planSteps[0];
     lastElement.parentNode.insertBefore(newElementNode, lastElement);
+    getCountriesData();
     countrySelector.style.display = "none";
 }))
 
-deleteCountries.forEach((el) => el.addEventListener("click", function (event) {
-    console.log('delete clicked');
-    const parentElement = this.parentElement;
-    parentElement.remove();
-}))
 
 
 plansContainer.addEventListener("click", function(event) {
