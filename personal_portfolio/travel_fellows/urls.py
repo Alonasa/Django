@@ -8,7 +8,8 @@ urlpatterns = [
     path('auth/', views.auth, name="authorize"),
     path('auth-form/', views.AuthorizeUser.as_view(), name="auth-user"),
     path('register-form/', views.RegisterUser.as_view(), name="register"),
-    path('logout/', views.logOut, name="logout"),
+    path('logout/', views.log_out, name="logout"),
     path('user/', views.ViewUserProfile.as_view(), name="user"),
-    path('user-plans', views.handlePlans, name="user-plans"),
+    path('user-plans', views.handle_plans, name="user-plans"),
+    path('countries-data/', views.get_country_codes, name='countries-data')
 ]

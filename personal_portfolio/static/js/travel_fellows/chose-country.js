@@ -79,5 +79,7 @@ plansContainer.addEventListener("click", function(event) {
 
 addCountry.addEventListener("click", function () {
     countrySelector.style.display = "flex";
+        let a = 1 == 1 ? 1 : 0;
+
 })
 

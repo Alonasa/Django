@@ -3,7 +3,7 @@ from datetime import datetime
 from cities_light.loading import get_cities_models
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
@@ -60,7 +60,7 @@ class AuthorizeUser(View):
                                                                 "form_address": reverse_lazy("auth-user")})
 
 
-def logOut(request):
+def log_out(request):
     logout(request)
     return redirect('fellows')
 
@@ -69,8 +69,18 @@ def get_letters():
     return ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
             'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
+
+def get_country_codes(request):
+    countries = Country.objects.all()
+    data = {country.name: country.code2.lower() for country in countries}
+    return JsonResponse(data, safe=False)
+
+get_country_codes(request="POST")
+
+
 def get_countries():
     countries = Country.objects.all()
+    print(countries.values())
     countries_list = [country.name for country in countries]
     return countries_list
 
@@ -166,7 +176,7 @@ class ViewUserProfile(View):
         return render(request, "travel_fellows/form.html", context)
 
 
-def handlePlans(request):
+def handle_plans(request):
     if request.method == 'POST':
         form_data = dict(request.POST)
         print(form_data)
