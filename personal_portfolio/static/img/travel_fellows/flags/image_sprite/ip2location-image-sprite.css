@@ -115,7 +115,7 @@
     background: no-repeat url(all_countries_64_7.png);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .ip2location-flag-32.flag-ad {
         background-position: -1px -1px;

@@ -1,6 +1,7 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.postgres.fields import ArrayField
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 
@@ -81,8 +82,8 @@ class UserPlans(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     destinations = ArrayField(models.CharField(max_length=100), blank=True, default=list)
     plans = ArrayField(models.CharField(max_length=1000), blank=True, default=list)
-    companions = models.IntegerField(default=1)
-    length = models.IntegerField(default=1)
+    companions = models.IntegerField(default=1, validators=(MinValueValidator(1), MaxValueValidator(50)))
+    length = models.IntegerField(default=1, validators=(MinValueValidator(1), MaxValueValidator(120)))
     dates_start = models.DateField()
     dates_end = models.DateField()
     kids = models.BooleanField(default=False, blank=True)

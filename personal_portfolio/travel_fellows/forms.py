@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 from django import forms
-from django.core.validators import FileExtensionValidator
+from django.core.validators import FileExtensionValidator, MaxValueValidator
 from django.forms import ModelForm, Form
 from django.templatetags.static import static
 from django.utils.html import format_html
@@ -197,9 +197,13 @@ class UserPlansForm(ModelForm):
                 'id': 'teammates-quantity',
                 'name': 'teammates-quantity',
                 'min': '1',
+                'max': '50',
                 'value': '2',
-            }
+            },
         ),
+        min_value=1,
+        max_value=50,
+        validators=[MaxValueValidator(50)],
     )
     length = forms.IntegerField(
         label='',
@@ -209,9 +213,13 @@ class UserPlansForm(ModelForm):
                 'id': 'travel-term',
                 'name': 'travel-term',
                 'min': '1',
+                'max': '120',
                 'value': '2',
             },
-        )
+        ),
+        min_value=1,
+        max_value=120,
+        validators=[MaxValueValidator(120)],
     )
 
     kids = forms.BooleanField(

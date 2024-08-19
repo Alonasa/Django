@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const inputId = this.dataset.input;
             const input = document.getElementById(inputId);
             let value = parseInt(input.value);
-            input.value = value + 1;
+            if (value < input.max) {
+                input.value = value + 1;
+            }
         });
     });
 });
