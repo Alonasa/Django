@@ -7,7 +7,6 @@
 {% block body %}
     <header class="page-header page-header--rounded">
         {% include 'travel_fellows/menu.html' %}
-
         <div class="page-header__content-wrapper page-header__content-wrapper--inner page-header__content-wrapper--no-js">
             <div class="container">
                 <div class="page-header__inner-heading-wrapper">
@@ -139,7 +138,8 @@
                 </div>
             </section>
             <section class="add-plan">
-                <form class="add-plans-form" method="POST" action="{% url 'user-plans' %}" enctype="multipart/form-data">
+                <form class="add-plans-form" method="POST" action="{% url 'user-plans' %}"
+                      enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="container">
                         <div class="add-plan__common-wrapper">
@@ -229,7 +229,7 @@
                                             <span class="visually-hidden">Last month</span>
                                         </button>
                                         <p class="calendar__title"></p>
-                                        
+
                                         <button class="calendar__control calendar__control--next" type="button">
                                             <span class="visually-hidden">Next month</span>
                                         </button>
@@ -312,42 +312,42 @@
                                             <span class="visually-hidden">Remove country</span>
                                         </button>
                                         <div class="chose-country plan-step__chose-country">
-                                            <input type="hidden" name="selected-countries" id="selected-countries" value="">
+                                            <input type="hidden" name="selected-countries" id="selected-countries"
+                                                   value="">
 
                                             <div class="chose-country__inner-content-wrapper">
                                                 {% for letter in letters %}
                                                     <input class="visually-hidden chose-country__letter-toggler chose-country__letter-toggler--{{ forloop.counter }}"
-                                                       type="radio" name="country-letter" id="country-letter-{{ forloop.counter }}"
-                                                       checked="">
+                                                           type="radio" name="country-letter"
+                                                           id="country-letter-{{ forloop.counter }}"
+                                                           checked="">
                                                 {% endfor %}
-                                                
+
                                                 <ul class="chose-country__letters-list">
-                                                    
                                                     {% for letter in letters %}
                                                         <li class="chose-country__letters-list-item">
-                                                        <label class="chose-country__letter-button"
-                                                               for="country-letter-{{ forloop.counter }}">{{ letter }}</label>
-                                                    </li>
+                                                            <label class="chose-country__letter-button"
+                                                                   for="country-letter-{{ forloop.counter }}">{{ letter }}</label>
+                                                        </li>
                                                     {% endfor %}
-                                                    
-                                                    
                                                 </ul>
                                                 <ul class="chose-country__all-countries">
                                                     {% for letter in letters %}
-                                                    <li class="chose-country__all-countries-item">
-                                                        <ul class="chose-country__countries-list chose-country__countries-list--{{ forloop.counter }}">
-                                                            {% for country in countries %}
-                                                                {% if country|startswith:letter %}
+                                                        <li class="chose-country__all-countries-item">
+                                                            <ul class="chose-country__countries-list chose-country__countries-list--{{ forloop.counter }}">
+                                                                {% for country in countries %}
+                                                                    {% if country|startswith:letter %}
 
-                                                                <li class="chose-country__countries-list-item">
-                                                                    <a href="{{ country }}.html" class="chose-country__country-link">{{ country }}</a>
-                                                                </li>
-                                                                {% endif %}
-                                                            {% endfor %}
-                                                        </ul>
-                                                    </li>
+                                                                        <li class="chose-country__countries-list-item">
+                                                                            <a href="{{ country }}.html"
+                                                                               class="chose-country__country-link">{{ country }}</a>
+                                                                        </li>
+                                                                    {% endif %}
+                                                                {% endfor %}
+                                                            </ul>
+                                                        </li>
                                                     {% endfor %}
-                                                    
+
                                                 </ul>
                                             </div>
                                         </div>
@@ -359,12 +359,12 @@
                                     </div>
                                 </div>
                                 <div class="plan-step__button-wrapper">
-                                    <a class="button button--rounded plan-step__button-next" href="#step-3">
-                                        Next step
-                                    </a>
                                     <a class="button button--rounded button--no-bg plan-step__button-prev"
                                        href="#step-1">
                                         Step back
+                                    </a>
+                                    <a class="button button--rounded plan-step__button-next" href="#step-3">
+                                        Next step
                                     </a>
                                 </div>
                             </section>
@@ -403,51 +403,16 @@
                                     </ul>
                                 </div>
                                 <div class="plan-step__description-wrapper">
-                                    <div class="plan-step__country-description">
-                                        <div class="plan-step__description-title">
-                                            <label class="plan-step__description-label" for="ba-plans">Босния и
-                                                Герцеговина</label>
-                                            <div class="country-flag country-flag--big"
-                                                 data-tooltip="Босния и Герцеговина">
-                                                <img class="country-flag__picture"
-                                                     src="{% static 'img/travel_fellows/flag-bosnia.svg' %}"
-                                                     alt="Флаг Боснии и Герцеговины" width="35" height="24">
-                                            </div>
-                                        </div>
-                                        <div class="plan-step__plan-description-wrapper">
-                                    <textarea class="plan-step__plan-description" id="ba-plans"
-                                              placeholder="Plan" required=""></textarea>
-                                            <div class="plan-step__plan-description-invalid">
-                                                This field must be filled
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="plan-step__country-description">
-                                        <div class="plan-step__description-title">
-                                            <label class="plan-step__description-label" for="cz-plans">Чехия</label>
-                                            <div class="country-flag country-flag--big" data-tooltip="Чехия">
-                                                <img class="country-flag__picture"
-                                                     src="{% static 'img/travel_fellows/flag-czech.svg' %}"
-                                                     alt="Флаг Чехии"
-                                                     width="35" height="24">
-                                            </div>
-                                        </div>
-                                        <div class="plan-step__plan-description-wrapper">
-                                            <textarea class="plan-step__plan-description" id="cz-plans" required="">Drink beer and climb old castles, enjoy the architecture and that's all.</textarea>
-                                            <div class="plan-step__plan-description-invalid">
-                                                This field must be filled
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="plan-step__button-wrapper">
-                                    <button class="button button--rounded plan-step__button-next" type="submit" name="plans">
-                                        Send
-                                    </button>
                                     <a class="button button button--rounded button--no-bg plan-step__button-prev"
                                        href="#step-2">
                                         Step back
                                     </a>
+                                    <button class="button button--rounded plan-step__button-next" type="submit"
+                                            name="plans">
+                                        Send
+                                    </button>
                                 </div>
                             </section>
                         </div>

@@ -52,7 +52,6 @@ const fetchCountryCodes = async () => {
 }
 
 const getCountries = () => {
-
     fetchCountryCodes().then(res => {
         if (res.success) {
             countriesData = res.data
@@ -69,6 +68,9 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
     event.preventDefault();
     const text = event.currentTarget.textContent;
     const planSteps = document.querySelectorAll(".plan-step__select-wrapper");
+    const planWrappers = document.querySelector(".plan-step__select-wrapper")
+    const countryCode = countriesData[text];
+
     const newElement =
         `
                     <button class="country-select country-select--chosen" type="button">
@@ -76,7 +78,7 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
                     </button>
                     <div class="plan-step__flag-wrapper plan-step__flag-wrapper--active">
                         <div class="country-flag country-flag--big" data-tooltip="${text}">
-                            <span class="country-flag__picture flag-square ip2location-flag-32 ip2location-flag-64 flag-${countriesData[text]}"></span>
+                            <span class="country-flag__picture flag-square ip2location-flag-32 ip2location-flag-64 flag-${countryCode}"></span>
                         </div>
                     </div>
                     <button class="plan-step__delete-country" type="button">
@@ -86,18 +88,56 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
 
     const newElementNode = document.createElement('div');
     newElementNode.classList.add('plan-step__select-wrapper');
+    newElementNode.dataset.tooltip = text;
     newElementNode.innerHTML = newElement;
     const lastElement = planSteps[0];
     lastElement.parentNode.insertBefore(newElementNode, lastElement);
     getCountriesData();
     countrySelector.style.display = "none";
+    createDescription(text, countryCode)
 }))
 
 
+const createDescription = (countryName, countryFlag) => {
+    const parentElement = document.querySelector('.plan-step__description-wrapper');
+
+    const planConent =
+        `
+            <div class="plan-step__description-title">
+                <label class="plan-step__description-label" for="${countryFlag}-plans">${countryName}
+                </label>
+                <div class="country-flag country-flag--big" data-tooltip="${countryName}">
+                    <span class="country-flag__picture  flag-square ip2location-flag-32 ip2location-flag-64 flag-${countryFlag}"></span>
+                </div>
+            </div>
+            <div class="plan-step__plan-description-wrapper">
+                <textarea class="plan-step__plan-description" id="${countryFlag}-plans"
+                                                      placeholder="Plan" required=""></textarea>
+                <div class="plan-step__plan-description-invalid">
+                    This field must be filled
+                </div>
+            </div>                       
+        `
+    const tempElement = document.createElement('div');
+    tempElement.classList.add('plan-step__country-description');
+    tempElement.innerHTML = planConent;
+    parentElement.appendChild(tempElement);
+}
+
+
 plansContainer.addEventListener("click", function (event) {
+    const countryDescriptions = document.querySelectorAll('.plan-step__country-description')
+    const parentElement = event.target.parentElement;
+    const countryName = parentElement.dataset.tooltip;
+
     if (event.target.classList.contains("plan-step__delete-country")) {
-        const parentElement = event.target.parentElement;
         parentElement.remove();
+        countryDescriptions.forEach(description => {
+            const descriptionCountryName = description.querySelector('.country-flag').dataset.tooltip;
+            if (descriptionCountryName === countryName) {
+                description.remove();
+            }
+        })
     }
 });
 
