@@ -1786,9 +1786,12 @@ a {
   display: block;
   width: 100%;
   height: auto;
-  position: relative;
-  z-index: -1; }
-
+  z-index: -1;
+  position: absolute;
+  top: -3px; }
+  @media (min-width: 768px) {
+    .country-flag__picture {
+      top: -10px; } }
 .teammates {
   background-color: #192144;
   color: #ffffff;

@@ -72,11 +72,8 @@ def get_letters():
 
 def get_country_codes(request):
     countries = Country.objects.all()
-    data = {country.name: country.code2.lower() for country in countries}
-    return JsonResponse(data, safe=False)
-
-get_country_codes(request="POST")
-
+    data = {str(country.name): country.code2.lower() for country in countries}
+    return JsonResponse(data, safe=True)
 
 def get_countries():
     countries = Country.objects.all()
