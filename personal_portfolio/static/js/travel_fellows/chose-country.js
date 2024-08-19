@@ -5,7 +5,7 @@ const choseCountryLink = document.querySelectorAll(".chose-country__country-link
 const countrySelector = document.querySelector(".plan-step__country-selector");
 const addCountry = document.querySelector(".country-select--add");
 const plansContainer = document.querySelector('.plan-step__selects');
-
+let countriesData = {}
 countrySelectButton.addEventListener("click", function () {
     countrySelectPopup.classList.toggle("chose-country--active");
     countrySelectButton.classList.toggle("country-select--blue");
@@ -33,13 +33,13 @@ const getCountriesData = () => {
     selectedCountriesInput.value = countriesList.join(',');
 }
 
-async function fetchAsync(url) {
+const fetchAsync = async (url) => {
     let response = await fetch(url);
     let data = await response.json();
     return data;
 }
 
-async function fetchCountryCodes() {
+const fetchCountryCodes = async () => {
     try {
         const url = 'http://localhost:8000/portfolio/fellows/countries-data/';
         const data = await fetchAsync(url);
@@ -51,19 +51,26 @@ async function fetchCountryCodes() {
     }
 }
 
+const getCountries = () => {
+
+    fetchCountryCodes().then(res => {
+        if (res.success) {
+            countriesData = res.data
+            return countriesData
+        } else {
+            console.error(res.error)
+        }
+    })
+}
+
+document.addEventListener('DOMContentLoaded', getCountries)
 
 choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
     event.preventDefault();
     const text = event.currentTarget.textContent;
     const planSteps = document.querySelectorAll(".plan-step__select-wrapper");
-    let countriesData = {}
-
-    fetchCountryCodes().then(res => {
-        if (res.success) {
-            countriesData = res.data
-            console.log(countriesData)
-            const newElement =
-                `
+    const newElement =
+        `
                     <button class="country-select country-select--chosen" type="button">
                         ${text}
                     </button>
@@ -77,17 +84,13 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
                     </button>
                 `;
 
-            const newElementNode = document.createElement('div');
-            newElementNode.classList.add('plan-step__select-wrapper');
-            newElementNode.innerHTML = newElement;
-            const lastElement = planSteps[0];
-            lastElement.parentNode.insertBefore(newElementNode, lastElement);
-            getCountriesData();
-            countrySelector.style.display = "none";
-        } else {
-            console.error("Error fetching country codes:", res.error);
-        }
-    });
+    const newElementNode = document.createElement('div');
+    newElementNode.classList.add('plan-step__select-wrapper');
+    newElementNode.innerHTML = newElement;
+    const lastElement = planSteps[0];
+    lastElement.parentNode.insertBefore(newElementNode, lastElement);
+    getCountriesData();
+    countrySelector.style.display = "none";
 }))
 
 
