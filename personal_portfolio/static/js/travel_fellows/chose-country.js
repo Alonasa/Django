@@ -68,8 +68,8 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
     event.preventDefault();
     const text = event.currentTarget.textContent;
     const planSteps = document.querySelectorAll(".plan-step__select-wrapper");
-    const planWrappers = document.querySelector(".plan-step__select-wrapper")
     const countryCode = countriesData[text];
+    console.log(planSteps)
 
     const newElement =
         `
@@ -86,15 +86,20 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
                     </button>
                 `;
 
-    const newElementNode = document.createElement('div');
-    newElementNode.classList.add('plan-step__select-wrapper');
-    newElementNode.dataset.tooltip = text;
-    newElementNode.innerHTML = newElement;
-    const lastElement = planSteps[0];
-    lastElement.parentNode.insertBefore(newElementNode, lastElement);
-    getCountriesData();
-    countrySelector.style.display = "none";
-    createDescription(text, countryCode)
+    if (planSteps.length > 0) {
+        let element = Array.from(planSteps).filter((el) => el.dataset.tooltip === text)
+        if (element.length + 1 < 2) {
+            const newElementNode = document.createElement('div');
+            newElementNode.classList.add('plan-step__select-wrapper');
+            newElementNode.dataset.tooltip = text;
+            newElementNode.innerHTML = newElement;
+            const lastElement = planSteps[0];
+            lastElement.parentNode.insertBefore(newElementNode, lastElement);
+            getCountriesData();
+            countrySelector.style.display = "none";
+            createDescription(text, countryCode)
+        }
+    }
 }))
 
 
