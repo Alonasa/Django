@@ -69,7 +69,6 @@ choseCountryLink.forEach((el) => el.addEventListener("click", function (event) {
     const text = event.currentTarget.textContent;
     const planSteps = document.querySelectorAll(".plan-step__select-wrapper");
     const countryCode = countriesData[text];
-    console.log(planSteps)
 
     const newElement =
         `
@@ -147,8 +146,8 @@ const createDescription = (countryName, countryFlag) => {
                 </div>
             </div>
             <div class="plan-step__plan-description-wrapper">
-                <textarea class="plan-step__plan-description" id="${countryFlag}-plans"
-                                                      placeholder="Plan" required=""></textarea>
+                <textarea class="plan-step__plan-description" id="${countryFlag}-plans" name="${countryName}-plan"
+                                                      placeholder="Describe your plans for this trip" required=""></textarea>
                 <div class="plan-step__plan-description-invalid">
                     This field must be filled
                 </div>

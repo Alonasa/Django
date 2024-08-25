@@ -28,25 +28,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let todaysDate
 
+const checkboxDisable = (dayNumber, currentDate, selectedMonth, checkbox) => {
+    if (dayNumber < currentDate.getDate() && currentDate.getMonth() === selectedMonth) {
+        checkbox.disabled = true;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const currentDate = new Date();
-    let displayedDate = new Date(currentDate)
+    let displayedDate = new Date(currentDate);
     const previousMonth = document.querySelector('.calendar__control--prev');
     const nextMonth = document.querySelector('.calendar__control--next');
 
-    function renderCalendar() {
+    function renderCalendar(selectedMonth) {
         const daysInMonth = new Date(displayedDate.getFullYear(), displayedDate.getMonth(), 0).getDate();
         const firstDayOfMonth = new Date(displayedDate.getFullYear(), displayedDate.getMonth(), 1).getDay();
         const currentMonth = displayedDate.toLocaleDateString('default', {month: 'long'});
         const month = new Date().toLocaleDateString('default', {month: 'long'});
-
         const calendarTableBody = document.querySelector('.calendar__table-body');
         calendarTableBody.innerHTML = '';
-
-        let dayOfWeek = 0; // Start from Sunday
-        let dayNumber = 1 - firstDayOfMonth; // Adjust for the first day of the month
+        let dayOfWeek = 0;
+        let dayNumber = 1 - firstDayOfMonth;
         let selectedYear = displayedDate.getFullYear();
-
 
         while (dayNumber <= daysInMonth + (6 - ((firstDayOfMonth + daysInMonth - 1) % 7))) {
             const tableRow = document.createElement('tr');
@@ -70,15 +73,18 @@ document.addEventListener('DOMContentLoaded', function () {
                         todaysDate = `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`;
                     }
 
-                    if (dayNumber < currentDate.getDate() && currentDate.getMonth() === currentDate.getMonth()) {
-                        checkbox.disabled = true;
+
+                    if (selectedMonth === undefined) {
+                        selectedMonth = currentDate.getMonth();
+                        checkboxDisable(dayNumber, currentDate, selectedMonth, checkbox)
+                    } else {
+                        checkboxDisable(dayNumber, currentDate, selectedMonth, checkbox)
                     }
 
                     const label = document.createElement('label');
                     label.classList.add('calendar__day-number');
                     label.textContent = dayNumber.toString();
                     label.setAttribute('for', `${currentMonth}-${dayNumber}-${displayedDate.getFullYear()}`);
-
                     tableCell.appendChild(checkbox);
                     tableCell.appendChild(label);
 
@@ -86,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         tableCell.classList.add('current-day');
                     }
                 } else if (dayNumber <= 0) {
-                    // Display the last days of the previous month
                     const prevMonth = new Date(displayedDate.getFullYear(), displayedDate.getMonth(), 0);
                     const prevMonthName = prevMonth.toLocaleString('default', {month: 'long'});
                     const prevMonthDayNumber = prevMonth.getDate() + dayNumber
@@ -96,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     checkbox.name = 'picked-date'
                     checkbox.value = `${prevMonthName}-${prevMonthDayNumber}-${displayedDate.getFullYear()}`;
                     checkbox.id = `${prevMonthName}-${prevMonthDayNumber}-${displayedDate.getFullYear()}`;
-                    checkbox.disabled = true;
+                    if (month === currentMonth){
+                        checkbox.disabled = true;
+                    }
 
                     const label = document.createElement('label');
                     label.classList.add('calendar__day-number', 'prev-month');
@@ -106,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     tableCell.appendChild(checkbox);
                     tableCell.appendChild(label);
                 } else {
-                    // Display the first days of the next month
                     const nextMonthDayNumber = dayNumber - daysInMonth;
                     const checkbox = document.createElement('input');
                     const nextMonth = new Date(displayedDate.getFullYear(), displayedDate.getMonth() + 1, 1);
@@ -120,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     const label = document.createElement('label');
                     label.classList.add('calendar__day-number', 'next-month');
-                    label.textContent = nextMonthDayNumber;
+                    label.textContent = nextMonthDayNumber.toString();
                     label.setAttribute('for', `${nextMonthName}-${nextMonthDayNumber}-${displayedDate.getFullYear()}`);
                     tableCell.appendChild(checkbox);
                     tableCell.appendChild(label);
@@ -144,18 +150,18 @@ document.addEventListener('DOMContentLoaded', function () {
     datesPicker()
 
     previousMonth.addEventListener('click', function () {
-        displayedDate.setMonth(displayedDate.getMonth() - 1);
-        renderCalendar()
-        datesPicker()
+        let month = displayedDate.getMonth() - 1;
+        displayedDate.setMonth(month);
+        renderCalendar(month);
+        datesPicker();
     })
 
     nextMonth.addEventListener('click', function () {
-        displayedDate.setMonth(displayedDate.getMonth() + 1);
-        renderCalendar()
-        datesPicker()
+        let month = displayedDate.getMonth() + 1;
+        displayedDate.setMonth(month);
+        renderCalendar(month);
+        datesPicker();
     })
-
-
 });
 
 
