@@ -176,7 +176,6 @@ class ViewUserProfile(View):
 def handle_plans(request):
     if request.method == 'POST':
         form_data = dict(request.POST)
-        print(form_data)
         cleaned_data = {}
         for key, value in form_data.items():
             if key == 'csrfmiddlewaretoken':

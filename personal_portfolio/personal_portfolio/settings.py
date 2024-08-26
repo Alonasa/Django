@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'travel_fellows',
     'django_countries',
     'cities_light',
-    'travel_fellows.templatetags'
+    'travel_fellows.templatetags',
 ]
 
 MIDDLEWARE = [
