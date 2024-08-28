@@ -183,12 +183,39 @@ const uncheckCheckboxes = (elements) => {
     });
 }
 
+
+const disableElements = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i].style.display = 'none';
+    }
+}
+
+const disableSteps = () => {
+    const step2 = document.querySelector('#step-2');
+    const step3 = document.querySelector('#step-3');
+    const elements = [step2, step3];
+    disableElements(elements);
+}
+
+disableSteps()
+
+
+const validateCalendar = (dates) => {
+    const continueButton = document.querySelector('.plan-step__button-wrapper');
+    if (dates.length < 2) {
+        continueButton.style.display = 'none';
+    } else {
+        continueButton.style.display = 'flex';
+    }
+}
+
 const datesPicker = () => {
     let datesList = document.querySelectorAll('.calendar__day-number');
     let datesCheckboxes = document.querySelectorAll('.calendar__table-cell input');
     let dates = [];
     let counter = 0;
 
+    validateCalendar(dates);
 
     datesList.forEach(el => {
         el.addEventListener('click', () => {
@@ -216,6 +243,8 @@ const datesPicker = () => {
                     return counter
                 }
             }
+            validateCalendar(dates);
         })
     })
+
 };
