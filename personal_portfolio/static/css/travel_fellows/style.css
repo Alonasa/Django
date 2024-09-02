@@ -5480,11 +5480,11 @@ a {
       justify-content: space-between;
       margin-bottom: 12px; } }
 .plan-step__button-wrapper {
+  display: none;
   padding: 0; }
   @media (min-width: 768px) {
     .plan-step__button-wrapper {
       padding: 0;
-      display: flex;
       justify-content: space-between;
       align-items: center; } }
 .plan-step__button-next {
@@ -6045,6 +6045,9 @@ a {
       padding: 17px 24px 20px; } }
 .plan-step__plan-description:invalid ~ .plan-step__plan-description-invalid {
   display: block; }
+
+#step-2, #step-3 {
+  display: none; }
 
 .calendar {
   display: block; }
@@ -6697,14 +6700,16 @@ a {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 30vw;
-  height: 10vh;
+  width: 80vw;
+  height: auto;
   text-align: center;
   z-index: 1000;
   font-weight: bold;
   background-color: #ffffff;
   color: #444444; }
-
+  @media (min-width: 768px) {
+    .modal {
+      width: 30vw; } }
 .modal-error {
   color: #ff0000;
   background-color: #ffefef; }

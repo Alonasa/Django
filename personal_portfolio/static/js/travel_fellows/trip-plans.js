@@ -1,3 +1,82 @@
+import {showModalPopup} from "./show-modal.js";
+
+let todaysDate
+
+
+const checkboxDisable = (dayNumber, currentDate, selectedMonth, year, checkbox) => {
+
+    let dat = new Date()
+    if (dayNumber < currentDate.getDate() && currentDate.getMonth() === selectedMonth && year === dat.getFullYear()) {
+        checkbox.disabled = true;
+    }
+}
+const setDisabled = (displayedDate, currentDate, checkbox) => {
+
+    if (displayedDate < currentDate) {
+        checkbox.disabled = true;
+    }
+}
+const uncheckCheckboxes = (elements) => {
+
+    elements.forEach(d => {
+
+
+        d.checked = false
+    });
+}
+const validateCalendarStep = (dates) => {
+    const step2 = document.querySelector('#step-2');
+    const continueButton = document.querySelector('.plan-step__button-wrapper');
+
+    if (dates.length < 2) {
+        continueButton.style.display = 'none';
+        step2.style.display = 'none';
+        showModalPopup("info", "Please select the date start and end of your trip to continue planning")
+    } else {
+        continueButton.style.display = 'flex';
+        step2.style.display = 'block';
+    }
+}
+const datesPicker = () => {
+    let datesList = document.querySelectorAll('.calendar__day-number');
+
+    let datesCheckboxes = document.querySelectorAll('.calendar__table-cell input');
+    let dates = [];
+    let counter = 0;
+    datesList.forEach(el => {
+
+        el.addEventListener('click', () => {
+            let currentId = el.getAttribute('for');
+            counter += 1;
+            switch (counter) {
+                case 1: {
+                    dates = [];
+                    dates[0] = currentId;
+                    uncheckCheckboxes(datesCheckboxes)
+                    validateCalendarStep(dates);
+                    break
+                }
+                case 2: {
+                    let oldChoice = new Date(dates[0].replace("-", " "));
+                    let newChoice = new Date(currentId.replace("-", " "));
+                    if (newChoice < oldChoice) {
+                        dates[0] = currentId;
+                        counter = 1;
+                        uncheckCheckboxes(datesCheckboxes)
+                        return counter
+                    } else {
+                        dates[1] = currentId
+                    }
+                    validateCalendarStep(dates);
+
+                    counter = 0
+                    return counter
+                }
+            }
+        })
+
+    })
+};
 document.addEventListener('DOMContentLoaded', function () {
     const decreaseButtons = document.querySelectorAll('.plan-step__number-input-button--decrease');
     const increaseButtons = document.querySelectorAll('.plan-step__number-input-button--increase');
@@ -24,22 +103,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-
-let todaysDate
-
-const checkboxDisable = (dayNumber, currentDate, selectedMonth, year, checkbox) => {
-    let dat = new Date()
-    if (dayNumber < currentDate.getDate() && currentDate.getMonth() === selectedMonth && year === dat.getFullYear()) {
-        checkbox.disabled = true;
-    }
-}
-
-const setDisabled = (displayedDate, currentDate, checkbox) => {
-    if (displayedDate < currentDate) {
-        checkbox.disabled = true;
-    }
-}
 
 document.addEventListener('DOMContentLoaded', function () {
     const currentDate = new Date();
@@ -175,76 +238,3 @@ document.addEventListener('DOMContentLoaded', function () {
         datesPicker();
     })
 });
-
-
-const uncheckCheckboxes = (elements) => {
-    elements.forEach(d => {
-        d.checked = false
-    });
-}
-
-
-const disableElements = (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-        arr[i].style.display = 'none';
-    }
-}
-
-const disableSteps = () => {
-    const step2 = document.querySelector('#step-2');
-    const step3 = document.querySelector('#step-3');
-    const elements = [step2, step3];
-    disableElements(elements);
-}
-
-disableSteps()
-
-
-const validateCalendar = (dates) => {
-    const continueButton = document.querySelector('.plan-step__button-wrapper');
-    if (dates.length < 2) {
-        continueButton.style.display = 'none';
-    } else {
-        continueButton.style.display = 'flex';
-    }
-}
-
-const datesPicker = () => {
-    let datesList = document.querySelectorAll('.calendar__day-number');
-    let datesCheckboxes = document.querySelectorAll('.calendar__table-cell input');
-    let dates = [];
-    let counter = 0;
-
-    validateCalendar(dates);
-
-    datesList.forEach(el => {
-        el.addEventListener('click', () => {
-            let currentId = el.getAttribute('for');
-            counter += 1;
-            switch (counter) {
-                case 1: {
-                    dates = [];
-                    dates[0] = currentId;
-                    uncheckCheckboxes(datesCheckboxes)
-                    break
-                }
-                case 2: {
-                    let oldChoice = new Date(dates[0].replace("-", " "));
-                    let newChoice = new Date(currentId.replace("-", " "));
-                    if (newChoice < oldChoice) {
-                        dates[0] = currentId;
-                        counter = 1;
-                        uncheckCheckboxes(datesCheckboxes)
-                        return counter
-                    } else {
-                        dates[1] = currentId
-                    }
-                    counter = 0
-                    return counter
-                }
-            }
-            validateCalendar(dates);
-        })
-    })
-
-};

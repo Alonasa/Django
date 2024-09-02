@@ -196,11 +196,11 @@
 }
 
 .plan-step__button-wrapper {
+  display: none;
   padding: 0;
 
   @media (min-width: $tablet) {
     padding: 0;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -951,4 +951,8 @@
 
 .plan-step__plan-description:invalid ~ .plan-step__plan-description-invalid {
   display: block;
+}
+
+#step-2, #step-3 {
+  display: none;
 }
