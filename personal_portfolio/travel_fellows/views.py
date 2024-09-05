@@ -183,7 +183,7 @@ def handle_plans(request):
             elif key == 'companions' or key == 'length':
                 cleaned_data[key] = int(value[0])
             elif key == 'picked-date':
-                cleaned_data[key] = [datetime.strptime(date, '%B-%d-%Y').date() for date in value]
+                cleaned_data[key] = [datetime.strptime(date, '%m-%d-%Y').date() for date in value]
             elif key == 'country-letter' or key == 'kids':
                 cleaned_data[key] = 'on' in value
             else:
