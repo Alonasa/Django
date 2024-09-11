@@ -195,13 +195,14 @@ def handle_plans(request):
         companions = cleaned_data['companions']
         length = cleaned_data['length']
         countries = cleaned_data['selected-countries'].split(",")
+        plans = [value for key, value in cleaned_data.items() if key.endswith('-plan')]
+
 
         try:
             kids = cleaned_data['kids']
         except KeyError:
             kids = False
 
-        plans = [cleaned_data['plans']]
 
         UserPlans.objects.create(user=user,
                                  destinations=countries,
