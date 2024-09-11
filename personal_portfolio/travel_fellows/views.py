@@ -77,15 +77,19 @@ def get_country_codes(request):
 
 def get_countries():
     countries = Country.objects.all()
-    print(countries.values())
     countries_list = [country.name for country in countries]
     return countries_list
+
+def get_plans(user):
+    plans = UserPlans.objects.filter(user=user)
+    return plans
+
 
 
 @method_decorator(login_required, name='dispatch')
 class ViewUserProfile(View):
     def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form, letters,
-                    countries):
+                    countries, plans):
         hashtags = user_profile.user.hashtag_set.all()
         str_hashtags = ' '.join(f'{ha.hashtag}' for ha in hashtags)
         hashtags_form = UserHashtagsForm(initial={'hashtags': str_hashtags})
@@ -99,7 +103,8 @@ class ViewUserProfile(View):
             "hashtags": hashtags,
             "plans_form": plans_form,
             "letters": letters,
-            "countries": countries
+            "countries": countries,
+            "plans": plans
         }
 
         return context
@@ -113,7 +118,7 @@ class ViewUserProfile(View):
         transportation_form = UserTransportationForm(instance=UserTransportation.objects.get(user=request.user))
         plans_form = UserPlansForm(request.GET)
         context = self.get_context(form, user_profile, hashtags_form, transportation_form, str_hashtags, plans_form,
-                                   get_letters(), get_countries())
+                                   get_letters(), get_countries(), get_plans(request.user))
         return render(request, "travel_fellows/form.html", context)
 
     def handle_photo_form(self, request, user_profile):
@@ -167,7 +172,7 @@ class ViewUserProfile(View):
         context = self.get_context(
             photo_form, user_profile, hashtags_form, transportation_form,
             user.hashtag_set.values_list('hashtag', flat=True), plans_form,
-            get_letters(), get_countries()
+            get_letters(), get_countries(), get_plans(user)
         )
 
         return render(request, "travel_fellows/form.html", context)

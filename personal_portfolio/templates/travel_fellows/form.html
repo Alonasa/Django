@@ -102,38 +102,28 @@
                             </h2>
                         </div>
                         <ol class="user-plans__list">
-                            <li class="plan-card user-plans__item">
+                            {% if plans %}
+                                {% for plan in plans %}
+                                    <li class="plan-card user-plans__item">
                                 <p class="plan-card__title">
-                                    <span class="plan-card__number">1.</span>France, Italy
+                                    <span class="plan-card__number">{{ forloop.counter }}. </span>
+                                    {% for country in plan.destinations %}{{ country }}{% if not forloop.last %},{% endif %} {% endfor %}
                                 </p>
                                 <div class="plan-card__details-wrapper">
                                     <p class="plan-card__details plan-card__details--teammates">
-                                        3 companions
+                                        {{  plan.companions }} companion{% if plan.companions > 1 %}s{% endif %}
                                     </p>
                                     <p class="plan-card__details plan-card__details--dates">
-                                        26 Mar — 29 Mar
+                                        {% load custom_filters %}
+                                        {{ plan.dates_start|format_date }} - {{ plan.dates_end|format_date }}
                                     </p>
                                     <a class="plan-card__edit" href="edit-plans.html">
                                         Change
                                     </a>
                                 </div>
                             </li>
-                            <li class="plan-card user-plans__item">
-                                <p class="plan-card__title">
-                                    <span class="plan-card__number">2.</span>Thailand, Indonesia
-                                </p>
-                                <div class="plan-card__details-wrapper">
-                                    <p class="plan-card__details plan-card__details--teammates">
-                                        1 companion
-                                    </p>
-                                    <p class="plan-card__details plan-card__details--dates">
-                                        1 Jul — 15 Jul
-                                    </p>
-                                    <a class="plan-card__edit" href="edit-plans.html">
-                                        Change
-                                    </a>
-                                </div>
-                            </li>
+                                {% endfor %}
+                            {% endif %}
                         </ol>
                     </div>
                 </div>
