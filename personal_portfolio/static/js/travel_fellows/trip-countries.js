@@ -1,4 +1,4 @@
-import { showModalPopup } from "./show-modal.js";
+import {showModalPopup} from "./show-modal.js";
 
 const countrySelectButton = document.querySelector(".country-select--choose");
 const countryDeleteButton = document.querySelector(".plan-step__delete-country--removable");
@@ -9,8 +9,11 @@ const addCountryButton = document.querySelector(".country-select--add");
 const plansContainer = document.querySelector('.plan-step__selects');
 const parentElement = document.querySelector('.plan-step__description-wrapper');
 const step3 = document.querySelector('#step-3');
-const planSteps = document.querySelectorAll(".plan-step__select-wrapper");
 let countriesData = {};
+
+const planSteps = () => {
+    return document.querySelectorAll(".plan-step__select-wrapper")
+}
 
 const initCountrySelectPopup = () => {
     countrySelectButton.addEventListener("click", () => {
@@ -70,7 +73,7 @@ const updateSelectedCountriesInput = () => {
 const regulateSteps = (stepNumber) => {
     const steps = document.querySelectorAll(".plan-step__button-wrapper");
     step3.style.display = "block";
-    steps[stepNumber].style.display = planSteps.length > 0 ? "flex" : "none";
+    steps[stepNumber].style.display = planSteps().length > 0 ? "flex" : "none";
 };
 
 const handleCountrySelection = (event) => {
@@ -91,8 +94,8 @@ const handleCountrySelection = (event) => {
 };
 
 const isCountryAlreadySelected = (countryName) => {
-    const planSteps = document.querySelectorAll(".plan-step__select-wrapper");
-    return Array.from(planSteps).some(el => el.dataset.tooltip === countryName);
+
+    return Array.from(planSteps()).some(el => el.dataset.tooltip === countryName);
 };
 
 const addCountryElement = (countryName, countryCode) => {
@@ -100,7 +103,7 @@ const addCountryElement = (countryName, countryCode) => {
     newElementNode.classList.add("plan-step__select-wrapper");
     newElementNode.dataset.tooltip = countryName;
     newElementNode.innerHTML = createCountryElementHTML(countryName, countryCode);
-    const lastElement = planSteps[0];
+    const lastElement = planSteps()[0];
     lastElement.parentNode.insertBefore(newElementNode, lastElement);
     createDescription(countryName, countryCode);
     regulateSteps(1);
