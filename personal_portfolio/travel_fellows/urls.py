@@ -9,7 +9,9 @@ urlpatterns = [
     path('auth-form/', views.AuthorizeUser.as_view(), name="auth-user"),
     path('register-form/', views.RegisterUser.as_view(), name="register"),
     path('logout/', views.log_out, name="logout"),
-    path('user/', views.ViewUserProfile.as_view(), name="user"),
+    path('user/', views.UserProfileView.as_view(), name="user"),
     path('user-plans', views.handle_plans, name="user-plans"),
+    path('user-plans/update/<int:plan_id>/', views.UserProfileView.as_view(), name='update_plan'),
     path('countries-data/', views.get_country_codes, name='countries-data')
 ]
+

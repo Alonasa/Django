@@ -77909,3 +77909,1355 @@ INFO 2024-09-11 18:22:36,955 basehttp 41236 28192 "GET /static/js/travel_fellows
 INFO 2024-09-11 18:22:37,132 basehttp 41236 28192 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
 INFO 2024-09-11 18:22:53,933 autoreload 41236 3500 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\templatetags\custom_filters.py changed, reloading.
 INFO 2024-09-11 18:22:55,573 autoreload 23136 27756 Watching for file changes with StatReloader
+INFO 2024-09-11 18:22:58,757 basehttp 23136 12208 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-11 18:22:58,771 basehttp 23136 31940 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-11 18:23:01,647 basehttp 23136 31940 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-11 18:23:04,104 basehttp 23136 31940 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-11 18:23:17,732 basehttp 23136 31940 "POST /portfolio/fellows/user-plans HTTP/1.1" 302 0
+INFO 2024-09-11 18:23:17,992 basehttp 23136 31940 "GET /portfolio/fellows/user/ HTTP/1.1" 200 1071587
+INFO 2024-09-11 18:23:18,292 basehttp 23136 31940 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-11 18:23:18,410 basehttp 23136 12208 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-11 18:23:18,413 basehttp 23136 42496 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-11 18:23:18,499 basehttp 23136 31940 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-11 18:23:18,538 basehttp 23136 12208 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-11 18:23:18,539 basehttp 23136 42496 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-11 18:23:19,203 basehttp 23136 42496 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-11 18:23:19,234 basehttp 23136 12208 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-11 18:23:19,331 basehttp 23136 31940 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-11 18:23:19,332 basehttp 23136 44824 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-11 18:23:19,783 basehttp 23136 44824 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-11 18:23:19,791 basehttp 23136 12208 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-11 18:23:19,792 basehttp 23136 31940 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-11 18:23:19,843 basehttp 23136 12208 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-11 18:23:19,856 basehttp 23136 31940 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-11 18:23:19,862 basehttp 23136 44824 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-11 18:23:19,875 basehttp 23136 42496 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-11 18:23:19,881 basehttp 23136 40604 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-11 18:23:19,881 basehttp 23136 28056 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-11 18:23:19,928 basehttp 23136 28056 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-11 18:23:20,996 basehttp 23136 28056 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-11 18:23:21,714 basehttp 23136 28056 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-12 10:10:24,257 basehttp 23136 4040 "GET /portfolio/fellows/user/ HTTP/1.1" 200 1071587
+INFO 2024-09-12 10:10:24,694 basehttp 23136 4040 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-12 10:10:24,700 basehttp 23136 42156 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-12 10:10:24,765 basehttp 23136 46152 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-12 10:10:24,786 basehttp 23136 4040 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-12 10:10:24,792 basehttp 23136 42156 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-12 10:10:24,806 basehttp 23136 46152 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-12 10:10:26,042 basehttp 23136 42156 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-12 10:10:26,043 basehttp 23136 46152 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-12 10:10:26,054 basehttp 23136 4040 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-12 10:10:26,055 basehttp 23136 41276 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-12 10:10:26,587 basehttp 23136 4040 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-12 10:10:26,600 basehttp 23136 41276 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-12 10:10:26,606 basehttp 23136 46152 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-12 10:10:26,648 basehttp 23136 46152 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-12 10:10:26,651 basehttp 23136 41276 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-12 10:10:26,665 basehttp 23136 4040 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-12 10:10:26,671 basehttp 23136 42156 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-12 10:10:26,673 basehttp 23136 22488 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-12 10:10:26,675 basehttp 23136 10160 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-12 10:10:26,693 basehttp 23136 4040 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-12 10:10:27,775 basehttp 23136 4040 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-12 10:10:29,387 basehttp 23136 4040 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-12 10:25:12,126 autoreload 23136 27756 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-12 10:25:19,295 autoreload 22340 20164 Watching for file changes with StatReloader
+INFO 2024-09-12 14:37:01,783 autoreload 32948 26972 Watching for file changes with StatReloader
+INFO 2024-09-13 12:38:47,974 autoreload 32948 26972 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 12:38:54,526 autoreload 30464 20244 Watching for file changes with StatReloader
+INFO 2024-09-13 13:22:36,587 basehttp 30464 23536 "GET /static/img/travel_fellows/qty-plus-mobile.svg HTTP/1.1" 200 120
+INFO 2024-09-13 13:22:36,606 basehttp 30464 40204 "GET /static/img/travel_fellows/qty-minus-mobile.svg HTTP/1.1" 200 105
+INFO 2024-09-13 16:13:24,727 basehttp 30464 40056 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 16:13:24,731 basehttp 30464 6820 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 16:15:33,499 basehttp 30464 44512 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 16:15:58,214 basehttp 30464 44512 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+ERROR 2024-09-13 16:19:42,932 log 30464 29376 Internal Server Error: /portfolio/fellows/user/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'country|startswith:letter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 121, in get
+    return render(request, "travel_fellows/form.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'startswith'
+ERROR 2024-09-13 16:19:42,986 basehttp 30464 29376 "GET /portfolio/fellows/user/ HTTP/1.1" 500 451770
+INFO 2024-09-13 16:20:32,546 basehttp 30464 29376 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891204
+INFO 2024-09-13 16:20:32,974 basehttp 30464 29376 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 16:20:32,985 basehttp 30464 38008 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 16:20:32,989 basehttp 30464 37308 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 16:20:33,016 basehttp 30464 38008 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 16:20:33,021 basehttp 30464 29376 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 16:20:33,024 basehttp 30464 37308 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 16:20:33,095 basehttp 30464 37308 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 16:20:33,097 basehttp 30464 38008 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 16:20:33,097 basehttp 30464 29376 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 16:20:33,106 basehttp 30464 38008 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 16:20:34,253 basehttp 30464 38008 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 16:20:34,464 basehttp 30464 38008 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 16:20:34,472 basehttp 30464 29376 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 16:20:34,473 basehttp 30464 37308 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 16:20:34,523 basehttp 30464 29376 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 16:20:34,537 basehttp 30464 37308 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 16:20:34,538 basehttp 30464 38008 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 16:20:34,539 basehttp 30464 11476 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 16:20:34,540 basehttp 30464 38588 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 16:20:34,540 basehttp 30464 13560 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 16:20:34,552 basehttp 30464 29376 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 16:20:35,434 basehttp 30464 29376 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 16:20:36,130 basehttp 30464 29376 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 16:20:45,770 basehttp 30464 29376 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 16:20:45,772 basehttp 30464 11476 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 16:36:09,803 autoreload 30464 20244 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-09-13 16:36:17,819 autoreload 10016 42576 Watching for file changes with StatReloader
+INFO 2024-09-13 16:36:20,591 autoreload 10016 42576 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\models.py changed, reloading.
+INFO 2024-09-13 16:36:22,573 autoreload 27700 16736 Watching for file changes with StatReloader
+INFO 2024-09-13 16:37:26,129 basehttp 27700 8676 "GET /admin/travel_fellows/userplans/ HTTP/1.1" 200 10790
+INFO 2024-09-13 16:37:26,467 basehttp 27700 8676 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-09-13 16:37:28,441 basehttp 27700 8676 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-09-13 16:37:28,442 basehttp 27700 10992 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+INFO 2024-09-13 16:37:33,849 basehttp 27700 13044 "GET /admin/travel_fellows/userplans/ HTTP/1.1" 200 10790
+INFO 2024-09-13 16:37:34,121 basehttp 27700 13044 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-09-13 16:37:39,476 basehttp 27700 13044 "GET /admin/travel_fellows/userplans/33/change/ HTTP/1.1" 200 15983
+INFO 2024-09-13 16:37:39,676 basehttp 27700 13044 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-09-13 16:37:41,870 basehttp 27700 13044 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+INFO 2024-09-13 16:47:46,220 autoreload 27700 16736 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\urls.py changed, reloading.
+INFO 2024-09-13 16:47:47,942 autoreload 21732 37340 Watching for file changes with StatReloader
+INFO 2024-09-13 16:48:36,681 basehttp 21732 41220 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891254
+INFO 2024-09-13 16:48:37,639 basehttp 21732 41220 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 16:48:37,646 basehttp 21732 41220 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 16:48:37,655 basehttp 21732 41220 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 16:48:37,665 basehttp 21732 29056 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 16:48:37,673 basehttp 21732 41220 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 16:48:37,683 basehttp 21732 29056 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 16:48:37,730 basehttp 21732 34116 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 16:48:38,024 basehttp 21732 32956 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 16:48:38,131 basehttp 21732 42748 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 16:48:38,164 basehttp 21732 25032 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 16:48:38,387 basehttp 21732 25032 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 16:48:38,390 basehttp 21732 42748 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 16:48:38,394 basehttp 21732 25032 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 16:48:38,438 basehttp 21732 25032 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 16:48:38,445 basehttp 21732 42748 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 16:48:38,454 basehttp 21732 29056 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 16:48:38,455 basehttp 21732 34116 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 16:48:38,456 basehttp 21732 32956 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 16:48:38,459 basehttp 21732 41220 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 16:48:38,489 basehttp 21732 29056 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 16:48:39,613 basehttp 21732 29056 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 16:48:39,947 basehttp 21732 29056 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+ERROR 2024-09-13 16:50:16,202 log 21732 29056 Internal Server Error: /portfolio/fellows/user/plans/update/33/
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ViewUserProfile.get() got an unexpected keyword argument 'plan_id'
+ERROR 2024-09-13 16:50:16,210 basehttp 21732 29056 "GET /portfolio/fellows/user/plans/update/33/ HTTP/1.1" 500 88594
+INFO 2024-09-13 16:50:16,234 autoreload 21732 37340 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\urls.py changed, reloading.
+INFO 2024-09-13 16:50:19,000 autoreload 10796 19248 Watching for file changes with StatReloader
+INFO 2024-09-13 16:50:21,779 basehttp 10796 34200 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891264
+INFO 2024-09-13 16:50:22,575 basehttp 10796 34200 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 16:50:22,595 basehttp 10796 34200 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 16:50:22,604 basehttp 10796 34200 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 16:50:22,616 basehttp 10796 34200 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 16:50:22,624 basehttp 10796 34200 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 16:50:22,639 basehttp 10796 34200 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 16:50:22,649 basehttp 10796 34200 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 16:50:22,657 basehttp 10796 34200 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 16:50:22,880 basehttp 10796 6892 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 16:50:22,896 basehttp 10796 16836 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 16:50:23,410 basehttp 10796 34200 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 16:50:23,412 basehttp 10796 6892 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 16:50:23,412 basehttp 10796 23980 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 16:50:23,413 basehttp 10796 16836 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 16:50:23,464 basehttp 10796 34200 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 16:50:23,472 basehttp 10796 6892 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 16:50:23,473 basehttp 10796 23980 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 16:50:23,487 basehttp 10796 16836 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 16:50:23,490 basehttp 10796 41828 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 16:50:23,505 basehttp 10796 23980 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 16:50:23,537 basehttp 10796 6892 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 16:50:25,215 basehttp 10796 6892 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 16:50:26,891 basehttp 10796 6892 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:07:59,786 autoreload 10796 19248 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:08:02,123 autoreload 9484 11072 Watching for file changes with StatReloader
+INFO 2024-09-13 17:08:11,768 autoreload 9484 11072 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:08:14,650 autoreload 19356 40308 Watching for file changes with StatReloader
+INFO 2024-09-13 17:08:16,284 basehttp 19356 21408 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891224
+INFO 2024-09-13 17:08:17,061 basehttp 19356 21408 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:08:17,075 basehttp 19356 21408 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:08:17,087 basehttp 19356 21408 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:08:17,099 basehttp 19356 21408 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:08:17,112 basehttp 19356 44716 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:08:17,114 basehttp 19356 34944 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:08:17,114 basehttp 19356 21408 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:08:17,124 basehttp 19356 27136 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:08:17,257 basehttp 19356 37436 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:08:17,259 basehttp 19356 20216 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:08:17,866 basehttp 19356 20216 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:08:18,181 basehttp 19356 20216 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:08:18,181 basehttp 19356 37436 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:08:18,236 basehttp 19356 37436 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:08:18,243 basehttp 19356 20216 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:08:18,253 basehttp 19356 27136 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:08:18,254 basehttp 19356 34944 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:08:18,256 basehttp 19356 44716 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:08:18,257 basehttp 19356 21408 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:08:18,268 basehttp 19356 20216 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:08:19,245 basehttp 19356 20216 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:08:19,857 basehttp 19356 20216 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:08:25,803 basehttp 19356 20216 "GET /portfolio/fellows/user/user-plans/update/33/ HTTP/1.1" 200 891244
+INFO 2024-09-13 17:08:26,176 basehttp 19356 20216 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:08:26,384 basehttp 19356 20216 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:08:26,387 basehttp 19356 44716 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:08:26,390 basehttp 19356 37436 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:08:26,390 basehttp 19356 21408 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:08:26,391 basehttp 19356 27136 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:08:26,397 basehttp 19356 44716 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:08:26,400 basehttp 19356 34944 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:08:26,416 basehttp 19356 34944 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:08:26,419 basehttp 19356 27136 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:08:27,459 basehttp 19356 27136 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:08:27,741 basehttp 19356 44716 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:08:27,742 basehttp 19356 34944 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:08:27,743 basehttp 19356 27136 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:08:27,783 basehttp 19356 34944 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:08:27,851 basehttp 19356 44716 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:08:27,858 basehttp 19356 34944 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:08:27,872 basehttp 19356 27136 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:08:27,872 basehttp 19356 21408 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:08:27,874 basehttp 19356 37436 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:08:27,889 basehttp 19356 20216 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:08:28,736 basehttp 19356 20216 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:08:29,167 basehttp 19356 20216 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:09:35,916 autoreload 19356 40308 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\urls.py changed, reloading.
+INFO 2024-09-13 17:09:39,497 autoreload 33580 22856 Watching for file changes with StatReloader
+WARNING 2024-09-13 17:09:40,285 log 33580 47116 Not Found: /portfolio/fellows/user/user-plans/update/33/
+WARNING 2024-09-13 17:09:40,287 basehttp 33580 47116 "GET /portfolio/fellows/user/user-plans/update/33/ HTTP/1.1" 404 5599
+INFO 2024-09-13 17:09:45,045 basehttp 33580 47116 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891214
+INFO 2024-09-13 17:09:45,716 basehttp 33580 47116 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:09:45,735 basehttp 33580 47116 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:09:45,743 basehttp 33580 47116 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:09:45,759 basehttp 33580 30824 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:09:45,765 basehttp 33580 47116 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:09:45,767 basehttp 33580 26408 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:09:45,769 basehttp 33580 24128 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:09:45,781 basehttp 33580 26408 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:09:45,809 basehttp 33580 27520 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:09:45,903 basehttp 33580 45492 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:09:46,405 basehttp 33580 45492 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:09:46,686 basehttp 33580 45492 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:09:46,709 basehttp 33580 45492 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:09:46,871 basehttp 33580 45492 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:09:46,903 basehttp 33580 45492 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:09:46,914 basehttp 33580 27520 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:09:46,918 basehttp 33580 26408 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:09:46,919 basehttp 33580 30824 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:09:46,919 basehttp 33580 24128 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:09:46,920 basehttp 33580 47116 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:09:46,930 basehttp 33580 27520 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:09:47,701 basehttp 33580 27520 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:09:48,138 basehttp 33580 27520 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:09:51,541 basehttp 33580 27520 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891234
+INFO 2024-09-13 17:09:51,987 basehttp 33580 27520 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:09:52,094 basehttp 33580 47116 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:09:52,101 basehttp 33580 30824 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:09:52,144 basehttp 33580 24128 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:09:52,145 basehttp 33580 45492 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:09:52,152 basehttp 33580 26408 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:09:52,157 basehttp 33580 27520 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:09:52,175 basehttp 33580 47116 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:09:52,257 basehttp 33580 26408 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:09:52,263 basehttp 33580 47116 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:09:53,020 basehttp 33580 47116 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:09:53,366 basehttp 33580 26408 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:09:53,368 basehttp 33580 47116 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:09:53,724 basehttp 33580 47116 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:09:53,772 basehttp 33580 47116 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:09:53,788 basehttp 33580 30824 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:09:53,788 basehttp 33580 26408 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:09:53,793 basehttp 33580 24128 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:09:53,798 basehttp 33580 45492 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:09:53,799 basehttp 33580 47116 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:09:53,802 basehttp 33580 27520 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:09:55,058 basehttp 33580 47116 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:09:55,453 basehttp 33580 47116 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:13:50,930 autoreload 33580 22856 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:13:53,120 autoreload 40840 45408 Watching for file changes with StatReloader
+INFO 2024-09-13 17:14:55,679 autoreload 40840 45408 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:14:57,368 autoreload 32824 3812 Watching for file changes with StatReloader
+INFO 2024-09-13 17:15:06,794 autoreload 32824 3812 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:15:09,161 autoreload 17660 32920 Watching for file changes with StatReloader
+INFO 2024-09-13 17:16:07,633 autoreload 17660 32920 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:16:09,719 autoreload 33060 31024 Watching for file changes with StatReloader
+INFO 2024-09-13 17:16:58,338 autoreload 33060 31024 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:17:00,505 autoreload 19048 43904 Watching for file changes with StatReloader
+INFO 2024-09-13 17:17:07,845 basehttp 19048 19660 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891234
+INFO 2024-09-13 17:17:08,507 basehttp 19048 19660 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:17:08,517 basehttp 19048 41404 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:17:08,521 basehttp 19048 19660 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:17:08,523 basehttp 19048 3860 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:17:08,529 basehttp 19048 41404 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:17:08,534 basehttp 19048 3860 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:17:08,544 basehttp 19048 19660 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:17:08,548 basehttp 19048 41404 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:17:08,631 basehttp 19048 12960 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:17:08,638 basehttp 19048 40180 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:17:09,314 basehttp 19048 40180 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:17:09,658 basehttp 19048 12960 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:17:09,661 basehttp 19048 40180 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:17:09,721 basehttp 19048 40180 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:17:09,731 basehttp 19048 12960 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:17:09,731 basehttp 19048 41404 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:17:09,734 basehttp 19048 19660 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:17:09,747 basehttp 19048 40180 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:17:09,747 basehttp 19048 3860 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:17:09,758 basehttp 19048 12960 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:17:10,592 basehttp 19048 12960 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:17:11,253 basehttp 19048 12960 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:17:18,683 basehttp 19048 12960 "GET /portfolio/fellows/user-plans/update/32/ HTTP/1.1" 200 891234
+INFO 2024-09-13 17:17:19,361 basehttp 19048 12960 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:17:19,446 basehttp 19048 19660 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:17:19,447 basehttp 19048 3860 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:17:19,447 basehttp 19048 40180 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:17:19,450 basehttp 19048 12612 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:17:19,453 basehttp 19048 12960 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:17:19,457 basehttp 19048 41404 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:17:19,478 basehttp 19048 40180 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:17:19,504 basehttp 19048 41404 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:17:19,507 basehttp 19048 3860 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:17:20,535 basehttp 19048 3860 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:17:20,961 basehttp 19048 3860 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:17:20,984 basehttp 19048 3860 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:17:20,993 basehttp 19048 41404 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:17:21,041 basehttp 19048 41404 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:17:21,049 basehttp 19048 3860 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:17:21,055 basehttp 19048 40180 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:17:21,055 basehttp 19048 12960 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:17:21,062 basehttp 19048 41404 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:17:21,068 basehttp 19048 12612 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:17:21,074 basehttp 19048 3860 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:17:22,959 basehttp 19048 3860 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:17:23,367 basehttp 19048 3860 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:17:35,021 basehttp 19048 3860 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-09-13 17:20:57,174 autoreload 19048 43904 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:21:00,352 autoreload 20020 31952 Watching for file changes with StatReloader
+INFO 2024-09-13 17:21:02,149 basehttp 20020 21956 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891234
+INFO 2024-09-13 17:21:03,566 basehttp 20020 21956 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:21:03,568 basehttp 20020 29188 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:21:03,575 basehttp 20020 21956 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:21:03,580 basehttp 20020 38112 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:21:03,595 basehttp 20020 29188 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:21:03,615 basehttp 20020 29188 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:21:03,620 basehttp 20020 38112 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:21:03,798 basehttp 20020 44752 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:21:03,906 basehttp 20020 34576 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:21:03,953 basehttp 20020 11604 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:21:04,785 basehttp 20020 11604 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:21:04,797 basehttp 20020 38112 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:21:04,797 basehttp 20020 44752 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:21:04,799 basehttp 20020 34576 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:21:04,831 basehttp 20020 44752 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:21:04,833 basehttp 20020 34576 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:21:04,835 basehttp 20020 38112 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:21:04,842 basehttp 20020 11604 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:21:04,868 basehttp 20020 38112 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:21:04,869 basehttp 20020 34576 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:21:04,885 basehttp 20020 11604 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:21:05,472 basehttp 20020 11604 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:21:06,194 basehttp 20020 11604 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:21:37,244 basehttp 20020 11604 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891234
+INFO 2024-09-13 17:21:37,578 basehttp 20020 11604 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:21:37,605 basehttp 20020 34576 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:21:37,606 basehttp 20020 38112 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:21:37,607 basehttp 20020 44752 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:21:37,608 basehttp 20020 21956 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:21:37,614 basehttp 20020 29188 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:21:37,619 basehttp 20020 11604 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:21:37,634 basehttp 20020 38112 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:21:37,660 basehttp 20020 29188 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:21:37,675 basehttp 20020 11604 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:21:38,651 basehttp 20020 11604 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:21:38,699 basehttp 20020 11604 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:21:39,080 basehttp 20020 11604 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:21:39,138 basehttp 20020 11604 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:21:39,153 basehttp 20020 29188 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:21:39,155 basehttp 20020 38112 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:21:39,156 basehttp 20020 44752 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:21:39,157 basehttp 20020 21956 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:21:39,173 basehttp 20020 11604 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:21:39,180 basehttp 20020 34576 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:21:40,490 basehttp 20020 34576 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:21:40,957 basehttp 20020 34576 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:21:51,923 basehttp 20020 34576 "GET /portfolio/fellows/user HTTP/1.1" 301 0
+INFO 2024-09-13 17:21:52,147 basehttp 20020 11604 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891214
+INFO 2024-09-13 17:21:52,475 basehttp 20020 11604 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:21:52,553 basehttp 20020 21956 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:21:52,554 basehttp 20020 44752 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:21:52,557 basehttp 20020 38112 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:21:52,569 basehttp 20020 29188 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:21:52,588 basehttp 20020 11604 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:21:52,595 basehttp 20020 21956 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:21:52,596 basehttp 20020 38112 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:21:52,621 basehttp 20020 11604 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:21:52,629 basehttp 20020 29188 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:21:53,502 basehttp 20020 29188 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:21:53,765 basehttp 20020 29188 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:21:53,799 basehttp 20020 29188 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:21:54,012 basehttp 20020 29188 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:21:54,051 basehttp 20020 29188 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:21:54,060 basehttp 20020 11604 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:21:54,066 basehttp 20020 21956 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:21:54,068 basehttp 20020 38112 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:21:54,068 basehttp 20020 44752 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:21:54,069 basehttp 20020 39460 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:21:54,100 basehttp 20020 11604 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:21:54,800 basehttp 20020 11604 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:21:55,254 basehttp 20020 11604 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:22:02,490 basehttp 20020 11604 "GET /portfolio/fellows/user-plans/update/32/ HTTP/1.1" 200 891234
+INFO 2024-09-13 17:22:02,934 basehttp 20020 11604 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:22:03,015 basehttp 20020 39460 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:22:03,017 basehttp 20020 44752 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:22:03,047 basehttp 20020 29188 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:22:03,049 basehttp 20020 38112 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:22:03,051 basehttp 20020 11604 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:22:03,055 basehttp 20020 21956 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:22:03,059 basehttp 20020 44752 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:22:03,084 basehttp 20020 21956 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:22:03,097 basehttp 20020 44752 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:22:03,737 basehttp 20020 44752 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:22:03,977 basehttp 20020 44752 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:22:04,022 basehttp 20020 44752 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:22:04,288 basehttp 20020 44752 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:22:04,335 basehttp 20020 21956 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:22:04,335 basehttp 20020 44752 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:22:04,380 basehttp 20020 29188 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:22:04,381 basehttp 20020 11604 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:22:04,382 basehttp 20020 21956 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:22:04,383 basehttp 20020 38112 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:22:04,392 basehttp 20020 44752 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:22:05,173 basehttp 20020 44752 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:22:05,561 basehttp 20020 44752 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:25:08,226 basehttp 20020 44752 "GET /portfolio/fellows/user-plans/update/32/ HTTP/1.1" 200 891220
+INFO 2024-09-13 17:25:08,598 basehttp 20020 44752 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:25:08,710 basehttp 20020 38112 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:25:08,711 basehttp 20020 21956 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:25:08,786 basehttp 20020 39460 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:25:08,787 basehttp 20020 11604 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:25:08,792 basehttp 20020 44752 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:25:08,795 basehttp 20020 29188 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:25:08,815 basehttp 20020 38112 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:25:08,861 basehttp 20020 39460 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:25:08,862 basehttp 20020 38112 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:25:09,489 basehttp 20020 38112 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:25:09,715 basehttp 20020 38112 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:25:09,912 basehttp 20020 38112 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:25:09,978 basehttp 20020 38112 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:25:09,991 basehttp 20020 39460 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:25:09,993 basehttp 20020 44752 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:25:09,995 basehttp 20020 29188 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:25:09,996 basehttp 20020 11604 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:25:10,002 basehttp 20020 38112 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:25:10,008 basehttp 20020 21956 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:25:10,805 basehttp 20020 21956 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:25:11,023 basehttp 20020 21956 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:25:18,739 basehttp 20020 21956 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891220
+INFO 2024-09-13 17:25:19,063 basehttp 20020 21956 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:25:19,165 basehttp 20020 11604 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:25:19,167 basehttp 20020 38112 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:25:19,188 basehttp 20020 29188 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:25:19,193 basehttp 20020 39460 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:25:19,195 basehttp 20020 21956 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:25:19,202 basehttp 20020 44752 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:25:19,211 basehttp 20020 38112 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:25:19,230 basehttp 20020 21956 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:25:19,236 basehttp 20020 44752 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:25:20,105 basehttp 20020 44752 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:25:20,375 basehttp 20020 44752 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:25:20,667 basehttp 20020 44752 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:25:20,679 basehttp 20020 44752 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:25:20,713 basehttp 20020 44752 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:25:20,726 basehttp 20020 21956 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:25:20,730 basehttp 20020 39460 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:25:20,731 basehttp 20020 38112 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:25:20,732 basehttp 20020 29188 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:25:20,733 basehttp 20020 11604 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:25:20,737 basehttp 20020 44752 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:25:21,410 basehttp 20020 44752 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:25:21,851 basehttp 20020 44752 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:28:01,625 basehttp 20020 44752 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891251
+INFO 2024-09-13 17:28:01,998 basehttp 20020 44752 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:28:02,039 basehttp 20020 11604 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:28:02,044 basehttp 20020 29188 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:28:02,123 basehttp 20020 38112 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:28:02,125 basehttp 20020 21956 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:28:02,130 basehttp 20020 39460 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:28:02,156 basehttp 20020 44752 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:28:02,203 basehttp 20020 11604 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:28:02,250 basehttp 20020 11604 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:28:02,259 basehttp 20020 44752 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:28:02,893 basehttp 20020 44752 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:28:03,118 basehttp 20020 44752 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:28:03,310 basehttp 20020 44752 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:28:03,428 basehttp 20020 44752 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:28:03,434 basehttp 20020 11604 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:28:03,442 basehttp 20020 39460 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:28:03,446 basehttp 20020 21956 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:28:03,447 basehttp 20020 38112 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:28:03,449 basehttp 20020 44752 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:28:03,460 basehttp 20020 39460 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:28:04,284 basehttp 20020 39460 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:28:04,461 basehttp 20020 39460 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:28:07,091 basehttp 20020 39460 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 17:28:07,096 basehttp 20020 44752 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 17:28:10,459 basehttp 20020 44752 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 17:28:12,753 basehttp 20020 44752 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+ERROR 2024-09-13 17:28:46,833 log 20020 44752 Internal Server Error: /portfolio/fellows/user-plans
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view travel_fellows.views.handle_plans didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-13 17:28:46,835 basehttp 20020 44752 "GET /portfolio/fellows/user-plans?csrfmiddlewaretoken=cywQ7O8L2oO8UB0HVTPfV59HUjnpSHVrSBEwIw2XQoURr1l3CKzSZ5K16SM84sxd&companions=2&length=2&picked-date=9-18-2024&picked-date=9-25-2024&selected-countries=Isle+of+Man&country-letter=on&Isle+of+Man-plan=Drink+coconut+water HTTP/1.1" 500 75772
+INFO 2024-09-13 17:33:15,577 autoreload 20020 31952 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:33:21,730 autoreload 18552 33596 Watching for file changes with StatReloader
+INFO 2024-09-13 17:33:23,864 basehttp 18552 35892 "GET /portfolio/fellows/user-plans?csrfmiddlewaretoken=cywQ7O8L2oO8UB0HVTPfV59HUjnpSHVrSBEwIw2XQoURr1l3CKzSZ5K16SM84sxd&companions=2&length=2&picked-date=9-18-2024&picked-date=9-25-2024&selected-countries=Isle+of+Man&country-letter=on&Isle+of+Man-plan=Drink+coconut+water HTTP/1.1" 302 0
+INFO 2024-09-13 17:33:24,260 basehttp 18552 35892 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891200
+INFO 2024-09-13 17:33:24,971 basehttp 18552 35892 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:33:24,988 basehttp 18552 26608 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:33:24,994 basehttp 18552 24340 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:33:24,996 basehttp 18552 26812 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:33:24,999 basehttp 18552 26608 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:33:25,001 basehttp 18552 35892 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:33:25,011 basehttp 18552 35892 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:33:25,018 basehttp 18552 26608 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:33:25,043 basehttp 18552 26976 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:33:25,052 basehttp 18552 28108 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:33:25,839 basehttp 18552 28108 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:33:25,877 basehttp 18552 28108 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:33:25,910 basehttp 18552 26608 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:33:25,912 basehttp 18552 26976 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:33:25,914 basehttp 18552 35892 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:33:25,914 basehttp 18552 26812 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:33:25,928 basehttp 18552 24340 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:33:25,953 basehttp 18552 26812 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:33:25,966 basehttp 18552 24340 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:33:25,971 basehttp 18552 35892 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:33:25,978 basehttp 18552 26976 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:33:26,714 basehttp 18552 26976 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:33:27,519 basehttp 18552 26976 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:33:33,158 basehttp 18552 26976 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891200
+INFO 2024-09-13 17:33:33,608 basehttp 18552 26976 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:33:33,714 basehttp 18552 24340 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:33:33,714 basehttp 18552 35892 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:33:33,716 basehttp 18552 26812 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:33:33,717 basehttp 18552 28108 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:33:33,724 basehttp 18552 26608 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:33:33,781 basehttp 18552 26976 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:33:33,803 basehttp 18552 35892 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:33:33,825 basehttp 18552 26976 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:33:33,826 basehttp 18552 26608 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:33:34,977 basehttp 18552 26608 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:33:34,987 basehttp 18552 26976 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:33:34,991 basehttp 18552 26608 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:33:35,044 basehttp 18552 26608 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:33:35,052 basehttp 18552 35892 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:33:35,053 basehttp 18552 26976 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:33:35,054 basehttp 18552 28108 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:33:35,081 basehttp 18552 24340 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:33:35,081 basehttp 18552 26812 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:33:35,121 basehttp 18552 26812 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:33:36,130 basehttp 18552 26812 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:33:36,575 basehttp 18552 26812 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:33:41,063 basehttp 18552 26812 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891222
+INFO 2024-09-13 17:33:41,420 basehttp 18552 26812 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:33:41,519 basehttp 18552 24340 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:33:41,570 basehttp 18552 28108 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:33:41,572 basehttp 18552 26976 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:33:41,572 basehttp 18552 26608 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:33:41,573 basehttp 18552 26812 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:33:41,579 basehttp 18552 35892 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:33:41,583 basehttp 18552 24340 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:33:41,613 basehttp 18552 24340 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:33:41,629 basehttp 18552 35892 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:33:42,509 basehttp 18552 35892 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:33:42,753 basehttp 18552 35892 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:33:43,060 basehttp 18552 35892 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:33:43,075 basehttp 18552 35892 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:33:43,138 basehttp 18552 35892 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:33:43,152 basehttp 18552 24340 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:33:43,162 basehttp 18552 26608 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:33:43,163 basehttp 18552 26812 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:33:43,167 basehttp 18552 26976 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:33:43,168 basehttp 18552 28108 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:33:43,178 basehttp 18552 26812 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:33:43,940 basehttp 18552 26812 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:33:44,498 basehttp 18552 26812 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:33:48,968 basehttp 18552 26812 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 17:33:48,969 basehttp 18552 26976 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 17:33:51,250 basehttp 18552 26812 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 17:33:53,215 basehttp 18552 26812 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-13 17:33:58,795 basehttp 18552 26812 "GET /portfolio/fellows/user-plans?csrfmiddlewaretoken=YSq6vv6psGh6B0MJVTuTs6ZJN2L05In8EVyM6d0BgGnP8q75CKeww6A3ZBaJhtZU&companions=2&length=2&picked-date=9-20-2024&picked-date=9-27-2024&selected-countries=Jordan&country-letter=on&Jordan-plan=jkol%2C HTTP/1.1" 302 0
+INFO 2024-09-13 17:33:58,994 basehttp 18552 26812 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891200
+INFO 2024-09-13 17:33:59,420 basehttp 18552 26812 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:33:59,507 basehttp 18552 28108 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:33:59,514 basehttp 18552 26976 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:33:59,516 basehttp 18552 35892 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:33:59,518 basehttp 18552 26608 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:33:59,523 basehttp 18552 24340 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:33:59,571 basehttp 18552 26812 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:33:59,577 basehttp 18552 26976 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:33:59,632 basehttp 18552 24340 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:33:59,632 basehttp 18552 26812 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:34:00,409 basehttp 18552 26812 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:34:00,719 basehttp 18552 26812 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:34:00,751 basehttp 18552 26812 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:34:00,784 basehttp 18552 26812 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:34:00,821 basehttp 18552 26812 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:34:00,832 basehttp 18552 24340 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:34:00,835 basehttp 18552 26976 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:34:00,854 basehttp 18552 35892 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:34:00,855 basehttp 18552 26812 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:34:00,855 basehttp 18552 26608 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:34:00,863 basehttp 18552 26976 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:34:01,754 basehttp 18552 26976 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:34:01,964 basehttp 18552 26976 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:34:12,252 basehttp 18552 42056 "GET /admin/travel_fellows/userplans/ HTTP/1.1" 200 10790
+INFO 2024-09-13 17:34:12,501 basehttp 18552 42056 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-09-13 17:34:14,488 basehttp 18552 42056 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-09-13 17:34:14,492 basehttp 18552 38064 "GET /static/img/travel_fellows/tooltag-add.svg HTTP/1.1" 404 1861
+INFO 2024-09-13 17:34:17,143 basehttp 18552 27716 "GET /admin/travel_fellows/userplans/33/change/ HTTP/1.1" 200 15983
+INFO 2024-09-13 17:34:17,416 basehttp 18552 27716 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-09-13 17:34:19,321 basehttp 18552 27716 "GET /static/img/travel_fellows/icon-addlink.svg HTTP/1.1" 404 1864
+WARNING 2024-09-13 17:34:19,597 basehttp 18552 24924 "GET /static/img/travel_fellows/icon-calendar.svg HTTP/1.1" 404 1867
+INFO 2024-09-13 17:36:03,501 autoreload 18552 33596 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 17:36:05,620 autoreload 7988 10092 Watching for file changes with StatReloader
+INFO 2024-09-13 17:36:08,732 basehttp 7988 15876 "GET /portfolio/fellows/user/ HTTP/1.1" 200 891200
+INFO 2024-09-13 17:36:09,477 basehttp 7988 15876 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:36:09,487 basehttp 7988 15876 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:36:09,508 basehttp 7988 15876 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:36:09,512 basehttp 7988 38392 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:36:09,515 basehttp 7988 17432 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:36:09,516 basehttp 7988 14436 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:36:09,552 basehttp 7988 38392 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:36:09,553 basehttp 7988 15876 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:36:09,646 basehttp 7988 13828 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:36:09,671 basehttp 7988 45700 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:36:10,116 basehttp 7988 45700 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:36:10,324 basehttp 7988 45700 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:36:10,336 basehttp 7988 45700 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:36:10,374 basehttp 7988 45700 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:36:10,377 basehttp 7988 13828 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:36:10,385 basehttp 7988 15876 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:36:10,387 basehttp 7988 38392 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:36:10,389 basehttp 7988 14436 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:36:10,391 basehttp 7988 17432 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:36:10,402 basehttp 7988 38392 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:36:11,969 basehttp 7988 38392 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:36:12,810 basehttp 7988 38392 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:36:17,349 basehttp 7988 38392 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891222
+INFO 2024-09-13 17:36:17,606 basehttp 7988 38392 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:36:17,644 basehttp 7988 17432 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:36:17,657 basehttp 7988 14436 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:36:17,659 basehttp 7988 15876 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:36:17,668 basehttp 7988 45700 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:36:17,675 basehttp 7988 13828 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:36:17,797 basehttp 7988 38392 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:36:17,812 basehttp 7988 17432 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:36:17,868 basehttp 7988 38392 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:36:17,870 basehttp 7988 17432 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:36:18,735 basehttp 7988 17432 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:36:18,949 basehttp 7988 17432 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:36:19,273 basehttp 7988 17432 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:36:19,278 basehttp 7988 38392 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:36:19,316 basehttp 7988 38392 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:36:19,327 basehttp 7988 13828 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:36:19,328 basehttp 7988 17432 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:36:19,328 basehttp 7988 45700 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:36:19,338 basehttp 7988 15876 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:36:19,344 basehttp 7988 14436 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:36:19,368 basehttp 7988 14436 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:36:20,002 basehttp 7988 14436 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:36:20,490 basehttp 7988 14436 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:36:25,913 basehttp 7988 14436 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 17:36:25,913 basehttp 7988 15876 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 17:36:29,538 basehttp 7988 14436 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 17:36:31,466 basehttp 7988 14436 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+ERROR 2024-09-13 17:36:36,340 log 7988 14436 Internal Server Error: /portfolio/fellows/user-plans
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view travel_fellows.views.handle_plans didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-13 17:36:36,342 basehttp 7988 14436 "GET /portfolio/fellows/user-plans?csrfmiddlewaretoken=q4gB6w6TB5vAnOO0VqebT5vRa2Ph7WXX67ohHe05p5BjUe9mChYOX56bmBe0jHzJ&companions=2&length=2&picked-date=9-24-2024&picked-date=9-31-2024&selected-countries=El+Salvador&country-letter=on&El+Salvador-plan=uykukuy HTTP/1.1" 500 75700
+ERROR 2024-09-13 17:37:35,345 log 7988 14436 Internal Server Error: /portfolio/fellows/user-plans
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view travel_fellows.views.handle_plans didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-13 17:37:35,350 basehttp 7988 14436 "GET /portfolio/fellows/user-plans?csrfmiddlewaretoken=q4gB6w6TB5vAnOO0VqebT5vRa2Ph7WXX67ohHe05p5BjUe9mChYOX56bmBe0jHzJ&companions=2&length=2&picked-date=9-24-2024&picked-date=9-31-2024&selected-countries=El+Salvador&country-letter=on&El+Salvador-plan=uykukuy HTTP/1.1" 500 75700
+ERROR 2024-09-13 17:37:42,285 log 7988 14436 Internal Server Error: /portfolio/fellows/user-plans
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view travel_fellows.views.handle_plans didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-13 17:37:42,287 basehttp 7988 14436 "GET /portfolio/fellows/user-plans?csrfmiddlewaretoken=q4gB6w6TB5vAnOO0VqebT5vRa2Ph7WXX67ohHe05p5BjUe9mChYOX56bmBe0jHzJ&companions=2&length=2&picked-date=9-24-2024&picked-date=9-31-2024&selected-countries=El+Salvador&country-letter=on&El+Salvador-plan=uykukuy HTTP/1.1" 500 75700
+INFO 2024-09-13 17:37:46,530 basehttp 7988 14436 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891236
+INFO 2024-09-13 17:37:46,898 basehttp 7988 14436 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:37:47,011 basehttp 7988 15876 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:37:47,014 basehttp 7988 38392 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:37:47,014 basehttp 7988 13828 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:37:47,015 basehttp 7988 45700 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:37:47,021 basehttp 7988 17432 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:37:47,078 basehttp 7988 14436 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:37:47,113 basehttp 7988 45700 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:37:47,153 basehttp 7988 17432 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:37:47,153 basehttp 7988 14436 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:37:47,747 basehttp 7988 17432 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:37:47,970 basehttp 7988 17432 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:37:48,280 basehttp 7988 17432 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:37:48,282 basehttp 7988 14436 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:37:48,317 basehttp 7988 14436 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:37:48,322 basehttp 7988 17432 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:37:48,333 basehttp 7988 45700 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:37:48,337 basehttp 7988 38392 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:37:48,337 basehttp 7988 14436 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:37:48,337 basehttp 7988 13828 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:37:48,365 basehttp 7988 45700 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:37:49,050 basehttp 7988 45700 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:37:49,537 basehttp 7988 45700 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:37:59,971 basehttp 7988 13828 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 17:37:59,973 basehttp 7988 45700 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 17:38:03,275 basehttp 7988 45700 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 17:38:06,094 basehttp 7988 45700 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+ERROR 2024-09-13 17:38:10,443 log 7988 45700 Internal Server Error: /portfolio/fellows/user-plans
+Traceback (most recent call last):
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 225, in handle_plans
+    cleaned_data[key] = [datetime.strptime(date, '%m-%d-%Y').date() for date in value]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py", line 225, in <listcomp>
+    cleaned_data[key] = [datetime.strptime(date, '%m-%d-%Y').date() for date in value]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alena\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alena\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 534, in _strptime
+    julian = datetime_date(year, month, day).toordinal() - \
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: day is out of range for month
+ERROR 2024-09-13 17:38:10,448 basehttp 7988 45700 "POST /portfolio/fellows/user-plans HTTP/1.1" 500 92205
+INFO 2024-09-13 17:38:23,590 basehttp 7988 45700 "GET /portfolio/fellows/user-plans/update/33/ HTTP/1.1" 200 891236
+INFO 2024-09-13 17:38:23,834 basehttp 7988 45700 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:38:23,963 basehttp 7988 13828 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:38:23,965 basehttp 7988 38392 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:38:23,966 basehttp 7988 14436 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:38:23,967 basehttp 7988 15876 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:38:23,972 basehttp 7988 17432 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:38:24,028 basehttp 7988 45700 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:38:24,053 basehttp 7988 13828 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:38:24,083 basehttp 7988 45700 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:38:24,084 basehttp 7988 17432 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:38:24,721 basehttp 7988 17432 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:38:25,010 basehttp 7988 17432 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:38:25,606 basehttp 7988 17432 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:38:25,625 basehttp 7988 17432 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:38:25,656 basehttp 7988 17432 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:38:25,665 basehttp 7988 45700 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:38:25,670 basehttp 7988 15876 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:38:25,670 basehttp 7988 13828 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:38:25,673 basehttp 7988 14436 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:38:25,674 basehttp 7988 38392 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:38:25,692 basehttp 7988 45700 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:38:26,270 basehttp 7988 45700 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:38:26,814 basehttp 7988 45700 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:38:31,284 basehttp 7988 38392 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 17:38:31,285 basehttp 7988 45700 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 17:38:36,478 basehttp 7988 45700 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 17:38:38,876 basehttp 7988 45700 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-13 17:38:53,626 basehttp 7988 45700 "POST /portfolio/fellows/user-plans HTTP/1.1" 302 0
+INFO 2024-09-13 17:38:53,826 basehttp 7988 45700 "GET /portfolio/fellows/user/ HTTP/1.1" 200 892322
+INFO 2024-09-13 17:38:54,128 basehttp 7988 45700 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:38:54,229 basehttp 7988 38392 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:38:54,237 basehttp 7988 14436 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:38:54,300 basehttp 7988 13828 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:38:54,302 basehttp 7988 17432 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:38:54,310 basehttp 7988 45700 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:38:54,314 basehttp 7988 15876 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:38:54,320 basehttp 7988 38392 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:38:54,346 basehttp 7988 45700 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:38:54,352 basehttp 7988 38392 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:38:55,155 basehttp 7988 38392 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:38:55,349 basehttp 7988 38392 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:38:55,669 basehttp 7988 38392 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:38:55,670 basehttp 7988 45700 "GET /static/img/travel_fellows/sprite.svg HTTP/1.1" 200 3480
+INFO 2024-09-13 17:38:55,710 basehttp 7988 45700 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:38:55,717 basehttp 7988 15876 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:38:55,718 basehttp 7988 38392 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:38:55,733 basehttp 7988 17432 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:38:55,734 basehttp 7988 13828 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:38:55,735 basehttp 7988 45700 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:38:55,742 basehttp 7988 38392 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:38:56,359 basehttp 7988 38392 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:38:56,546 basehttp 7988 38392 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:40:30,059 basehttp 7988 38392 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 17:40:30,063 basehttp 7988 13828 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 17:40:39,020 basehttp 7988 13828 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 17:40:42,573 basehttp 7988 13828 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-13 17:40:48,119 basehttp 7988 13828 "POST /portfolio/fellows/user-plans HTTP/1.1" 302 0
+INFO 2024-09-13 17:40:48,324 basehttp 7988 13828 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893421
+INFO 2024-09-13 17:40:48,631 basehttp 7988 13828 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 17:40:48,708 basehttp 7988 38392 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 17:40:48,716 basehttp 7988 45700 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 17:40:48,717 basehttp 7988 17432 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 17:40:48,724 basehttp 7988 15876 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 17:40:48,764 basehttp 7988 14436 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 17:40:48,769 basehttp 7988 13828 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 17:40:48,788 basehttp 7988 38392 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 17:40:48,819 basehttp 7988 13828 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 17:40:48,822 basehttp 7988 14436 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 17:40:49,654 basehttp 7988 14436 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 17:40:49,827 basehttp 7988 14436 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 17:40:50,032 basehttp 7988 14436 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 17:40:50,069 basehttp 7988 14436 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 17:40:50,077 basehttp 7988 13828 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 17:40:50,106 basehttp 7988 38392 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 17:40:50,108 basehttp 7988 14436 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 17:40:50,113 basehttp 7988 15876 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 17:40:50,117 basehttp 7988 17432 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 17:40:50,123 basehttp 7988 13828 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 17:40:50,890 basehttp 7988 13828 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 17:40:51,308 basehttp 7988 13828 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 17:41:01,861 basehttp 7988 13828 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-09-13 17:41:05,230 basehttp 7988 13828 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 17:41:05,232 basehttp 7988 17432 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 17:41:07,879 basehttp 7988 17432 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 17:41:09,597 basehttp 7988 17432 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-13 21:01:08,639 autoreload 7988 10092 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 21:01:10,210 autoreload 23848 29664 Watching for file changes with StatReloader
+INFO 2024-09-13 21:01:18,413 autoreload 8976 26772 Watching for file changes with StatReloader
+INFO 2024-09-13 21:01:19,279 basehttp 8976 11968 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893421
+INFO 2024-09-13 21:01:20,137 basehttp 8976 11912 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 21:01:20,148 basehttp 8976 11912 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 21:01:20,161 basehttp 8976 11912 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 21:01:20,180 basehttp 8976 11912 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 21:01:20,196 basehttp 8976 11912 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 21:01:20,440 basehttp 8976 38440 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 21:01:20,489 basehttp 8976 11968 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 21:01:20,574 basehttp 8976 47132 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 21:01:20,667 basehttp 8976 27316 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 21:01:20,774 basehttp 8976 24896 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 21:01:20,912 basehttp 8976 24896 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 21:01:20,956 basehttp 8976 24896 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 21:01:21,248 basehttp 8976 24896 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 21:01:21,837 basehttp 8976 24896 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 21:01:21,849 basehttp 8976 27316 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 21:01:21,857 basehttp 8976 11968 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 21:01:21,857 basehttp 8976 47132 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 21:01:21,883 basehttp 8976 38440 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 21:01:21,885 basehttp 8976 47132 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 21:01:21,907 basehttp 8976 11968 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 21:01:22,464 basehttp 8976 11968 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 21:01:23,236 basehttp 8976 11968 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 21:01:32,464 basehttp 8976 11968 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893421
+INFO 2024-09-13 21:01:32,936 basehttp 8976 11968 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 21:01:33,074 basehttp 8976 38440 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 21:01:33,076 basehttp 8976 47132 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 21:01:33,092 basehttp 8976 27316 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 21:01:33,092 basehttp 8976 11912 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 21:01:33,099 basehttp 8976 24896 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 21:01:33,221 basehttp 8976 11968 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 21:01:33,261 basehttp 8976 38440 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 21:01:33,313 basehttp 8976 24896 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 21:01:33,314 basehttp 8976 11968 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 21:01:33,859 basehttp 8976 11968 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 21:01:34,158 basehttp 8976 11968 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 21:01:34,343 basehttp 8976 11968 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 21:01:34,391 basehttp 8976 11968 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 21:01:34,406 basehttp 8976 24896 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 21:01:34,409 basehttp 8976 38440 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 21:01:34,410 basehttp 8976 11912 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 21:01:34,411 basehttp 8976 47132 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 21:01:34,411 basehttp 8976 27316 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 21:01:34,422 basehttp 8976 11968 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 21:01:35,095 basehttp 8976 11968 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 21:01:35,505 basehttp 8976 11968 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 21:01:39,850 basehttp 8976 11968 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 21:01:39,851 basehttp 8976 27316 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 21:01:42,983 basehttp 8976 27316 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 21:01:45,332 basehttp 8976 27316 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-13 21:03:01,755 autoreload 8976 26772 A:\DJANGO\portfolio_projects\personal_portfolio\travel_fellows\views.py changed, reloading.
+INFO 2024-09-13 21:03:03,607 autoreload 19652 6036 Watching for file changes with StatReloader
+INFO 2024-09-13 21:03:04,837 basehttp 19652 11804 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-13 21:03:05,890 basehttp 19652 11804 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 21:03:05,906 basehttp 19652 11804 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 21:03:05,921 basehttp 19652 11804 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 21:03:05,941 basehttp 19652 11804 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 21:03:05,961 basehttp 19652 11804 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 21:03:06,056 basehttp 19652 31464 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 21:03:06,057 basehttp 19652 33652 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 21:03:06,300 basehttp 19652 12492 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 21:03:06,362 basehttp 19652 37556 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 21:03:06,555 basehttp 19652 33652 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 21:03:06,557 basehttp 19652 12492 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 21:03:06,560 basehttp 19652 37556 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 21:03:06,570 basehttp 19652 35604 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 21:03:06,636 basehttp 19652 35604 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 21:03:06,637 basehttp 19652 12492 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 21:03:06,651 basehttp 19652 37556 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 21:03:06,653 basehttp 19652 33652 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 21:03:06,653 basehttp 19652 31464 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 21:03:06,656 basehttp 19652 11804 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 21:03:06,672 basehttp 19652 12492 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 21:03:07,933 basehttp 19652 12492 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 21:03:08,712 basehttp 19652 12492 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 21:03:16,924 basehttp 19652 12492 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-13 21:03:17,325 basehttp 19652 12492 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 21:03:17,507 basehttp 19652 33652 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 21:03:17,509 basehttp 19652 11804 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 21:03:17,512 basehttp 19652 31464 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 21:03:17,513 basehttp 19652 35604 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 21:03:17,521 basehttp 19652 37556 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 21:03:17,580 basehttp 19652 12492 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 21:03:17,625 basehttp 19652 31464 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 21:03:17,664 basehttp 19652 37556 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 21:03:17,695 basehttp 19652 31464 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 21:03:18,687 basehttp 19652 31464 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 21:03:19,045 basehttp 19652 37556 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 21:03:19,055 basehttp 19652 31464 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 21:03:19,109 basehttp 19652 37556 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 21:03:19,112 basehttp 19652 12492 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 21:03:19,120 basehttp 19652 11804 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 21:03:19,126 basehttp 19652 35604 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 21:03:19,133 basehttp 19652 33652 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 21:03:19,134 basehttp 19652 31464 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 21:03:19,137 basehttp 19652 11804 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 21:03:20,620 basehttp 19652 11804 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 21:03:21,090 basehttp 19652 11804 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 21:03:30,012 basehttp 19652 11804 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 21:03:30,014 basehttp 19652 31464 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 21:03:33,060 basehttp 19652 31464 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 21:03:37,829 basehttp 19652 31464 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-13 21:07:04,288 autoreload 47768 30872 Watching for file changes with StatReloader
+INFO 2024-09-13 21:07:09,555 basehttp 47768 18708 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-13 21:07:10,460 basehttp 47768 18708 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-13 21:07:10,470 basehttp 47768 18708 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-13 21:07:10,481 basehttp 47768 18708 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6777
+INFO 2024-09-13 21:07:10,497 basehttp 47768 18708 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-13 21:07:10,513 basehttp 47768 18708 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-13 21:07:10,702 basehttp 47768 20640 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-13 21:07:10,716 basehttp 47768 29016 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-13 21:07:10,920 basehttp 47768 37960 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-13 21:07:10,973 basehttp 47768 27056 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-13 21:07:11,064 basehttp 47768 8296 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-13 21:07:11,195 basehttp 47768 37960 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-13 21:07:11,199 basehttp 47768 27056 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-13 21:07:11,202 basehttp 47768 8296 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-13 21:07:11,265 basehttp 47768 8296 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-13 21:07:11,271 basehttp 47768 37960 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-13 21:07:11,284 basehttp 47768 27056 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-13 21:07:11,287 basehttp 47768 18708 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-13 21:07:11,289 basehttp 47768 20640 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-13 21:07:11,291 basehttp 47768 29016 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-13 21:07:11,303 basehttp 47768 27056 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-13 21:07:12,739 basehttp 47768 27056 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-13 21:07:13,253 basehttp 47768 27056 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-13 21:08:02,314 basehttp 47768 29016 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-13 21:08:02,314 basehttp 47768 27056 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-13 21:08:06,430 basehttp 47768 27056 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-13 21:08:09,483 basehttp 47768 27056 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 10:48:32,656 basehttp 47768 21180 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 10:48:33,000 basehttp 47768 21180 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 10:48:33,179 basehttp 47768 11900 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 10:48:33,180 basehttp 47768 22064 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 10:48:33,199 basehttp 47768 21180 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 10:48:33,226 basehttp 47768 11900 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 10:48:33,229 basehttp 47768 22064 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 10:48:33,235 basehttp 47768 21180 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 10:48:33,256 basehttp 47768 22064 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6806
+INFO 2024-09-14 10:48:33,257 basehttp 47768 11900 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 10:48:33,264 basehttp 47768 21180 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 10:48:34,476 basehttp 47768 22064 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 10:48:34,477 basehttp 47768 11900 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 10:48:34,480 basehttp 47768 21180 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 10:48:34,591 basehttp 47768 21180 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 10:48:34,594 basehttp 47768 11900 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 10:48:34,615 basehttp 47768 22064 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 10:48:34,615 basehttp 47768 2784 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 10:48:34,616 basehttp 47768 32800 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 10:48:34,618 basehttp 47768 29732 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 10:48:34,623 basehttp 47768 11900 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 10:48:36,097 basehttp 47768 11900 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 10:48:36,820 basehttp 47768 11900 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 10:48:45,071 basehttp 47768 11900 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 10:48:45,293 basehttp 47768 11900 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 10:48:45,408 basehttp 47768 29732 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 10:48:45,465 basehttp 47768 22064 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 10:48:45,468 basehttp 47768 2784 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 10:48:45,470 basehttp 47768 21180 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 10:48:45,476 basehttp 47768 32800 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 10:48:45,489 basehttp 47768 11900 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 10:48:45,525 basehttp 47768 29732 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6806
+INFO 2024-09-14 10:48:45,583 basehttp 47768 32800 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 10:48:45,583 basehttp 47768 29732 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 10:48:46,224 basehttp 47768 32800 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 10:48:46,248 basehttp 47768 32800 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 10:48:46,490 basehttp 47768 32800 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 10:48:46,956 basehttp 47768 21180 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 10:48:46,958 basehttp 47768 2784 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 10:48:46,960 basehttp 47768 32800 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 10:48:46,960 basehttp 47768 22064 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 10:48:46,961 basehttp 47768 11900 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 10:48:46,963 basehttp 47768 29732 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 10:48:46,977 basehttp 47768 32800 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 10:48:47,971 basehttp 47768 32800 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 10:48:48,300 basehttp 47768 32800 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 10:49:04,132 basehttp 47768 11900 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-14 10:49:04,133 basehttp 47768 32800 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-14 10:49:07,937 basehttp 47768 32800 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-14 10:49:09,764 basehttp 47768 32800 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 10:49:49,560 basehttp 47768 32800 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 10:49:49,912 basehttp 47768 32800 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 10:49:49,983 basehttp 47768 11900 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 10:49:50,035 basehttp 47768 22064 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 10:49:50,036 basehttp 47768 21180 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 10:49:50,037 basehttp 47768 29732 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 10:49:50,039 basehttp 47768 32800 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 10:49:50,043 basehttp 47768 2784 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 10:49:50,051 basehttp 47768 11900 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6835
+INFO 2024-09-14 10:49:50,093 basehttp 47768 2784 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 10:49:50,108 basehttp 47768 11900 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 10:49:50,776 basehttp 47768 11900 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 10:49:51,018 basehttp 47768 11900 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 10:49:51,195 basehttp 47768 11900 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 10:49:51,417 basehttp 47768 11900 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 10:49:51,431 basehttp 47768 2784 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 10:49:51,434 basehttp 47768 21180 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 10:49:51,436 basehttp 47768 22064 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 10:49:51,436 basehttp 47768 32800 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 10:49:51,438 basehttp 47768 29732 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 10:49:51,447 basehttp 47768 11900 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 10:49:52,038 basehttp 47768 11900 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 10:49:52,379 basehttp 47768 11900 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 10:49:59,283 basehttp 47768 11900 "GET /static/img/travel_fellows/tick.svg HTTP/1.1" 200 126
+INFO 2024-09-14 10:50:07,938 basehttp 47768 29732 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-14 10:50:07,939 basehttp 47768 11900 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-14 10:50:11,325 basehttp 47768 11900 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-14 10:50:12,912 basehttp 47768 11900 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 10:50:50,183 basehttp 47768 19188 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 10:50:50,540 basehttp 47768 19188 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 10:50:50,550 basehttp 47768 45612 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 10:50:50,551 basehttp 47768 21164 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 10:50:50,592 basehttp 47768 45612 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 10:50:50,593 basehttp 47768 19188 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 10:50:50,594 basehttp 47768 21164 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 10:50:50,615 basehttp 47768 19188 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 10:50:50,616 basehttp 47768 45612 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6838
+INFO 2024-09-14 10:50:50,622 basehttp 47768 21164 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 10:50:50,650 basehttp 47768 19188 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 10:50:51,660 basehttp 47768 19188 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 10:50:51,689 basehttp 47768 19188 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 10:50:51,913 basehttp 47768 19188 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 10:50:51,962 basehttp 47768 19188 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 10:50:51,967 basehttp 47768 21164 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 10:50:51,977 basehttp 47768 45612 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 10:50:51,979 basehttp 47768 34472 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 10:50:51,980 basehttp 47768 41924 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 10:50:51,981 basehttp 47768 35312 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 10:50:51,999 basehttp 47768 45612 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 10:50:52,825 basehttp 47768 45612 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 10:50:53,396 basehttp 47768 45612 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 10:51:00,647 basehttp 47768 45612 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-14 10:51:00,651 basehttp 47768 35312 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-14 10:51:03,271 basehttp 47768 35312 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-14 10:51:07,602 basehttp 47768 35312 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 12:57:32,052 basehttp 47768 10584 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 12:57:32,495 basehttp 47768 10584 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 12:57:32,584 basehttp 47768 25428 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 12:57:32,595 basehttp 47768 18852 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 12:57:32,625 basehttp 47768 10584 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 12:57:32,658 basehttp 47768 25428 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 12:57:32,659 basehttp 47768 18852 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 12:57:32,682 basehttp 47768 10584 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 12:57:32,694 basehttp 47768 18852 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6886
+INFO 2024-09-14 12:57:32,703 basehttp 47768 25428 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 12:57:32,708 basehttp 47768 10584 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 12:57:33,623 basehttp 47768 10584 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 12:57:33,639 basehttp 47768 25428 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 12:57:33,662 basehttp 47768 18852 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 12:57:33,786 basehttp 47768 42900 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 12:57:33,787 basehttp 47768 34176 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 12:57:33,787 basehttp 47768 18852 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 12:57:33,787 basehttp 47768 11700 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 12:57:33,790 basehttp 47768 10584 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 12:57:33,791 basehttp 47768 25428 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 12:57:33,823 basehttp 47768 25428 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 12:57:34,829 basehttp 47768 25428 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 12:57:35,564 basehttp 47768 25428 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 12:57:46,063 basehttp 47768 25428 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-14 12:57:46,065 basehttp 47768 10584 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-14 12:57:49,440 basehttp 47768 10584 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-14 12:57:51,916 basehttp 47768 10584 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 12:58:22,723 basehttp 47768 10584 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 12:58:23,155 basehttp 47768 10584 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 12:58:23,187 basehttp 47768 18852 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 12:58:23,189 basehttp 47768 34176 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 12:58:23,189 basehttp 47768 25428 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 12:58:23,190 basehttp 47768 11700 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 12:58:23,200 basehttp 47768 42900 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 12:58:23,212 basehttp 47768 10584 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 12:58:23,226 basehttp 47768 25428 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6907
+INFO 2024-09-14 12:58:23,271 basehttp 47768 10584 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 12:58:23,272 basehttp 47768 42900 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 12:58:24,388 basehttp 47768 10584 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 12:58:24,399 basehttp 47768 25428 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 12:58:24,401 basehttp 47768 42900 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 12:58:24,452 basehttp 47768 42900 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 12:58:24,458 basehttp 47768 25428 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 12:58:24,481 basehttp 47768 34176 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 12:58:24,484 basehttp 47768 18852 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 12:58:24,487 basehttp 47768 10584 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 12:58:24,489 basehttp 47768 11700 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 12:58:24,499 basehttp 47768 18852 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 12:58:25,496 basehttp 47768 18852 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 12:58:25,943 basehttp 47768 18852 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 12:58:31,446 basehttp 47768 11700 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-14 12:58:31,447 basehttp 47768 18852 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-14 12:58:38,716 basehttp 47768 18852 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-14 12:58:41,522 basehttp 47768 11700 "GET /static/img/travel_fellows/qty-plus-mobile.svg HTTP/1.1" 200 120
+INFO 2024-09-14 12:58:41,522 basehttp 47768 18852 "GET /static/img/travel_fellows/qty-minus-mobile.svg HTTP/1.1" 200 105
+INFO 2024-09-14 12:58:41,530 basehttp 47768 10584 "GET /static/img/travel_fellows/small-arrow.svg HTTP/1.1" 200 133
+INFO 2024-09-14 12:58:45,134 basehttp 47768 10584 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 12:58:56,510 basehttp 47768 10584 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 12:58:56,949 basehttp 47768 10584 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 12:58:57,025 basehttp 47768 18852 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 12:58:57,026 basehttp 47768 11700 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 12:58:57,029 basehttp 47768 34176 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 12:58:57,066 basehttp 47768 42900 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 12:58:57,071 basehttp 47768 25428 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 12:58:57,079 basehttp 47768 10584 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 12:58:57,118 basehttp 47768 11700 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6913
+INFO 2024-09-14 12:58:57,167 basehttp 47768 10584 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 12:58:57,173 basehttp 47768 25428 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 12:58:57,926 basehttp 47768 25428 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 12:58:58,159 basehttp 47768 25428 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 12:58:58,384 basehttp 47768 25428 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 12:58:58,392 basehttp 47768 10584 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 12:58:58,393 basehttp 47768 11700 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 12:58:58,411 basehttp 47768 42900 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 12:58:58,412 basehttp 47768 34176 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 12:58:58,414 basehttp 47768 25428 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 12:58:58,419 basehttp 47768 11700 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 12:58:58,432 basehttp 47768 34176 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 12:58:59,073 basehttp 47768 34176 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 12:58:59,753 basehttp 47768 34176 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 12:59:05,216 basehttp 47768 34176 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-14 12:59:05,219 basehttp 47768 11700 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-14 12:59:12,474 basehttp 47768 11700 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-14 12:59:14,120 basehttp 47768 11700 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 13:02:37,600 basehttp 47768 29564 "GET /portfolio/fellows/user/ HTTP/1.1" 200 893461
+INFO 2024-09-14 13:02:38,103 basehttp 47768 29564 "GET /static/fonts/travel_fellows/bloggersans-light.woff2 HTTP/1.1" 200 56332
+INFO 2024-09-14 13:02:38,180 basehttp 47768 5088 "GET /static/fonts/travel_fellows/bloggersans.woff2 HTTP/1.1" 200 54160
+INFO 2024-09-14 13:02:38,181 basehttp 47768 28304 "GET /static/fonts/travel_fellows/bloggersans-medium.woff2 HTTP/1.1" 200 51436
+INFO 2024-09-14 13:02:38,218 basehttp 47768 29564 "GET /static/css/travel_fellows/style.css HTTP/1.1" 200 203731
+INFO 2024-09-14 13:02:38,220 basehttp 47768 28304 "GET /static/fonts/travel_fellows/bloggersans-bold.woff2 HTTP/1.1" 200 56480
+INFO 2024-09-14 13:02:38,223 basehttp 47768 5088 "GET /static/img/travel_fellows/flags/image_sprite/ip2location-image-sprite.css HTTP/1.1" 200 44437
+INFO 2024-09-14 13:02:38,226 basehttp 47768 29564 "GET /static/js/travel_fellows/trip-plans.js HTTP/1.1" 200 10246
+INFO 2024-09-14 13:02:38,240 basehttp 47768 5088 "GET /static/js/travel_fellows/trip-countries.js HTTP/1.1" 200 6919
+INFO 2024-09-14 13:02:38,245 basehttp 47768 28304 "GET /static/js/travel_fellows/navigation.js HTTP/1.1" 200 927
+INFO 2024-09-14 13:02:38,251 basehttp 47768 29564 "GET /static/js/travel_fellows/business-tariffs.js HTTP/1.1" 200 877
+INFO 2024-09-14 13:02:39,462 basehttp 47768 29564 "GET /static/img/travel_fellows/profile/Dream_Shopping_boqm1h9.png HTTP/1.1" 200 87625
+INFO 2024-09-14 13:02:39,472 basehttp 47768 5088 "GET /static/js/travel_fellows/svgxuse.js HTTP/1.1" 200 9724
+INFO 2024-09-14 13:02:39,474 basehttp 47768 28304 "GET /static/js/travel_fellows/picturefill.js HTTP/1.1" 200 48938
+INFO 2024-09-14 13:02:39,475 basehttp 47768 31360 "GET /static/img/travel_fellows/contacts-mail.svg HTTP/1.1" 200 457
+INFO 2024-09-14 13:02:39,487 basehttp 47768 33036 "GET /static/img/travel_fellows/facebook.svg HTTP/1.1" 200 322
+INFO 2024-09-14 13:02:39,489 basehttp 47768 2256 "GET /static/img/travel_fellows/instagram.svg HTTP/1.1" 200 600
+INFO 2024-09-14 13:02:39,503 basehttp 47768 5088 "GET /static/img/travel_fellows/qty-minus.svg HTTP/1.1" 200 231
+INFO 2024-09-14 13:02:39,518 basehttp 47768 31360 "GET /static/img/travel_fellows/qty-plus.svg HTTP/1.1" 200 123
+INFO 2024-09-14 13:02:39,520 basehttp 47768 33036 "GET /static/img/travel_fellows/month-arrow-left.svg HTTP/1.1" 200 218
+INFO 2024-09-14 13:02:39,523 basehttp 47768 2256 "GET /static/img/travel_fellows/month-arrow-right.svg HTTP/1.1" 200 220
+INFO 2024-09-14 13:02:40,130 basehttp 47768 2256 "GET /static/js/travel_fellows/show-modal.js HTTP/1.1" 200 768
+INFO 2024-09-14 13:02:40,964 basehttp 47768 2256 "GET /portfolio/fellows/countries-data/ HTTP/1.1" 200 5028
+INFO 2024-09-14 13:02:48,045 basehttp 47768 2256 "GET /static/img/travel_fellows/dropdown-form.svg HTTP/1.1" 200 205
+INFO 2024-09-14 13:02:48,047 basehttp 47768 33036 "GET /static/img/travel_fellows/menu-close.svg HTTP/1.1" 200 270
+INFO 2024-09-14 13:02:50,575 basehttp 47768 33036 "GET /static/img/travel_fellows/menu-filter-close.svg HTTP/1.1" 200 271
+INFO 2024-09-14 13:02:52,769 basehttp 47768 33036 "GET /static/img/travel_fellows/flags/image_sprite/all_countries_64.png HTTP/1.1" 200 452429
+INFO 2024-09-14 13:10:10,761 autoreload 31868 6156 Watching for file changes with StatReloader

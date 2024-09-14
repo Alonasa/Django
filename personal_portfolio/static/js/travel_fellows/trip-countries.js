@@ -77,7 +77,6 @@ const handleCountrySelection = (event) => {
     event.preventDefault();
     const countryName = event.currentTarget.textContent;
     const countryCode = countriesData[countryName];
-
     if (!countryCode) return;
 
     if (isCountryAlreadySelected(countryName)) {
@@ -92,6 +91,7 @@ const handleCountrySelection = (event) => {
 };
 
 const isCountryAlreadySelected = (countryName) => {
+    const planSteps = document.querySelectorAll(".plan-step__select-wrapper");
     return Array.from(planSteps).some(el => el.dataset.tooltip === countryName);
 };
 

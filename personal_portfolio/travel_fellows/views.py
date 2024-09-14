@@ -85,9 +85,8 @@ def get_plans(user):
     return plans
 
 
-
 @method_decorator(login_required, name='dispatch')
-class ViewUserProfile(View):
+class UserProfileView(View):
     def get_context(self, form, user_profile, hashtags_form, transportation_form, hashtags, plans_form, letters,
                     countries, plans):
         hashtags = user_profile.user.hashtag_set.all()
@@ -163,7 +162,6 @@ class ViewUserProfile(View):
     def post(self, request):
         user = request.user
         user_profile, _ = UserProfile.objects.get_or_create(user=user)
-
         photo_form = self.handle_photo_form(request, user_profile)
         hashtags_form = self.handle_hashtags_form(request, user)
         plans_form = self.handle_plans_form(request)
@@ -179,6 +177,8 @@ class ViewUserProfile(View):
 
 
 def handle_plans(request):
+    user = request.user
+
     if request.method == 'POST':
         form_data = dict(request.POST)
         cleaned_data = {}
@@ -194,7 +194,6 @@ def handle_plans(request):
             else:
                 cleaned_data[key] = value[0]
 
-        user = request.user
         start_trip = cleaned_data['picked-date'][0]
         end_trip = cleaned_data['picked-date'][1]
         companions = cleaned_data['companions']
@@ -202,12 +201,10 @@ def handle_plans(request):
         countries = cleaned_data['selected-countries'].split(",")
         plans = [value for key, value in cleaned_data.items() if key.endswith('-plan')]
 
-
         try:
             kids = cleaned_data['kids']
         except KeyError:
             kids = False
-
 
         UserPlans.objects.create(user=user,
                                  destinations=countries,
